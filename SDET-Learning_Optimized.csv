@@ -1,0 +1,337 @@
+Story ID,Story Name,Category,Description,Acceptance Criteria
+Story 1.1,Java Core Concepts Review,1. Java Fundamentals & OOP,Refresh and solidify understanding of core Java concepts for technical interviews.,"• Explain difference between JDK, JRE, and JVM
+• Demonstrate 4 access modifiers (public, private, protected, default)
+• Code difference between == and .equals()
+• Explain String immutability with examples
+• Compare String, StringBuilder, StringBuffer
+• Checked vs Unchecked exceptions
+• Final, finally, finalize() keywords"
+Story 1.2,OOP Deep Dive,1. Java Fundamentals & OOP,Master OOP principles and apply them to test automation frameworks.,"• Implement Encapsulation, Inheritance, Polymorphism, Abstraction
+• Create Page Object Model classes (Encapsulation)
+• Method overloading vs overriding
+• Abstract class for BasePage
+• Interface for test data providers
+• IS-A vs HAS-A relationships
+• Compile-time vs runtime polymorphism"
+Story 1.3,Java Collections Framework,1. Java Fundamentals & OOP,Master Collections to efficiently manage test data and dynamic structures.,"• Collection vs Collections
+• ArrayList vs LinkedList vs HashSet vs TreeSet
+• HashMap vs Hashtable vs ConcurrentHashMap
+• Test data management utility
+• Filtering, sorting, mapping, reducing
+• Custom comparator
+• Excel/JSON to collections"
+Story 1.4,Exception Handling & Multithreading,1. Java Fundamentals & OOP,Understand concurrency for parallel execution and robust error handling.,"• Checked vs unchecked exceptions examples
+• Custom exceptions (ElementNotFound, etc)
+• Try-catch-finally blocks
+• Throw vs throws
+• ThreadLocal for WebDriver (Parallel execution)
+• Synchronized blocks/methods
+• Wait/notify/notifyAll
+• Thread-safe Singleton pattern
+• ExecutorService"
+Story 1.5,Java Coding Practice (Algo),1. Java Fundamentals & OOP,Practice essential Java coding problems for technical interviews.,"• String manipulation (Reverse, palindrome, duplicates)
+• Array operations (Largest, remove duplicates, missing number)
+• Fibonacci series (recursion/iteration)
+• Factorial
+• Swap without temp variable
+• Count words (HashMap)
+• Anagram check
+• First non-repeating char
+• Perfect number / Armstrong number
+• File I/O"
+Story 2.1,Selenium WebDriver Core,2. Selenium WebDriver Mastery,Deep understanding of WebDriver architecture and core concepts.,"• Explain WebDriver architecture
+• WebDriver vs RemoteWebDriver
+• ChromeOptions/FirefoxOptions (Headless)
+• Browser profile management
+• findElement vs findElements
+• Handle NoSuchElement/StaleElement exceptions
+• Navigation methods
+• Window management"
+Story 2.2,Advanced Locator Strategies,2. Selenium WebDriver Mastery,"Master XPath, CSS, and dynamic locators for complex DOMs.","• Demonstrate all 8 strategies
+• Complex XPath (axes: parent, following-sibling, etc)
+• Advanced CSS (pseudo-classes)
+• Dynamic handling (contains, starts-with)
+• Partial matching
+• Locator priority
+• Relative locators (Selenium 4)"
+Story 2.3,Synchronization & Waits,2. Selenium WebDriver Mastery,Eliminate flaky tests using proper waiting mechanisms.,"• Implicit Wait
+• Explicit Wait (ExpectedConditions)
+• Custom Expected Conditions
+• Fluent Wait
+• Wait decision matrix
+• Page load/Script timeouts
+• Smart wait methods"
+Story 2.4,Advanced Selenium Techniques,2. Selenium WebDriver Mastery,"Handle complex scenarios like JS interactions, windows, and auth.","• JavaScriptExecutor (scroll, click, highlight)
+• Alerts/Prompts
+• Window/Tab switching
+• Iframes
+• Drag-and-drop (Actions)
+• Mouse hover/Keyboard actions
+• File upload/download
+• Browser Auth pop-ups
+• SSL Certificates
+• Shadow DOM / Canvas
+• Screenshots"
+Story 2.5,Selenium Grid & Parallel,2. Selenium WebDriver Mastery,Implement distributed testing to reduce execution time.,"• Grid 4 Architecture (Hub, Node, Router)
+• Standalone vs Hub-Node setup
+• RemoteWebDriver config
+• TestNG parallel execution
+• Cross-browser matrix
+• ThreadLocal safety
+• Grid monitoring"
+Story 2.6,Selenium 4 New Features,2. Selenium WebDriver Mastery,Leverage modern capabilities of Selenium 4.,"• Relative Locators
+• New Window/Tab API
+• Element Screenshots
+• Chrome DevTools Protocol (CDP)
+• Selenium Manager
+• W3C Compliance"
+Story 2.7,Real-world Practice Project,2. Selenium WebDriver Mastery,Build a complete end-to-end automation project.,"• Choose complex site (SaaS/E-com)
+• Complete POM (10+ pages)
+• Proper locators & sync
+• Utilities package
+• 5 complex scenarios
+• Log4j2 logging
+• 20 test cases
+• GitHub documentation"
+Story 3.1,TestNG Core Concepts,3. TestNG & Framework Design,Master TestNG for organizing and configuring tests.,"• TestNG vs JUnit
+• All Annotations & Order
+• testng.xml configuration
+• Groups & Priorities
+• Include/Exclude
+• Dependencies (Methods/Groups)
+• Multiple suites (Smoke/Reg)"
+Story 3.2,TestNG Advanced Features,3. TestNG & Framework Design,"Parameterization, parallel execution, and listeners.","• @Parameters
+• Data-driven (@DataProvider)
+• Parallel execution levels
+• Thread-count config
+• Soft vs Hard Assertions
+• Custom Listeners (ITestListener)
+• Retry Logic (IRetryAnalyzer)
+• HTML Reports"
+Story 3.3,Design Patterns,3. TestNG & Framework Design,Architect scalable frameworks using industry patterns.,"• Page Object Model (POM)
+• Fluent POM (Chaining)
+• Singleton (WebDriver Manager)
+• Factory Pattern
+• Strategy Pattern
+• Facade Pattern
+• Observer Pattern
+• Modular Architecture"
+Story 3.4,Framework Architecture,3. TestNG & Framework Design,Design enterprise-grade folder structures and components.,"• Folder structure best practices
+• Config management (Properties)
+• Centralized utilities
+• Test Data Layer
+• Env specific config (QA/Stage/Prod)
+• Abstraction layers
+• Dependency Injection"
+Story 3.5,Logging & Reporting,3. TestNG & Framework Design,Implement comprehensive debugging and visualization tools.,"• Log4j2 integration
+• ExtentReports (HTML)
+• Screenshots on failure
+• Allure Reporting
+• Video recording
+• ReportPortal integration
+• Email reports"
+Story 3.6,Framework Interview Prep,3. TestNG & Framework Design,Prepare to explain architecture and design decisions confidently.,"• Explain 'Your Framework' with diagrams
+• Component responsibilities
+• Design pattern justification
+• Challenges & Solutions
+• ROI Calculation
+• Scalability strategies
+• 'Design from scratch' scenarios"
+Story 4.1,REST Assured Fundamentals,4. REST Assured API Testing,Master BDD syntax and HTTP basics.,"• REST Assured advantages
+• BDD Syntax (Given/When/Then)
+• CRUD Operations (GET/POST/PUT/DELETE)
+• Status code validation
+• JsonPath extraction
+• Header/Cookie validation
+• Request/Response Specifications"
+Story 4.2,JSON & XML Validation,4. REST Assured API Testing,Validate complex nested responses and schemas.,"• JsonPath expressions
+• Nested objects/arrays
+• JSON Schema Validation
+• XmlPath
+• Hamcrest Matchers
+• Array validation
+• Response chaining"
+Story 4.3,Authentication & Auth,4. REST Assured API Testing,Test secured APIs using various auth mechanisms.,"• Basic Auth
+• OAuth 2.0
+• Bearer Tokens
+• API Keys
+• Token generation/refresh
+• Store tokens for reuse
+• Negative scenarios (401/403)"
+Story 4.4,Data-Driven API Testing,4. REST Assured API Testing,Test APIs with multiple datasets.,"• TestNG DataProvider integration
+• Excel/JSON data sources
+• Parameterized tests
+• POJO classes (Serialization)
+• Jackson/Gson (Deserialization)
+• Data-driven framework"
+Story 4.5,Advanced REST Assured,4. REST Assured API Testing,"Handle files, databases, and mocking.","• Multipart/Form-data (Uploads)
+• File downloads
+• Request logging
+• Filters
+• SLA/Response time validation
+• DB validation (JDBC)
+• WireMock integration
+• Retry logic"
+Story 4.6,API Best Practices Project,4. REST Assured API Testing,Build a complete API framework from scratch.,"• Public API (Restful-Booker)
+• Complete BDD framework
+• Reusable Specs
+• JSON Validation
+• Auth handling
+• Data-driven
+• Reporting
+• GitHub Documentation"
+Story 5.0,TypeScript Bridge for Java Devs,5. Playwright TypeScript,[NEW] Map Java OOP to TS and master Async/Await to avoid bad patterns.,"• Structural vs Nominal Typing
+• Interface as DTO vs Class
+• Event Loop vs Thread Pool
+• Async/Await vs Callbacks
+• 'Void' trap in tests
+• Optional Chaining (?.) and Null Coalescing (??)
+• Const/Let (No Var)
+• Generics in TS vs Java"
+Story 5.1,Playwright Project Setup,5. Playwright TypeScript,Set up modern automation environment.,"• Node.js/npm setup
+• npm init playwright
+• tsconfig.json
+• playwright.config.ts
+• Folder structure
+• Multi-browser config
+• VS Code Extension"
+Story 5.2,Playwright Locators,5. Playwright TypeScript,Master user-facing locators and auto-waiting.,"• getByRole, getByText, etc.
+• Locator vs ElementHandle
+• CSS/XPath fallback
+• Text-based locators
+• Filtering (has, hasText)
+• Auto-waiting mechanisms
+• Custom waits"
+Story 5.3,Playwright Core Features,5. Playwright TypeScript,Master browser contexts and interactions.,"• Browser/Context/Page hierarchy
+• Multiple contexts (Isolation)
+• Navigation
+• Actions (Click, Fill, Type)
+• File Upload/Download
+• Iframes/Shadow DOM
+• Media capture"
+Story 5.4,Fixtures & Organization,5. Playwright TypeScript,Create reusable test components and share state.,"• Built-in fixtures
+• Custom fixtures (Setup/Teardown)
+• Dependency injection
+• Page Object Fixtures
+• Test Hooks
+• Grouping/Skipping/Tagging"
+Story 5.5,Auth & Network Interception,5. Playwright TypeScript,Optimize tests with saved state and mocking.,"• UI Login & State storage
+• Reuse auth state
+• API-based auth
+• Network Interception (page.route)
+• Mocking API responses
+• Block resources"
+Story 5.6,Playwright API Testing,5. Playwright TypeScript,Perform API testing within Playwright.,"• API Request Context
+• CRUD operations
+• JSON validation
+• Chaining API to UI
+• Hybrid testing"
+Story 5.7,Playwright CI/CD,5. Playwright TypeScript,Integrate Playwright with Pipelines.,"• CI Config
+• GitHub Actions
+• Jenkins Integration
+• Parallel/Sharding
+• HTML Reports in CI
+• Artifacts (Trace Viewer)"
+Story 5.8,AI-Assisted Engineering,5. Playwright TypeScript,[NEW] Integrate AI tools into the development workflow.,"• Setup Copilot/Cursor for TS
+• Generate boilerplate code
+• Generate synthetic test data using LLMs
+• Use AI for locator suggestions
+• Review AI-generated code for security"
+Story 6.1,CI/CD Fundamentals,6. CI/CD & Docker,Understand pipelines and test integration strategies.,"• CI/CD Concepts
+• Test Pyramid
+• Shift-Left
+• Build Pipeline stages
+• Parallel execution benefits
+• Branching strategies
+• Continuous Feedback"
+Story 6.2,Jenkins Integration,6. CI/CD & Docker,Integrate tests with Jenkins pipelines.,"• Jenkins Setup
+• Freestyle vs Pipeline
+• Jenkinsfile (Declarative)
+• Triggers (SCM/Cron)
+• Maven/Gradle integration
+• Test Reporting plugins
+• Artifact Archiving"
+Story 6.3,GitHub Actions,6. CI/CD & Docker,Build modern workflows in GitHub.,"• Workflows/Jobs/Steps
+• YAML config
+• Triggers
+• Test Matrix strategy
+• Parallel execution
+• Secrets management"
+Story 6.4,Docker Fundamentals,6. CI/CD & Docker,Containerize tests for consistent environments.,"• Images vs Containers
+• Dockerfile
+• Build images
+• Run tests in Docker
+• Docker Compose
+• Selenium Grid in Docker"
+Story 6.5,Advanced CI/CD,6. CI/CD & Docker,"Monitoring, Flakiness, and Intelligence in pipelines.","• Telemetry
+• Dashboards
+• Flaky test detection
+• Test Impact Analysis
+• Security scanning"
+Story 6.6,Git Mastery,6. CI/CD & Docker,Master version control for team collaboration.,"• Commands (Clone/Push/Pull)
+• Branching strategies (GitFlow)
+• Merge conflicts
+• Pull Requests
+• .gitignore
+• Semantic Versioning"
+Story 6.7,Cloud Native Infrastructure,6. CI/CD & Docker,[NEW] Deploy and run tests in Cloud Providers (AWS/Azure).,"• Deploy test runner on AWS EC2
+• Trigger tests via AWS Lambda/Azure Functions
+• Store reports in S3/Blob Storage
+• IAM Roles for test agents
+• Cloud-based Test Grids"
+Story 7.1,Microservices Testing,7. Advanced SDET Topics,Test distributed architectures effectively.,"• Architecture challenges
+• Microservices Test Pyramid
+• Contract Testing (Pact)
+• Consumer-Driven Contracts
+• Service Virtualization
+• Chaos Testing basics"
+Story 7.2,Flaky Test Management,7. Advanced SDET Topics,Detect and prevent instability in pipelines.,"• Causes (Timing, Env, Data)
+• Detection methods
+• Synchronization fixes
+• Isolation strategies
+• Retry mechanisms
+• Quarantine strategy"
+Story 7.3,Test Data Management,7. Advanced SDET Topics,Strategy for reliable and secure test data.,"• TDM Challenges
+• Synthetic Generation
+• Data Masking
+• Automated Refresh
+• Version Control for Data"
+Story 7.4,Performance Basics,7. Advanced SDET Topics,JMeter basics for load testing.,"• Load/Stress/Spike types
+• Metrics (Throughput/Error)
+• JMeter Setup
+• Thread Groups
+• Samplers & Assertions
+• Reporting"
+Story 7.5,Accessibility Testing,7. Advanced SDET Topics,Ensure inclusive digital experiences.,"• WCAG Guidelines
+• Axe DevTools
+• Automated Checks (axe-core)
+• Screen Readers
+• Keyboard Nav"
+Story 7.6,System Design (SDET),7. Advanced SDET Topics,[UPDATED] Design scalable automation platforms (5 Layers).,"• Execution Layer: Sharding, K8s Jobs
+• Data Layer: Seeding vs Mocking vs Synthetic
+• Infra Layer: IaC, Ephemeral Envs, Containers
+• Observability: Tracing (TraceIDs), Kibana, Metrics
+• Intelligence: Self-healing, Smart Selection"
+Story 8.1,Coding Patterns (DSA),8. Interview Preparation,Practice common algorithmic patterns.,"• Strings & Arrays (50+)
+• Recursion
+• Sorting
+• HashMaps
+• Time Complexity (Big O)
+• Whiteboarding"
+Story 8.2,Behavioral Prep,8. Interview Preparation,Prepare STAR stories for leadership/soft skills.,"• STAR format stories
+• Pitch (2 mins)
+• Conflict resolution
+• Mentoring examples
+• Questions for interviewers"
+Story 8.3,Mock Interviews,8. Interview Preparation,Simulate pressure of real interviews.,"• 5+ Technical Mocks
+• 3+ Behavioral Mocks
+• Portfolio refinement
+• Resume polish"
+Story 8.4,Company Specific,8. Interview Preparation,Tailor prep for target companies.,"• Research patterns
+• Culture/Values
+• Tech stack research
+• Salary negotiation"
+Story 8.5,Final Checklist,8. Interview Preparation,Verify readiness across all domains.,"• Skills check
+• Portfolio check
+• Logistics prep
+• Mental prep"
