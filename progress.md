@@ -70,7 +70,7 @@
 - [x] java-1.5-ac1: String manipulation algorithms
 - [x] java-1.5-ac2: Array operations
 - [x] java-1.5-ac3: Fibonacci series
-- [ ] java-1.5-ac4: Factorial calculation
+- [x] java-1.5-ac4: Factorial calculation
 - [ ] java-1.5-ac5: Swap without third variable
 - [ ] java-1.5-ac6: Word occurrences with HashMap
 - [ ] java-1.5-ac7: Anagram checker
@@ -881,6 +881,12 @@
 - **Feature Completed**: java-1.3-ac2
 - **Content File**: ./sdet-learning-content/java-1.3-ac2.md
 - **Summary**: Created comprehensive content comparing ArrayList, LinkedList, HashSet, and TreeSet, including their underlying data structures, performance characteristics with benchmark code, best practices, common pitfalls, interview questions, and a hands-on exercise.
+### 2026-01-31 - Iteration 34
+- **Feature Completed**: java-1.5-ac4
+- **Content File**: ./sdet-learning-content/java-1.5-ac4.md
+- **Summary**: Created comprehensive content on implementing factorial calculation using recursion. The guide covers the concept of base cases and recursive steps, includes a detailed example walkthrough, full Java code implementation with input validation and boundary value testing, best practices, common pitfalls, interview questions, and a hands-on exercise for summing digits recursively.
+- **Git Commit**: `Content: java-1.5-ac4 - Write factorial calculation using recursion`
+
 ### 2026-01-31 - Iteration 33
 - **Feature Completed**: java-1.5-ac3
 - **Content File**: ./sdet-learning-content/java-1.5-ac3.md
