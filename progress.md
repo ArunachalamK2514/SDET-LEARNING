@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 19 | 41% |
+| 1. Java Fundamentals & OOP | 46 | 20 | 43% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **19** | **5%** |
+| **TOTAL** | **364** | **20** | **5%** |
 
 ---
 
@@ -59,7 +59,7 @@
 - [x] java-1.4-ac1: Checked vs unchecked exceptions
 - [x] java-1.4-ac2: Custom exceptions for framework
 - [x] java-1.4-ac3: Try-catch-finally blocks
-- [ ] java-1.4-ac4: throw vs throws
+- [x] java-1.4-ac4: throw vs throws
 - [ ] java-1.4-ac5: ThreadLocal for WebDriver
 - [ ] java-1.4-ac6: Thread safety with synchronized
 - [ ] java-1.4-ac7: wait(), notify(), notifyAll()
@@ -699,6 +699,12 @@
 - **Content File**: ./sdet-learning-content/java-1.4-ac3.md
 - **Summary**: Created comprehensive content on writing proper `try-catch-finally` blocks for WebDriver operations. The guide covers handling specific exceptions like `NoSuchElementException`, using `finally` for cleanup (e.g., screenshots), best practices, common pitfalls, interview questions, and a hands-on exercise.
 - **Git Commit**: `Content: java-1.4-ac3 - Write proper try-catch-finally blocks for WebDriver operations`
+
+### 2026-01-31 - Iteration 25
+- **Feature Completed**: java-1.4-ac4
+- **Content File**: ./sdet-learning-content/java-1.4-ac4.md
+- **Summary**: Created comprehensive content explaining the difference between `throw` and `throws` keywords in Java exception handling. The guide covers their distinct purposes, usage, key characteristics, practical examples in test automation, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.4-ac4 - Explain difference between throw and throws keywords with examples`
 
 ---
 
