@@ -51,7 +51,7 @@
 - [x] java-1.3-ac2: ArrayList, LinkedList, HashSet, TreeSet
 - [x] java-1.3-ac3: HashMap vs Hashtable vs ConcurrentHashMap
 - [x] java-1.3-ac4: Test data management utility
-- [ ] java-1.3-ac5: Collection operations (filter, sort, map, reduce)
+- [x] java-1.3-ac5: Collection operations (filter, sort, map, reduce)
 - [ ] java-1.3-ac6: Custom comparator
 - [ ] java-1.3-ac7: Excel/JSON data to collections
 
@@ -554,6 +554,12 @@
 - [ ] final-8.5-ac6: Interview day logistics
 - [ ] final-8.5-ac7: "Tell me about yourself" practice
 - [ ] final-8.5-ac8: Common mistakes review
+
+### 2026-01-31 - Iteration 19
+- **Feature Completed**: java-1.3-ac5
+- **Content File**: ./sdet-learning-content/java-1.3-ac5.md
+- **Summary**: Created comprehensive content on using the Java Stream API for common collection operations: filtering, sorting, mapping, and reducing. Includes detailed explanations, runnable code examples, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac5 - Write code for common collection operations: filtering, sorting, mapping, reducing`
 
 ### 2026-01-31 - Iteration 15
 - **Feature Completed**: java-1.2-ac8
