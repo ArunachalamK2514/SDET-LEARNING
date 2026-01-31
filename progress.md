@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 17 | 37% |
+| 1. Java Fundamentals & OOP | 46 | 18 | 39% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **17** | **5%** |
+| **TOTAL** | **364** | **18** | **5%** |
 
 ---
 
@@ -56,7 +56,7 @@
 - [x] java-1.3-ac7: Excel/JSON data to collections
 
 #### Story 1.4: Exception Handling & Multithreading (5 points)
-- [ ] java-1.4-ac1: Checked vs unchecked exceptions
+- [x] java-1.4-ac1: Checked vs unchecked exceptions
 - [ ] java-1.4-ac2: Custom exceptions for framework
 - [ ] java-1.4-ac3: Try-catch-finally blocks
 - [ ] java-1.4-ac4: throw vs throws
@@ -582,6 +582,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 22
+- **Feature Completed**: java-1.4-ac1
+- **Content File**: ./sdet-learning-content/java-1.4-ac1.md
+- **Summary**: Created comprehensive content explaining checked vs unchecked exceptions with 5 practical test automation examples, including `IOException`, `NoSuchElementException`, `StaleElementReferenceException`, `WebDriverException`, and `NullPointerException`. The guide covers detailed explanations, code snippets for handling each, best practices, common pitfalls, interview questions, and hands-on exercises.
+- **Git Commit**: `Content: java-1.4-ac1 - Explain checked vs unchecked exceptions with 5 practical test automation examples`
 
 ### 2026-01-31 - Iteration 21
 - **Feature Completed**: java-1.3-ac7
