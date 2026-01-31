@@ -61,7 +61,7 @@
 - [x] java-1.4-ac3: Try-catch-finally blocks
 - [x] java-1.4-ac4: throw vs throws
 - [x] java-1.4-ac5: ThreadLocal for WebDriver
-- [ ] java-1.4-ac6: Thread safety with synchronized
+- [x] java-1.4-ac6: Thread safety with synchronized
 - [ ] java-1.4-ac7: wait(), notify(), notifyAll()
 - [ ] java-1.4-ac8: Thread-safe Singleton pattern
 - [ ] java-1.4-ac9: ExecutorService for parallel execution
@@ -709,6 +709,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 27
+- **Feature Completed**: java-1.4-ac6
+- **Content File**: ./sdet-learning-content/java-1.4-ac6.md
+- **Summary**: Created comprehensive content demonstrating thread safety in Java using synchronized methods and blocks. The guide explains race conditions with a counter example, provides thread-safe solutions, covers best practices for avoiding deadlocks, discusses performance impacts, and includes interview questions and a hands-on exercise.
+- **Git Commit**: `Content: java-1.4-ac6 - Demonstrate thread safety using synchronized blocks and methods`
 
 ### 2026-01-31 - Iteration 26
 - **Feature Completed**: java-1.4-ac5
