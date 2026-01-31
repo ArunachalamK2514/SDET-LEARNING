@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 5 | 10% |
+| 1. Java Fundamentals & OOP | 46 | 6 | 13% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **5** | **1%** |
+| **TOTAL** | **364** | **6** | **2%** |
 
 ---
 
@@ -33,7 +33,7 @@
 - [x] java-1.1-ac3: String comparison (== vs .equals())
 - [x] java-1.1-ac4: String immutability
 - [x] java-1.1-ac5: String, StringBuilder, StringBuffer comparison
-- [ ] java-1.1-ac6: Checked vs unchecked exceptions
+- [x] java-1.1-ac6: Checked vs unchecked exceptions
 - [ ] java-1.1-ac7: final, finally, finalize keywords
 
 #### Story 1.2: Object-Oriented Programming Deep Dive (5 points)
@@ -558,6 +558,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 6
+- **Feature Completed**: java-1.1-ac6
+- **Content File**: ./sdet-learning-content/java-1.1-ac6.md
+- **Summary**: Created comprehensive content explaining the difference between checked and unchecked exceptions in Java, with practical test automation scenarios, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac6 - Write code examples for checked vs unchecked exceptions with test automation scenarios`
 
 ### 2026-01-31 - Iteration 5
 - **Feature Completed**: java-1.1-ac5
