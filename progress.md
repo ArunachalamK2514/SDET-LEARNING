@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 2 | 4% |
+| 1. Java Fundamentals & OOP | 46 | 3 | 6% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **2** | **1%** |
+| **TOTAL** | **364** | **3** | **1%** |
 
 ---
 
@@ -30,7 +30,7 @@
 #### Story 1.1: Java Core Concepts Review (3 points)
 - [x] java-1.1-ac1: JDK, JRE, JVM explanation
 - [x] java-1.1-ac2: Access modifiers demonstration
-- [ ] java-1.1-ac3: String comparison (== vs .equals())
+- [x] java-1.1-ac3: String comparison (== vs .equals())
 - [ ] java-1.1-ac4: String immutability
 - [ ] java-1.1-ac5: String, StringBuilder, StringBuffer comparison
 - [ ] java-1.1-ac6: Checked vs unchecked exceptions
@@ -558,6 +558,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 3
+- **Feature Completed**: java-1.1-ac3
+- **Content File**: ./sdet-learning-content/java-1.1-ac3.md
+- **Summary**: Created comprehensive content explaining the difference between `==` and `.equals()` for String comparison, including the String Constant Pool, code examples, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac3 - Write code demonstrating the difference between == and .equals() for String comparison`
 
 ### 2026-01-31 - Iteration 2
 - **Feature Completed**: java-1.1-ac2
