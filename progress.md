@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 12 | 26% |
+| 1. Java Fundamentals & OOP | 46 | 13 | 28% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **12** | **3%** |
+| **TOTAL** | **364** | **13** | **4%** |
 
 ---
 
@@ -47,7 +47,7 @@
 - [x] java-1.2-ac8: Inheritance hierarchy utility
 
 #### Story 1.3: Java Collections Framework Mastery (3 points)
-- [ ] java-1.3-ac1: Collection vs Collections
+- [x] java-1.3-ac1: Collection vs Collections
 - [ ] java-1.3-ac2: ArrayList, LinkedList, HashSet, TreeSet
 - [ ] java-1.3-ac3: HashMap vs Hashtable vs ConcurrentHashMap
 - [ ] java-1.3-ac4: Test data management utility
@@ -560,6 +560,12 @@
 - **Content File**: ./sdet-learning-content/java-1.2-ac8.md
 - **Summary**: Created comprehensive content demonstrating how to build a simple test utility showcasing inheritance hierarchy using a BaseTest class with setup and teardown methods, emphasizing code reuse, best practices, common pitfalls, and interview questions.
 - **Git Commit**: `Content: java-1.2-ac8 - Build a simple test utility showcasing inheritance hierarchy`
+
+### 2026-01-31 - Iteration 16
+- **Feature Completed**: java-1.3-ac1
+- **Content File**: ./sdet-learning-content/java-1.3-ac1.md
+- **Summary**: Created comprehensive content explaining the difference between the `Collection` interface and the `Collections` utility class in Java, including usage examples, key differences, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac1 - Explain difference between Collection and Collections with examples`
 
 ---
 
