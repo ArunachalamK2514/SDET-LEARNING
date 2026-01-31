@@ -42,7 +42,7 @@
 - [x] java-1.2-ac3: Method overloading vs overriding
 - [x] java-1.2-ac4: Abstract class for BasePage
 - [x] java-1.2-ac5: Interface examples and comparison
-- [ ] java-1.2-ac6: IS-A and HAS-A relationships
+- [x] java-1.2-ac6: IS-A and HAS-A relationships
 - [ ] java-1.2-ac7: Compile-time vs runtime polymorphism
 - [ ] java-1.2-ac8: Inheritance hierarchy utility
 
@@ -564,6 +564,12 @@
 - **Content File**: ./sdet-learning-content/java-1.2-ac5.md
 - **Summary**: Created comprehensive content explaining interfaces and abstract classes, with examples of test data providers, their comparison, best practices, and interview questions.
 - **Git Commit**: `Content: java-1.2-ac5 - Create interface examples for test data providers and explain interface vs abstract class`
+
+### 2026-01-31 - Iteration 13
+- **Feature Completed**: java-1.2-ac6
+- **Content File**: ./sdet-learning-content/java-1.2-ac6.md
+- **Summary**: Created comprehensive content explaining IS-A and HAS-A relationships in Java OOP, with detailed code examples using a Selenium test framework structure, best practices, common pitfalls, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac6 - Demonstrate IS-A and HAS-A relationships using test framework components`
 
 ### 2026-01-31 - Iteration 11
 - **Feature Completed**: java-1.2-ac4
