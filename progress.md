@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 22 | 47% |
+| 1. Java Fundamentals & OOP | 46 | 23 | 50% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **22** | **6%** |
+| **TOTAL** | **364** | **23** | **6%** |
 
 ---
 
@@ -71,7 +71,7 @@
 - [x] java-1.5-ac2: Array operations
 - [x] java-1.5-ac3: Fibonacci series
 - [x] java-1.5-ac4: Factorial calculation
-- [ ] java-1.5-ac5: Swap without third variable
+- [x] java-1.5-ac5: Swap without third variable
 - [ ] java-1.5-ac6: Word occurrences with HashMap
 - [ ] java-1.5-ac7: Anagram checker
 - [ ] java-1.5-ac8: First non-repeating character
@@ -881,6 +881,12 @@
 - **Feature Completed**: java-1.3-ac2
 - **Content File**: ./sdet-learning-content/java-1.3-ac2.md
 - **Summary**: Created comprehensive content comparing ArrayList, LinkedList, HashSet, and TreeSet, including their underlying data structures, performance characteristics with benchmark code, best practices, common pitfalls, interview questions, and a hands-on exercise.
+### 2026-01-31 - Iteration 35
+- **Feature Completed**: java-1.5-ac5
+- **Content File**: ./sdet-learning-content/java-1.5-ac5.md
+- **Summary**: Created comprehensive content on swapping two numbers without a third variable, demonstrating both arithmetic and XOR methods, including detailed explanations, code implementations, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.5-ac5 - Swap two numbers without third variable`
+
 ### 2026-01-31 - Iteration 34
 - **Feature Completed**: java-1.5-ac4
 - **Content File**: ./sdet-learning-content/java-1.5-ac4.md
