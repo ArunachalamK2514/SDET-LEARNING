@@ -44,7 +44,7 @@
 - [x] java-1.2-ac5: Interface examples and comparison
 - [x] java-1.2-ac6: IS-A and HAS-A relationships
 - [x] java-1.2-ac7: Compile-time vs runtime polymorphism
-- [ ] java-1.2-ac8: Inheritance hierarchy utility
+- [x] java-1.2-ac8: Inheritance hierarchy utility
 
 #### Story 1.3: Java Collections Framework Mastery (3 points)
 - [ ] java-1.3-ac1: Collection vs Collections
@@ -554,6 +554,12 @@
 - [ ] final-8.5-ac6: Interview day logistics
 - [ ] final-8.5-ac7: "Tell me about yourself" practice
 - [ ] final-8.5-ac8: Common mistakes review
+
+### 2026-01-31 - Iteration 15
+- **Feature Completed**: java-1.2-ac8
+- **Content File**: ./sdet-learning-content/java-1.2-ac8.md
+- **Summary**: Created comprehensive content demonstrating how to build a simple test utility showcasing inheritance hierarchy using a BaseTest class with setup and teardown methods, emphasizing code reuse, best practices, common pitfalls, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac8 - Build a simple test utility showcasing inheritance hierarchy`
 
 ---
 
