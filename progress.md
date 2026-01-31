@@ -58,7 +58,7 @@
 #### Story 1.4: Exception Handling & Multithreading (5 points)
 - [x] java-1.4-ac1: Checked vs unchecked exceptions
 - [x] java-1.4-ac2: Custom exceptions for framework
-- [ ] java-1.4-ac3: Try-catch-finally blocks
+- [x] java-1.4-ac3: Try-catch-finally blocks
 - [ ] java-1.4-ac4: throw vs throws
 - [ ] java-1.4-ac5: ThreadLocal for WebDriver
 - [ ] java-1.4-ac6: Thread safety with synchronized
@@ -694,7 +694,11 @@
 - **Feature Completed**: java-1.3-ac2
 - **Content File**: ./sdet-learning-content/java-1.3-ac2.md
 - **Summary**: Created comprehensive content comparing ArrayList, LinkedList, HashSet, and TreeSet, including their underlying data structures, performance characteristics with benchmark code, best practices, common pitfalls, interview questions, and a hands-on exercise.
-- **Git Commit**: `Content: java-1.3-ac2 - Implement and compare ArrayList, LinkedList, HashSet, TreeSet with performance analysis`
+### 2026-01-31 - Iteration 24
+- **Feature Completed**: java-1.4-ac3
+- **Content File**: ./sdet-learning-content/java-1.4-ac3.md
+- **Summary**: Created comprehensive content on writing proper `try-catch-finally` blocks for WebDriver operations. The guide covers handling specific exceptions like `NoSuchElementException`, using `finally` for cleanup (e.g., screenshots), best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.4-ac3 - Write proper try-catch-finally blocks for WebDriver operations`
 
 ---
 
