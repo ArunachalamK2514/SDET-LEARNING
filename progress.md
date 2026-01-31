@@ -48,7 +48,7 @@
 
 #### Story 1.3: Java Collections Framework Mastery (3 points)
 - [x] java-1.3-ac1: Collection vs Collections
-- [ ] java-1.3-ac2: ArrayList, LinkedList, HashSet, TreeSet
+- [x] java-1.3-ac2: ArrayList, LinkedList, HashSet, TreeSet
 - [ ] java-1.3-ac3: HashMap vs Hashtable vs ConcurrentHashMap
 - [ ] java-1.3-ac4: Test data management utility
 - [ ] java-1.3-ac5: Collection operations (filter, sort, map, reduce)
@@ -654,6 +654,10 @@
 - **Content File**: ./sdet-learning-content/java-1.2-ac7.md
 - **Summary**: Created comprehensive content explaining compile-time vs runtime polymorphism, including method overloading and overriding, with detailed WebDriver framework examples, upcasting benefits, best practices, common pitfalls, and interview questions.
 - **Git Commit**: `Content: java-1.2-ac7 - Explain compile-time vs runtime polymorphism with framework examples`
+- **Feature Completed**: java-1.3-ac2
+- **Content File**: ./sdet-learning-content/java-1.3-ac2.md
+- **Summary**: Created comprehensive content comparing ArrayList, LinkedList, HashSet, and TreeSet, including their underlying data structures, performance characteristics with benchmark code, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac2 - Implement and compare ArrayList, LinkedList, HashSet, TreeSet with performance analysis`
 
 ---
 
