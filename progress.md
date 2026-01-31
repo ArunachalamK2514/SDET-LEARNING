@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 8 | 17% |
+| 1. Java Fundamentals & OOP | 46 | 9 | 19% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **8** | **2%** |
+| **TOTAL** | **364** | **9** | **2%** |
 
 ---
 
@@ -38,7 +38,7 @@
 
 #### Story 1.2: Object-Oriented Programming Deep Dive (5 points)
 - [x] java-1.2-ac1: Four OOP pillars implementation
-- [ ] java-1.2-ac2: POM with encapsulation
+- [x] java-1.2-ac2: POM with encapsulation
 - [ ] java-1.2-ac3: Method overloading vs overriding
 - [ ] java-1.2-ac4: Abstract class for BasePage
 - [ ] java-1.2-ac5: Interface examples and comparison
@@ -558,6 +558,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 9
+- **Feature Completed**: java-1.2-ac2
+- **Content File**: ./sdet-learning-content/java-1.2-ac2.md
+- **Summary**: Created comprehensive content demonstrating encapsulation principles using the Page Object Model (POM), with detailed code examples, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac2 - Create Page Object Model classes demonstrating encapsulation principles`
 
 ### 2026-01-31 - Iteration 8
 - **Feature Completed**: java-1.2-ac1
