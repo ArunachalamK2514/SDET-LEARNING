@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 18 | 39% |
+| 1. Java Fundamentals & OOP | 46 | 19 | 41% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **18** | **5%** |
+| **TOTAL** | **364** | **19** | **5%** |
 
 ---
 
@@ -57,7 +57,7 @@
 
 #### Story 1.4: Exception Handling & Multithreading (5 points)
 - [x] java-1.4-ac1: Checked vs unchecked exceptions
-- [ ] java-1.4-ac2: Custom exceptions for framework
+- [x] java-1.4-ac2: Custom exceptions for framework
 - [ ] java-1.4-ac3: Try-catch-finally blocks
 - [ ] java-1.4-ac4: throw vs throws
 - [ ] java-1.4-ac5: ThreadLocal for WebDriver
@@ -594,6 +594,153 @@
 - **Content File**: ./sdet-learning-content/java-1.3-ac7.md
 - **Summary**: Created comprehensive content on building utility methods to simulate reading test data from Excel/JSON into Java Collections (`List<Map>` and `Map`), including detailed explanations, code implementation, best practices, common pitfalls, interview questions, and a hands-on exercise.
 - **Git Commit**: `Content: java-1.3-ac7 - Build utility methods for reading test data from Excel/JSON into collections`
+
+### 2026-01-31 - Iteration 17
+- **Feature Completed**: java-1.3-ac3
+- **Content File**: ./sdet-learning-content/java-1.3-ac3.md
+- **Summary**: Created comprehensive content explaining the differences between HashMap, Hashtable, and ConcurrentHashMap, focusing on their thread-safety mechanisms, performance implications, and practical application in test automation scenarios. Includes detailed explanations, code examples, best practices, common pitfalls, and interview questions.
+- **Git Commit**: `Content: java-1.3-ac3 - Demonstrate HashMap vs Hashtable vs ConcurrentHashMap with thread-safety scenarios`
+
+
+### 2026-01-31 - Iteration 18
+- **Feature Completed**: java-1.3-ac4
+- **Content File**: ./sdet-learning-content/java-1.3-ac4.md
+- **Summary**: Created comprehensive content on building a test data management utility using Java Collections (Map for key-value pairs, List<Map> for data tables), including detailed explanations, code implementation, best practices, common pitfalls, interview questions, and a hands-on exercise for loading data from JSON.
+- **Git Commit**: `Content: java-1.3-ac4 - Create test data management utility using appropriate collection types`
+
+### 2026-01-31 - Iteration 12
+- **Feature Completed**: java-1.2-ac5
+- **Content File**: ./sdet-learning-content/java-1.2-ac5.md
+- **Summary**: Created comprehensive content explaining interfaces and abstract classes, with examples of test data providers, their comparison, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac5 - Create interface examples for test data providers and explain interface vs abstract class`
+
+### 2026-01-31 - Iteration 13
+- **Feature Completed**: java-1.2-ac6
+- **Content File**: ./sdet-learning-content/java-1.2-ac6.md
+- **Summary**: Created comprehensive content explaining IS-A and HAS-A relationships in Java OOP, with detailed code examples using a Selenium test framework structure, best practices, common pitfalls, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac6 - Demonstrate IS-A and HAS-A relationships using test framework components`
+
+### 2026-01-31 - Iteration 11
+- **Feature Completed**: java-1.2-ac4
+- **Content File**: ./sdet-learning-content/java-1.2-ac4.md
+- **Summary**: Created comprehensive content on designing and implementing an abstract BasePage class in a test framework, including reusable methods, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac4 - Design and implement abstract class for BasePage in test framework`
+
+### 2026-01-31 - Iteration 10
+- **Feature Completed**: java-1.2-ac3
+- **Content File**: ./sdet-learning-content/java-1.2-ac3.md
+- **Summary**: Created comprehensive content explaining method overloading and overriding with 3 examples for each, tailored to test automation, including a comparison table, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac3 - Explain and code method overloading vs method overriding with 3 examples each`
+
+### 2026-01-31 - Iteration 9
+- **Feature Completed**: java-1.2-ac2
+- **Content File**: ./sdet-learning-content/java-1.2-ac2.md
+- **Summary**: Created comprehensive content demonstrating encapsulation principles using the Page Object Model (POM), with detailed code examples, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac2 - Create Page Object Model classes demonstrating encapsulation principles`
+
+### 2026-01-31 - Iteration 8
+- **Feature Completed**: java-1.2-ac1
+- **Content File**: ./sdet-learning-content/java-1.2-ac1.md
+- **Summary**: Created comprehensive content explaining the four pillars of OOP (Encapsulation, Inheritance, Polymorphism, Abstraction) with detailed code examples tailored for test automation frameworks, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac1 - Implement working examples of all 4 OOP pillars: Encapsulation, Inheritance, Polymorphism, Abstraction`
+
+### 2026-01-31 - Iteration 7
+- **Feature Completed**: java-1.1-ac7
+- **Content File**: ./sdet-learning-content/java-1.1-ac7.md
+- **Summary**: Created comprehensive content explaining the `final`, `finally`, and `finalize` keywords in Java, with code examples, a comparison table, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac7 - Explain and code examples for final, finally, and finalize keywords`
+
+### 2026-01-31 - Iteration 6
+- **Feature Completed**: java-1.1-ac6
+- **Content File**: ./sdet-learning-content/java-1.1-ac6.md
+- **Summary**: Created comprehensive content explaining the difference between checked and unchecked exceptions in Java, with practical test automation scenarios, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac6 - Write code examples for checked vs unchecked exceptions with test automation scenarios`
+
+### 2026-01-31 - Iteration 5
+- **Feature Completed**: java-1.1-ac5
+- **Content File**: ./sdet-learning-content/java-1.1-ac5.md
+- **Summary**: Created comprehensive content comparing `String`, `StringBuilder`, and `StringBuffer`, including a detailed comparison table, performance benchmarks with code, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac5 - Create comparison table for String, StringBuilder, and StringBuffer with performance benchmarks`
+
+### 2026-01-31 - Iteration 4
+- **Feature Completed**: java-1.1-ac4
+- **Content File**: ./sdet-learning-content/java-1.1-ac4.md
+- **Summary**: Created comprehensive content explaining String immutability in Java, its importance in test automation (thread safety, security), with practical examples, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac4 - Explain String immutability and its importance in test automation with 2 practical examples`
+
+### 2026-01-31 - Iteration 3
+- **Feature Completed**: java-1.1-ac3
+- **Content File**: ./sdet-learning-content/java-1.1-ac3.md
+- **Summary**: Created comprehensive content explaining the difference between `==` and `.equals()` for String comparison, including the String Constant Pool, code examples, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac3 - Write code demonstrating the difference between == and .equals() for String comparison`
+
+### 2026--01-31 - Iteration 2
+- **Feature Completed**: java-1.1-ac2
+- **Content File**: ./sdet-learning-content/java-1.1-ac2.md
+- **Summary**: Created comprehensive content explaining the 4 Java access modifiers (public, protected, default, private) with code examples in a framework context, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac2 - Demonstrate understanding of all 4 access modifiers (public, private, protected, default) with code examples`
+
+### 2026-01-31 - Iteration 1
+- **Feature Completed**: java-1.1-ac1
+- **Content File**: ./sdet-learning-content/java-1.1-ac1.md
+- **Summary**: Created comprehensive content explaining the roles and differences between JDK, JRE, and JVM, including diagrams, code examples, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac1 - Explain the difference between JDK, JRE, and JVM with real-world examples`
+
+### 2026-01-31 - Iteration 14
+- **Feature Completed**: java-1.2-ac7
+- **Content File**: ./sdet-learning-content/java-1.2-ac7.md
+- **Summary**: Created comprehensive content explaining compile-time vs runtime polymorphism, including method overloading and overriding, with detailed WebDriver framework examples, upcasting benefits, best practices, common pitfalls, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac7 - Explain compile-time vs runtime polymorphism with framework examples`
+- **Feature Completed**: java-1.3-ac2
+- **Content File**: ./sdet-learning-content/java-1.3-ac2.md
+- **Summary**: Created comprehensive content comparing ArrayList, LinkedList, HashSet, and TreeSet, including their underlying data structures, performance characteristics with benchmark code, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac2 - Implement and compare ArrayList, LinkedList, HashSet, TreeSet with performance analysis`
+
+---
+
+## Detailed Completion Log
+
+### 2026-01-31 - Iteration 23
+- **Feature Completed**: java-1.4-ac2
+- **Content File**: ./sdet-learning-content/java-1.4-ac2.md
+- **Summary**: Created comprehensive content on implementing custom exceptions for test automation frameworks (e.g., `ElementNotFoundException`, `TestDataException`). The guide covers detailed explanations, code implementation, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.4-ac2 - Implement custom exceptions for framework`
+
+### 2026-01-31 - Iteration 22
+- **Feature Completed**: java-1.4-ac1
+- **Content File**: ./sdet-learning-content/java-1.4-ac1.md
+- **Summary**: Created comprehensive content explaining checked vs unchecked exceptions with 5 practical test automation examples, including `IOException`, `NoSuchElementException`, `StaleElementReferenceException`, `WebDriverException`, and `NullPointerException`. The guide covers detailed explanations, code snippets for handling each, best practices, common pitfalls, interview questions, and hands-on exercises.
+- **Git Commit**: `Content: java-1.4-ac1 - Explain checked vs unchecked exceptions with 5 practical test automation examples`
+
+### 2026-01-31 - Iteration 21
+- **Feature Completed**: java-1.3-ac7
+- **Content File**: ./sdet-learning-content/java-1.3-ac7.md
+- **Summary**: Created comprehensive content on building utility methods to simulate reading test data from Excel/JSON into Java Collections (`List<Map>` and `Map`), including detailed explanations, code implementation, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac7 - Build utility methods for reading test data from Excel/JSON into collections`
+
+### 2026-01-31 - Iteration 20
+- **Feature Completed**: java-1.3-ac6
+- **Content File**: ./sdet-learning-content/java-1.3-ac6.md
+- **Summary**: Created comprehensive content on implementing custom `Comparator`s for sorting test data objects in Java. The guide covers the `compare` method, real-world test automation scenarios, full code examples, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac6 - Implement custom comparator for test data sorting`
+
+### 2026-01-31 - Iteration 19
+- **Feature Completed**: java-1.3-ac5
+- **Content File**: ./sdet-learning-content/java-1.3-ac5.md
+- **Summary**: Created comprehensive content on using the Java Stream API for common collection operations: filtering, sorting, mapping, and reducing. Includes detailed explanations, runnable code examples, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac5 - Write code for common collection operations: filtering, sorting, mapping, reducing`
+
+### 2026-01-31 - Iteration 15
+- **Feature Completed**: java-1.2-ac8
+- **Content File**: ./sdet-learning-content/java-1.2-ac8.md
+- **Summary**: Created comprehensive content demonstrating how to build a simple test utility showcasing inheritance hierarchy using a BaseTest class with setup and teardown methods, emphasizing code reuse, best practices, common pitfalls, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac8 - Build a simple test utility showcasing inheritance hierarchy`
+
+### 2026-01-31 - Iteration 16
+- **Feature Completed**: java-1.3-ac1
+- **Content File**: ./sdet-learning-content/java-1.3-ac1.md
+- **Summary**: Created comprehensive content explaining the difference between the `Collection` interface and the `Collections` utility class in Java, including usage examples, key differences, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac1 - Explain difference between Collection and Collections with examples`
 
 ### 2026-01-31 - Iteration 17
 - **Feature Completed**: java-1.3-ac3
