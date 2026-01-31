@@ -13,12 +13,13 @@
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=2
+MAX_ITERATIONS=8
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
 LOGS_FILE="logs.md"
 LEARNING_CONTENT_DIR="./sdet-learning-content"
+ITERATION_LOG_DIR="./iteration-logs"
 
 # Colors for output
 GREEN='\033[0;32m'
@@ -33,56 +34,73 @@ features_completed=0
 
 # Create directories if they don't exist
 mkdir -p "$LEARNING_CONTENT_DIR"
+mkdir -p "$ITERATION_LOG_DIR"
 
 # Initialize log file
 echo "# SDET Learning Content Generation Logs" > "$LOGS_FILE"
 echo "" >> "$LOGS_FILE"
 echo "Started at: $(date)" >> "$LOGS_FILE"
 echo "Max iterations: $MAX_ITERATIONS" >> "$LOGS_FILE"
+echo "Mode: STRICT SINGLE FEATURE + FIXED LOGGING" >> "$LOGS_FILE"
 echo "---" >> "$LOGS_FILE"
 echo "" >> "$LOGS_FILE"
 
 # Main loop
 echo -e "${BLUE}╔════════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║   Ralph Loop - SDET Learning Content Generator with Gemini    ║${NC}"
+echo -e "${BLUE}║   Ralph Loop - SDET Learning (Strict Mode + Fixed Logging)    ║${NC}"
 echo -e "${BLUE}╔════════════════════════════════════════════════════════════════╗${NC}"
 echo ""
 
 while [ $iteration -lt $MAX_ITERATIONS ]; do
     iteration=$((iteration + 1))
     
+    # Count files before iteration (STRICT Logic)
+    files_before=$(ls "$LEARNING_CONTENT_DIR" 2>/dev/null | wc -l)
+    
     echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo -e "${YELLOW}  Iteration #$iteration${NC}"
+    echo -e "${YELLOW}  Files before: $files_before${NC}"
     echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo ""
     
     # Log iteration start
     echo "## Iteration $iteration - $(date)" >> "$LOGS_FILE"
+    echo "Files before: $files_before" >> "$LOGS_FILE"
     echo "" >> "$LOGS_FILE"
     
-    # Construct the prompt for Gemini CLI
+    # Construct the prompt
+    # COMBINES: Detailed SDET context (Original) + Strict stopping rules (Strict)
     PROMPT="You are an expert SDET learning content creator with deep knowledge in test automation, Java, Selenium, REST Assured, Playwright, TestNG, CI/CD, and Docker.
 
-Your task is to generate production-grade learning content for ONE acceptance criterion from the requirements.json file.
+🚨 CRITICAL INSTRUCTION - READ CAREFULLY 🚨
+You MUST generate content for EXACTLY ONE (1) acceptance criterion ONLY.
+DO NOT generate content for multiple features in a single response.
+STOP immediately after completing ONE feature.
 
-CRITICAL INSTRUCTIONS:
-1. Read the requirements.json file to see all features (acceptance criteria) that need content
-2. Read the progress.md file to see which features are already completed
+Your task:
+1. Read the requirements.json file to see all features (acceptance criteria)
+2. Read the progress.md file to see which features are already completed (marked with ✅ or [x])
 3. Select the NEXT incomplete feature based on logical learning progression
-4. Generate COMPREHENSIVE, PRODUCTION-GRADE content for that ONE feature including:
+4. Generate COMPREHENSIVE, PRODUCTION-GRADE content for that ONE feature:
    - Detailed explanation with real-world examples
    - Working code samples (complete, runnable, well-commented)
    - Best practices and common pitfalls
    - Interview tips related to this topic
    - Hands-on practice exercises
    - Links to additional resources
-5. Create a markdown file in ./sdet-learning-content/ named by the feature ID (e.g., 'java-1.1-ac1.md')
+5. Create ONE markdown file in ./sdet-learning-content/ named by the feature ID (e.g., 'java-1.1-ac1.md')
 6. Update progress.md with:
    - Feature ID marked as completed
    - Summary of content created
    - Git commit message for tracking
-7. Make a git commit with message: 'Content: [Feature ID] - [Feature Description]'
-8. If ALL features are completed, output $COMPLETION_PROMISE
+7. Make ONE git commit with message: 'Content: [Feature ID] - [Feature Description]'
+8. STOP. Do not process the next feature.
+
+IMPORTANT STOPPING RULE:
+After creating ONE feature file, your work for this iteration is COMPLETE.
+Wait for the next iteration to process the next feature.
+
+If ALL features are completed, output exactly: $COMPLETION_PROMISE
 
 IMPORTANT QUALITY STANDARDS:
 - Code must be production-ready, not pseudo-code
@@ -132,79 +150,116 @@ Remember:
 - Ensure content is comprehensive and production-grade
 - Update progress.md after each completion
 - Commit to git for tracking
+- Focus on ONE feature per iteration. Quality over quantity.
 - Output $COMPLETION_PROMISE only when ALL features are complete
 "
 
-    # Execute Gemini CLI with the prompt
+    # Save prompt to temporary file (FIXED Logic)
+    PROMPT_FILE="$ITERATION_LOG_DIR/prompt-iteration-$iteration.txt"
+    echo "$PROMPT" > "$PROMPT_FILE"
+    
+    # Define output log (FIXED Logic)
+    ITERATION_OUTPUT="$ITERATION_LOG_DIR/output-iteration-$iteration.log"
+    
     echo -e "${BLUE}[$(date +%H:%M:%S)] Invoking Gemini CLI agent...${NC}"
+    echo -e "${BLUE}[$(date +%H:%M:%S)] Output will be saved to: $ITERATION_OUTPUT${NC}"
+    echo ""
     
-    # Save prompt to temporary file
-    echo "$PROMPT" > /tmp/gemini_prompt.txt
+    # Execute Gemini CLI with tee for real-time output AND logging (FIXED Logic)
+    gemini --yolo < "$PROMPT_FILE" 2>&1 | tee "$ITERATION_OUTPUT"
     
-    # Execute Gemini CLI (assumes gemini CLI is installed and configured)
-    # Adjust command based on your Gemini CLI setup
-    result=$(gemini --yolo < /tmp/gemini_prompt.txt 2>&1)
+    # Capture exit code
+    exit_code=${PIPESTATUS[0]}
     
-    # Log the result
-    echo "$result" >> "$LOGS_FILE"
+    echo ""
+    echo -e "${BLUE}[$(date +%H:%M:%S)] Gemini CLI completed with exit code: $exit_code${NC}"
+    echo ""
+    
+    # Count files after iteration (STRICT Logic)
+    files_after=$(ls "$LEARNING_CONTENT_DIR" 2>/dev/null | wc -l)
+    files_created=$((files_after - files_before))
+    
+    # Count completed features
+    if [ -f "$PROGRESS_FILE" ]; then
+        features_completed=$(grep -c "✅\|✔\|\[x\]" "$PROGRESS_FILE" || echo "0")
+    fi
+    
+    # Append iteration output to main log (FIXED Logic)
+    echo "### Iteration $iteration Output" >> "$LOGS_FILE"
+    cat "$ITERATION_OUTPUT" >> "$LOGS_FILE"
     echo "" >> "$LOGS_FILE"
+    echo "Files after: $files_after" >> "$LOGS_FILE"
+    echo "Files created this iteration: $files_created" >> "$LOGS_FILE"
+    echo "Features marked complete: $features_completed" >> "$LOGS_FILE"
+    echo "Exit code: $exit_code" >> "$LOGS_FILE"
     echo "---" >> "$LOGS_FILE"
     echo "" >> "$LOGS_FILE"
     
-    # Display abbreviated result
-    echo -e "${GREEN}Agent Response:${NC}"
-    echo "$result" | head -n 20
-    if [ $(echo "$result" | wc -l) -gt 20 ]; then
-        echo "... (truncated, full output in $LOGS_FILE)"
-    fi
+    # Display summary (STRICT + FIXED Logic)
+    echo -e "${GREEN}╔════════════════════════════════════════════════════════════════╗${NC}"
+    echo -e "${GREEN}║                  Iteration $iteration Summary                      ║${NC}"
+    echo -e "${GREEN}╚════════════════════════════════════════════════════════════════╝${NC}"
     echo ""
+    echo "  Files created this iteration: $files_created"
+    echo "  Total files in directory: $files_after"
+    echo "  Features marked complete: $features_completed"
     
-    # Check for completion promise
-    if echo "$result" | grep -q "$COMPLETION_PROMISE"; then
+    # Check file creation (STRICT Logic)
+    if [ $files_created -eq 0 ]; then
+        echo -e "${RED}⚠️  Warning: No files created in this iteration${NC}"
+        echo -e "${YELLOW}Agent may have skipped or encountered an error${NC}"
+        echo ""
+    elif [ $files_created -eq 1 ]; then
+        echo -e "${GREEN}✅ Perfect: 1 file created (as expected)${NC}"
+        echo ""
+    else
+        echo -e "${YELLOW}ℹ️  Agent created $files_created files${NC}"
+        echo -e "${YELLOW}Processing multiple features per iteration (Monitoring)${NC}"
+        echo ""
+    fi
+    
+    # Check for completion promise (ORIGINAL Logic)
+    if grep -q "$COMPLETION_PROMISE" "$ITERATION_OUTPUT"; then
         echo -e "${GREEN}╔════════════════════════════════════════════════════════════════╗${NC}"
         echo -e "${GREEN}║              🎉 ALL FEATURES COMPLETED! 🎉                     ║${NC}"
-        echo -e "${GREEN}╔════════════════════════════════════════════════════════════════╗${NC}"
+        echo -e "${GREEN}╚════════════════════════════════════════════════════════════════╝${NC}"
         echo ""
         echo -e "${GREEN}Total iterations: $iteration${NC}"
-        echo -e "${GREEN}Learning content generated in: $LEARNING_CONTENT_DIR${NC}"
-        echo ""
+        echo -e "${GREEN}Total files created: $files_after${NC}"
+        echo -e "${GREEN}Features completed: $features_completed${NC}"
         
         # Final log entry
         echo "## COMPLETION" >> "$LOGS_FILE"
         echo "" >> "$LOGS_FILE"
         echo "All features completed successfully!" >> "$LOGS_FILE"
         echo "Total iterations: $iteration" >> "$LOGS_FILE"
+        echo "Total files: $files_after" >> "$LOGS_FILE"
         echo "Completed at: $(date)" >> "$LOGS_FILE"
         
         exit 0
     fi
     
-    # Count completed features from progress file
-    if [ -f "$PROGRESS_FILE" ]; then
-        features_completed=$(grep -c "✅" "$PROGRESS_FILE" || echo "0")
-    fi
-    
-    echo -e "${BLUE}[$(date +%H:%M:%S)] Features completed: $features_completed${NC}"
+    # Small delay between iterations
+    echo -e "${BLUE}Waiting 3 seconds before next iteration...${NC}"
     echo ""
-    
-    # Small delay between iterations to prevent overwhelming the system
-    sleep 2
+    sleep 3
 done
 
 # Max iterations reached
 echo -e "${RED}╔════════════════════════════════════════════════════════════════╗${NC}"
 echo -e "${RED}║          ⚠️  Max iterations reached ($MAX_ITERATIONS)          ║${NC}"
-echo -e "${RED}╔════════════════════════════════════════════════════════════════╗${NC}"
+echo -e "${RED}╚════════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 echo -e "${YELLOW}Features completed: $features_completed${NC}"
-echo -e "${YELLOW}Learning content generated in: $LEARNING_CONTENT_DIR${NC}"
+echo -e "${YELLOW}Files created: $files_after${NC}"
 echo ""
 
-# Final log entry for max iterations
+# Final log entry
 echo "## MAX ITERATIONS REACHED" >> "$LOGS_FILE"
 echo "" >> "$LOGS_FILE"
 echo "Stopped at iteration $MAX_ITERATIONS" >> "$LOGS_FILE"
 echo "Features completed: $features_completed" >> "$LOGS_FILE"
+echo "Files created: $files_after" >> "$LOGS_FILE"
 echo "Stopped at: $(date)" >> "$LOGS_FILE"
 
 exit 1
