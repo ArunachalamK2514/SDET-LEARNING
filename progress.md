@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 14 | 30% |
+| 1. Java Fundamentals & OOP | 46 | 15 | 32% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **14** | **4%** |
+| **TOTAL** | **364** | **15** | **4%** |
 
 ---
 
@@ -50,7 +50,7 @@
 - [x] java-1.3-ac1: Collection vs Collections
 - [x] java-1.3-ac2: ArrayList, LinkedList, HashSet, TreeSet
 - [x] java-1.3-ac3: HashMap vs Hashtable vs ConcurrentHashMap
-- [ ] java-1.3-ac4: Test data management utility
+- [x] java-1.3-ac4: Test data management utility
 - [ ] java-1.3-ac5: Collection operations (filter, sort, map, reduce)
 - [ ] java-1.3-ac6: Custom comparator
 - [ ] java-1.3-ac7: Excel/JSON data to collections
@@ -576,6 +576,13 @@
 - **Content File**: ./sdet-learning-content/java-1.3-ac3.md
 - **Summary**: Created comprehensive content explaining the differences between HashMap, Hashtable, and ConcurrentHashMap, focusing on their thread-safety mechanisms, performance implications, and practical application in test automation scenarios. Includes detailed explanations, code examples, best practices, common pitfalls, and interview questions.
 - **Git Commit**: `Content: java-1.3-ac3 - Demonstrate HashMap vs Hashtable vs ConcurrentHashMap with thread-safety scenarios`
+
+
+### 2026-01-31 - Iteration 18
+- **Feature Completed**: java-1.3-ac4
+- **Content File**: ./sdet-learning-content/java-1.3-ac4.md
+- **Summary**: Created comprehensive content on building a test data management utility using Java Collections (Map for key-value pairs, List<Map> for data tables), including detailed explanations, code implementation, best practices, common pitfalls, interview questions, and a hands-on exercise for loading data from JSON.
+- **Git Commit**: `Content: java-1.3-ac4 - Create test data management utility using appropriate collection types`
 
 ### 2026-01-31 - Iteration 12
 - **Feature Completed**: java-1.2-ac5
