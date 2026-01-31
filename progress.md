@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 9 | 19% |
+| 1. Java Fundamentals & OOP | 46 | 10 | 21% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **9** | **2%** |
+| **TOTAL** | **364** | **10** | **3%** |
 
 ---
 
@@ -39,7 +39,7 @@
 #### Story 1.2: Object-Oriented Programming Deep Dive (5 points)
 - [x] java-1.2-ac1: Four OOP pillars implementation
 - [x] java-1.2-ac2: POM with encapsulation
-- [ ] java-1.2-ac3: Method overloading vs overriding
+- [x] java-1.2-ac3: Method overloading vs overriding
 - [ ] java-1.2-ac4: Abstract class for BasePage
 - [ ] java-1.2-ac5: Interface examples and comparison
 - [ ] java-1.2-ac6: IS-A and HAS-A relationships
@@ -558,6 +558,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 10
+- **Feature Completed**: java-1.2-ac3
+- **Content File**: ./sdet-learning-content/java-1.2-ac3.md
+- **Summary**: Created comprehensive content explaining method overloading and overriding with 3 examples for each, tailored to test automation, including a comparison table, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.2-ac3 - Explain and code method overloading vs method overriding with 3 examples each`
 
 ### 2026-01-31 - Iteration 9
 - **Feature Completed**: java-1.2-ac2
