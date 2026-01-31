@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 15 | 32% |
+| 1. Java Fundamentals & OOP | 46 | 16 | 35% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **15** | **4%** |
+| **TOTAL** | **364** | **16** | **4%** |
 
 ---
 
@@ -52,7 +52,7 @@
 - [x] java-1.3-ac3: HashMap vs Hashtable vs ConcurrentHashMap
 - [x] java-1.3-ac4: Test data management utility
 - [x] java-1.3-ac5: Collection operations (filter, sort, map, reduce)
-- [ ] java-1.3-ac6: Custom comparator
+- [x] java-1.3-ac6: Custom comparator
 - [ ] java-1.3-ac7: Excel/JSON data to collections
 
 #### Story 1.4: Exception Handling & Multithreading (5 points)
@@ -555,6 +555,12 @@
 - [ ] final-8.5-ac7: "Tell me about yourself" practice
 - [ ] final-8.5-ac8: Common mistakes review
 
+### 2026-01-31 - Iteration 20
+- **Feature Completed**: java-1.3-ac6
+- **Content File**: ./sdet-learning-content/java-1.3-ac6.md
+- **Summary**: Created comprehensive content on implementing custom `Comparator`s for sorting test data objects in Java. The guide covers the `compare` method, real-world test automation scenarios, full code examples, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac6 - Implement custom comparator for test data sorting`
+
 ### 2026-01-31 - Iteration 19
 - **Feature Completed**: java-1.3-ac5
 - **Content File**: ./sdet-learning-content/java-1.3-ac5.md
@@ -656,7 +662,7 @@
 - **Summary**: Created comprehensive content explaining the difference between `==` and `.equals()` for String comparison, including the String Constant Pool, code examples, best practices, and interview questions.
 - **Git Commit**: `Content: java-1.1-ac3 - Write code demonstrating the difference between == and .equals() for String comparison`
 
-### 2026-01-31 - Iteration 2
+### 2026--01-31 - Iteration 2
 - **Feature Completed**: java-1.1-ac2
 - **Content File**: ./sdet-learning-content/java-1.1-ac2.md
 - **Summary**: Created comprehensive content explaining the 4 Java access modifiers (public, protected, default, private) with code examples in a framework context, best practices, and interview questions.
@@ -677,6 +683,19 @@
 - **Content File**: ./sdet-learning-content/java-1.3-ac2.md
 - **Summary**: Created comprehensive content comparing ArrayList, LinkedList, HashSet, and TreeSet, including their underlying data structures, performance characteristics with benchmark code, best practices, common pitfalls, interview questions, and a hands-on exercise.
 - **Git Commit**: `Content: java-1.3-ac2 - Implement and compare ArrayList, LinkedList, HashSet, TreeSet with performance analysis`
+
+---
+
+## Notes
+
+- Each ✅ represents a completed acceptance criterion
+- Content files are stored in ./sdet-learning-content/
+- Git commits track each feature completion
+- This file is automatically updated by the Ralph Loop agent
+
+---
+
+**Last Updated**: Saturday, 31 January 2026
 
 ---
 
