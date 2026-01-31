@@ -69,7 +69,7 @@
 #### Story 1.5: Java Coding Practice - Essential Algorithms (8 points)
 - [x] java-1.5-ac1: String manipulation algorithms
 - [x] java-1.5-ac2: Array operations
-- [ ] java-1.5-ac3: Fibonacci series
+- [x] java-1.5-ac3: Fibonacci series
 - [ ] java-1.5-ac4: Factorial calculation
 - [ ] java-1.5-ac5: Swap without third variable
 - [ ] java-1.5-ac6: Word occurrences with HashMap
@@ -881,6 +881,12 @@
 - **Feature Completed**: java-1.3-ac2
 - **Content File**: ./sdet-learning-content/java-1.3-ac2.md
 - **Summary**: Created comprehensive content comparing ArrayList, LinkedList, HashSet, and TreeSet, including their underlying data structures, performance characteristics with benchmark code, best practices, common pitfalls, interview questions, and a hands-on exercise.
+### 2026-01-31 - Iteration 33
+- **Feature Completed**: java-1.5-ac3
+- **Content File**: ./sdet-learning-content/java-1.5-ac3.md
+- **Summary**: Created comprehensive content on implementing the Fibonacci series using both iterative and recursive (with and without memoization) approaches. The guide includes a detailed performance comparison, analysis of time/space complexity, and discussion of stack usage, along with best practices, pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.5-ac3 - Implement Fibonacci series using recursion and iteration`
+
 ### 2026-01-31 - Iteration 32
 - **Feature Completed**: java-1.5-ac2
 - **Content File**: ./sdet-learning-content/java-1.5-ac2.md
