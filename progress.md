@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 3 | 6% |
+| 1. Java Fundamentals & OOP | 46 | 4 | 8% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **3** | **1%** |
+| **TOTAL** | **364** | **4** | **1%** |
 
 ---
 
@@ -31,7 +31,7 @@
 - [x] java-1.1-ac1: JDK, JRE, JVM explanation
 - [x] java-1.1-ac2: Access modifiers demonstration
 - [x] java-1.1-ac3: String comparison (== vs .equals())
-- [ ] java-1.1-ac4: String immutability
+- [x] java-1.1-ac4: String immutability
 - [ ] java-1.1-ac5: String, StringBuilder, StringBuffer comparison
 - [ ] java-1.1-ac6: Checked vs unchecked exceptions
 - [ ] java-1.1-ac7: final, finally, finalize keywords
@@ -558,6 +558,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 4
+- **Feature Completed**: java-1.1-ac4
+- **Content File**: ./sdet-learning-content/java-1.1-ac4.md
+- **Summary**: Created comprehensive content explaining String immutability in Java, its importance in test automation (thread safety, security), with practical examples, best practices, and interview questions.
+- **Git Commit**: `Content: java-1.1-ac4 - Explain String immutability and its importance in test automation with 2 practical examples`
 
 ### 2026-01-31 - Iteration 3
 - **Feature Completed**: java-1.1-ac3
