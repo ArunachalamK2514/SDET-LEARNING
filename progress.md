@@ -11,7 +11,7 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 16 | 35% |
+| 1. Java Fundamentals & OOP | 46 | 17 | 37% |
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **16** | **4%** |
+| **TOTAL** | **364** | **17** | **5%** |
 
 ---
 
@@ -53,7 +53,7 @@
 - [x] java-1.3-ac4: Test data management utility
 - [x] java-1.3-ac5: Collection operations (filter, sort, map, reduce)
 - [x] java-1.3-ac6: Custom comparator
-- [ ] java-1.3-ac7: Excel/JSON data to collections
+- [x] java-1.3-ac7: Excel/JSON data to collections
 
 #### Story 1.4: Exception Handling & Multithreading (5 points)
 - [ ] java-1.4-ac1: Checked vs unchecked exceptions
@@ -582,6 +582,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 21
+- **Feature Completed**: java-1.3-ac7
+- **Content File**: ./sdet-learning-content/java-1.3-ac7.md
+- **Summary**: Created comprehensive content on building utility methods to simulate reading test data from Excel/JSON into Java Collections (`List<Map>` and `Map`), including detailed explanations, code implementation, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.3-ac7 - Build utility methods for reading test data from Excel/JSON into collections`
 
 ### 2026-01-31 - Iteration 17
 - **Feature Completed**: java-1.3-ac3
