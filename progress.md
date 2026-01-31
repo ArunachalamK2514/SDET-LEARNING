@@ -67,7 +67,7 @@
 - [x] java-1.4-ac9: ExecutorService for parallel execution
 
 #### Story 1.5: Java Coding Practice - Essential Algorithms (8 points)
-- [ ] java-1.5-ac1: String manipulation algorithms
+- [x] java-1.5-ac1: String manipulation algorithms
 - [ ] java-1.5-ac2: Array operations
 - [ ] java-1.5-ac3: Fibonacci series
 - [ ] java-1.5-ac4: Factorial calculation
@@ -881,7 +881,11 @@
 - **Feature Completed**: java-1.3-ac2
 - **Content File**: ./sdet-learning-content/java-1.3-ac2.md
 - **Summary**: Created comprehensive content comparing ArrayList, LinkedList, HashSet, and TreeSet, including their underlying data structures, performance characteristics with benchmark code, best practices, common pitfalls, interview questions, and a hands-on exercise.
-- **Git Commit**: `Content: java-1.3-ac2 - Implement and compare ArrayList, LinkedList, HashSet, TreeSet with performance analysis`
+### 2026-01-31 - Iteration 31
+- **Feature Completed**: java-1.5-ac1
+- **Content File**: ./sdet-learning-content/java-1.5-ac1.md
+- **Summary**: Created comprehensive content on essential Java string manipulation algorithms: reversing a string, checking for a palindrome, and finding duplicate characters. The guide includes detailed explanations, runnable code examples, time/space complexity analysis, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.5-ac1 - String manipulation: Reverse string, palindrome check, find duplicate characters`
 
 ---
 
