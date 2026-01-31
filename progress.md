@@ -62,7 +62,7 @@
 - [x] java-1.4-ac4: throw vs throws
 - [x] java-1.4-ac5: ThreadLocal for WebDriver
 - [x] java-1.4-ac6: Thread safety with synchronized
-- [ ] java-1.4-ac7: wait(), notify(), notifyAll()
+- [x] java-1.4-ac7: wait(), notify(), notifyAll()
 - [ ] java-1.4-ac8: Thread-safe Singleton pattern
 - [ ] java-1.4-ac9: ExecutorService for parallel execution
 
@@ -582,6 +582,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-01-31 - Iteration 28
+- **Feature Completed**: java-1.4-ac7
+- **Content File**: ./sdet-learning-content/java-1.4-ac7.md
+- **Summary**: Created comprehensive content explaining inter-thread communication in Java using `wait()`, `notify()`, and `notifyAll()`. The guide includes a detailed Producer-Consumer example, best practices for avoiding common issues like spurious wakeups, common pitfalls like deadlocks, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.4-ac7 - Explain and code wait(), notify(), and notifyAll() for thread coordination`
 
 ### 2026-01-31 - Iteration 22
 - **Feature Completed**: java-1.4-ac1
