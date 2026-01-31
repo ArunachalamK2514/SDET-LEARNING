@@ -13,7 +13,7 @@
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=200
+MAX_ITERATIONS=2
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
