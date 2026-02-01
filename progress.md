@@ -12,7 +12,7 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 59 | 3 | 5% |
+| 2. Selenium WebDriver Mastery | 59 | 4 | 7% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
@@ -88,7 +88,7 @@
 - [x] selenium-2.1-ac5: findElement vs findElements
 - [x] selenium-2.1-ac6: Exception handling
 - [x] selenium-2.1-ac7: Navigation methods
-- [ ] selenium-2.1-ac8: Browser window management
+- [x] selenium-2.1-ac8: Browser window management
 
 #### Story 2.2: Advanced Locator Strategies (5 points)
 - [ ] selenium-2.2-ac1: All 8 locator strategies
@@ -558,6 +558,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-01 - Iteration 48
+- **Feature Completed**: selenium-2.1-ac8
+- **Content File**: ./sdet-learning-content/selenium-2.1-ac8.md
+- **Summary**: Created comprehensive content on managing browser windows in Selenium WebDriver. The guide covers maximizing, minimizing, setting specific sizes and positions, and retrieving window properties. It includes a complete Java code example, best practices, common pitfalls, interview questions, and a hands-on exercise for responsive testing.
+- **Git Commit**: `Content: selenium-2.1-ac8 - Manage browser windows: maximize, minimize, set size, get position`
 
 ### 2026-02-01 - Iteration 47
 - **Feature Completed**: selenium-2.1-ac7
