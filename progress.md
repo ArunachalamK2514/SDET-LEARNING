@@ -73,7 +73,7 @@
 - [x] java-1.5-ac4: Factorial calculation
 - [x] java-1.5-ac5: Swap without third variable
 - [x] java-1.5-ac6: Word occurrences with HashMap
-- [ ] java-1.5-ac7: Anagram checker
+- [x] java-1.5-ac7: Anagram checker
 - [ ] java-1.5-ac8: First non-repeating character
 - [ ] java-1.5-ac9: Perfect number checker
 - [ ] java-1.5-ac10: Armstrong numbers
@@ -582,6 +582,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-01 - Iteration 37
+- **Feature Completed**: java-1.5-ac7
+- **Content File**: ./sdet-learning-content/java-1.5-ac7.md
+- **Summary**: Created comprehensive content on checking if two strings are anagrams using both sorting and frequency counting methods. The guide includes detailed explanations, runnable Java code, time/space complexity analysis, best practices, common pitfalls, interview questions, and a hands-on exercise for grouping anagrams.
+- **Git Commit**: `Content: java-1.5-ac7 - Check if two strings are anagrams`
 
 ### 2026-02-01 - Iteration 36
 - **Feature Completed**: java-1.5-ac6
