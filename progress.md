@@ -12,7 +12,7 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 59 | 9 | 15% |
+| 2. Selenium WebDriver Mastery | 59 | 10 | 17% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
@@ -92,7 +92,7 @@
 
 #### Story 2.2: Advanced Locator Strategies (5 points)
 - [x] selenium-2.2-ac1: All 8 locator strategies
-- [ ] selenium-2.2-ac2: Complex XPath expressions
+- [x] selenium-2.2-ac2: Complex XPath expressions
 - [ ] selenium-2.2-ac3: Advanced CSS selectors
 - [ ] selenium-2.2-ac4: Dynamic element handling
 - [ ] selenium-2.2-ac5: Dynamic IDs/classes handling
@@ -559,6 +559,12 @@
 
 ## Detailed Completion Log
 
+
+### 2026-02-01 - Iteration 51
+- **Feature Completed**: selenium-2.2-ac2
+- **Content File**: ./sdet-learning-content/selenium-2.2-ac2.md
+- **Summary**: Created comprehensive content on complex XPath expressions using axes. The guide explains 11 common XPath axes with their syntax, provides 10 working Java code examples targeting a custom HTML test page, includes best practices for writing robust XPaths, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: selenium-2.2-ac2 - Write 10 complex XPath expressions using axes (parent, following-sibling, ancestor, etc.)`
 
 ### 2026-02-01 - Iteration 50
 - **Feature Completed**: selenium-2.1-ac4

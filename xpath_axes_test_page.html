@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPath Axes Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .container { max-width: 900px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; }
+        h1, h2, h3 { color: #333; }
+        .section { margin-bottom: 25px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background-color: #fff; }
+        .item-list { list-style: none; padding: 0; }
+        .item-list li { margin-bottom: 10px; padding: 10px; border: 1px solid #eee; background-color: #fafafa; border-radius: 3px; }
+        .card { border: 1px solid #cce; padding: 15px; margin-top: 15px; background-color: #eef; border-radius: 5px; }
+        .card-header { font-weight: bold; margin-bottom: 10px; color: #55a; }
+        .card-body { font-size: 0.9em; color: #66b; }
+        .user-info { display: flex; margin-bottom: 10px; align-items: center; }
+        .user-info .avatar { width: 40px; height: 40px; background-color: #aaa; border-radius: 50%; margin-right: 10px; }
+        .user-info .name { font-weight: bold; color: #007bff; }
+        .user-info .role { font-size: 0.8em; color: #6c757d; margin-left: 5px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input[type="text"], .form-group input[type="email"] { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .btn { padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1em; }
+        .btn:hover { background-color: #218838; }
+        footer { text-align: center; margin-top: 30px; font-size: 0.8em; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">Demonstrating XPath Axes</h1>
+        <p>This page provides various HTML structures to practice complex XPath expressions using axes.</p>
+
+        <div class="section" id="products-section">
+            <h2 class="section-title">Product Listings</h2>
+            <div class="product-category" id="electronics">
+                <h3>Electronics</h3>
+                <ul class="item-list">
+                    <li id="prod-101">
+                        <span class="product-name">Laptop Pro</span>
+                        <span class="price">$1200</span>
+                        <span class="stock">In Stock</span>
+                    </li>
+                    <li id="prod-102">
+                        <span class="product-name">Gaming Mouse</span>
+                        <span class="price">$75</span>
+                        <span class="stock out-of-stock">Out of Stock</span>
+                    </li>
+                    <li id="prod-103">
+                        <span class="product-name">External SSD</span>
+                        <span class="price">$150</span>
+                        <span class="stock">In Stock</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-category" id="books">
+                <h3>Books</h3>
+                <ul class="item-list">
+                    <li id="prod-201">
+                        <span class="product-name">Selenium Mastery</span>
+                        <span class="price">$45</span>
+                        <span class="stock">In Stock</span>
+                    </li>
+                    <li id="prod-202">
+                        <span class="product-name">Java for SDETs</span>
+                        <span class="price">$55</span>
+                        <span class="stock">In Stock</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="user-reviews-section">
+            <h2 class="section-title">User Reviews</h2>
+            <div class="card review-card" data-review-id="R1">
+                <div class="user-info">
+                    <div class="avatar"></div>
+                    <span class="name">Alice Smith</span>
+                    <span class="role">(Customer)</span>
+                </div>
+                <div class="card-header">Great Product!</div>
+                <div class="card-body">"This laptop is amazing. Fast delivery and excellent performance."</div>
+                <span class="rating">5 Stars</span>
+                <span class="date">2023-01-15</span>
+            </div>
+            <div class="card review-card" data-review-id="R2">
+                <div class="user-info">
+                    <div class="avatar"></div>
+                    <span class="name">Bob Johnson</span>
+                    <span class="role">(Verified Buyer)</span>
+                </div>
+                <div class="card-header">Good Value</div>
+                <div class="card-body">"Mouse works well for gaming. Battery life is decent."</div>
+                <span class="rating">4 Stars</span>
+                <span class="date">2023-02-20</span>
+            </div>
+            <div class="card review-card" data-review-id="R3">
+                <div class="user-info">
+                    <div class="avatar"></div>
+                    <span class="name">Charlie Brown</span>
+                    <span class="role">(Admin)</span>
+                </div>
+                <div class="card-header">Excellent Service</div>
+                <div class="card-body">"Resolved my query quickly. Highly recommend this store."</div>
+                <span class="rating">5 Stars</span>
+                <span class="date">2023-03-01</span>
+            </div>
+        </div>
+
+        <div class="section" id="contact-form-section">
+            <h2 class="section-title">Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <footer>&copy; 2023 XPath Learning Site</footer>
+    </div>
+</body>
+</html>
