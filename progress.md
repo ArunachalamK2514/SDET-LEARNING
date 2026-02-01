@@ -85,11 +85,7 @@
 - [x] selenium-2.1-ac2: WebDriver vs RemoteWebDriver
 - [x] selenium-2.1-ac3: ChromeOptions, FirefoxOptions
 - [x] selenium-2.1-ac4: Browser profile management
-- **Feature Completed**: selenium-2.1-ac4
-- **Content File**: ./sdet-learning-content/selenium-2.1-ac4.md
-- **Summary**: Created comprehensive content on browser profile management for different test scenarios using ChromeOptions and FirefoxOptions. The guide covers creating temporary profiles, setting custom preferences (like download directories), best practices for isolation and cleanup, common pitfalls, and includes a full code example.
-- **Git Commit**: `Content: selenium-2.1-ac4 - Implement browser profile management for different test scenarios`
-- [ ] selenium-2.1-ac5: findElement vs findElements
+- [x] selenium-2.1-ac5: findElement vs findElements
 - [ ] selenium-2.1-ac6: Exception handling
 - [ ] selenium-2.1-ac7: Navigation methods
 - [ ] selenium-2.1-ac8: Browser window management
@@ -562,6 +558,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-01 - Iteration 45
+- **Feature Completed**: selenium-2.1-ac5
+- **Content File**: ./sdet-learning-content/selenium-2.1-ac5.md
+- **Summary**: Created comprehensive content on the differences between findElement() and findElements(). The guide covers their return types, exception handling, and best-practice use cases, including a full code example, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: selenium-2.1-ac5 - Explain and demonstrate difference between findElement() and findElements()`
 
 ### 2026-02-01 - Iteration 44
 - **Feature Completed**: selenium-2.1-ac3
