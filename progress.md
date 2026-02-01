@@ -11,7 +11,8 @@
 
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
-| 1. Java Fundamentals & OOP | 46 | 23 | 50% |
+| 1. Java Fundamentals & OOP | 46 | 24 | 52% |
+|----------|----------------|-----------|------------|
 | 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
@@ -19,7 +20,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **23** | **6%** |
+| **TOTAL** | **364** | **24** | **7%** |
 
 ---
 
@@ -74,7 +75,7 @@
 - [x] java-1.5-ac5: Swap without third variable
 - [x] java-1.5-ac6: Word occurrences with HashMap
 - [x] java-1.5-ac7: Anagram checker
-- [ ] java-1.5-ac8: First non-repeating character
+- [x] java-1.5-ac8: First non-repeating character
 - [ ] java-1.5-ac9: Perfect number checker
 - [ ] java-1.5-ac10: Armstrong numbers
 - [ ] java-1.5-ac11: File I/O operations
@@ -588,6 +589,12 @@
 - **Content File**: ./sdet-learning-content/java-1.5-ac7.md
 - **Summary**: Created comprehensive content on checking if two strings are anagrams using both sorting and frequency counting methods. The guide includes detailed explanations, runnable Java code, time/space complexity analysis, best practices, common pitfalls, interview questions, and a hands-on exercise for grouping anagrams.
 - **Git Commit**: `Content: java-1.5-ac7 - Check if two strings are anagrams`
+
+### 2026-02-01 - Iteration 38
+- **Feature Completed**: java-1.5-ac8
+- **Content File**: ./sdet-learning-content/java-1.5-ac8.md
+- **Summary**: Created comprehensive content on finding the first non-repeating character in a string. The guide covers optimal approaches using LinkedHashMap or arrays for frequency counting, detailed explanations of time/space complexity, runnable Java code examples, best practices for handling edge cases and character sets, common pitfalls, interview questions, and hands-on exercises.
+- **Git Commit**: `Content: java-1.5-ac8 - Find first non-repeating character in string`
 
 ### 2026-02-01 - Iteration 36
 - **Feature Completed**: java-1.5-ac6
