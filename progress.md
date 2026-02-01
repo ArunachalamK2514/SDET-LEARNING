@@ -78,7 +78,7 @@
 - [x] java-1.5-ac8: First non-repeating character
 - [x] java-1.5-ac9: Perfect number checker
 - [x] java-1.5-ac10: Armstrong numbers
-- [ ] java-1.5-ac11: File I/O operations
+- [x] java-1.5-ac11: File I/O operations
 - [ ] java-1.5-ac12: Triangle pattern program
 
 #### Story 2.1: Selenium WebDriver Core Concepts (3 points)
@@ -583,6 +583,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-01 - Iteration 41
+- **Feature Completed**: java-1.5-ac11
+- **Content File**: ./sdet-learning-content/java-1.5-ac11.md
+- **Summary**: Created comprehensive content on reading and writing files using Java I/O. The guide covers both classic (`BufferedReader`/`BufferedWriter`) and modern (`java.nio.file.Files`) approaches, with a focus on best practices like using `try-with-resources`, handling `IOException`, and preferring the NIO package for simplicity and robustness. It also includes common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.5-ac11 - Read and write files using Java I/O`
 
 ### 2026-02-01 - Iteration 40
 - **Feature Completed**: java-1.5-ac10
