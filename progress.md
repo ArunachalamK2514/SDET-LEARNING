@@ -87,7 +87,7 @@
 - [x] selenium-2.1-ac4: Browser profile management
 - [x] selenium-2.1-ac5: findElement vs findElements
 - [x] selenium-2.1-ac6: Exception handling
-- [ ] selenium-2.1-ac7: Navigation methods
+- [x] selenium-2.1-ac7: Navigation methods
 - [ ] selenium-2.1-ac8: Browser window management
 
 #### Story 2.2: Advanced Locator Strategies (5 points)
@@ -558,6 +558,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-01 - Iteration 47
+- **Feature Completed**: selenium-2.1-ac7
+- **Content File**: ./sdet-learning-content/selenium-2.1-ac7.md
+- **Summary**: Created comprehensive content on Selenium's navigation commands. The guide explains the difference between `get()` and `navigate().to()`, details the usage of `back()`, `forward()`, and `refresh()`, and provides a complete Java code example. It also covers best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: selenium-2.1-ac7 - Navigate using get(), navigate().to(), back(), forward(), refresh()`
 
 ### 2026-02-01 - Iteration 46
 - **Feature Completed**: selenium-2.1-ac6
