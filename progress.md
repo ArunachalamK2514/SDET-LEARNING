@@ -77,7 +77,7 @@
 - [x] java-1.5-ac7: Anagram checker
 - [x] java-1.5-ac8: First non-repeating character
 - [x] java-1.5-ac9: Perfect number checker
-- [ ] java-1.5-ac10: Armstrong numbers
+- [x] java-1.5-ac10: Armstrong numbers
 - [ ] java-1.5-ac11: File I/O operations
 - [ ] java-1.5-ac12: Triangle pattern program
 
@@ -583,6 +583,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-01 - Iteration 40
+- **Feature Completed**: java-1.5-ac10
+- **Content File**: ./sdet-learning-content/java-1.5-ac10.md
+- **Summary**: Created comprehensive content on generating Armstrong numbers in Java. The guide explains the algorithm, provides a checker and a generator, covers best practices for handling edge cases and preventing overflow, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.5-ac10 - Generate Armstrong numbers`
 
 ### 2026-02-01 - Iteration 39
 - **Feature Completed**: java-1.5-ac9
