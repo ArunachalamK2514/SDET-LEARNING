@@ -13,14 +13,14 @@
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 46 | 24 | 52% |
 |----------|----------------|-----------|------------|
-| 2. Selenium WebDriver Mastery | 59 | 0 | 0% |
+| 2. Selenium WebDriver Mastery | 59 | 1 | 2% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **24** | **7%** |
+| **TOTAL** | **364** | **47** | **13%** |
 
 ---
 
@@ -82,7 +82,7 @@
 - [x] java-1.5-ac12: Triangle pattern program
 
 #### Story 2.1: Selenium WebDriver Core Concepts (3 points)
-- [ ] selenium-2.1-ac1: WebDriver architecture
+- [x] selenium-2.1-ac1: WebDriver architecture
 - [ ] selenium-2.1-ac2: WebDriver vs RemoteWebDriver
 - [ ] selenium-2.1-ac3: ChromeOptions, FirefoxOptions
 - [ ] selenium-2.1-ac4: Browser profile management
@@ -583,6 +583,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-01 - Iteration 42
+- **Feature Completed**: selenium-2.1-ac1
+- **Content File**: ./sdet-learning-content/selenium-2.1-ac1.md
+- **Summary**: Created comprehensive content explaining the Selenium WebDriver architecture, including the four main components (Client Libraries, W3C Protocol, Browser Drivers, Browsers), the communication flow, and the shift from JSON Wire Protocol to the W3C standard in Selenium 4. The guide provides a full code example, best practices, common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: selenium-2.1-ac1 - Explain Selenium WebDriver architecture and how it communicates with browsers`
 
 ### 2026-02-01 - Iteration 41
 - **Feature Completed**: java-1.5-ac11
