@@ -13,7 +13,7 @@
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=8
+MAX_ITERATIONS=2
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
@@ -91,7 +91,6 @@ Your task:
 5. Create ONE markdown file in ./sdet-learning-content/ named by the feature ID (e.g., 'java-1.1-ac1.md')
 6. Update progress.md with:
    - Feature ID marked as completed
-   - Summary of content created
    - Git commit message for tracking
 7. Make ONE git commit with message: 'Content: [Feature ID] - [Feature Description]'
 8. STOP. Do not process the next feature.
