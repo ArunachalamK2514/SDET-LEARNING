@@ -79,7 +79,7 @@
 - [x] java-1.5-ac9: Perfect number checker
 - [x] java-1.5-ac10: Armstrong numbers
 - [x] java-1.5-ac11: File I/O operations
-- [ ] java-1.5-ac12: Triangle pattern program
+- [x] java-1.5-ac12: Triangle pattern program
 
 #### Story 2.1: Selenium WebDriver Core Concepts (3 points)
 - [ ] selenium-2.1-ac1: WebDriver architecture
