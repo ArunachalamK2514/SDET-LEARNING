@@ -72,7 +72,7 @@
 - [x] java-1.5-ac3: Fibonacci series
 - [x] java-1.5-ac4: Factorial calculation
 - [x] java-1.5-ac5: Swap without third variable
-- [ ] java-1.5-ac6: Word occurrences with HashMap
+- [x] java-1.5-ac6: Word occurrences with HashMap
 - [ ] java-1.5-ac7: Anagram checker
 - [ ] java-1.5-ac8: First non-repeating character
 - [ ] java-1.5-ac9: Perfect number checker
@@ -582,6 +582,12 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-01 - Iteration 36
+- **Feature Completed**: java-1.5-ac6
+- **Content File**: ./sdet-learning-content/java-1.5-ac6.md
+- **Summary**: Created comprehensive content on counting word occurrences in a sentence using a `HashMap`. This guide details an efficient algorithm, includes a full runnable Java example, and covers best practices like normalization, concise counting with `getOrDefault`, and handling edge cases. It also discusses common pitfalls, interview questions, and a hands-on exercise.
+- **Git Commit**: `Content: java-1.5-ac6 - Count word occurrences in a sentence using HashMap`
 
 ### 2026-01-31 - Iteration 30
 - **Feature Completed**: java-1.4-ac9
