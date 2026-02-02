@@ -12,14 +12,14 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 59 | 12 | 20% |
+| 2. Selenium WebDriver Mastery | 59 | 13 | 22% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **52** | 14% |
+| **TOTAL** | **364** | **53** | 15% |
 
 ---
 
@@ -98,7 +98,7 @@
 - [x] selenium-2.2-ac5: Dynamic IDs/classes handling
 - [x] selenium-2.2-ac6: Dynamic locator utility methods
 - [x] selenium-2.2-ac7: Locator best practices
-- [ ] selenium-2.2-ac8: Selenium 4 relative locators
+- [x] selenium-2.2-ac8: Selenium 4 relative locators
 
 #### Story 2.3: Synchronization & Waits Mastery (5 points)
 - [ ] selenium-2.3-ac1: Implicit Wait implementation
@@ -559,6 +559,11 @@
 
 ## Detailed Completion Log
 
+
+### 2026-02-02 - Iteration 57
+- **Feature Completed**: selenium-2.2-ac8
+- **Content File**: ./sdet-learning-content/selenium-2.2-ac8.md
+- **Git Commit**: `Content: selenium-2.2-ac8 - Implement relative locators in Selenium 4 (above, below, near, toLeftOf, toRightOf)`
 
 ### 2026-02-02 - Iteration 56
 - **Feature Completed**: selenium-2.2-ac7
