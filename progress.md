@@ -12,14 +12,14 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 59 | 19 | 32% |
+| 2. Selenium WebDriver Mastery | 59 | 20 | 34% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **59** | 16% |
+| **TOTAL** | **364** | **60** | 16% |
 
 ---
 
@@ -111,7 +111,7 @@
 - [x] selenium-2.3-ac8: Smart wait methods
 
 #### Story 2.4: Advanced Selenium Techniques (8 points)
-- [ ] selenium-2.4-ac1: JavaScriptExecutor techniques
+- [x] selenium-2.4-ac1: JavaScriptExecutor techniques
 - [ ] selenium-2.4-ac2: Alert handling
 - [ ] selenium-2.4-ac3: Window/tab switching
 - [ ] selenium-2.4-ac4: iframe handling
@@ -559,6 +559,11 @@
 
 ## Detailed Completion Log
 
+
+### 2026-02-02 - Iteration 66
+- **Feature Completed**: selenium-2.4-ac1
+- **Content File**: ./sdet-learning-content/selenium-2.4-ac1.md
+- **Git Commit**: `Content: selenium-2.4-ac1 - Implement JavaScriptExecutor for scrolling, clicking hidden elements, element highlighting`
 
 ### 2026-02-02 - Iteration 65
 - **Feature Completed**: selenium-2.3-ac8
