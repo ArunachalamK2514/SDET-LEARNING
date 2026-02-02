@@ -12,14 +12,14 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 59 | 20 | 34% |
+| 2. Selenium WebDriver Mastery | 59 | 21 | 35% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **60** | 16% |
+| **TOTAL** | **364** | **61** | 16% |
 
 ---
 
@@ -115,7 +115,7 @@
 - [x] selenium-2.4-ac2: Alert handling
 - [x] selenium-2.4-ac3: Window/tab switching
 - [x] selenium-2.4-ac4: iframe handling
-- [ ] selenium-2.4-ac5: Drag-and-drop operations
+- [x] selenium-2.4-ac5: Drag-and-drop operations
 - [ ] selenium-2.4-ac6: Mouse and keyboard actions
 - [ ] selenium-2.4-ac7: File uploads
 - [ ] selenium-2.4-ac8: File downloads
@@ -559,6 +559,11 @@
 
 ## Detailed Completion Log
 
+
+### 2026-02-02 - Iteration 69
+- **Feature Completed**: selenium-2.4-ac5
+- **Content File**: ./sdet-learning-content/selenium-2.4-ac5.md
+- **Git Commit**: `Content: selenium-2.4-ac5 - Implement drag-and-drop operations using Actions class`
 
 ### 2026-02-02 - Iteration 68
 - **Feature Completed**: selenium-2.4-ac4
