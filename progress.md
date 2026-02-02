@@ -122,7 +122,7 @@
 - [x] selenium-2.4-ac9: Browser authentication
 - [x] selenium-2.4-ac10: SSL certificate handling
 - [x] selenium-2.4-ac11: HTML5 elements handling
-- [ ] selenium-2.4-ac12: Screenshot capture
+- [x] selenium-2.4-ac12: Screenshot capture
 
 #### Story 2.5: Selenium Grid & Parallel Execution (5 points)
 - [ ] selenium-2.5-ac1: Grid 4 architecture
@@ -558,6 +558,11 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-02 - Iteration 76
+- **Feature Completed**: selenium-2.4-ac12
+- **Content File**: ./sdet-learning-content/selenium-2.4-ac12.md
+- **Git Commit**: `Content: selenium-2.4-ac12 - Capture screenshots at element and page level`
 
 ### 2026-02-02 - Iteration 75
 - **Feature Completed**: selenium-2.4-ac11
