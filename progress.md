@@ -112,7 +112,7 @@
 
 #### Story 2.4: Advanced Selenium Techniques (8 points)
 - [x] selenium-2.4-ac1: JavaScriptExecutor techniques
-- [ ] selenium-2.4-ac2: Alert handling
+- [x] selenium-2.4-ac2: Alert handling
 - [ ] selenium-2.4-ac3: Window/tab switching
 - [ ] selenium-2.4-ac4: iframe handling
 - [ ] selenium-2.4-ac5: Drag-and-drop operations
