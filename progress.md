@@ -460,14 +460,14 @@
 - [ ] perf-7.4-ac10: Results analysis
 
 #### Story 7.5: Accessibility Testing Fundamentals (3 points)
-- [ ] a11y-7.5-ac1: WCAG guidelines
-- [ ] a11y-7.5-ac2: Common accessibility issues
-- [ ] a11y-7.5-ac3: axe DevTools usage
-- [ ] a11y-7.5-ac4: axe-core integration
-- [ ] a11y-7.5-ac5: Automated vs manual testing
-- [ ] a11y-7.5-ac6: Screen reader testing
-- [ ] a11y-7.5-ac7: Keyboard navigation validation
-- [ ] a11y-7.5-ac8: Accessibility in CI/CD
+- [ ] accessibility-7.5-ac1: WCAG guidelines
+- [ ] accessibility-7.5-ac2: Common accessibility issues
+- [ ] accessibility-7.5-ac3: axe DevTools usage
+- [ ] accessibility-7.5-ac4: axe-core integration
+- [ ] accessibility-7.5-ac5: Automated vs manual testing
+- [ ] accessibility-7.5-ac6: Screen reader testing
+- [ ] accessibility-7.5-ac7: Keyboard navigation validation
+- [ ] accessibility-7.5-ac8: Accessibility in CI/CD
 
 #### Story 7.6: System Design for SDET Interviews (3 points)
 - [ ] sysdesign-7.6-ac1: Scalable framework design

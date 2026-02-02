@@ -4204,8 +4204,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac1",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac1",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4220,8 +4220,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac2",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac2",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4236,8 +4236,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac3",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac3",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4252,8 +4252,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac4",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac4",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4268,8 +4268,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac5",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac5",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4283,8 +4283,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac6",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac6",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4298,8 +4298,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac7",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac7",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4313,8 +4313,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac8",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac8",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4328,8 +4328,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac9",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac9",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4343,8 +4343,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac10",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac10",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4359,8 +4359,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.2-ac11",
-      "category": "cicd",
+      "id": "jenkins-6.2-ac11",
+      "category": "jenkins",
       "story": "Story 6.2: Jenkins Integration",
       "sprint": 4,
       "story_points": 5,
@@ -4374,8 +4374,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac1",
-      "category": "cicd",
+      "id": "github-6.3-ac1",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4390,8 +4390,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac2",
-      "category": "cicd",
+      "id": "github-6.3-ac2",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4406,8 +4406,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac3",
-      "category": "cicd",
+      "id": "github-6.3-ac3",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4422,8 +4422,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac4",
-      "category": "cicd",
+      "id": "github-6.3-ac4",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4438,8 +4438,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac5",
-      "category": "cicd",
+      "id": "github-6.3-ac5",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4453,8 +4453,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac6",
-      "category": "cicd",
+      "id": "github-6.3-ac6",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4469,8 +4469,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac7",
-      "category": "cicd",
+      "id": "github-6.3-ac7",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4484,8 +4484,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac8",
-      "category": "cicd",
+      "id": "github-6.3-ac8",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4500,8 +4500,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.3-ac9",
-      "category": "cicd",
+      "id": "github-6.3-ac9",
+      "category": "github",
       "story": "Story 6.3: GitHub Actions for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4515,8 +4515,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac1",
-      "category": "cicd",
+      "id": "docker-6.4-ac1",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4531,8 +4531,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac2",
-      "category": "cicd",
+      "id": "docker-6.4-ac2",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4546,8 +4546,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac3",
-      "category": "cicd",
+      "id": "docker-6.4-ac3",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4561,8 +4561,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac4",
-      "category": "cicd",
+      "id": "docker-6.4-ac4",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4577,8 +4577,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac5",
-      "category": "cicd",
+      "id": "docker-6.4-ac5",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4592,8 +4592,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac6",
-      "category": "cicd",
+      "id": "docker-6.4-ac6",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4608,8 +4608,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac7",
-      "category": "cicd",
+      "id": "docker-6.4-ac7",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4624,8 +4624,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac8",
-      "category": "cicd",
+      "id": "docker-6.4-ac8",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4640,8 +4640,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac9",
-      "category": "cicd",
+      "id": "docker-6.4-ac9",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4655,8 +4655,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.4-ac10",
-      "category": "cicd",
+      "id": "docker-6.4-ac10",
+      "category": "docker",
       "story": "Story 6.4: Docker Fundamentals for Test Automation",
       "sprint": 4,
       "story_points": 5,
@@ -4790,8 +4790,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac1",
-      "category": "cicd",
+      "id": "git-6.6-ac1",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4805,8 +4805,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac2",
-      "category": "cicd",
+      "id": "git-6.6-ac2",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4820,8 +4820,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac3",
-      "category": "cicd",
+      "id": "git-6.6-ac3",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4836,8 +4836,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac4",
-      "category": "cicd",
+      "id": "git-6.6-ac4",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4852,8 +4852,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac5",
-      "category": "cicd",
+      "id": "git-6.6-ac5",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4868,8 +4868,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac6",
-      "category": "cicd",
+      "id": "git-6.6-ac6",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4884,8 +4884,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac7",
-      "category": "cicd",
+      "id": "git-6.6-ac7",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4899,8 +4899,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac8",
-      "category": "cicd",
+      "id": "git-6.6-ac8",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4914,8 +4914,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac9",
-      "category": "cicd",
+      "id": "git-6.6-ac9",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4929,8 +4929,8 @@
       "passes": false
     },
     {
-      "id": "cicd-6.6-ac10",
-      "category": "cicd",
+      "id": "git-6.6-ac10",
+      "category": "git",
       "story": "Story 6.6: Git & Version Control Mastery",
       "sprint": 4,
       "story_points": 3,
@@ -4945,8 +4945,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac1",
-      "category": "advanced",
+      "id": "microservices-7.1-ac1",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -4960,8 +4960,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac2",
-      "category": "advanced",
+      "id": "microservices-7.1-ac2",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -4975,8 +4975,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac3",
-      "category": "advanced",
+      "id": "microservices-7.1-ac3",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -4990,8 +4990,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac4",
-      "category": "advanced",
+      "id": "microservices-7.1-ac4",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5005,8 +5005,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac5",
-      "category": "advanced",
+      "id": "microservices-7.1-ac5",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5021,8 +5021,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac6",
-      "category": "advanced",
+      "id": "microservices-7.1-ac6",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5036,8 +5036,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac7",
-      "category": "advanced",
+      "id": "microservices-7.1-ac7",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5051,8 +5051,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac8",
-      "category": "advanced",
+      "id": "microservices-7.1-ac8",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5066,8 +5066,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac9",
-      "category": "advanced",
+      "id": "microservices-7.1-ac9",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5081,8 +5081,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.1-ac10",
-      "category": "advanced",
+      "id": "microservices-7.1-ac10",
+      "category": "microservices",
       "story": "Story 7.1: Microservices Testing Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5096,8 +5096,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac1",
-      "category": "advanced",
+      "id": "flaky-7.2-ac1",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5111,8 +5111,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac2",
-      "category": "advanced",
+      "id": "flaky-7.2-ac2",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5126,8 +5126,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac3",
-      "category": "advanced",
+      "id": "flaky-7.2-ac3",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5141,8 +5141,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac4",
-      "category": "advanced",
+      "id": "flaky-7.2-ac4",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5156,8 +5156,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac5",
-      "category": "advanced",
+      "id": "flaky-7.2-ac5",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5171,8 +5171,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac6",
-      "category": "advanced",
+      "id": "flaky-7.2-ac6",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5186,8 +5186,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac7",
-      "category": "advanced",
+      "id": "flaky-7.2-ac7",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5201,8 +5201,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac8",
-      "category": "advanced",
+      "id": "flaky-7.2-ac8",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5216,8 +5216,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac9",
-      "category": "advanced",
+      "id": "flaky-7.2-ac9",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5231,8 +5231,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.2-ac10",
-      "category": "advanced",
+      "id": "flaky-7.2-ac10",
+      "category": "flaky",
       "story": "Story 7.2: Flaky Test Detection & Prevention",
       "sprint": 4,
       "story_points": 5,
@@ -5246,8 +5246,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac1",
-      "category": "advanced",
+      "id": "tdm-7.3-ac1",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5261,8 +5261,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac2",
-      "category": "advanced",
+      "id": "tdm-7.3-ac2",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5276,8 +5276,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac3",
-      "category": "advanced",
+      "id": "tdm-7.3-ac3",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5291,8 +5291,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac4",
-      "category": "advanced",
+      "id": "tdm-7.3-ac4",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5306,8 +5306,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac5",
-      "category": "advanced",
+      "id": "tdm-7.3-ac5",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5321,8 +5321,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac6",
-      "category": "advanced",
+      "id": "tdm-7.3-ac6",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5336,8 +5336,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac7",
-      "category": "advanced",
+      "id": "tdm-7.3-ac7",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5351,8 +5351,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac8",
-      "category": "advanced",
+      "id": "tdm-7.3-ac8",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5366,8 +5366,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac9",
-      "category": "advanced",
+      "id": "tdm-7.3-ac9",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5381,8 +5381,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.3-ac10",
-      "category": "advanced",
+      "id": "tdm-7.3-ac10",
+      "category": "tdm",
       "story": "Story 7.3: Test Data Management Strategy",
       "sprint": 4,
       "story_points": 5,
@@ -5396,8 +5396,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac1",
-      "category": "advanced",
+      "id": "perf-7.4-ac1",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5412,8 +5412,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac2",
-      "category": "advanced",
+      "id": "perf-7.4-ac2",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5428,8 +5428,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac3",
-      "category": "advanced",
+      "id": "perf-7.4-ac3",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5444,8 +5444,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac4",
-      "category": "advanced",
+      "id": "perf-7.4-ac4",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5459,8 +5459,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac5",
-      "category": "advanced",
+      "id": "perf-7.4-ac5",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5475,8 +5475,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac6",
-      "category": "advanced",
+      "id": "perf-7.4-ac6",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5490,8 +5490,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac7",
-      "category": "advanced",
+      "id": "perf-7.4-ac7",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5506,8 +5506,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac8",
-      "category": "advanced",
+      "id": "perf-7.4-ac8",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5521,8 +5521,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac9",
-      "category": "advanced",
+      "id": "perf-7.4-ac9",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5537,8 +5537,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.4-ac10",
-      "category": "advanced",
+      "id": "perf-7.4-ac10",
+      "category": "perf",
       "story": "Story 7.4: Performance Testing Basics",
       "sprint": 3,
       "story_points": 5,
@@ -5553,8 +5553,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.5-ac1",
-      "category": "advanced",
+      "id": "accessibility-7.5-ac1",
+      "category": "accessibility",
       "story": "Story 7.5: Accessibility Testing Fundamentals",
       "sprint": 3,
       "story_points": 3,
@@ -5568,8 +5568,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.5-ac2",
-      "category": "advanced",
+      "id": "accessibility-7.5-ac2",
+      "category": "accessibility",
       "story": "Story 7.5: Accessibility Testing Fundamentals",
       "sprint": 3,
       "story_points": 3,
@@ -5583,8 +5583,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.5-ac3",
-      "category": "advanced",
+      "id": "accessibility-7.5-ac3",
+      "category": "accessibility",
       "story": "Story 7.5: Accessibility Testing Fundamentals",
       "sprint": 3,
       "story_points": 3,
@@ -5599,8 +5599,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.5-ac4",
-      "category": "advanced",
+      "id": "accessibility-7.5-ac4",
+      "category": "accessibility",
       "story": "Story 7.5: Accessibility Testing Fundamentals",
       "sprint": 3,
       "story_points": 3,
@@ -5614,8 +5614,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.5-ac5",
-      "category": "advanced",
+      "id": "accessibility-7.5-ac5",
+      "category": "accessibility",
       "story": "Story 7.5: Accessibility Testing Fundamentals",
       "sprint": 3,
       "story_points": 3,
@@ -5629,8 +5629,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.5-ac6",
-      "category": "advanced",
+      "id": "accessibility-7.5-ac6",
+      "category": "accessibility",
       "story": "Story 7.5: Accessibility Testing Fundamentals",
       "sprint": 3,
       "story_points": 3,
@@ -5645,8 +5645,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.5-ac7",
-      "category": "advanced",
+      "id": "accessibility-7.5-ac7",
+      "category": "accessibility",
       "story": "Story 7.5: Accessibility Testing Fundamentals",
       "sprint": 3,
       "story_points": 3,
@@ -5660,8 +5660,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.5-ac8",
-      "category": "advanced",
+      "id": "accessibility-7.5-ac8",
+      "category": "accessibility",
       "story": "Story 7.5: Accessibility Testing Fundamentals",
       "sprint": 3,
       "story_points": 3,
@@ -5675,8 +5675,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac1",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac1",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5690,8 +5690,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac2",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac2",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5705,8 +5705,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac3",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac3",
+      "category": "advasysdesignnced",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5720,8 +5720,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac4",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac4",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5735,8 +5735,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac5",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac5",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5750,8 +5750,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac6",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac6",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5765,8 +5765,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac7",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac7",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5780,8 +5780,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac8",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac8",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5795,8 +5795,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac9",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac9",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5810,8 +5810,8 @@
       "passes": false
     },
     {
-      "id": "advanced-7.6-ac10",
-      "category": "advanced",
+      "id": "sysdesign-7.6-ac10",
+      "category": "sysdesign",
       "story": "Story 7.6: System Design for SDET Interviews",
       "sprint": 4,
       "story_points": 3,
@@ -5825,7 +5825,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.1-ac1",
+      "id": "coding-8.1-ac1",
       "category": "interview",
       "story": "Story 8.1: Coding Practice - Common Patterns",
       "sprint": 4,
@@ -5841,7 +5841,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.1-ac2",
+      "id": "coding-8.1-ac2",
       "category": "interview",
       "story": "Story 8.1: Coding Practice - Common Patterns",
       "sprint": 4,
@@ -5857,7 +5857,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.1-ac3",
+      "id": "coding-8.1-ac3",
       "category": "interview",
       "story": "Story 8.1: Coding Practice - Common Patterns",
       "sprint": 4,
@@ -5873,7 +5873,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.1-ac4",
+      "id": "coding-8.1-ac4",
       "category": "interview",
       "story": "Story 8.1: Coding Practice - Common Patterns",
       "sprint": 4,
@@ -5889,7 +5889,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.1-ac5",
+      "id": "coding-8.1-ac5",
       "category": "interview",
       "story": "Story 8.1: Coding Practice - Common Patterns",
       "sprint": 4,
@@ -5905,7 +5905,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.1-ac6",
+      "id": "coding-8.1-ac6",
       "category": "interview",
       "story": "Story 8.1: Coding Practice - Common Patterns",
       "sprint": 4,
@@ -5920,7 +5920,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.1-ac7",
+      "id": "coding-8.1-ac7",
       "category": "interview",
       "story": "Story 8.1: Coding Practice - Common Patterns",
       "sprint": 4,
@@ -5936,7 +5936,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.1-ac8",
+      "id": "coding-8.1-ac8",
       "category": "interview",
       "story": "Story 8.1: Coding Practice - Common Patterns",
       "sprint": 4,
@@ -5951,7 +5951,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.2-ac1",
+      "id": "behavioral-8.2-ac1",
       "category": "interview",
       "story": "Story 8.2: Behavioral Interview Preparation",
       "sprint": 4,
@@ -5966,7 +5966,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.2-ac2",
+      "id": "behavioral-8.2-ac2",
       "category": "interview",
       "story": "Story 8.2: Behavioral Interview Preparation",
       "sprint": 4,
@@ -5981,7 +5981,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.2-ac3",
+      "id": "behavioral-8.2-ac3",
       "category": "interview",
       "story": "Story 8.2: Behavioral Interview Preparation",
       "sprint": 4,
@@ -5996,7 +5996,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.2-ac4",
+      "id": "behavioral-8.2-ac4",
       "category": "interview",
       "story": "Story 8.2: Behavioral Interview Preparation",
       "sprint": 4,
@@ -6011,7 +6011,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.2-ac5",
+      "id": "behavioral-8.2-ac5",
       "category": "interview",
       "story": "Story 8.2: Behavioral Interview Preparation",
       "sprint": 4,
@@ -6026,7 +6026,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.2-ac6",
+      "id": "behavioral-8.2-ac6",
       "category": "interview",
       "story": "Story 8.2: Behavioral Interview Preparation",
       "sprint": 4,
@@ -6041,7 +6041,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.2-ac7",
+      "id": "behavioral-8.2-ac7",
       "category": "interview",
       "story": "Story 8.2: Behavioral Interview Preparation",
       "sprint": 4,
@@ -6056,7 +6056,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.2-ac8",
+      "id": "behavioral-8.2-ac8",
       "category": "interview",
       "story": "Story 8.2: Behavioral Interview Preparation",
       "sprint": 4,
@@ -6071,7 +6071,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac1",
+      "id": "portfolio-8.3-ac1",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6086,7 +6086,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac2",
+      "id": "portfolio-8.3-ac2",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6101,7 +6101,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac3",
+      "id": "portfolio-8.3-ac3",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6116,7 +6116,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac4",
+      "id": "portfolio-8.3-ac4",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6131,7 +6131,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac5",
+      "id": "portfolio-8.3-ac5",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6146,7 +6146,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac6",
+      "id": "portfolio-8.3-ac6",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6161,7 +6161,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac7",
+      "id": "portfolio-8.3-ac7",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6176,7 +6176,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac8",
+      "id": "portfolio-8.3-ac8",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6191,7 +6191,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.3-ac9",
+      "id": "portfolio-8.3-ac9",
       "category": "interview",
       "story": "Story 8.3: Mock Interviews & Portfolio Building",
       "sprint": 4,
@@ -6206,7 +6206,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.4-ac1",
+      "id": "company-8.4-ac1",
       "category": "interview",
       "story": "Story 8.4: Company-Specific Interview Preparation",
       "sprint": 4,
@@ -6221,7 +6221,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.4-ac2",
+      "id": "company-8.4-ac2",
       "category": "interview",
       "story": "Story 8.4: Company-Specific Interview Preparation",
       "sprint": 4,
@@ -6236,7 +6236,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.4-ac3",
+      "id": "company-8.4-ac3",
       "category": "interview",
       "story": "Story 8.4: Company-Specific Interview Preparation",
       "sprint": 4,
@@ -6251,7 +6251,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.4-ac4",
+      "id": "company-8.4-ac4",
       "category": "interview",
       "story": "Story 8.4: Company-Specific Interview Preparation",
       "sprint": 4,
@@ -6266,7 +6266,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.4-ac5",
+      "id": "company-8.4-ac5",
       "category": "interview",
       "story": "Story 8.4: Company-Specific Interview Preparation",
       "sprint": 4,
@@ -6281,7 +6281,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.4-ac6",
+      "id": "company-8.4-ac6",
       "category": "interview",
       "story": "Story 8.4: Company-Specific Interview Preparation",
       "sprint": 4,
@@ -6296,7 +6296,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.4-ac7",
+      "id": "company-8.4-ac7",
       "category": "interview",
       "story": "Story 8.4: Company-Specific Interview Preparation",
       "sprint": 4,
@@ -6311,7 +6311,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.5-ac1",
+      "id": "final-8.5-ac1",
       "category": "interview",
       "story": "Story 8.5: Final Interview Checklist",
       "sprint": 4,
@@ -6326,7 +6326,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.5-ac2",
+      "id": "final-8.5-ac2",
       "category": "interview",
       "story": "Story 8.5: Final Interview Checklist",
       "sprint": 4,
@@ -6341,7 +6341,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.5-ac3",
+      "id": "final-8.5-ac3",
       "category": "interview",
       "story": "Story 8.5: Final Interview Checklist",
       "sprint": 4,
@@ -6356,7 +6356,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.5-ac4",
+      "id": "final-8.5-ac4",
       "category": "interview",
       "story": "Story 8.5: Final Interview Checklist",
       "sprint": 4,
@@ -6371,7 +6371,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.5-ac5",
+      "id": "final-8.5-ac5",
       "category": "interview",
       "story": "Story 8.5: Final Interview Checklist",
       "sprint": 4,
@@ -6386,7 +6386,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.5-ac6",
+      "id": "final-8.5-ac6",
       "category": "interview",
       "story": "Story 8.5: Final Interview Checklist",
       "sprint": 4,
@@ -6401,7 +6401,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.5-ac7",
+      "id": "final-8.5-ac7",
       "category": "interview",
       "story": "Story 8.5: Final Interview Checklist",
       "sprint": 4,
@@ -6416,7 +6416,7 @@
       "passes": false
     },
     {
-      "id": "interview-8.5-ac8",
+      "id": "final-8.5-ac8",
       "category": "interview",
       "story": "Story 8.5: Final Interview Checklist",
       "sprint": 4,
