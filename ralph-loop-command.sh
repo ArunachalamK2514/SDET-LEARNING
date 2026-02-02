@@ -13,7 +13,7 @@
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=2
+MAX_ITERATIONS=5
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
@@ -109,8 +109,9 @@ IMPORTANT QUALITY STANDARDS:
 - Include practical, hands-on examples that can be executed
 
 FILES TO READ:
-- requirements.json (all features/acceptance criteria)
-- progress.md (completed features tracker)
+- progress.md (completed features tracker) - READ THIS FILE FIRST to understand what is done and what should be done next in the logical order.
+- requirements.json (file containing all features/acceptance criteria) - Then read this file to get the feature details of the item you are going to implement using the feature ID
+
 
 OUTPUT STRUCTURE FOR EACH FEATURE:
 # [Feature Title]
