@@ -121,7 +121,7 @@
 - [x] selenium-2.4-ac8: File downloads
 - [x] selenium-2.4-ac9: Browser authentication
 - [x] selenium-2.4-ac10: SSL certificate handling
-- [ ] selenium-2.4-ac11: HTML5 elements handling
+- [x] selenium-2.4-ac11: HTML5 elements handling
 - [ ] selenium-2.4-ac12: Screenshot capture
 
 #### Story 2.5: Selenium Grid & Parallel Execution (5 points)
@@ -558,6 +558,11 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-02 - Iteration 75
+- **Feature Completed**: selenium-2.4-ac11
+- **Content File**: ./sdet-learning-content/selenium-2.4-ac11.md
+- **Git Commit**: `Content: selenium-2.4-ac11 - Work with HTML5 elements (canvas, SVG, shadow DOM)`
 
 ### 2026-02-02 - Iteration 74
 - **Feature Completed**: selenium-2.4-ac10
