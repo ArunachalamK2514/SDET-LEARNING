@@ -97,7 +97,7 @@
 - [x] selenium-2.2-ac4: Dynamic element handling
 - [x] selenium-2.2-ac5: Dynamic IDs/classes handling
 - [x] selenium-2.2-ac6: Dynamic locator utility methods
-- [ ] selenium-2.2-ac7: Locator best practices
+- [x] selenium-2.2-ac7: Locator best practices
 - [ ] selenium-2.2-ac8: Selenium 4 relative locators
 
 #### Story 2.3: Synchronization & Waits Mastery (5 points)
@@ -560,6 +560,11 @@
 ## Detailed Completion Log
 
 
+### 2026-02-02 - Iteration 56
+- **Feature Completed**: selenium-2.2-ac7
+- **Content File**: ./sdet-learning-content/selenium-2.2-ac7.md
+- **Git Commit**: `Content: selenium-2.2-ac7 - Explain locator priority and best practices for maintainability`
+
 ### 2026-02-02 - Iteration 55
 - **Feature Completed**: selenium-2.2-ac6
 - **Content File**: ./sdet-learning-content/selenium-2.2-ac6.md
@@ -596,4 +601,4 @@
 
 ---
 
-**Last Updated**: Sunday, 1 February 2026
+**Last Updated**: Monday, 2 February 2026
