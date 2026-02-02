@@ -113,7 +113,7 @@
 #### Story 2.4: Advanced Selenium Techniques (8 points)
 - [x] selenium-2.4-ac1: JavaScriptExecutor techniques
 - [x] selenium-2.4-ac2: Alert handling
-- [ ] selenium-2.4-ac3: Window/tab switching
+- [x] selenium-2.4-ac3: Window/tab switching
 - [ ] selenium-2.4-ac4: iframe handling
 - [ ] selenium-2.4-ac5: Drag-and-drop operations
 - [ ] selenium-2.4-ac6: Mouse and keyboard actions
@@ -559,6 +559,11 @@
 
 ## Detailed Completion Log
 
+
+### 2026-02-02 - Iteration 67
+- **Feature Completed**: selenium-2.4-ac3
+- **Content File**: ./sdet-learning-content/selenium-2.4-ac3.md
+- **Git Commit**: `Content: selenium-2.4-ac3 - Switch between windows and tabs using window handles`
 
 ### 2026-02-02 - Iteration 66
 - **Feature Completed**: selenium-2.4-ac1
