@@ -1909,8 +1909,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac1",
-      "category": "framework",
+      "id": "patterns-3.3-ac1",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -1925,8 +1925,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac2",
-      "category": "framework",
+      "id": "patterns-3.3-ac2",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -1940,8 +1940,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac3",
-      "category": "framework",
+      "id": "patterns-3.3-ac3",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -1956,8 +1956,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac4",
-      "category": "framework",
+      "id": "patterns-3.3-ac4",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -1972,8 +1972,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac5",
-      "category": "framework",
+      "id": "patterns-3.3-ac5",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -1988,8 +1988,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac6",
-      "category": "framework",
+      "id": "patterns-3.3-ac6",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -2004,8 +2004,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac7",
-      "category": "framework",
+      "id": "patterns-3.3-ac7",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -2020,8 +2020,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac8",
-      "category": "framework",
+      "id": "patterns-3.3-ac8",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -2035,8 +2035,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac9",
-      "category": "framework",
+      "id": "patterns-3.3-ac9",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -2050,8 +2050,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.3-ac10",
-      "category": "framework",
+      "id": "patterns-3.3-ac10",
+      "category": "patterns",
       "story": "Story 3.3: Design Patterns for Test Automation",
       "sprint": 2,
       "story_points": 8,
@@ -2203,8 +2203,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac1",
-      "category": "framework",
+      "id": "reporting-3.5-ac1",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2219,8 +2219,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac2",
-      "category": "framework",
+      "id": "reporting-3.5-ac2",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2235,8 +2235,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac3",
-      "category": "framework",
+      "id": "reporting-3.5-ac3",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2251,8 +2251,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac4",
-      "category": "framework",
+      "id": "reporting-3.5-ac4",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2266,8 +2266,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac5",
-      "category": "framework",
+      "id": "reporting-3.5-ac5",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2281,8 +2281,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac6",
-      "category": "framework",
+      "id": "reporting-3.5-ac6",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2297,8 +2297,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac7",
-      "category": "framework",
+      "id": "reporting-3.5-ac7",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2313,8 +2313,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac8",
-      "category": "framework",
+      "id": "reporting-3.5-ac8",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2329,8 +2329,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac9",
-      "category": "framework",
+      "id": "reporting-3.5-ac9",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2344,8 +2344,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.5-ac10",
-      "category": "framework",
+      "id": "reporting-3.5-ac10",
+      "category": "reporting",
       "story": "Story 3.5: Logging & Reporting Implementation",
       "sprint": 2,
       "story_points": 5,
@@ -2359,8 +2359,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.6-ac1",
-      "category": "framework",
+      "id": "interview-3.6-ac1",
+      "category": "interview",
       "story": "Story 3.6: Framework Interview Preparation",
       "sprint": 2,
       "story_points": 2,
@@ -2374,8 +2374,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.6-ac2",
-      "category": "framework",
+      "id": "interview-3.6-ac2",
+      "category": "interview",
       "story": "Story 3.6: Framework Interview Preparation",
       "sprint": 2,
       "story_points": 2,
@@ -2389,8 +2389,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.6-ac3",
-      "category": "framework",
+      "id": "interview-3.6-ac3",
+      "category": "interview",
       "story": "Story 3.6: Framework Interview Preparation",
       "sprint": 2,
       "story_points": 2,
@@ -2404,8 +2404,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.6-ac4",
-      "category": "framework",
+      "id": "interview-3.6-ac4",
+      "category": "interview",
       "story": "Story 3.6: Framework Interview Preparation",
       "sprint": 2,
       "story_points": 2,
@@ -2419,8 +2419,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.6-ac5",
-      "category": "framework",
+      "id": "interview-3.6-ac5",
+      "category": "interview",
       "story": "Story 3.6: Framework Interview Preparation",
       "sprint": 2,
       "story_points": 2,
@@ -2434,8 +2434,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.6-ac6",
-      "category": "framework",
+      "id": "interview-3.6-ac6",
+      "category": "interview",
       "story": "Story 3.6: Framework Interview Preparation",
       "sprint": 2,
       "story_points": 2,
@@ -2449,8 +2449,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.6-ac7",
-      "category": "framework",
+      "id": "interview-3.6-ac7",
+      "category": "interview",
       "story": "Story 3.6: Framework Interview Preparation",
       "sprint": 2,
       "story_points": 2,
@@ -2464,8 +2464,8 @@
       "passes": false
     },
     {
-      "id": "framework-3.6-ac8",
-      "category": "framework",
+      "id": "interview-3.6-ac8",
+      "category": "interview",
       "story": "Story 3.6: Framework Interview Preparation",
       "sprint": 2,
       "story_points": 2,
@@ -3095,171 +3095,6 @@
         "Identify flaky endpoints (e.g., network timeout)",
         "Apply TestNG retry analyzer to API tests",
         "Verify stability improvement"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac1",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Choose a public API (RESTful-Booker, Postman Echo, or real project API)",
-      "steps": [
-        "Review documentation for the selected API",
-        "Create a repository for the project",
-        "Plan test coverage for main endpoints"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac2",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Implement complete API test framework with REST Assured",
-      "steps": [
-        "Setup Maven project with dependencies",
-        "Create package structure (tests, utils, payloads)",
-        "Configure base test class"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac3",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Follow BDD approach with clear test scenarios",
-      "steps": [
-        "Ensure all tests use Given/When/Then naming or structure",
-        "Write readable test methods",
-        "Add comments explaining business logic"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac4",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Implement request/response specifications for reusability",
-      "steps": [
-        "Define RequestSpecBuilder in BaseTest",
-        "Define ResponseSpecBuilder for common assertions",
-        "Apply specs to all tests"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac5",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Add comprehensive JSON validation for all endpoints",
-      "steps": [
-        "Validate status code, time, and headers",
-        "Validate schema compliance",
-        "Validate critical business data fields"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac6",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Implement authentication handling",
-      "steps": [
-        "Create Auth utility to fetch tokens",
-        "Ensure tests automatically get fresh tokens",
-        "Handle token expiration gracefully"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac7",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Create data-driven tests using external data sources",
-      "steps": [
-        "Externalize payloads to JSON files",
-        "Run parameterized tests for edge cases",
-        "Verify system handles invalid data correctly"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac8",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Add proper assertions and reporting",
-      "steps": [
-        "Use Hamcrest matchers for assertions",
-        "Integrate Allure or Extent reports",
-        "Ensure report logs request and response details"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac9",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Integrate with TestNG and generate reports",
-      "steps": [
-        "Create `testng.xml` suite file",
-        "Execute via Maven `mvn test`",
-        "Verify HTML report generation in target folder"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac10",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Document API testing strategy and framework features",
-      "steps": [
-        "Write documentation on how to run tests",
-        "Explain how to add new endpoints",
-        "Document prerequisite setup (keys, env vars)"
-      ],
-      "passes": false
-    },
-    {
-      "id": "api-4.6-ac11",
-      "category": "api",
-      "story": "Story 4.6: API Testing Best Practices & Real Project",
-      "sprint": 3,
-      "story_points": 3,
-      "priority": "critical",
-      "description": "Push to GitHub with comprehensive README",
-      "steps": [
-        "Create .gitignore to exclude target/ and .idea/",
-        "Commit code to Git",
-        "Push to remote repository with clear commit messages"
       ],
       "passes": false
     },

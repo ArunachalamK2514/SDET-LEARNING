@@ -1,7 +1,7 @@
 # SDET Learning Content Generation - Progress Tracker
 
 **Project**: Senior SDET Interview Preparation - 8-Week Learning Plan
-**Total Features**: 208 Acceptance Criteria across 8 categories
+**Total Features**: 353 Acceptance Criteria across 8 categories
 **Status**: In Progress
 **Started**: Saturday, 31 January 2026
 
@@ -12,14 +12,14 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 59 | 23 | 39% |
+| 2. Selenium WebDriver Mastery | 51 | 36 | 72% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **63** | 18% |
+| **TOTAL** | **353** | **63** | 18% |
 
 ---
 
@@ -143,17 +143,6 @@
 - [ ] selenium-2.6-ac6: Selenium 3 vs 4 comparison
 - [ ] selenium-2.6-ac7: W3C WebDriver protocol
 
-#### Story 2.7: Real-world Automation Practice Project (3 points)
-- [ ] selenium-2.7-ac1: Project website selection
-- [ ] selenium-2.7-ac2: Complete POM structure (10+ pages)
-- [ ] selenium-2.7-ac3: All locator strategies usage
-- [ ] selenium-2.7-ac4: Proper synchronization
-- [ ] selenium-2.7-ac5: Utilities package
-- [ ] selenium-2.7-ac6: Complex scenarios (5+)
-- [ ] selenium-2.7-ac7: Log4j2 integration
-- [ ] selenium-2.7-ac8: Test cases (20+)
-- [ ] selenium-2.7-ac9: GitHub documentation
-
 ### Sprint 2: Frameworks & API Testing
 
 #### Story 3.1: TestNG Core Concepts (3 points)
@@ -272,19 +261,6 @@
 - [ ] api-4.5-ac6: JDBC database integration
 - [ ] api-4.5-ac7: WireMock for API mocking
 - [ ] api-4.5-ac8: Retry logic for flaky tests
-
-#### Story 4.6: API Testing Best Practices & Real Project (3 points)
-- [ ] api-4.6-ac1: Public API selection
-- [ ] api-4.6-ac2: Complete API framework
-- [ ] api-4.6-ac3: BDD approach
-- [ ] api-4.6-ac4: Specifications reusability
-- [ ] api-4.6-ac5: Comprehensive JSON validation
-- [ ] api-4.6-ac6: Authentication handling
-- [ ] api-4.6-ac7: Data-driven tests
-- [ ] api-4.6-ac8: Assertions and reporting
-- [ ] api-4.6-ac9: TestNG integration
-- [ ] api-4.6-ac10: API strategy documentation
-- [ ] api-4.6-ac11: GitHub with README
 
 ### Sprint 3: Modern Tools & DevOps
 
