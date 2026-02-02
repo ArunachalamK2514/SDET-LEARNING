@@ -12,14 +12,14 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 59 | 15 | 25% |
+| 2. Selenium WebDriver Mastery | 59 | 16 | 27% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **364** | **55** | 15% |
+| **TOTAL** | **364** | **56** | 15% |
 
 ---
 
@@ -103,7 +103,7 @@
 #### Story 2.3: Synchronization & Waits Mastery (5 points)
 - [x] selenium-2.3-ac1: Implicit Wait implementation
 - [x] selenium-2.3-ac2: Explicit Wait with ExpectedConditions
-- [ ] selenium-2.3-ac3: Custom ExpectedConditions
+- [x] selenium-2.3-ac3: Custom ExpectedConditions
 - [ ] selenium-2.3-ac4: Fluent Wait implementation
 - [ ] selenium-2.3-ac5: Wait types comparison matrix
 - [ ] selenium-2.3-ac6: Reusable wait utility class
@@ -559,6 +559,11 @@
 
 ## Detailed Completion Log
 
+
+### 2026-02-02 - Iteration 60
+- **Feature Completed**: selenium-2.3-ac3
+- **Content File**: ./sdet-learning-content/selenium-2.3-ac3.md
+- **Git Commit**: `Content: selenium-2.3-ac3 - Build custom ExpectedConditions for specific business scenarios`
 
 ### 2026-02-02 - Iteration 59
 - **Feature Completed**: selenium-2.3-ac2
