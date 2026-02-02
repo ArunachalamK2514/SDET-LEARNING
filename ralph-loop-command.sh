@@ -99,7 +99,7 @@ IMPORTANT STOPPING RULE:
 After creating ONE feature file, your work for this iteration is COMPLETE.
 Wait for the next iteration to process the next feature.
 
-If ALL features are completed, output exactly: $COMPLETION_PROMISE
+Only if ALL features are completed, meaning, if all the features are marked with ✅ or [x] in progress.md, output exactly: $COMPLETION_PROMISE
 
 IMPORTANT QUALITY STANDARDS:
 - Code must be production-ready, not pseudo-code

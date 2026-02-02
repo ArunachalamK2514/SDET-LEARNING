@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XPath Axes Test Page</title>
+    <title>XPath Axes and IFrame Test Page</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
         .container { max-width: 900px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; }
@@ -23,88 +23,46 @@
         .form-group input[type="text"], .form-group input[type="email"] { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
         .btn { padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1em; }
         .btn:hover { background-color: #218838; }
+        iframe { width: 100%; height: 150px; border: 1px dashed #007bff; margin-top: 10px; }
         footer { text-align: center; margin-top: 30px; font-size: 0.8em; color: #888; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="main-title">Demonstrating XPath Axes</h1>
-        <p>This page provides various HTML structures to practice complex XPath expressions using axes.</p>
+        <h1 id="main-title">Demonstrating XPath Axes & IFrames</h1>
+        <p>This page provides various HTML structures to practice complex XPath expressions and IFrame handling.</p>
 
         <div class="section" id="products-section">
             <h2 class="section-title">Product Listings</h2>
-            <div class="product-category" id="electronics">
-                <h3>Electronics</h3>
-                <ul class="item-list">
-                    <li id="prod-101">
-                        <span class="product-name">Laptop Pro</span>
-                        <span class="price">$1200</span>
-                        <span class="stock">In Stock</span>
-                    </li>
-                    <li id="prod-102">
-                        <span class="product-name">Gaming Mouse</span>
-                        <span class="price">$75</span>
-                        <span class="stock out-of-stock">Out of Stock</span>
-                    </li>
-                    <li id="prod-103">
-                        <span class="product-name">External SSD</span>
-                        <span class="price">$150</span>
-                        <span class="stock">In Stock</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="product-category" id="books">
-                <h3>Books</h3>
-                <ul class="item-list">
-                    <li id="prod-201">
-                        <span class="product-name">Selenium Mastery</span>
-                        <span class="price">$45</span>
-                        <span class="stock">In Stock</span>
-                    </li>
-                    <li id="prod-202">
-                        <span class="product-name">Java for SDETs</span>
-                        <span class="price">$55</span>
-                        <span class="stock">In Stock</span>
-                    </li>
-                </ul>
-            </div>
+            <p>Main page content about products.</p>
         </div>
 
-        <div class="section" id="user-reviews-section">
-            <h2 class="section-title">User Reviews</h2>
-            <div class="card review-card" data-review-id="R1">
-                <div class="user-info">
-                    <div class="avatar"></div>
-                    <span class="name">Alice Smith</span>
-                    <span class="role">(Customer)</span>
-                </div>
-                <div class="card-header">Great Product!</div>
-                <div class="card-body">"This laptop is amazing. Fast delivery and excellent performance."</div>
-                <span class="rating">5 Stars</span>
-                <span class="date">2023-01-15</span>
-            </div>
-            <div class="card review-card" data-review-id="R2">
-                <div class="user-info">
-                    <div class="avatar"></div>
-                    <span class="name">Bob Johnson</span>
-                    <span class="role">(Verified Buyer)</span>
-                </div>
-                <div class="card-header">Good Value</div>
-                <div class="card-body">"Mouse works well for gaming. Battery life is decent."</div>
-                <span class="rating">4 Stars</span>
-                <span class="date">2023-02-20</span>
-            </div>
-            <div class="card review-card" data-review-id="R3">
-                <div class="user-info">
-                    <div class="avatar"></div>
-                    <span class="name">Charlie Brown</span>
-                    <span class="role">(Admin)</span>
-                </div>
-                <div class="card-header">Excellent Service</div>
-                <div class="card-body">"Resolved my query quickly. Highly recommend this store."</div>
-                <span class="rating">5 Stars</span>
-                <span class="date">2023-03-01</span>
-            </div>
+        <div class="section" id="iframe-section">
+            <h2 class="section-title">IFrame Examples</h2>
+            <p>This section contains IFrames for practicing context switching.</p>
+            
+            <h3 id="iframe-title-1">IFrame 1 (With Name and ID)</h3>
+            <iframe name="iframe1" id="frame1" srcdoc="
+                <html lang='en'>
+                <body>
+                    <h2>Content inside IFrame 1</h2>
+                    <p>This is the first IFrame. It has both a name and an ID.</p>
+                    <input type='text' id='iframe-input-1' placeholder='Input inside frame 1'/>
+                    <button onclick='alert(`Button inside IFrame 1 clicked!`)'>Click Me</button>
+                </body>
+                </html>
+            "></iframe>
+
+            <h3 id="iframe-title-2">IFrame 2 (No Name or ID)</h3>
+            <iframe srcdoc="
+                <html lang='en'>
+                <body>
+                    <h2>Content inside IFrame 2</h2>
+                    <p>This is the second IFrame. It can only be located by index or as a WebElement.</p>
+                    <p id='text-in-iframe-2'>Some text here for verification.</p>
+                </body>
+                </html>
+            "></iframe>
         </div>
 
         <div class="section" id="contact-form-section">
@@ -114,23 +72,11 @@
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName">
                 </div>
-                <div class="form-group">
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5"></textarea>
-                </div>
                 <button type="submit" class="btn submit-btn">Send Message</button>
             </form>
         </div>
 
-        <footer>&copy; 2023 XPath Learning Site</footer>
+        <footer>&copy; 2024 XPath & IFrame Learning Site</footer>
     </div>
 </body>
 </html>

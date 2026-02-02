@@ -114,7 +114,7 @@
 - [x] selenium-2.4-ac1: JavaScriptExecutor techniques
 - [x] selenium-2.4-ac2: Alert handling
 - [x] selenium-2.4-ac3: Window/tab switching
-- [ ] selenium-2.4-ac4: iframe handling
+- [x] selenium-2.4-ac4: iframe handling
 - [ ] selenium-2.4-ac5: Drag-and-drop operations
 - [ ] selenium-2.4-ac6: Mouse and keyboard actions
 - [ ] selenium-2.4-ac7: File uploads
@@ -559,6 +559,11 @@
 
 ## Detailed Completion Log
 
+
+### 2026-02-02 - Iteration 68
+- **Feature Completed**: selenium-2.4-ac4
+- **Content File**: ./sdet-learning-content/selenium-2.4-ac4.md
+- **Git Commit**: `Content: selenium-2.4-ac4 - Handle iframes and switch back to main content`
 
 ### 2026-02-02 - Iteration 67
 - **Feature Completed**: selenium-2.4-ac3
