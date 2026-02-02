@@ -65,6 +65,83 @@
             "></iframe>
         </div>
 
+        <div class="section" id="actions-section">
+            <h2 class="section-title">Mouse & Keyboard Actions</h2>
+            
+            <!-- Hover action -->
+            <div id="hover-container" style="margin-bottom: 20px;">
+                <button id="hover-btn">Hover Over Me</button>
+                <div id="hover-menu" style="display: none; padding: 10px; border: 1px solid #ccc; background-color: #f0f0f0; margin-top: 5px;">
+                    <a href="#" id="hover-link">Sub Menu Link</a>
+                </div>
+            </div>
+
+            <!-- Double-click action -->
+            <div id="double-click-container" style="margin-bottom: 20px;">
+                <button id="double-click-btn">Double-Click Me</button>
+                <p id="double-click-message" style="color: green; display: none;">Button Double-Clicked!</p>
+            </div>
+
+            <!-- Right-click (context-click) action -->
+            <div id="right-click-container" style="margin-bottom: 20px;">
+                <div id="right-click-area" style="padding: 20px; border: 2px dashed #dc3545; background-color: #f8d7da; text-align: center;">
+                    Right-Click This Area
+                </div>
+                <div id="right-click-menu" style="display: none; padding: 10px; border: 1px solid #333; background-color: #fff; position: absolute;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li id="context-menu-item-1">Option 1</li>
+                        <li id="context-menu-item-2">Option 2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Keyboard actions -->
+            <div id="keyboard-container">
+                <label for="key-input">Keyboard Input:</label>
+                <input type="text" id="key-input" placeholder="Type here...">
+            </div>
+        </div>
+
+        <script>
+            // Hover logic
+            const hoverBtn = document.getElementById('hover-btn');
+            const hoverMenu = document.getElementById('hover-menu');
+            hoverBtn.addEventListener('mouseenter', () => {
+                hoverMenu.style.display = 'block';
+            });
+            hoverBtn.addEventListener('mouseleave', () => {
+                // Keep it visible for a moment to allow Selenium to interact
+                setTimeout(() => {
+                    if (!hoverMenu.matches(':hover')) {
+                       hoverMenu.style.display = 'none';
+                    }
+                }, 300);
+            });
+             hoverMenu.addEventListener('mouseleave', () => {
+                hoverMenu.style.display = 'none';
+            });
+
+            // Double-click logic
+            const dblClickBtn = document.getElementById('double-click-btn');
+            const dblClickMessage = document.getElementById('double-click-message');
+            dblClickBtn.addEventListener('dblclick', () => {
+                dblClickMessage.style.display = 'block';
+            });
+
+            // Right-click logic
+            const rightClickArea = document.getElementById('right-click-area');
+            const rightClickMenu = document.getElementById('right-click-menu');
+            rightClickArea.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+                rightClickMenu.style.display = 'block';
+                rightClickMenu.style.left = e.pageX + 'px';
+                rightClickMenu.style.top = e.pageY + 'px';
+            });
+            document.addEventListener('click', () => {
+                rightClickMenu.style.display = 'none';
+            });
+        </script>
+
         <div class="section" id="contact-form-section">
             <h2 class="section-title">Contact Us</h2>
             <form id="contact-form">
