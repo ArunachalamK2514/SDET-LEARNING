@@ -12,14 +12,14 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 51 | 38 | 75% |
+| 2. Selenium WebDriver Mastery | 51 | 39 | 76% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **65** | 18% |
+| **TOTAL** | **353** | **66** | 19% |
 
 ---
 
@@ -135,7 +135,7 @@
 - [x] selenium-2.5-ac8: Grid 3 vs Grid 4
 
 #### Story 2.6: Selenium 4 New Features (3 points)
-- [ ] selenium-2.6-ac1: Relative locators implementation
+- [x] selenium-2.6-ac1: Relative locators implementation
 - [ ] selenium-2.6-ac2: Window/Tab management APIs
 - [ ] selenium-2.6-ac3: Element screenshots
 - [ ] selenium-2.6-ac4: Chrome DevTools Protocol
@@ -534,6 +534,11 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-03 - Iteration 85
+- **Feature Completed**: selenium-2.6-ac1
+- **Content File**: ./sdet-learning-content/selenium-2.6-ac1.md
+- **Git Commit**: `Content: selenium-2.6-ac1 - Implement relative locators (above, below, toLeftOf, toRightOf, near)`
 
 ### 2026-02-03 - Iteration 84
 - **Feature Completed**: selenium-2.5-ac8
