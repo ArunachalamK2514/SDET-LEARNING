@@ -12,14 +12,14 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 51 | 37 | 73% |
+| 2. Selenium WebDriver Mastery | 51 | 38 | 75% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **64** | 18% |
+| **TOTAL** | **353** | **65** | 18% |
 
 ---
 
@@ -132,7 +132,7 @@
 - [x] selenium-2.5-ac5: Cross-browser testing matrix
 - [x] selenium-2.5-ac6: ThreadLocal implementation
 - [x] selenium-2.5-ac7: Grid monitoring
-- [ ] selenium-2.5-ac8: Grid 3 vs Grid 4
+- [x] selenium-2.5-ac8: Grid 3 vs Grid 4
 
 #### Story 2.6: Selenium 4 New Features (3 points)
 - [ ] selenium-2.6-ac1: Relative locators implementation
@@ -534,6 +534,11 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-03 - Iteration 84
+- **Feature Completed**: selenium-2.5-ac8
+- **Content File**: ./sdet-learning-content/selenium-2.5-ac8.md
+- **Git Commit**: `Content: selenium-2.5-ac8 - Explain difference between Selenium Grid 3 vs Grid 4`
 
 ### 2026-02-03 - Iteration 83
 - **Feature Completed**: selenium-2.5-ac7
