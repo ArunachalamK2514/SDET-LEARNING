@@ -125,7 +125,7 @@
 - [x] selenium-2.4-ac12: Screenshot capture
 
 #### Story 2.5: Selenium Grid & Parallel Execution (5 points)
-- [ ] selenium-2.5-ac1: Grid 4 architecture
+- [x] selenium-2.5-ac1: Grid 4 architecture
 - [ ] selenium-2.5-ac2: Grid setup configurations
 - [ ] selenium-2.5-ac3: RemoteWebDriver configuration
 - [ ] selenium-2.5-ac4: TestNG parallel execution
@@ -539,6 +539,11 @@
 - **Feature Completed**: selenium-2.4-ac12
 - **Content File**: ./sdet-learning-content/selenium-2.4-ac12.md
 - **Git Commit**: `Content: selenium-2.4-ac12 - Capture screenshots at element and page level`
+
+### 2026-02-03 - Iteration 77
+- **Feature Completed**: selenium-2.5-ac1
+- **Content File**: ./sdet-learning-content/selenium-2.5-ac1.md
+- **Git Commit**: `Content: selenium-2.5-ac1 - Explain Selenium Grid 4 architecture (Hub, Node, Router, Distributor, Session Map)`
 
 ### 2026-02-02 - Iteration 75
 - **Feature Completed**: selenium-2.4-ac11
