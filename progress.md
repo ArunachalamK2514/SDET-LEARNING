@@ -140,7 +140,7 @@
 - [x] selenium-2.6-ac3: Element screenshots
 - [x] selenium-2.6-ac4: Chrome DevTools Protocol
 - [x] selenium-2.6-ac5: Selenium Manager
-- [ ] selenium-2.6-ac6: Selenium 3 vs 4 comparison
+- [x] selenium-2.6-ac6: Selenium 3 vs 4 comparison
 - [ ] selenium-2.6-ac7: W3C WebDriver protocol
 
 ### Sprint 2: Frameworks & API Testing
@@ -534,6 +534,11 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-04 - Iteration 90
+- **Feature Completed**: selenium-2.6-ac6
+- **Content File**: ./sdet-learning-content/selenium-2.6-ac6.md
+- **Git Commit**: `Content: selenium-2.6-ac6 - Explain architectural differences between Selenium 3 and 4`
 
 ### 2026-02-03 - Iteration 89
 - **Feature Completed**: selenium-2.6-ac5
