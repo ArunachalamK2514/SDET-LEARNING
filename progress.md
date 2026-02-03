@@ -12,7 +12,7 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 51 | 39 | 76% |
+| 2. Selenium WebDriver Mastery | 51 | 40 | 78% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
@@ -137,7 +137,7 @@
 #### Story 2.6: Selenium 4 New Features (3 points)
 - [x] selenium-2.6-ac1: Relative locators implementation
 - [x] selenium-2.6-ac2: Window/Tab management APIs
-- [ ] selenium-2.6-ac3: Element screenshots
+- [x] selenium-2.6-ac3: Element screenshots
 - [ ] selenium-2.6-ac4: Chrome DevTools Protocol
 - [ ] selenium-2.6-ac5: Selenium Manager
 - [ ] selenium-2.6-ac6: Selenium 3 vs 4 comparison
@@ -534,6 +534,11 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-03 - Iteration 87
+- **Feature Completed**: selenium-2.6-ac3
+- **Content File**: ./sdet-learning-content/selenium-2.6-ac3.md
+- **Git Commit**: `Content: selenium-2.6-ac3 - Capture element screenshots using getScreenshotAs()`
 
 ### 2026-02-03 - Iteration 86
 - **Feature Completed**: selenium-2.6-ac2
