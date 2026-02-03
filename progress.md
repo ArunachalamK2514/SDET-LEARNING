@@ -19,7 +19,7 @@
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **66** | 19% |
+| **TOTAL** | **353** | **67** | 19% |
 
 ---
 
@@ -136,7 +136,7 @@
 
 #### Story 2.6: Selenium 4 New Features (3 points)
 - [x] selenium-2.6-ac1: Relative locators implementation
-- [ ] selenium-2.6-ac2: Window/Tab management APIs
+- [x] selenium-2.6-ac2: Window/Tab management APIs
 - [ ] selenium-2.6-ac3: Element screenshots
 - [ ] selenium-2.6-ac4: Chrome DevTools Protocol
 - [ ] selenium-2.6-ac5: Selenium Manager
@@ -535,6 +535,12 @@
 
 ## Detailed Completion Log
 
+### 2026-02-03 - Iteration 86
+- **Feature Completed**: selenium-2.6-ac2
+- **Content File**: ./sdet-learning-content/selenium-2.6-ac2.md
+- **Git Commit**: `Content: selenium-2.6-ac2 - Use new Window and Tab management APIs (newWindow())`
+
+
 ### 2026-02-03 - Iteration 85
 - **Feature Completed**: selenium-2.6-ac1
 - **Content File**: ./sdet-learning-content/selenium-2.6-ac1.md
@@ -728,4 +734,4 @@
 
 ---
 
-**Last Updated**: Monday, 2 February 2026
+**Last Updated**: Tuesday, 3 February 2026
