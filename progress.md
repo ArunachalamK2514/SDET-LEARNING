@@ -12,14 +12,14 @@
 | Category | Total Criteria | Completed | Percentage |
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
-| 2. Selenium WebDriver Mastery | 51 | 40 | 78% |
+| 2. Selenium WebDriver Mastery | 51 | 42 | 82% |
 | 3. TestNG & Framework Design | 49 | 0 | 0% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **67** | 19% |
+| **TOTAL** | **353** | **69** | 19% |
 
 ---
 
@@ -138,8 +138,8 @@
 - [x] selenium-2.6-ac1: Relative locators implementation
 - [x] selenium-2.6-ac2: Window/Tab management APIs
 - [x] selenium-2.6-ac3: Element screenshots
-- [ ] selenium-2.6-ac4: Chrome DevTools Protocol
-- [ ] selenium-2.6-ac5: Selenium Manager
+- [x] selenium-2.6-ac4: Chrome DevTools Protocol
+- [x] selenium-2.6-ac5: Selenium Manager
 - [ ] selenium-2.6-ac6: Selenium 3 vs 4 comparison
 - [ ] selenium-2.6-ac7: W3C WebDriver protocol
 
@@ -534,6 +534,16 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-03 - Iteration 89
+- **Feature Completed**: selenium-2.6-ac5
+- **Content File**: ./sdet-learning-content/selenium-2.6-ac5.md
+- **Git Commit**: `Content: selenium-2.6-ac5 - Understand Selenium Manager for automatic driver management`
+
+### 2026-02-03 - Iteration 88
+- **Feature Completed**: selenium-2.6-ac4
+- **Content File**: ./sdet-learning-content/selenium-2.6-ac4.md
+- **Git Commit**: `Content: selenium-2.6-ac4 - Utilize Chrome DevTools Protocol integration`
 
 ### 2026-02-03 - Iteration 87
 - **Feature Completed**: selenium-2.6-ac3
