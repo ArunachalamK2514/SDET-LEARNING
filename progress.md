@@ -229,7 +229,7 @@
 - [x] api-4.2-ac5: Hamcrest matchers
 - [x] api-4.2-ac6: Array validation
 - [x] api-4.2-ac7: Request chaining
-- [ ] api-4.2-ac8: Partial content validation
+- [x] api-4.2-ac8: Partial content validation
 - [ ] api-4.2-ac9: Custom validation logic
 
 #### Story 4.3: Authentication & Authorization (5 points)
@@ -1043,3 +1043,8 @@
 - **Feature Completed**: api-4.2-ac7
 - **Content File**: ./sdet-learning-content/api-4.2-ac7.md
 - **Git Commit**: `Content: api-4.2-ac7 - API Chaining: Extracting and Reusing Response Data`
+
+### 2026-02-04 - Iteration 158
+- **Feature Completed**: api-4.2-ac8
+- **Content File**: ./sdet-learning-content/api-4.2-ac8.md
+- **Git Commit**: `Content: api-4.2-ac8 - JSON & XML Response Validation with Hamcrest`
