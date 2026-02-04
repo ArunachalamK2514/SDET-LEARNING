@@ -194,17 +194,17 @@
 - [x] reporting-3.5-ac2: Log levels configuration
 - [x] reporting-3.5-ac3: ExtentReports HTML reporting
 - [x] reporting-3.5-ac4: Screenshot on failure
-- [x] reporting-3.5-ac5: Custom report with summary
+- [x] reporting-3.5-ac5: Create custom report with summary
 - [x] reporting-3.5-ac6: Allure reporting integration
-- [x] reporting-3.5-ac7: Test execution videos
-- [x] reporting-3.5-ac8: ReportPortal integration
+- [x] reporting-3.5-ac7: Add test execution videos for failed tests
+- [x] reporting-3.5-ac8: Implement ReportPortal for AI-powered test analysis
 - [x] reporting-3.5-ac9: Execution trends and historical data
-- [x] reporting-3.5-ac10: Email test reports
+- [x] reporting-3.5-ac10: Email test execution reports automatically
 
 #### Story 3.6: Framework Interview Preparation (2 points)
 - [x] interview-3.6-ac1: Framework architecture explanation
 - [x] interview-3.6-ac2: Framework components
-- [ ] interview-3.6-ac3: Design pattern choices
+- [x] interview-3.6-ac3: Design pattern choices
 - [ ] interview-3.6-ac4: Challenges and solutions
 - [ ] interview-3.6-ac5: ROI calculation
 - [ ] interview-3.6-ac6: Scalability strategies
@@ -340,7 +340,7 @@
 - [ ] playwright-5.7-ac8: Docker integration
 - [ ] playwright-5.7-ac9: Retry on failure in CI
 
-### Sprint 4: Advanced Topics & Interview Prep
+### Sprint 4: Advanced Topics & DevOps
 
 #### Story 6.1: CI/CD Fundamentals & Best Practices (3 points)
 - [ ] cicd-6.1-ac1: CI/CD concepts and benefits
@@ -938,3 +938,8 @@
 - **Feature Completed**: interview-3.6-ac2
 - **Content File**: ./sdet-learning-content/interview-3.6-ac2.md
 - **Git Commit**: `Content: interview-3.6-ac2 - Explain framework components`
+
+### 2026-02-04 - Iteration 137
+- **Feature Completed**: interview-3.6-ac3
+- **Content File**: ./sdet-learning-content/interview-3.6-ac3.md
+- **Git Commit**: `Content: interview-3.6-ac3 - Discuss design pattern choices and alternatives considered`
