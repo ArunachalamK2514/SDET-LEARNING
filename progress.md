@@ -839,3 +839,8 @@
 - **Feature Completed**: patterns-3.3-ac9
 - **Content File**: ./sdet-learning-content/patterns-3.3-ac9.md
 - **Git Commit**: `Content: patterns-3.3-ac9 - Create modular framework architecture with clear separation of concerns`
+
+### 2026-02-04 - Iteration 115
+- **Feature Completed**: patterns-3.3-ac10
+- **Content File**: ./sdet-learning-content/patterns-3.3-ac10.md
+- **Git Commit**: `Content: patterns-3.3-ac10 - Design Patterns for Test Automation: When to Use Each Pattern`
