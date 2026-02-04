@@ -238,7 +238,7 @@
 - [x] api-4.3-ac3: Bearer token authentication
 - [x] api-4.3-ac4: API Key authentication
 - [x] api-4.3-ac5: Token generation and refresh
-- [ ] api-4.3-ac6: Token storage and reuse
+- [x] api-4.3-ac6: Token storage and reuse
 - [ ] api-4.3-ac7: Authenticated scenarios testing
 - [ ] api-4.3-ac8: 401 and 403 validation
 
@@ -1078,3 +1078,8 @@
 - **Feature Completed**: api-4.3-ac5
 - **Content File**: ./sdet-learning-content/api-4.3-ac5.md
 - **Git Commit**: `Content: api-4.3-ac5 - Handle token generation and refresh logic`
+
+### 2026-02-04 - Iteration 165
+- **Feature Completed**: api-4.3-ac6
+- **Content File**: ./sdet-learning-content/api-4.3-ac6.md
+- **Git Commit**: `Content: api-4.3-ac6 - Store and reuse authentication tokens across tests`
