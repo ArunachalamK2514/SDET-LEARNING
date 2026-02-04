@@ -164,7 +164,7 @@
 - [x] testng-3.2-ac6: Common assertions (10+)
 - [x] testng-3.2-ac7: Custom listeners (ITestListener, IRetryAnalyzer)
 - [x] testng-3.2-ac8: Retry logic for failed tests
-- [ ] testng-3.2-ac9: TestNG HTML reports
+- [x] testng-3.2-ac9: TestNG HTML reports
 
 #### Story 3.3: Design Patterns for Test Automation (8 points)
 - [ ] patterns-3.3-ac1: Page Object Model (5 pages)
@@ -789,3 +789,8 @@
 - **Feature Completed**: testng-3.2-ac8
 - **Content File**: ./sdet-learning-content/testng-3.2-ac8.md
 - **Git Commit**: `Content: testng-3.2-ac8 - Implement retry logic for failed tests`
+
+### 2026-02-04 - Iteration 105
+- **Feature Completed**: testng-3.2-ac9
+- **Content File**: ./sdet-learning-content/testng-3.2-ac9.md
+- **Git Commit**: `Content: testng-3.2-ac9 - Generate TestNG HTML reports and customize report content`
