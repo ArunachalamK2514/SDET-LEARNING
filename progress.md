@@ -240,7 +240,7 @@
 - [x] api-4.3-ac5: Token generation and refresh
 - [x] api-4.3-ac6: Token storage and reuse
 - [x] api-4.3-ac7: Authenticated scenarios testing
-- [ ] api-4.3-ac8: 401 and 403 validation
+- [x] api-4.3-ac8: 401 and 403 validation
 
 #### Story 4.4: Data-Driven & Parameterized API Testing (5 points)
 - [ ] api-4.4-ac1: TestNG DataProvider integration
@@ -1088,3 +1088,8 @@
 - **Feature Completed**: api-4.3-ac7
 - **Content File**: ./sdet-learning-content/api-4.3-ac7.md
 - **Git Commit**: `Content: api-4.3-ac7 - Test authenticated and unauthenticated scenarios`
+
+### 2026-02-04 - Iteration 167
+- **Feature Completed**: api-4.3-ac8
+- **Content File**: ./sdet-learning-content/api-4.3-ac8.md
+- **Git Commit**: `Content: api-4.3-ac8 - Validate 401 Unauthorized and 403 Forbidden responses`
