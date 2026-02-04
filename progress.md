@@ -202,7 +202,7 @@
 - [x] reporting-3.5-ac10: Email test reports
 
 #### Story 3.6: Framework Interview Preparation (2 points)
-- [ ] interview-3.6-ac1: Framework architecture explanation
+- [x] interview-3.6-ac1: Framework architecture explanation
 - [ ] interview-3.6-ac2: Framework components
 - [ ] interview-3.6-ac3: Design pattern choices
 - [ ] interview-3.6-ac4: Challenges and solutions
@@ -928,3 +928,8 @@
 - **Feature Completed**: reporting-3.5-ac10
 - **Content File**: ./sdet-learning-content/reporting-3.5-ac10.md
 - **Git Commit**: `Content: reporting-3.5-ac10 - Email test execution reports automatically`
+
+### 2026-02-04 - Iteration 135
+- **Feature Completed**: interview-3.6-ac1
+- **Content File**: ./sdet-learning-content/interview-3.6-ac1.md
+- **Git Commit**: `Content: interview-3.6-ac1 - Framework architecture explanation`
