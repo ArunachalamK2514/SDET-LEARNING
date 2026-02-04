@@ -226,7 +226,7 @@
 - [x] api-4.2-ac2: Nested JSON validation
 - [x] api-4.2-ac3: JSON schema validation
 - [x] api-4.2-ac4: XML response validation with XmlPath
-- [ ] api-4.2-ac5: Hamcrest matchers
+- [x] api-4.2-ac5: Hamcrest matchers
 - [ ] api-4.2-ac6: Array validation
 - [ ] api-4.2-ac7: Request chaining
 - [ ] api-4.2-ac8: Partial content validation
@@ -1028,3 +1028,8 @@
 - **Feature Completed**: api-4.2-ac4
 - **Content File**: ./sdet-learning-content/api-4.2-ac4.md
 - **Git Commit**: `Content: api-4.2-ac4 - XML response validation with XmlPath`
+
+### 2026-02-04 - Iteration 155
+- **Feature Completed**: api-4.2-ac5
+- **Content File**: ./sdet-learning-content/api-4.2-ac5.md
+- **Git Commit**: `Content: api-4.2-ac5 - JSON Response Validation with Hamcrest Matchers`
