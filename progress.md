@@ -169,7 +169,7 @@
 #### Story 3.3: Design Patterns for Test Automation (8 points)
 - [x] patterns-3.3-ac1: Page Object Model (5 pages)
 - [x] patterns-3.3-ac2: Fluent Page Object Model
-- [ ] patterns-3.3-ac3: Singleton pattern for WebDriver
+- [x] patterns-3.3-ac3: Singleton pattern for WebDriver
 - [ ] patterns-3.3-ac4: Factory pattern for browsers
 - [ ] patterns-3.3-ac5: Data-Driven Testing framework
 - [ ] patterns-3.3-ac6: Strategy pattern
@@ -804,3 +804,8 @@
 - **Feature Completed**: patterns-3.3-ac2
 - **Content File**: ./sdet-learning-content/patterns-3.3-ac2.md
 - **Git Commit**: `Content: patterns-3.3-ac2 - Build Fluent Page Object Model with method chaining`
+
+### 2026-02-04 - Iteration 108
+- **Feature Completed**: patterns-3.3-ac3
+- **Content File**: ./sdet-learning-content/patterns-3.3-ac3.md
+- **Git Commit**: `Content: patterns-3.3-ac3 - Singleton pattern for WebDriver manager`
