@@ -208,8 +208,8 @@
 - [x] interview-3.6-ac4: Challenges and solutions
 - [x] interview-3.6-ac5: ROI calculation
 - [x] interview-3.6-ac6: Scalability strategies
-- [x] interview-3.6-ac7: Design from scratch scenario
-- [x] interview-3.6-ac8: Framework presentation slides
+- [x] interview-3.6-ac7: Designing a Test Automation Framework from Scratch
+- [x] interview-3.6-ac8: Framework Interview Preparation: Presentation Slides
 
 #### Story 4.1: REST Assured Fundamentals (3 points)
 - [x] api-4.1-ac1: REST Assured advantages
@@ -236,7 +236,7 @@
 - [x] api-4.3-ac1: Basic Authentication
 - [x] api-4.3-ac2: OAuth 2.0 flow
 - [x] api-4.3-ac3: Bearer token authentication
-- [ ] api-4.3-ac4: API Key authentication
+- [x] api-4.3-ac4: API Key authentication
 - [ ] api-4.3-ac5: Token generation and refresh
 - [ ] api-4.3-ac6: Token storage and reuse
 - [ ] api-4.3-ac7: Authenticated scenarios testing
@@ -1068,3 +1068,8 @@
 - **Feature Completed**: api-4.3-ac3
 - **Content File**: ./sdet-learning-content/api-4.3-ac3.md
 - **Git Commit**: `Content: api-4.3-ac3 - Bearer Token Authentication in API Testing`
+
+### 2026-02-04 - Iteration 163
+- **Feature Completed**: api-4.3-ac4
+- **Content File**: ./sdet-learning-content/api-4.3-ac4.md
+- **Git Commit**: `Content: api-4.3-ac4 - Implement API Key Authentication`
