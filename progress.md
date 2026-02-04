@@ -193,7 +193,7 @@
 - [x] reporting-3.5-ac1: Log4j2 integration
 - [x] reporting-3.5-ac2: Log levels configuration
 - [x] reporting-3.5-ac3: ExtentReports HTML reporting
-- [ ] reporting-3.5-ac4: Screenshot on failure
+- [x] reporting-3.5-ac4: Screenshot on failure
 - [ ] reporting-3.5-ac5: Custom report with summary
 - [ ] reporting-3.5-ac6: Allure reporting integration
 - [ ] reporting-3.5-ac7: Test execution videos
@@ -894,3 +894,7 @@
 - **Feature Completed**: reporting-3.5-ac3
 - **Content File**: ./sdet-learning-content/reporting-3.5-ac3.md
 - **Git Commit**: `Content: reporting-3.5-ac3 - Implement ExtentReports for detailed HTML reporting`
+### 2026-02-04 - Iteration 128
+- **Feature Completed**: reporting-3.5-ac4
+- **Content File**: ./sdet-learning-content/reporting-3.5-ac4.md
+- **Git Commit**: `Content: reporting-3.5-ac4 - Implement screenshot capture on test failure for enhanced reporting`
