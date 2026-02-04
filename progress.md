@@ -159,16 +159,16 @@
 - [x] testng-3.2-ac1: @Parameters annotation
 - [x] testng-3.2-ac2: @DataProvider examples (5+)
 - [x] testng-3.2-ac3: Parallel execution configuration
-- [x] testng-3.2-ac4: Thread-count and parallel modes
-- [x] testng-3.2-ac5: Soft vs Hard Assertions
+- [x] testng-3.2-ac4: Calculate and explain thread-count, parallel mode combinations
+- [x] testng-3.2-ac5: Implement Soft Assertions vs Hard Assertions with use cases
 - [x] testng-3.2-ac6: Common assertions (10+)
 - [x] testng-3.2-ac7: Custom listeners (ITestListener, IRetryAnalyzer)
-- [x] testng-3.2-ac8: Retry logic for failed tests
-- [x] testng-3.2-ac9: TestNG HTML reports
+- [x] testng-3.2-ac8: Implement retry logic for failed tests
+- [x] testng-3.2-ac9: Generate TestNG HTML reports and customize report content
 
 #### Story 3.3: Design Patterns for Test Automation (8 points)
 - [x] patterns-3.3-ac1: Page Object Model (5 pages)
-- [ ] patterns-3.3-ac2: Fluent Page Object Model
+- [x] patterns-3.3-ac2: Fluent Page Object Model
 - [ ] patterns-3.3-ac3: Singleton pattern for WebDriver
 - [ ] patterns-3.3-ac4: Factory pattern for browsers
 - [ ] patterns-3.3-ac5: Data-Driven Testing framework
@@ -799,3 +799,8 @@
 - **Feature Completed**: patterns-3.3-ac1
 - **Content File**: ./sdet-learning-content/patterns-3.3-ac1.md
 - **Git Commit**: `Content: patterns-3.3-ac1 - Implement Page Object Model (POM) with 5 page classes`
+
+### 2026-02-04 - Iteration 107
+- **Feature Completed**: patterns-3.3-ac2
+- **Content File**: ./sdet-learning-content/patterns-3.3-ac2.md
+- **Git Commit**: `Content: patterns-3.3-ac2 - Build Fluent Page Object Model with method chaining`
