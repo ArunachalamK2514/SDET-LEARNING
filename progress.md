@@ -157,7 +157,7 @@
 
 #### Story 3.2: TestNG Advanced Features (5 points)
 - [x] testng-3.2-ac1: @Parameters annotation
-- [ ] testng-3.2-ac2: @DataProvider examples (5+)
+- [x] testng-3.2-ac2: @DataProvider examples (5+)
 - [ ] testng-3.2-ac3: Parallel execution configuration
 - [ ] testng-3.2-ac4: Thread-count and parallel modes
 - [ ] testng-3.2-ac5: Soft vs Hard Assertions
@@ -3242,14 +3242,24 @@
 
 ---
 
-**Last Updated**: Wednesday, 4 February 2026 
- # # #   2 0 2 6 - 0 2 - 0 4   -   I t e r a t i o n   9 8  
- -   * * F e a t u r e   C o m p l e t e d * * :   t e s t n g - 3 . 1 - a c 8  
- -   * * C o n t e n t   F i l e * * :   . / s d e t - l e a r n i n g - c o n t e n t / t e s t n g - 3 . 1 - a c 8 . m d  
- -   * * G i t   C o m m i t * * :   C o n t e n t :   t e s t n g - 3 . 1 - a c 8   -   C r e a t e   m u l t i p l e   t e s t n g . x m l   f i l e s   f o r   d i f f e r e n t   t e s t   s u i t e s   ( s m o k e ,   s a n i t y ,   r e g r e s s i o n )  
-  
- # # #   2 0 2 6 - 0 2 - 0 4   -   I t e r a t i o n   9 9  
- -   * * F e a t u r e   C o m p l e t e d * * :   t e s t n g - 3 . 2 - a c 1  
- -   * * C o n t e n t   F i l e * * :   . / s d e t - l e a r n i n g - c o n t e n t / t e s t n g - 3 . 2 - a c 1 . m d  
- -   * * G i t   C o m m i t * * :   C o n t e n t :   t e s t n g - 3 . 2 - a c 1   -   I m p l e m e n t   p a r a m e t e r i z a t i o n   u s i n g   @ P a r a m e t e r s   a n n o t a t i o n   f r o m   t e s t n g . x m l  
+**Last Updated**: Wednesday, 4 February 2026
+ 
+ # # #   2 0 2 6 - 0 2 - 0 4   -   I t e r a t i o n   9 8 
+ 
+ -   * * F e a t u r e   C o m p l e t e d * * :   t e s t n g - 3 . 1 - a c 8 
+ 
+ -   * * C o n t e n t   F i l e * * :   . / s d e t - l e a r n i n g - c o n t e n t / t e s t n g - 3 . 1 - a c 8 . m d 
+ 
+ -   * * G i t   C o m m i t * * :   C o n t e n t :   t e s t n g - 3 . 1 - a c 8   -   C r e a t e   m u l t i p l e   t e s t n g . x m l   f i l e s   f o r   d i f f e r e n t   t e s t   s u i t e s   ( s m o k e ,   s a n i t y ,   r e g r e s s i o n ) 
+ 
+ 
+ 
+ # # #   2 0 2 6 - 0 2 - 0 4   -   I t e r a t i o n   9 9 
+ 
+ -   * * F e a t u r e   C o m p l e t e d * * :   t e s t n g - 3 . 2 - a c 1 
+ 
+ -   * * C o n t e n t   F i l e * * :   . / s d e t - l e a r n i n g - c o n t e n t / t e s t n g - 3 . 2 - a c 1 . m d 
+ 
+ -   * * G i t   C o m m i t * * :   C o n t e n t :   t e s t n g - 3 . 2 - a c 1   -   I m p l e m e n t   p a r a m e t e r i z a t i o n   u s i n g   @ P a r a m e t e r s   a n n o t a t i o n   f r o m   t e s t n g . x m l 
+ 
  
