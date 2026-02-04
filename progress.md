@@ -235,7 +235,7 @@
 #### Story 4.3: Authentication & Authorization (5 points)
 - [x] api-4.3-ac1: Basic Authentication
 - [x] api-4.3-ac2: OAuth 2.0 flow
-- [ ] api-4.3-ac3: Bearer token authentication
+- [x] api-4.3-ac3: Bearer token authentication
 - [ ] api-4.3-ac4: API Key authentication
 - [ ] api-4.3-ac5: Token generation and refresh
 - [ ] api-4.3-ac6: Token storage and reuse
@@ -977,7 +977,7 @@
 ### 2026-02-04 - Iteration 144
 - **Feature Completed**: api-4.1-ac2
 - **Content File**: ./sdet-learning-content/api-4.1-ac2.md
-- **Git Commit**: `Content: api-4.1-ac2 - REST Assured BDD-style syntax (given, when, then)`
+- **Git Commit**: `Content: api-4.1-ac2 - BDD-style syntax (given, when, then)`
 
 ### 2026-02-04 - Iteration 145
 - **Feature Completed**: api-4.1-ac3
@@ -1063,3 +1063,8 @@
 - **Feature Completed**: api-4.3-ac2
 - **Content File**: ./sdet-learning-content/api-4.3-ac2.md
 - **Git Commit**: `Content: api-4.3-ac2 - OAuth 2.0 Authentication Flow`
+
+### 2026-02-04 - Iteration 162
+- **Feature Completed**: api-4.3-ac3
+- **Content File**: ./sdet-learning-content/api-4.3-ac3.md
+- **Git Commit**: `Content: api-4.3-ac3 - Bearer Token Authentication in API Testing`
