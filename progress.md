@@ -13,13 +13,13 @@
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
-| 3. TestNG & Framework Design | 49 | 4 | 8% |
+| 3. TestNG & Framework Design | 49 | 5 | 10% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **90** | **26%** |
+| **TOTAL** | **353** | **91** | **26%** |
 
 ---
 
@@ -150,7 +150,7 @@
 - [x] testng-3.1-ac2: All annotations with execution order
 - [x] testng-3.1-ac3: testng.xml configuration
 - [x] testng-3.1-ac4: Test grouping
-- [ ] testng-3.1-ac5: Test priorities
+- [x] testng-3.1-ac5: Test priorities
 - [ ] testng-3.1-ac6: Test inclusion/exclusion
 - [ ] testng-3.1-ac7: Test dependencies
 - [ ] testng-3.1-ac8: Multiple testng.xml files
