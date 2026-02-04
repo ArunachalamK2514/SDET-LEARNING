@@ -217,7 +217,7 @@
 - [x] api-4.1-ac3: All HTTP methods tests
 - [x] api-4.1-ac4: Status code validation
 - [x] api-4.1-ac5: JsonPath response validation
-- [ ] api-4.1-ac6: Headers, cookies, response time validation
+- [x] api-4.1-ac6: Headers, cookies, response time validation
 - [ ] api-4.1-ac7: Request/response specifications
 - [ ] api-4.1-ac8: Base URI, headers, parameters
 
@@ -993,3 +993,8 @@
 - **Feature Completed**: api-4.1-ac5
 - **Content File**: ./sdet-learning-content/api-4.1-ac5.md
 - **Git Commit**: `Content: api-4.1-ac5 - Extract and validate response body using JsonPath`
+
+### 2026-02-04 - Iteration 148
+- **Feature Completed**: api-4.1-ac6
+- **Content File**: ./sdet-learning-content/api-4.1-ac6.md
+- **Git Commit**: `Content: api-4.1-ac6 - Headers, cookies, response time validation`
