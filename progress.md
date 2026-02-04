@@ -163,7 +163,7 @@
 - [x] testng-3.2-ac5: Soft vs Hard Assertions
 - [x] testng-3.2-ac6: Common assertions (10+)
 - [x] testng-3.2-ac7: Custom listeners (ITestListener, IRetryAnalyzer)
-- [ ] testng-3.2-ac8: Retry logic for failed tests
+- [x] testng-3.2-ac8: Retry logic for failed tests
 - [ ] testng-3.2-ac9: TestNG HTML reports
 
 #### Story 3.3: Design Patterns for Test Automation (8 points)
@@ -784,3 +784,8 @@
 - **Feature Completed**: testng-3.2-ac7
 - **Content File**: ./sdet-learning-content/testng-3.2-ac7.md
 - **Git Commit**: `Content: testng-3.2-ac7 - Custom listeners (ITestListener, IRetryAnalyzer)`
+
+### 2026-02-04 - Iteration 104
+- **Feature Completed**: testng-3.2-ac8
+- **Content File**: ./sdet-learning-content/testng-3.2-ac8.md
+- **Git Commit**: `Content: testng-3.2-ac8 - Implement retry logic for failed tests`
