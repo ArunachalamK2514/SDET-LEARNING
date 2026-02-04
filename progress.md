@@ -195,7 +195,7 @@
 - [x] reporting-3.5-ac3: ExtentReports HTML reporting
 - [x] reporting-3.5-ac4: Screenshot on failure
 - [x] reporting-3.5-ac5: Custom report with summary
-- [ ] reporting-3.5-ac6: Allure reporting integration
+- [x] reporting-3.5-ac6: Allure reporting integration
 - [ ] reporting-3.5-ac7: Test execution videos
 - [ ] reporting-3.5-ac8: ReportPortal integration
 - [ ] reporting-3.5-ac9: Execution trends and historical data
@@ -903,3 +903,8 @@
 - **Feature Completed**: reporting-3.5-ac5
 - **Content File**: ./sdet-learning-content/reporting-3.5-ac5.md
 - **Git Commit**: `Content: reporting-3.5-ac5 - Create custom report with test execution summary, pass/fail counts`
+
+### 2026-02-04 - Iteration 130
+- **Feature Completed**: reporting-3.5-ac6
+- **Content File**: ./sdet-learning-content/reporting-3.5-ac6.md
+- **Git Commit**: `Content: reporting-3.5-ac6 - Integrate Allure reporting framework`
