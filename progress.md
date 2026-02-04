@@ -186,7 +186,7 @@
 - [x] framework-3.4-ac5: Environment-specific configuration
 - [x] framework-3.4-ac6: Abstraction layers
 - [x] framework-3.4-ac7: Dependency injection
-- [ ] framework-3.4-ac8: Framework documentation
+- [x] framework-3.4-ac8: Framework documentation
 - [ ] framework-3.4-ac9: Scalability principles
 
 #### Story 3.5: Logging & Reporting Implementation (5 points)
@@ -874,3 +874,7 @@
 - **Feature Completed**: framework-3.4-ac7
 - **Content File**: ./sdet-learning-content/framework-3.4-ac7.md
 - **Git Commit**: `Content: framework-3.4-ac7 - Implement dependency injection for better testability`
+### 2026-02-04 - Iteration 123
+- **Feature Completed**: framework-3.4-ac8
+- **Content File**: ./sdet-learning-content/framework-3.4-ac8.md
+- **Git Commit**: `Content: framework-3.4-ac8 - Framework documentation with architecture diagrams`
