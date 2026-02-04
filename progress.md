@@ -192,7 +192,7 @@
 #### Story 3.5: Logging & Reporting Implementation (5 points)
 - [x] reporting-3.5-ac1: Log4j2 integration
 - [x] reporting-3.5-ac2: Log levels configuration
-- [ ] reporting-3.5-ac3: ExtentReports HTML reporting
+- [x] reporting-3.5-ac3: ExtentReports HTML reporting
 - [ ] reporting-3.5-ac4: Screenshot on failure
 - [ ] reporting-3.5-ac5: Custom report with summary
 - [ ] reporting-3.5-ac6: Allure reporting integration
@@ -529,7 +529,7 @@
 - [ ] final-8.5-ac5: Quick reference notes
 - [ ] final-8.5-ac6: Interview day logistics
 - [ ] final-8.5-ac7: "Tell me about yourself" practice
-- [ ] final-8.8-ac8: Common mistakes review
+- [ ] final-8.5-ac8: Common mistakes review
 
 ---
 
@@ -890,3 +890,7 @@
 - **Feature Completed**: reporting-3.5-ac2
 - **Content File**: ./sdet-learning-content/reporting-3.5-ac2.md
 - **Git Commit**: `Content: reporting-3.5-ac2 - Understanding Log Levels and Configuration in Log4j2`
+### 2026-02-04 - Iteration 127
+- **Feature Completed**: reporting-3.5-ac3
+- **Content File**: ./sdet-learning-content/reporting-3.5-ac3.md
+- **Git Commit**: `Content: reporting-3.5-ac3 - Implement ExtentReports for detailed HTML reporting`
