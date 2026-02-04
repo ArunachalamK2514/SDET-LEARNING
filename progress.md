@@ -233,7 +233,7 @@
 - [x] api-4.2-ac9: Custom validation logic
 
 #### Story 4.3: Authentication & Authorization (5 points)
-- [ ] api-4.3-ac1: Basic Authentication
+- [x] api-4.3-ac1: Basic Authentication
 - [ ] api-4.3-ac2: OAuth 2.0 flow
 - [ ] api-4.3-ac3: Bearer token authentication
 - [ ] api-4.3-ac4: API Key authentication
@@ -1053,3 +1053,8 @@
 - **Feature Completed**: api-4.2-ac9
 - **Content File**: ./sdet-learning-content/api-4.2-ac9.md
 - **Git Commit**: `Content: api-4.2-ac9 - Custom JSON Validation Logic`
+
+### 2026-02-04 - Iteration 160
+- **Feature Completed**: api-4.3-ac1
+- **Content File**: ./sdet-learning-content/api-4.3-ac1.md
+- **Git Commit**: `Content: api-4.3-ac1 - Basic Authentication using preemptive().basic()`
