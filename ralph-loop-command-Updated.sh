@@ -9,8 +9,7 @@
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=1
-GEMINI_MODEL="gemini-2.5-pro"
+MAX_ITERATIONS=8
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
@@ -42,7 +41,6 @@ fi
 # Initialize log file
 echo "# SDET Learning Content Generation Logs" > "$LOGS_FILE"
 echo "Started at: $(date)" >> "$LOGS_FILE"
-echo "Model: $GEMINI_MODEL" >> "$LOGS_FILE"
 echo "---" >> "$LOGS_FILE"
 
 # Main loop
@@ -210,12 +208,12 @@ Process ONLY $NEXT_ID now. Output a summary of actions taken when done.
     echo "$PROMPT" > "$PROMPT_FILE"
     ITERATION_OUTPUT="$ITERATION_LOG_DIR/output-iteration-$iteration.log"
 
-    echo -e "${BLUE}[$(date +%H:%M:%S)] Invoking agent ($GEMINI_MODEL) for $NEXT_ID...${NC}"
+    echo -e "${BLUE}[$(date +%H:%M:%S)] Invoking agent for $NEXT_ID...${NC}"
     
     # ---------------------------------------------------------
     # STEP 4: EXECUTE AGENT
     # ---------------------------------------------------------
-    gemini -m "$GEMINI_MODEL" --yolo < "$PROMPT_FILE" 2>&1 | tee "$ITERATION_OUTPUT"
+    gemini --yolo < "$PROMPT_FILE" 2>&1 | tee "$ITERATION_OUTPUT"
     
     exit_code=${PIPESTATUS[0]}
     
