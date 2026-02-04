@@ -191,7 +191,7 @@
 
 #### Story 3.5: Logging & Reporting Implementation (5 points)
 - [x] reporting-3.5-ac1: Log4j2 integration
-- [ ] reporting-3.5-ac2: Log levels configuration
+- [x] reporting-3.5-ac2: Log levels configuration
 - [ ] reporting-3.5-ac3: ExtentReports HTML reporting
 - [ ] reporting-3.5-ac4: Screenshot on failure
 - [ ] reporting-3.5-ac5: Custom report with summary
@@ -886,3 +886,7 @@
 - **Feature Completed**: reporting-3.5-ac1
 - **Content File**: ./sdet-learning-content/reporting-3.5-ac1.md
 - **Git Commit**: `Content: reporting-3.5-ac1 - Integrate Log4j2 for application logging`
+### 2026-02-04 - Iteration 126
+- **Feature Completed**: reporting-3.5-ac2
+- **Content File**: ./sdet-learning-content/reporting-3.5-ac2.md
+- **Git Commit**: `Content: reporting-3.5-ac2 - Understanding Log Levels and Configuration in Log4j2`
