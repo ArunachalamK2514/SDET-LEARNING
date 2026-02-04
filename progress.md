@@ -225,7 +225,7 @@
 - [x] api-4.2-ac1: Simple JSON validation with JsonPath
 - [x] api-4.2-ac2: Nested JSON validation
 - [x] api-4.2-ac3: JSON schema validation
-- [ ] api-4.2-ac4: XML response validation with XmlPath
+- [x] api-4.2-ac4: XML response validation with XmlPath
 - [ ] api-4.2-ac5: Hamcrest matchers
 - [ ] api-4.2-ac6: Array validation
 - [ ] api-4.2-ac7: Request chaining
@@ -1023,3 +1023,8 @@
 - **Feature Completed**: api-4.2-ac3
 - **Content File**: ./sdet-learning-content/api-4.2-ac3.md
 - **Git Commit**: `Content: api-4.2-ac3 - Validate JSON schema using json-schema-validator`
+
+### 2026-02-04 - Iteration 154
+- **Feature Completed**: api-4.2-ac4
+- **Content File**: ./sdet-learning-content/api-4.2-ac4.md
+- **Git Commit**: `Content: api-4.2-ac4 - XML response validation with XmlPath`
