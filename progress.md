@@ -219,7 +219,7 @@
 - [x] api-4.1-ac5: JsonPath response validation
 - [x] api-4.1-ac6: Headers, cookies, response time validation
 - [x] api-4.1-ac7: Request/response specifications
-- [ ] api-4.1-ac8: Base URI, headers, parameters
+- [x] api-4.1-ac8: Base URI, headers, parameters
 
 #### Story 4.2: JSON & XML Response Validation (5 points)
 - [ ] api-4.2-ac1: Simple JSON validation with JsonPath
@@ -1003,3 +1003,8 @@
 - **Feature Completed**: api-4.1-ac7
 - **Content File**: ./sdet-learning-content/api-4.1-ac7.md
 - **Git Commit**: `Content: api-4.1-ac7 - Request/response specifications for reusability`
+
+### 2026-02-04 - Iteration 150
+- **Feature Completed**: api-4.1-ac8
+- **Content File**: ./sdet-learning-content/api-4.1-ac8.md
+- **Git Commit**: `Content: api-4.1-ac8 - Base URI, headers, path parameters, query parameters`
