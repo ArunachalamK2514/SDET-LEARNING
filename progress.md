@@ -13,13 +13,13 @@
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
-| 3. TestNG & Framework Design | 49 | 0 | 0% |
+| 3. TestNG & Framework Design | 49 | 1 | 2% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **70** | 20% |
+| **TOTAL** | **353** | **87** | **25%** |
 
 ---
 
@@ -146,7 +146,7 @@
 ### Sprint 2: Frameworks & API Testing
 
 #### Story 3.1: TestNG Core Concepts (3 points)
-- [ ] testng-3.1-ac1: TestNG vs JUnit comparison
+- [x] testng-3.1-ac1: TestNG vs JUnit comparison
 - [ ] testng-3.1-ac2: All annotations with execution order
 - [ ] testng-3.1-ac3: testng.xml configuration
 - [ ] testng-3.1-ac4: Test grouping
@@ -535,6 +535,11 @@
 
 ## Detailed Completion Log
 
+### 2026-02-04 - Iteration 92
+- **Feature Completed**: testng-3.1-ac1
+- **Content File**: ./sdet-learning-content/testng-3.1-ac1.md
+- **Git Commit**: `Content: testng-3.1-ac1 - Explain TestNG advantages over JUnit with 5 key differentiators`
+
 ### 2026-02-04 - Iteration 91
 - **Feature Completed**: selenium-2.6-ac7
 - **Content File**: ./sdet-learning-content/selenium-2.6-ac7.md
@@ -759,4 +764,4 @@
 
 ---
 
-**Last Updated**: Tuesday, 3 February 2026
+**Last Updated**: Wednesday, 4 February 2026
