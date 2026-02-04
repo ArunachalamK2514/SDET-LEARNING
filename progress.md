@@ -212,7 +212,7 @@
 - [x] interview-3.6-ac8: Framework presentation slides
 
 #### Story 4.1: REST Assured Fundamentals (3 points)
-- [ ] api-4.1-ac1: REST Assured advantages
+- [x] api-4.1-ac1: REST Assured advantages
 - [ ] api-4.1-ac2: BDD syntax (given, when, then)
 - [ ] api-4.1-ac3: All HTTP methods tests
 - [ ] api-4.1-ac4: Status code validation
@@ -966,3 +966,8 @@
 - **Feature Completed**: interview-3.6-ac8
 - **Content File**: ./sdet-learning-content/interview-3.6-ac8.md
 - **Git Commit**: `Content: interview-3.6-ac8 - Framework Interview Preparation: Presentation Slides`
+
+### 2026-02-04 - Iteration 143
+- **Feature Completed**: api-4.1-ac1
+- **Content File**: ./sdet-learning-content/api-4.1-ac1.md
+- **Git Commit**: `Content: api-4.1-ac1 - REST Assured advantages for API testing`
