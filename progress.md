@@ -209,7 +209,7 @@
 - [x] interview-3.6-ac5: ROI calculation
 - [x] interview-3.6-ac6: Scalability strategies
 - [x] interview-3.6-ac7: Design from scratch scenario
-- [ ] interview-3.6-ac8: Framework presentation slides
+- [x] interview-3.6-ac8: Framework presentation slides
 
 #### Story 4.1: REST Assured Fundamentals (3 points)
 - [ ] api-4.1-ac1: REST Assured advantages
@@ -962,3 +962,7 @@
 - **Feature Completed**: interview-3.6-ac7
 - **Content File**: ./sdet-learning-content/interview-3.6-ac7.md
 - **Git Commit**: `Content: interview-3.6-ac7 - Designing a Test Automation Framework from Scratch`
+### 2026-02-04 - Iteration 142
+- **Feature Completed**: interview-3.6-ac8
+- **Content File**: ./sdet-learning-content/interview-3.6-ac8.md
+- **Git Commit**: `Content: interview-3.6-ac8 - Framework Interview Preparation: Presentation Slides`
