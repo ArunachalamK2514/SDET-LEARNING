@@ -239,7 +239,7 @@
 - [x] api-4.3-ac4: API Key authentication
 - [x] api-4.3-ac5: Token generation and refresh
 - [x] api-4.3-ac6: Token storage and reuse
-- [ ] api-4.3-ac7: Authenticated scenarios testing
+- [x] api-4.3-ac7: Authenticated scenarios testing
 - [ ] api-4.3-ac8: 401 and 403 validation
 
 #### Story 4.4: Data-Driven & Parameterized API Testing (5 points)
@@ -1083,3 +1083,8 @@
 - **Feature Completed**: api-4.3-ac6
 - **Content File**: ./sdet-learning-content/api-4.3-ac6.md
 - **Git Commit**: `Content: api-4.3-ac6 - Store and reuse authentication tokens across tests`
+
+### 2026-02-04 - Iteration 166
+- **Feature Completed**: api-4.3-ac7
+- **Content File**: ./sdet-learning-content/api-4.3-ac7.md
+- **Git Commit**: `Content: api-4.3-ac7 - Test authenticated and unauthenticated scenarios`
