@@ -65,7 +65,6 @@ graph TD
 *   **Driver/HTTP Client Management**: Handles browser/driver setup and teardown, or HTTP client configuration for API tests.
 *   **Reporting Layer**: Generates comprehensive test execution reports (e.g., Extent Reports, Allure) for traceability and analysis.
 *   **CI/CD Integration**: Seamlessly integrates into the continuous integration/delivery pipeline for automated execution on every code change.
-```
 
 ## Best Practices
 -   **Keep it concise:** Each slide should convey one main idea. Use bullet points and visuals, not dense paragraphs.
