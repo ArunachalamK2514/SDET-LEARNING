@@ -206,7 +206,7 @@
 - [x] interview-3.6-ac2: Framework components
 - [x] interview-3.6-ac3: Design pattern choices
 - [x] interview-3.6-ac4: Challenges and solutions
-- [ ] interview-3.6-ac5: ROI calculation
+- [x] interview-3.6-ac5: ROI calculation
 - [ ] interview-3.6-ac6: Scalability strategies
 - [ ] interview-3.6-ac7: Design from scratch scenario
 - [ ] interview-3.6-ac8: Framework presentation slides
@@ -948,3 +948,8 @@
 - **Feature Completed**: interview-3.6-ac4
 - **Content File**: ./sdet-learning-content/interview-3.6-ac4.md
 - **Git Commit**: `Content: interview-3.6-ac4 - Handling Technical Challenges and Implementing Solutions in Test Automation`
+
+### 2026-02-04 - Iteration 139
+- **Feature Completed**: interview-3.6-ac5
+- **Content File**: ./sdet-learning-content/interview-3.6-ac5.md
+- **Git Commit**: `Content: interview-3.6-ac5 - How to Calculate ROI for Test Automation`
