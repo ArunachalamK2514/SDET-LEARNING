@@ -13,7 +13,7 @@
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
-| 3. TestNG & Framework Design | 49 | 9 | 18% |
+| 3. TestNG & Framework Design | 49 | 10 | 18% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
@@ -159,7 +159,7 @@
 - [x] testng-3.2-ac1: @Parameters annotation
 - [x] testng-3.2-ac2: @DataProvider examples (5+)
 - [x] testng-3.2-ac3: Parallel execution configuration
-- [ ] testng-3.2-ac4: Thread-count and parallel modes
+- [x] testng-3.2-ac4: Thread-count and parallel modes
 - [ ] testng-3.2-ac5: Soft vs Hard Assertions
 - [ ] testng-3.2-ac6: Common assertions (10+)
 - [ ] testng-3.2-ac7: Custom listeners (ITestListener, IRetryAnalyzer)
@@ -764,5 +764,10 @@
 - **Feature Completed**: testng-3.2-ac3
 - **Content File**: ./sdet-learning-content/testng-3.2-ac3.md
 - **Git Commit**: `Content: testng-3.2-ac3 - Configure parallel execution at suite, test, class, and method levels`
+
+### 2026-02-04 - Iteration 100
+- **Feature Completed**: testng-3.2-ac4
+- **Content File**: ./sdet-learning-content/testng-3.2-ac4.md
+- **Git Commit**: `Content: testng-3.2-ac4 - Calculate and explain thread-count, parallel mode combinations`
 
 **Last Updated**: Wednesday, 4 February 2026
