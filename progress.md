@@ -14,12 +14,12 @@
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
 | 3. TestNG & Framework Design | 49 | 10 | 18% |
-| 4. REST Assured API Testing | 45 | 0 | 0% |
+| 4. REST Assured API Testing | 45 | 1 | 2% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **95** | **26%** |
+| **TOTAL** | **353** | **96** | **27%** |
 
 ---
 
@@ -218,7 +218,7 @@
 - [x] api-4.1-ac4: Status code validation
 - [x] api-4.1-ac5: JsonPath response validation
 - [x] api-4.1-ac6: Headers, cookies, response time validation
-- [ ] api-4.1-ac7: Request/response specifications
+- [x] api-4.1-ac7: Request/response specifications
 - [ ] api-4.1-ac8: Base URI, headers, parameters
 
 #### Story 4.2: JSON & XML Response Validation (5 points)
@@ -998,3 +998,8 @@
 - **Feature Completed**: api-4.1-ac6
 - **Content File**: ./sdet-learning-content/api-4.1-ac6.md
 - **Git Commit**: `Content: api-4.1-ac6 - Headers, cookies, response time validation`
+
+### 2026-02-04 - Iteration 149
+- **Feature Completed**: api-4.1-ac7
+- **Content File**: ./sdet-learning-content/api-4.1-ac7.md
+- **Git Commit**: `Content: api-4.1-ac7 - Request/response specifications for reusability`
