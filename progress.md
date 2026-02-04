@@ -234,7 +234,7 @@
 
 #### Story 4.3: Authentication & Authorization (5 points)
 - [x] api-4.3-ac1: Basic Authentication
-- [ ] api-4.3-ac2: OAuth 2.0 flow
+- [x] api-4.3-ac2: OAuth 2.0 flow
 - [ ] api-4.3-ac3: Bearer token authentication
 - [ ] api-4.3-ac4: API Key authentication
 - [ ] api-4.3-ac5: Token generation and refresh
@@ -1058,3 +1058,8 @@
 - **Feature Completed**: api-4.3-ac1
 - **Content File**: ./sdet-learning-content/api-4.3-ac1.md
 - **Git Commit**: `Content: api-4.3-ac1 - Basic Authentication using preemptive().basic()`
+
+### 2026-02-04 - Iteration 161
+- **Feature Completed**: api-4.3-ac2
+- **Content File**: ./sdet-learning-content/api-4.3-ac2.md
+- **Git Commit**: `Content: api-4.3-ac2 - OAuth 2.0 Authentication Flow`
