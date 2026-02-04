@@ -1,19 +1,18 @@
 #!/bin/bash
 
 # ==============================================================================
-# Ralph Loop Command for SDET Learning with Gemini CLI
+# Ralph Loop Command - UPDATED PRODUCTION VERSION
 # ==============================================================================
-# This script implements the Ralph Wiggum loop approach for continuous
-# AI-driven learning content generation using Gemini CLI.
+# This version combines:
+# 1. "Smart Context" logic (Python extraction to prevent context blindness)
+# 2. "Detailed Prompt" (High-quality instructions for best content)
+# 3. Full Production Logging & Error Handling
 #
-# Based on Anthropic's long-running agent harnesses research:
-# https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
-#
-# Usage: ./ralph-loop-command.sh
+# Usage: ./ralph-loop-command-Updated.sh
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=4
+MAX_ITERATIONS=2
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
@@ -36,85 +35,119 @@ features_completed=0
 mkdir -p "$LEARNING_CONTENT_DIR"
 mkdir -p "$ITERATION_LOG_DIR"
 
+# Pre-flight check
+if [ ! -f "$REQUIREMENTS_FILE" ] || [ ! -f "$PROGRESS_FILE" ]; then
+    echo -e "${RED}Error: Required files ($REQUIREMENTS_FILE or $PROGRESS_FILE) missing!${NC}"
+    exit 1
+fi
+
 # Initialize log file
-echo "# SDET Learning Content Generation Logs" > "$LOGS_FILE"
+echo "# SDET Learning Content Generation Logs - UPDATED RUN" > "$LOGS_FILE"
 echo "" >> "$LOGS_FILE"
 echo "Started at: $(date)" >> "$LOGS_FILE"
 echo "Max iterations: $MAX_ITERATIONS" >> "$LOGS_FILE"
-echo "Mode: STRICT SINGLE FEATURE + FIXED LOGGING" >> "$LOGS_FILE"
+echo "Mode: SMART CONTEXT + DETAILED PROMPT + FULL LOGGING" >> "$LOGS_FILE"
 echo "---" >> "$LOGS_FILE"
 echo "" >> "$LOGS_FILE"
 
 # Main loop
 echo -e "${BLUE}╔════════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║   Ralph Loop - SDET Learning (Strict Mode + Fixed Logging)    ║${NC}"
-echo -e "${BLUE}╔════════════════════════════════════════════════════════════════╗${NC}"
+echo -e "${BLUE}║   Ralph Loop - UPDATED PRODUCTION MODE ($MAX_ITERATIONS Iterations)   ║${NC}"
+echo -e "${BLUE}╚════════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
 while [ $iteration -lt $MAX_ITERATIONS ]; do
     iteration=$((iteration + 1))
     
-    # Count files before iteration (STRICT Logic)
+    # ---------------------------------------------------------
+    # STEP 1: IDENTIFY TARGET FEATURE
+    # ---------------------------------------------------------
+    # Identify the NEXT feature ID from progress.md
+    NEXT_ID=$(grep "\[ \]" "$PROGRESS_FILE" | head -n 1 | sed -E 's/.*\[ \] ([^:]+):.*/\1/')
+
+    if [ -z "$NEXT_ID" ]; then
+        echo -e "${GREEN}🎉 No incomplete features found in $PROGRESS_FILE!${NC}"
+        # If we are done, we still check properly at the end, but we can exit early here too.
+        echo "$COMPLETION_PROMISE"
+        exit 0
+    fi
+
+    # ---------------------------------------------------------
+    # STEP 2: EXTRACT SPECIFIC CONTEXT (Python)
+    # ---------------------------------------------------------
+    # Extract the SPECIFIC feature details from requirements.json
+    FEATURE_DATA=$(python -c "
+import json
+try:
+    with open('$REQUIREMENTS_FILE', 'r') as f:
+        data = json.load(f)
+        feature = next((item for item in data['features'] if item['id'] == '$NEXT_ID'), None)
+        print(json.dumps(feature, indent=2) if feature else 'NOT_FOUND')
+except Exception as e:
+    print(f'ERROR: {str(e)}')
+")
+
+    if [[ "$FEATURE_DATA" == "NOT_FOUND" ]] || [[ "$FEATURE_DATA" == ERROR* ]]; then
+        echo -e "${RED}Error: Could not find data for $NEXT_ID in $REQUIREMENTS_FILE${NC}"
+        exit 1
+    fi
+
+    # Count files before iteration
     files_before=$(ls "$LEARNING_CONTENT_DIR" 2>/dev/null | wc -l)
     
     echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo -e "${YELLOW}  Iteration #$iteration${NC}"
-    echo -e "${YELLOW}  Files before: $files_before${NC}"
+    echo -e "${YELLOW}  Iteration #$iteration | Target: $NEXT_ID ${NC}"
     echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo ""
     
     # Log iteration start
     echo "## Iteration $iteration - $(date)" >> "$LOGS_FILE"
+    echo "Target Feature: $NEXT_ID" >> "$LOGS_FILE"
     echo "Files before: $files_before" >> "$LOGS_FILE"
     echo "" >> "$LOGS_FILE"
-    
-    # Construct the prompt
-    # COMBINES: Detailed SDET context (Original) + Strict stopping rules (Strict)
+
+    # ---------------------------------------------------------
+    # STEP 3: CONSTRUCT DETAILED PROMPT
+    # ---------------------------------------------------------
     PROMPT="You are an expert SDET learning content creator with deep knowledge in test automation, Java, Selenium, REST Assured, Playwright, TestNG, CI/CD, and Docker.
 
-🚨 CRITICAL INSTRUCTION - READ CAREFULLY 🚨
-You MUST generate content for EXACTLY ONE (1) acceptance criterion ONLY.
-DO NOT generate content for multiple features in a single response.
+### TARGET FEATURE DATA (INPUT) ###
+The system has pre-selected the following feature for you to work on.
+$FEATURE_DATA
+
+### CONTEXT ###
+This is part of a larger SDET Roadmap. You are specifically assigned to complete feature ID: $NEXT_ID.
+
+### CRITICAL INSTRUCTION - READ CAREFULLY ###
+You MUST generate content for EXACTLY ONE (1) acceptance criterion ONLY (the one provided above).
+DO NOT generate content for multiple features.
 STOP immediately after completing ONE feature.
 
-Your task:
-1. Read the requirements.json file to see all features (acceptance criteria)
-2. Read the progress.md file to see which features are already completed (marked with ✅ or [x])
-3. Select the NEXT incomplete feature based on logical learning progression
-4. Generate COMPREHENSIVE, PRODUCTION-GRADE content for that ONE feature:
+### YOUR TASK ###
+1. **Analyze** the 'TARGET FEATURE DATA' provided above to understand the requirements.
+2. **Generate** COMPREHENSIVE, PRODUCTION-GRADE content for this ONE feature ($NEXT_ID):
    - Detailed explanation with real-world examples
    - Working code samples (complete, runnable, well-commented)
    - Best practices and common pitfalls
    - Interview tips related to this topic
    - Hands-on practice exercises
    - Links to additional resources
-5. Create ONE markdown file in ./sdet-learning-content/ named by the feature ID (e.g., 'java-1.1-ac1.md')
-6. Update progress.md with:
-   - Feature ID marked as completed
-   - Git commit message for tracking
-7. Make ONE git commit with message: 'Content: [Feature ID] - [Feature Description]'
-8. STOP. Do not process the next feature.
+3. **Create** ONE markdown file in ./sdet-learning-content/ named '$NEXT_ID.md'.
+4. **Update** 'progress.md':
+   - Find the line for $NEXT_ID and change '[ ]' to '[x]'.
+   - Add a brief entry in the 'Detailed Completion Log' at the bottom of progress.md (Date, Iteration, Feature ID).
+5. **Commit**: Make ONE git commit with message: 'Content: $NEXT_ID - [Brief Description]'
+6. **STOP**: Do not process any other features.
 
-IMPORTANT STOPPING RULE:
-After creating ONE feature file, your work for this iteration is COMPLETE.
-Wait for the next iteration to process the next feature.
-
-Only if ALL features are completed, meaning, if all the features are marked with ✅ or [x] in progress.md, output exactly: $COMPLETION_PROMISE
-
-IMPORTANT QUALITY STANDARDS:
+### IMPORTANT QUALITY STANDARDS ###
 - Code must be production-ready, not pseudo-code
 - Include error handling and edge cases
 - Provide context and 'why' explanations, not just 'how'
 - Make content interview-focused - what would senior SDETs be asked?
 - Include practical, hands-on examples that can be executed
 
-FILES TO READ:
-- progress.md (completed features tracker) - READ THIS FILE FIRST to understand what is done and what should be done next in the logical order.
-- requirements.json (file containing all features/acceptance criteria) - Then read this file to get the feature details of the item you are going to implement using the feature ID
-
-
-OUTPUT STRUCTURE FOR EACH FEATURE:
+### OUTPUT STRUCTURE FOR THE FEATURE ###
 # [Feature Title]
+
 ## Overview
 [Brief introduction and why this matters]
 
@@ -145,27 +178,22 @@ OUTPUT STRUCTURE FOR EACH FEATURE:
 - [Resource 1 with URL]
 - [Resource 2 with URL]
 
-Remember:
-- Focus on ONE feature per iteration
-- Ensure content is comprehensive and production-grade
-- Update progress.md after each completion
-- Commit to git for tracking
-- Focus on ONE feature per iteration. Quality over quantity.
-- Output $COMPLETION_PROMISE only when ALL features are complete
+### FINAL COMMAND ###
+Process ONLY $NEXT_ID now. Output a summary of actions taken when done.
 "
 
-    # Save prompt to temporary file (FIXED Logic)
+    # Save prompt to temporary file
     PROMPT_FILE="$ITERATION_LOG_DIR/prompt-iteration-$iteration.txt"
     echo "$PROMPT" > "$PROMPT_FILE"
-    
-    # Define output log (FIXED Logic)
     ITERATION_OUTPUT="$ITERATION_LOG_DIR/output-iteration-$iteration.log"
-    
-    echo -e "${BLUE}[$(date +%H:%M:%S)] Invoking Gemini CLI agent...${NC}"
+
+    echo -e "${BLUE}[$(date +%H:%M:%S)] Invoking agent for $NEXT_ID...${NC}"
     echo -e "${BLUE}[$(date +%H:%M:%S)] Output will be saved to: $ITERATION_OUTPUT${NC}"
     echo ""
     
-    # Execute Gemini CLI with tee for real-time output AND logging (FIXED Logic)
+    # ---------------------------------------------------------
+    # STEP 4: EXECUTE AGENT
+    # ---------------------------------------------------------
     gemini --yolo < "$PROMPT_FILE" 2>&1 | tee "$ITERATION_OUTPUT"
     
     # Capture exit code
@@ -174,8 +202,12 @@ Remember:
     echo ""
     echo -e "${BLUE}[$(date +%H:%M:%S)] Gemini CLI completed with exit code: $exit_code${NC}"
     echo ""
+
+    # ---------------------------------------------------------
+    # STEP 5: VERIFY & LOG
+    # ---------------------------------------------------------
     
-    # Count files after iteration (STRICT Logic)
+    # Count files after iteration
     files_after=$(ls "$LEARNING_CONTENT_DIR" 2>/dev/null | wc -l)
     files_created=$((files_after - files_before))
     
@@ -184,7 +216,7 @@ Remember:
         features_completed=$(grep -c "✅\|✔\|\[x\]" "$PROGRESS_FILE" || echo "0")
     fi
     
-    # Append iteration output to main log (FIXED Logic)
+    # Append iteration output to main log
     echo "### Iteration $iteration Output" >> "$LOGS_FILE"
     cat "$ITERATION_OUTPUT" >> "$LOGS_FILE"
     echo "" >> "$LOGS_FILE"
@@ -195,7 +227,7 @@ Remember:
     echo "---" >> "$LOGS_FILE"
     echo "" >> "$LOGS_FILE"
     
-    # Display summary (STRICT + FIXED Logic)
+    # Display summary
     echo -e "${GREEN}╔════════════════════════════════════════════════════════════════╗${NC}"
     echo -e "${GREEN}║                  Iteration $iteration Summary                      ║${NC}"
     echo -e "${GREEN}╚════════════════════════════════════════════════════════════════╝${NC}"
@@ -204,13 +236,13 @@ Remember:
     echo "  Total files in directory: $files_after"
     echo "  Features marked complete: $features_completed"
     
-    # Check file creation (STRICT Logic)
+    # Check file creation
     if [ $files_created -eq 0 ]; then
         echo -e "${RED}⚠️  Warning: No files created in this iteration${NC}"
         echo -e "${YELLOW}Agent may have skipped or encountered an error${NC}"
         echo ""
     elif [ $files_created -eq 1 ]; then
-        echo -e "${GREEN}✅ Perfect: 1 file created (as expected)${NC}"
+        echo -e "${GREEN}✅ Perfect: 1 file created for $NEXT_ID${NC}"
         echo ""
     else
         echo -e "${YELLOW}ℹ️  Agent created $files_created files${NC}"
@@ -218,7 +250,7 @@ Remember:
         echo ""
     fi
     
-    # Check for completion promise (ORIGINAL Logic)
+    # Check for completion promise
     if grep -q "$COMPLETION_PROMISE" "$ITERATION_OUTPUT"; then
         echo -e "${GREEN}╔════════════════════════════════════════════════════════════════╗${NC}"
         echo -e "${GREEN}║              🎉 ALL FEATURES COMPLETED! 🎉                     ║${NC}"
