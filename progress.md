@@ -224,7 +224,7 @@
 #### Story 4.2: JSON & XML Response Validation (5 points)
 - [x] api-4.2-ac1: Simple JSON validation with JsonPath
 - [x] api-4.2-ac2: Nested JSON validation
-- [ ] api-4.2-ac3: JSON schema validation
+- [x] api-4.2-ac3: JSON schema validation
 - [ ] api-4.2-ac4: XML response validation with XmlPath
 - [ ] api-4.2-ac5: Hamcrest matchers
 - [ ] api-4.2-ac6: Array validation
@@ -1018,3 +1018,8 @@
 - **Feature Completed**: api-4.2-ac2
 - **Content File**: ./sdet-learning-content/api-4.2-ac2.md
 - **Git Commit**: `Content: api-4.2-ac2 - Extract and validate nested JSON objects and arrays`
+
+### 2026-02-04 - Iteration 153
+- **Feature Completed**: api-4.2-ac3
+- **Content File**: ./sdet-learning-content/api-4.2-ac3.md
+- **Git Commit**: `Content: api-4.2-ac3 - Validate JSON schema using json-schema-validator`
