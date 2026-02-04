@@ -1,17 +1,15 @@
 #!/bin/bash
 
 # ==============================================================================
-# Ralph Loop Test - DETAILED PROMPT VERSION
+# Ralph Loop Command - FINAL ROBUST VERSION
 # ==============================================================================
-# This version combines:
-# 1. The "Smart Context" logic (Python extraction of specific JSON data)
-# 2. The "Detailed Prompt" (Your original high-quality instructions)
+# Fixes "Binary file matches" and "ignored null byte" errors by sanitizing inputs.
 #
-# Usage: ./ralph-loop-test.sh
+# Usage: ./ralph-loop-command-Final.sh
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=2
+MAX_ITERATIONS=1
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
@@ -28,8 +26,9 @@ NC='\033[0m' # No Color
 
 # Initialize counters
 iteration=0
+features_completed=0
 
-# Create directories if they don't exist
+# Create directories
 mkdir -p "$LEARNING_CONTENT_DIR"
 mkdir -p "$ITERATION_LOG_DIR"
 
@@ -40,28 +39,53 @@ if [ ! -f "$REQUIREMENTS_FILE" ] || [ ! -f "$PROGRESS_FILE" ]; then
 fi
 
 # Initialize log file
-echo "# SDET Learning Content Generation TEST Logs" > "$LOGS_FILE"
-echo "Started Test at: $(date)" >> "$LOGS_FILE"
+echo "# SDET Learning Content Generation Logs" > "$LOGS_FILE"
+echo "Started at: $(date)" >> "$LOGS_FILE"
 echo "---" >> "$LOGS_FILE"
 
 # Main loop
 echo -e "${BLUE}╔════════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║   Ralph Loop - DETAILED PROMPT MODE (2 Iterations Max)        ║${NC}"
+echo -e "${BLUE}║   Ralph Loop - FINAL ROBUST MODE ($MAX_ITERATIONS Iterations)         ║${NC}"
 echo -e "${BLUE}╚════════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
 while [ $iteration -lt $MAX_ITERATIONS ]; do
     iteration=$((iteration + 1))
     
-    # 1. Identify the NEXT feature ID from progress.md
-    NEXT_ID=$(grep "\[ \]" "$PROGRESS_FILE" | head -n 1 | sed -E 's/.*\[ \] ([^:]+):.*/\1/')
+    # ---------------------------------------------------------
+    # CRITICAL FIX: SANITIZE PROGRESS FILE (INSIDE LOOP)
+    # ---------------------------------------------------------
+    # We sanitize inside the loop because the agent might corrupt the file 
+    # during the previous iteration (e.g., saving as UTF-16).
+    # This ensures every iteration starts with a clean, null-free UTF-8 file.
+    if [ -f "$PROGRESS_FILE" ]; then
+        tr -d '\000' < "$PROGRESS_FILE" > "${PROGRESS_FILE}.tmp" && mv "${PROGRESS_FILE}.tmp" "$PROGRESS_FILE"
+    fi
+
+    # ---------------------------------------------------------
+    # STEP 1: IDENTIFY TARGET FEATURE
+    # ---------------------------------------------------------
+    # Force grep to treat file as text (-a) just in case
+    TARGET_LINE=$(grep -a "\[ \]" "$PROGRESS_FILE" | head -n 1)
+    
+    # Sanitize for prompt injection (remove carriage returns)
+    TARGET_LINE=$(echo "$TARGET_LINE" | tr -d '\r')
+
+    # Extract just the ID
+    NEXT_ID=$(echo "$TARGET_LINE" | sed -E 's/.*\[ \] ([^:]+):.*/\1/')
 
     if [ -z "$NEXT_ID" ]; then
         echo -e "${GREEN}🎉 No incomplete features found!${NC}"
+        echo "$COMPLETION_PROMISE"
         exit 0
     fi
+    
+    LOG_CONTEXT=$(tail -n 5 "$PROGRESS_FILE")
 
-    # 2. Extract the SPECIFIC feature details from requirements.json
+    # ---------------------------------------------------------
+    # STEP 2: EXTRACT SPECIFIC CONTEXT (Python)
+    # ---------------------------------------------------------
+    # Changed 'python3' to 'python' as requested
     FEATURE_DATA=$(python -c "
 import json
 try:
@@ -74,27 +98,48 @@ except Exception as e:
 ")
 
     if [[ "$FEATURE_DATA" == "NOT_FOUND" ]] || [[ "$FEATURE_DATA" == ERROR* ]]; then
-        echo -e "${RED}Error: Could not find data for $NEXT_ID${NC}"
+        echo -e "${RED}Error: Could not find data for '$NEXT_ID' (Extracted from: '$TARGET_LINE')${NC}"
         exit 1
     fi
 
+    # Count files before iteration
     files_before=$(ls "$LEARNING_CONTENT_DIR" 2>/dev/null | wc -l)
     
     echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo -e "${YELLOW}  Test Iteration #$iteration | Target: $NEXT_ID ${NC}"
+    echo -e "${YELLOW}  Iteration #$iteration | Target: $NEXT_ID ${NC}"
     echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     
-    # ------------------------------------------------------------------
-    #  THE MERGED PROMPT (Smart Data Injection + Detailed Instructions)
-    # ------------------------------------------------------------------
+    echo "## Iteration $iteration - $(date)" >> "$LOGS_FILE"
+    echo "Target Feature: $NEXT_ID" >> "$LOGS_FILE"
+
+    # ---------------------------------------------------------
+    # STEP 3: CONSTRUCT DETAILED PROMPT
+    # ---------------------------------------------------------
     PROMPT="You are an expert SDET learning content creator with deep knowledge in test automation, Java, Selenium, REST Assured, Playwright, TestNG, CI/CD, and Docker.
 
 ### TARGET FEATURE DATA (INPUT) ###
 The system has pre-selected the following feature for you to work on.
 $FEATURE_DATA
 
-### CONTEXT ###
-This is part of a larger SDET Roadmap. You are specifically assigned to complete feature ID: $NEXT_ID.
+### CONTEXT & FILE EDITING INSTRUCTIONS ###
+You are specifically assigned to complete feature ID: $NEXT_ID.
+
+To avoid file editing errors, use the EXACT text below when using the 'replace' tool on '$PROGRESS_FILE'.
+
+1. **MARK COMPLETE**:
+   The line currently looks like this in '$PROGRESS_FILE':
+   \`$TARGET_LINE\`
+   
+   *Action*: Search for this EXACT string and replace it with:
+   \`- [x] $NEXT_ID ...\` (keeping the original description)
+
+2. **APPEND LOG**:
+   The end of '$PROGRESS_FILE' currently looks like this:
+   \`\`\`
+   $LOG_CONTEXT
+   \`\`\`
+   
+   *Action*: Append your new log entry (Date, Iteration, Feature ID, Commit) after this block.
 
 ### CRITICAL INSTRUCTION - READ CAREFULLY ###
 You MUST generate content for EXACTLY ONE (1) acceptance criterion ONLY (the one provided above).
@@ -111,9 +156,7 @@ STOP immediately after completing ONE feature.
    - Hands-on practice exercises
    - Links to additional resources
 3. **Create** ONE markdown file in ./sdet-learning-content/ named '$NEXT_ID.md'.
-4. **Update** 'progress.md':
-   - Find the line for $NEXT_ID and change '[ ]' to '[x]'.
-   - Add a brief entry in the 'Detailed Completion Log' at the bottom of progress.md (Date, Iteration, Feature ID).
+4. **Update** 'progress.md' using the context provided above.
 5. **Commit**: Make ONE git commit with message: 'Content: $NEXT_ID - [Brief Description]'
 6. **STOP**: Do not process any other features.
 
@@ -161,33 +204,62 @@ STOP immediately after completing ONE feature.
 Process ONLY $NEXT_ID now. Output a summary of actions taken when done.
 "
 
-    PROMPT_FILE="$ITERATION_LOG_DIR/test-prompt-$iteration.txt"
+    PROMPT_FILE="$ITERATION_LOG_DIR/prompt-iteration-$iteration.txt"
     echo "$PROMPT" > "$PROMPT_FILE"
-    ITERATION_OUTPUT="$ITERATION_LOG_DIR/test-output-$iteration.log"
+    ITERATION_OUTPUT="$ITERATION_LOG_DIR/output-iteration-$iteration.log"
 
     echo -e "${BLUE}[$(date +%H:%M:%S)] Invoking agent for $NEXT_ID...${NC}"
     
-    # Run Gemini CLI
+    # ---------------------------------------------------------
+    # STEP 4: EXECUTE AGENT
+    # ---------------------------------------------------------
     gemini --yolo < "$PROMPT_FILE" 2>&1 | tee "$ITERATION_OUTPUT"
     
     exit_code=${PIPESTATUS[0]}
     
+    # ---------------------------------------------------------
+    # STEP 5: VERIFY & LOG
+    # ---------------------------------------------------------
+    
     files_after=$(ls "$LEARNING_CONTENT_DIR" 2>/dev/null | wc -l)
     files_created=$((files_after - files_before))
     
-    echo "### Test Iteration $iteration ($NEXT_ID)" >> "$LOGS_FILE"
-    echo "Files created: $files_created" >> "$LOGS_FILE"
-    echo "---" >> "$LOGS_FILE"
-
-    if [ $files_created -gt 0 ]; then
-        echo -e "${GREEN}✅ Test Success for $NEXT_ID${NC}"
-    else
-        echo -e "${RED}⚠️  No files were created. Check $ITERATION_OUTPUT${NC}"
+    if [ -f "$PROGRESS_FILE" ]; then
+        features_completed=$(grep -c "✅\|✔\|\[x\]" "$PROGRESS_FILE" || echo "0")
     fi
-
-    echo -e "${BLUE}Waiting 3 seconds...${NC}"
+    
+    echo "### Iteration $iteration Output" >> "$LOGS_FILE"
+    cat "$ITERATION_OUTPUT" >> "$LOGS_FILE"
+    echo "" >> "$LOGS_FILE"
+    echo "Files created this iteration: $files_created" >> "$LOGS_FILE"
+    echo "Features marked complete: $features_completed" >> "$LOGS_FILE"
+    echo "---" >> "$LOGS_FILE"
+    
+    echo -e "${GREEN}╔════════════════════════════════════════════════════════════════╗${NC}"
+    echo -e "${GREEN}║                  Iteration $iteration Summary                      ║${NC}"
+    echo -e "${GREEN}╚════════════════════════════════════════════════════════════════╝${NC}"
+    echo ""
+    echo "  Files created this iteration: $files_created"
+    echo "  Features marked complete: $features_completed"
+    
+    if [ $files_created -eq 0 ]; then
+        echo -e "${RED}⚠️  Warning: No files created in this iteration${NC}"
+    elif [ $files_created -eq 1 ]; then
+        echo -e "${GREEN}✅ Perfect: 1 file created for $NEXT_ID${NC}"
+    else
+        echo -e "${YELLOW}ℹ️  Agent created $files_created files${NC}"
+    fi
+    
+    if grep -q "$COMPLETION_PROMISE" "$ITERATION_OUTPUT"; then
+        echo -e "${GREEN}🎉 ALL FEATURES COMPLETED! 🎉${NC}"
+        echo "## COMPLETION" >> "$LOGS_FILE"
+        echo "Completed at: $(date)" >> "$LOGS_FILE"
+        exit 0
+    fi
+    
+    echo -e "${BLUE}Waiting 3 seconds before next iteration...${NC}"
     sleep 3
 done
 
-echo ""
-echo -e "${YELLOW}Test complete. Check sdet-learning-content/ and progress.md for updates.${NC}"
+echo -e "${YELLOW}Max iterations reached ($MAX_ITERATIONS).${NC}"
+exit 1
