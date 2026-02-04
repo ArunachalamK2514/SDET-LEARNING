@@ -230,7 +230,7 @@
 - [x] api-4.2-ac6: Array validation
 - [x] api-4.2-ac7: Request chaining
 - [x] api-4.2-ac8: Partial content validation
-- [ ] api-4.2-ac9: Custom validation logic
+- [x] api-4.2-ac9: Custom validation logic
 
 #### Story 4.3: Authentication & Authorization (5 points)
 - [ ] api-4.3-ac1: Basic Authentication
@@ -1048,3 +1048,8 @@
 - **Feature Completed**: api-4.2-ac8
 - **Content File**: ./sdet-learning-content/api-4.2-ac8.md
 - **Git Commit**: `Content: api-4.2-ac8 - JSON & XML Response Validation with Hamcrest`
+
+### 2026-02-04 - Iteration 159
+- **Feature Completed**: api-4.2-ac9
+- **Content File**: ./sdet-learning-content/api-4.2-ac9.md
+- **Git Commit**: `Content: api-4.2-ac9 - Custom JSON Validation Logic`
