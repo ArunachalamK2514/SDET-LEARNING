@@ -194,7 +194,7 @@
 - [x] reporting-3.5-ac2: Log levels configuration
 - [x] reporting-3.5-ac3: ExtentReports HTML reporting
 - [x] reporting-3.5-ac4: Screenshot on failure
-- [ ] reporting-3.5-ac5: Custom report with summary
+- [x] reporting-3.5-ac5: Custom report with summary
 - [ ] reporting-3.5-ac6: Allure reporting integration
 - [ ] reporting-3.5-ac7: Test execution videos
 - [ ] reporting-3.5-ac8: ReportPortal integration
@@ -898,3 +898,8 @@
 - **Feature Completed**: reporting-3.5-ac4
 - **Content File**: ./sdet-learning-content/reporting-3.5-ac4.md
 - **Git Commit**: `Content: reporting-3.5-ac4 - Implement screenshot capture on test failure for enhanced reporting`
+
+### 2026-02-04 - Iteration 129
+- **Feature Completed**: reporting-3.5-ac5
+- **Content File**: ./sdet-learning-content/reporting-3.5-ac5.md
+- **Git Commit**: `Content: reporting-3.5-ac5 - Create custom report with test execution summary, pass/fail counts`
