@@ -222,7 +222,7 @@
 - [x] api-4.1-ac8: Base URI, headers, parameters
 
 #### Story 4.2: JSON & XML Response Validation (5 points)
-- [ ] api-4.2-ac1: Simple JSON validation with JsonPath
+- [x] api-4.2-ac1: Simple JSON validation with JsonPath
 - [ ] api-4.2-ac2: Nested JSON validation
 - [ ] api-4.2-ac3: JSON schema validation
 - [ ] api-4.2-ac4: XML response validation with XmlPath
@@ -337,7 +337,7 @@
 - [ ] playwright-5.7-ac5: Test sharding
 - [ ] playwright-5.7-ac6: HTML reports in CI
 - [ ] playwright-5.7-ac7: CI artifacts (screenshots/videos)
-- [ ] playwright-5.7-ac8: Docker integration
+- [ ] playwright-5.5-ac8: Docker integration
 - [ ] playwright-5.7-ac9: Retry on failure in CI
 
 ### Sprint 4: Advanced Topics & DevOps
@@ -1008,3 +1008,8 @@
 - **Feature Completed**: api-4.1-ac8
 - **Content File**: ./sdet-learning-content/api-4.1-ac8.md
 - **Git Commit**: `Content: api-4.1-ac8 - Base URI, headers, path parameters, query parameters`
+
+### 2026-02-04 - Iteration 151
+- **Feature Completed**: api-4.2-ac1
+- **Content File**: ./sdet-learning-content/api-4.2-ac1.md
+- **Git Commit**: `Content: api-4.2-ac1 - Validate simple JSON responses using JsonPath expressions`
