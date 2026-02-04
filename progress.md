@@ -190,7 +190,7 @@
 - [x] framework-3.4-ac9: Scalability principles
 
 #### Story 3.5: Logging & Reporting Implementation (5 points)
-- [ ] reporting-3.5-ac1: Log4j2 integration
+- [x] reporting-3.5-ac1: Log4j2 integration
 - [ ] reporting-3.5-ac2: Log levels configuration
 - [ ] reporting-3.5-ac3: ExtentReports HTML reporting
 - [ ] reporting-3.5-ac4: Screenshot on failure
@@ -882,3 +882,7 @@
 - **Feature Completed**: framework-3.4-ac9
 - **Content File**: ./sdet-learning-content/framework-3.4-ac9.md
 - **Git Commit**: `Content: framework-3.4-ac9 - Explain scalability, maintainability, and reusability principles`
+### 2026-02-04 - Iteration 125
+- **Feature Completed**: reporting-3.5-ac1
+- **Content File**: ./sdet-learning-content/reporting-3.5-ac1.md
+- **Git Commit**: `Content: reporting-3.5-ac1 - Integrate Log4j2 for application logging`
