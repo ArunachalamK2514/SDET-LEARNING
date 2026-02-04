@@ -185,7 +185,7 @@
 - [x] framework-3.4-ac4: Test data management layer
 - [x] framework-3.4-ac5: Environment-specific configuration
 - [x] framework-3.4-ac6: Abstraction layers
-- [ ] framework-3.4-ac7: Dependency injection
+- [x] framework-3.4-ac7: Dependency injection
 - [ ] framework-3.4-ac8: Framework documentation
 - [ ] framework-3.4-ac9: Scalability principles
 
@@ -529,7 +529,7 @@
 - [ ] final-8.5-ac5: Quick reference notes
 - [ ] final-8.5-ac6: Interview day logistics
 - [ ] final-8.5-ac7: "Tell me about yourself" practice
-- [ ] final-8.5-ac8: Common mistakes review
+- [ ] final-8.8-ac8: Common mistakes review
 
 ---
 
@@ -870,3 +870,7 @@
 - **Feature Completed**: framework-3.4-ac6
 - **Content File**: ./sdet-learning-content/framework-3.4-ac6.md
 - **Git Commit**: `Content: framework-3.4-ac6 - Design abstraction layers separating test logic from implementation`
+### 2026-02-04 - Iteration 122
+- **Feature Completed**: framework-3.4-ac7
+- **Content File**: ./sdet-learning-content/framework-3.4-ac7.md
+- **Git Commit**: `Content: framework-3.4-ac7 - Implement dependency injection for better testability`
