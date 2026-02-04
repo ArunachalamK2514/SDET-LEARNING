@@ -203,7 +203,7 @@
 
 #### Story 3.6: Framework Interview Preparation (2 points)
 - [x] interview-3.6-ac1: Framework architecture explanation
-- [ ] interview-3.6-ac2: Framework components
+- [x] interview-3.6-ac2: Framework components
 - [ ] interview-3.6-ac3: Design pattern choices
 - [ ] interview-3.6-ac4: Challenges and solutions
 - [ ] interview-3.6-ac5: ROI calculation
@@ -933,3 +933,8 @@
 - **Feature Completed**: interview-3.6-ac1
 - **Content File**: ./sdet-learning-content/interview-3.6-ac1.md
 - **Git Commit**: `Content: interview-3.6-ac1 - Framework architecture explanation`
+
+### 2026-02-04 - Iteration 136
+- **Feature Completed**: interview-3.6-ac2
+- **Content File**: ./sdet-learning-content/interview-3.6-ac2.md
+- **Git Commit**: `Content: interview-3.6-ac2 - Explain framework components`
