@@ -176,7 +176,7 @@
 - [x] patterns-3.3-ac7: Facade pattern
 - [x] patterns-3.3-ac8: Observer pattern
 - [x] patterns-3.3-ac9: Modular framework architecture
-- [ ] patterns-3.3-ac10: When to use each pattern
+- [x] patterns-3.3-ac10: When to use each pattern
 
 #### Story 3.4: Framework Architecture & Best Practices (5 points)
 - [ ] framework-3.4-ac1: Framework folder structure
