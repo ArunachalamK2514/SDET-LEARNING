@@ -205,7 +205,7 @@
 - [x] interview-3.6-ac1: Framework architecture explanation
 - [x] interview-3.6-ac2: Framework components
 - [x] interview-3.6-ac3: Design pattern choices
-- [ ] interview-3.6-ac4: Challenges and solutions
+- [x] interview-3.6-ac4: Challenges and solutions
 - [ ] interview-3.6-ac5: ROI calculation
 - [ ] interview-3.6-ac6: Scalability strategies
 - [ ] interview-3.6-ac7: Design from scratch scenario
@@ -943,3 +943,8 @@
 - **Feature Completed**: interview-3.6-ac3
 - **Content File**: ./sdet-learning-content/interview-3.6-ac3.md
 - **Git Commit**: `Content: interview-3.6-ac3 - Discuss design pattern choices and alternatives considered`
+
+### 2026-02-04 - Iteration 138
+- **Feature Completed**: interview-3.6-ac4
+- **Content File**: ./sdet-learning-content/interview-3.6-ac4.md
+- **Git Commit**: `Content: interview-3.6-ac4 - Handling Technical Challenges and Implementing Solutions in Test Automation`
