@@ -196,7 +196,7 @@
 - [x] reporting-3.5-ac4: Screenshot on failure
 - [x] reporting-3.5-ac5: Custom report with summary
 - [x] reporting-3.5-ac6: Allure reporting integration
-- [ ] reporting-3.5-ac7: Test execution videos
+- [x] reporting-3.5-ac7: Test execution videos
 - [ ] reporting-3.5-ac8: ReportPortal integration
 - [ ] reporting-3.5-ac9: Execution trends and historical data
 - [ ] reporting-3.5-ac10: Email test reports
@@ -908,3 +908,8 @@
 - **Feature Completed**: reporting-3.5-ac6
 - **Content File**: ./sdet-learning-content/reporting-3.5-ac6.md
 - **Git Commit**: `Content: reporting-3.5-ac6 - Integrate Allure reporting framework`
+
+### 2026-02-04 - Iteration 131
+- **Feature Completed**: reporting-3.5-ac7
+- **Content File**: ./sdet-learning-content/reporting-3.5-ac7.md
+- **Git Commit**: `Content: reporting-3.5-ac7 - Add test execution videos for failed tests`
