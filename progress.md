@@ -162,7 +162,7 @@
 - [x] testng-3.2-ac4: Thread-count and parallel modes
 - [x] testng-3.2-ac5: Soft vs Hard Assertions
 - [x] testng-3.2-ac6: Common assertions (10+)
-- [ ] testng-3.2-ac7: Custom listeners (ITestListener, IRetryAnalyzer)
+- [x] testng-3.2-ac7: Custom listeners (ITestListener, IRetryAnalyzer)
 - [ ] testng-3.2-ac8: Retry logic for failed tests
 - [ ] testng-3.2-ac9: TestNG HTML reports
 
@@ -770,15 +770,17 @@
 - **Content File**: ./sdet-learning-content/testng-3.2-ac4.md
 - **Git Commit**: `Content: testng-3.2-ac4 - Calculate and explain thread-count, parallel mode combinations`
 
-**Last Updated**: Wednesday, 4 February 2026
 ### 2026-02-04 - Iteration 101
 - **Feature Completed**: testng-3.2-ac5
 - **Content File**: ./sdet-learning-content/testng-3.2-ac5.md
-- **Git Commit**: Content: testng-3.2-ac5 - Implement Soft Assertions vs Hard Assertions with use cases
+- **Git Commit**: `Content: testng-3.2-ac5 - Implement Soft Assertions vs Hard Assertions with use cases`
 
-**Last Updated**: Wednesday, 4 February 2026
 ### 2026-02-04 - Iteration 102
 - **Feature Completed**: testng-3.2-ac6
 - **Content File**: ./sdet-learning-content/testng-3.2-ac6.md
-- **Git Commit**: Content: testng-3.2-ac6 - Common assertions (10+)
+- **Git Commit**: `Content: testng-3.2-ac6 - Common assertions (10+)`
 
+### 2026-02-04 - Iteration 103
+- **Feature Completed**: testng-3.2-ac7
+- **Content File**: ./sdet-learning-content/testng-3.2-ac7.md
+- **Git Commit**: `Content: testng-3.2-ac7 - Custom listeners (ITestListener, IRetryAnalyzer)`
