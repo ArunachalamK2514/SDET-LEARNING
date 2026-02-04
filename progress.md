@@ -208,7 +208,7 @@
 - [x] interview-3.6-ac4: Challenges and solutions
 - [x] interview-3.6-ac5: ROI calculation
 - [x] interview-3.6-ac6: Scalability strategies
-- [ ] interview-3.6-ac7: Design from scratch scenario
+- [x] interview-3.6-ac7: Design from scratch scenario
 - [ ] interview-3.6-ac8: Framework presentation slides
 
 #### Story 4.1: REST Assured Fundamentals (3 points)
@@ -958,3 +958,7 @@
 - **Feature Completed**: interview-3.6-ac6
 - **Content File**: ./sdet-learning-content/interview-3.6-ac6.md
 - **Git Commit**: `Content: interview-3.6-ac6 - Framework Scalability and Maintenance Strategies`
+### 2026-02-04 - Iteration 141
+- **Feature Completed**: interview-3.6-ac7
+- **Content File**: ./sdet-learning-content/interview-3.6-ac7.md
+- **Git Commit**: `Content: interview-3.6-ac7 - Designing a Test Automation Framework from Scratch`
