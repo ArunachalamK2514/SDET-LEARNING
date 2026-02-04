@@ -180,7 +180,7 @@
 
 #### Story 3.4: Framework Architecture & Best Practices (5 points)
 - [x] framework-3.4-ac1: Framework folder structure
-- [ ] framework-3.4-ac2: Configuration management
+- [x] framework-3.4-ac2: Configuration management
 - [ ] framework-3.4-ac3: Centralized utility packages
 - [ ] framework-3.4-ac4: Test data management layer
 - [ ] framework-3.4-ac5: Environment-specific configuration
@@ -849,3 +849,8 @@
 - **Feature Completed**: framework-3.4-ac1
 - **Content File**: ./sdet-learning-content/framework-3.4-ac1.md
 - **Git Commit**: `Content: framework-3.4-ac1 - Framework Architecture & Best Practices - Folder Structure`
+
+### 2026-02-04 - Iteration 117
+- **Feature Completed**: framework-3.4-ac2
+- **Content File**: ./sdet-learning-content/framework-3.4-ac2.md
+- **Git Commit**: `Content: framework-3.4-ac2 - Configuration Management`
