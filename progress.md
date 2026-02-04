@@ -170,7 +170,7 @@
 - [x] patterns-3.3-ac1: Page Object Model (5 pages)
 - [x] patterns-3.3-ac2: Fluent Page Object Model
 - [x] patterns-3.3-ac3: Singleton pattern for WebDriver
-- [ ] patterns-3.3-ac4: Factory pattern for browsers
+- [x] patterns-3.3-ac4: Factory pattern for browsers
 - [ ] patterns-3.3-ac5: Data-Driven Testing framework
 - [ ] patterns-3.3-ac6: Strategy pattern
 - [ ] patterns-3.3-ac7: Facade pattern
@@ -809,3 +809,8 @@
 - **Feature Completed**: patterns-3.3-ac3
 - **Content File**: ./sdet-learning-content/patterns-3.3-ac3.md
 - **Git Commit**: `Content: patterns-3.3-ac3 - Singleton pattern for WebDriver manager`
+
+### 2026-02-04 - Iteration 109
+- **Feature Completed**: patterns-3.3-ac4
+- **Content File**: ./sdet-learning-content/patterns-3.3-ac4.md
+- **Git Commit**: `Content: patterns-3.3-ac4 - Factory pattern for browser instantiation`
