@@ -213,7 +213,7 @@
 
 #### Story 4.1: REST Assured Fundamentals (3 points)
 - [x] api-4.1-ac1: REST Assured advantages
-- [ ] api-4.1-ac2: BDD syntax (given, when, then)
+- [x] api-4.1-ac2: BDD syntax (given, when, then)
 - [ ] api-4.1-ac3: All HTTP methods tests
 - [ ] api-4.1-ac4: Status code validation
 - [ ] api-4.1-ac5: JsonPath response validation
@@ -971,3 +971,7 @@
 - **Feature Completed**: api-4.1-ac1
 - **Content File**: ./sdet-learning-content/api-4.1-ac1.md
 - **Git Commit**: `Content: api-4.1-ac1 - REST Assured advantages for API testing`
+### 2026-02-04 - Iteration 144
+- **Feature Completed**: api-4.1-ac2
+- **Content File**: ./sdet-learning-content/api-4.1-ac2.md
+- **Git Commit**: `Content: api-4.1-ac2 - REST Assured BDD-style syntax (given, when, then)`
