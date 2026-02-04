@@ -13,13 +13,13 @@
 |----------|----------------|-----------|------------|
 | 1. Java Fundamentals & OOP | 43 | 43 | 100% |
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
-| 3. TestNG & Framework Design | 49 | 3 | 6% |
+| 3. TestNG & Framework Design | 49 | 4 | 8% |
 | 4. REST Assured API Testing | 45 | 0 | 0% |
 | 5. Playwright TypeScript | 54 | 0 | 0% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **89** | **25%** |
+| **TOTAL** | **353** | **90** | **26%** |
 
 ---
 
@@ -149,7 +149,7 @@
 - [x] testng-3.1-ac1: TestNG vs JUnit comparison
 - [x] testng-3.1-ac2: All annotations with execution order
 - [x] testng-3.1-ac3: testng.xml configuration
-- [ ] testng-3.1-ac4: Test grouping
+- [x] testng-3.1-ac4: Test grouping
 - [ ] testng-3.1-ac5: Test priorities
 - [ ] testng-3.1-ac6: Test inclusion/exclusion
 - [ ] testng-3.1-ac7: Test dependencies
@@ -534,6 +534,11 @@
 ---
 
 ## Detailed Completion Log
+
+### 2026-02-04 - Iteration 95
+- **Feature Completed**: testng-3.1-ac4
+- **Content File**: ./sdet-learning-content/testng-3.1-ac4.md
+- **Git Commit**: `Content: testng-3.1-ac4 - Implement test grouping using groups attribute`
 
 ### 2026-02-04 - Iteration 94
 - **Feature Completed**: testng-3.1-ac3
