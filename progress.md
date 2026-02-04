@@ -160,7 +160,7 @@
 - [x] testng-3.2-ac2: @DataProvider examples (5+)
 - [x] testng-3.2-ac3: Parallel execution configuration
 - [x] testng-3.2-ac4: Thread-count and parallel modes
-- [ ] testng-3.2-ac5: Soft vs Hard Assertions
+- [x] testng-3.2-ac5: Soft vs Hard Assertions
 - [ ] testng-3.2-ac6: Common assertions (10+)
 - [ ] testng-3.2-ac7: Custom listeners (ITestListener, IRetryAnalyzer)
 - [ ] testng-3.2-ac8: Retry logic for failed tests
@@ -771,3 +771,10 @@
 - **Git Commit**: `Content: testng-3.2-ac4 - Calculate and explain thread-count, parallel mode combinations`
 
 **Last Updated**: Wednesday, 4 February 2026
+ # # #   2 0 2 6 - 0 2 - 0 4   -   I t e r a t i o n   1 0 1 
+ -   * * F e a t u r e   C o m p l e t e d * * :   t e s t n g - 3 . 2 - a c 5 
+ -   * * C o n t e n t   F i l e * * :   . / s d e t - l e a r n i n g - c o n t e n t / t e s t n g - 3 . 2 - a c 5 . m d 
+ -   * * G i t   C o m m i t * * :   C o n t e n t :   t e s t n g - 3 . 2 - a c 5   -   I m p l e m e n t   S o f t   A s s e r t i o n s   v s   H a r d   A s s e r t i o n s   w i t h   u s e   c a s e s 
+ 
+ * * L a s t   U p d a t e d * * :   W e d n e s d a y ,   4   F e b r u a r y   2 0 2 6  
+ 
