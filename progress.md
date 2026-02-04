@@ -179,7 +179,7 @@
 - [x] patterns-3.3-ac10: When to use each pattern
 
 #### Story 3.4: Framework Architecture & Best Practices (5 points)
-- [ ] framework-3.4-ac1: Framework folder structure
+- [x] framework-3.4-ac1: Framework folder structure
 - [ ] framework-3.4-ac2: Configuration management
 - [ ] framework-3.4-ac3: Centralized utility packages
 - [ ] framework-3.4-ac4: Test data management layer
@@ -844,3 +844,8 @@
 - **Feature Completed**: patterns-3.3-ac10
 - **Content File**: ./sdet-learning-content/patterns-3.3-ac10.md
 - **Git Commit**: `Content: patterns-3.3-ac10 - Design Patterns for Test Automation: When to Use Each Pattern`
+
+### 2026-02-04 - Iteration 116
+- **Feature Completed**: framework-3.4-ac1
+- **Content File**: ./sdet-learning-content/framework-3.4-ac1.md
+- **Git Commit**: `Content: framework-3.4-ac1 - Framework Architecture & Best Practices - Folder Structure`
