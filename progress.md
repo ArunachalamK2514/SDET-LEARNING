@@ -245,7 +245,7 @@
 #### Story 4.4: Data-Driven & Parameterized API Testing (5 points)
 - [x] api-4.4-ac1: TestNG DataProvider integration
 - [x] api-4.4-ac2: Excel data reading
-- [ ] api-4.4-ac3: JSON data reading
+- [x] api-4.4-ac3: JSON data reading
 - [ ] api-4.4-ac4: Positive/negative parameterized tests
 - [ ] api-4.4-ac5: POJO classes for request/response
 - [ ] api-4.4-ac6: Serialization with Jackson
@@ -1103,3 +1103,7 @@
 - **Feature Completed**: api-4.4-ac2
 - **Content File**: ./sdet-learning-content/api-4.4-ac2.md
 - **Git Commit**: `Content: api-4.4-ac2 - Data-Driven & Parameterized API Testing with Excel`
+### 2026-02-05 - Iteration 170
+- **Feature Completed**: api-4.4-ac3
+- **Content File**: ./sdet-learning-content/api-4.4-ac3.md
+- **Git Commit**: `Content: api-4.4-ac3 - Data-Driven & Parameterized API Testing with JSON`
