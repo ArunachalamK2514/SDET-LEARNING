@@ -248,7 +248,7 @@
 - [x] api-4.4-ac3: JSON data reading
 - [x] api-4.4-ac4: Positive/negative parameterized tests
 - [x] api-4.4-ac5: POJO classes for request/response
-- [ ] api-4.4-ac6: Serialization with Jackson
+- [x] api-4.4-ac6: Serialization with Jackson
 - [ ] api-4.4-ac7: Deserialization implementation
 - [ ] api-4.4-ac8: Data-driven framework
 
@@ -1117,3 +1117,7 @@
 - **Feature Completed**: api-4.4-ac5
 - **Content File**: ./sdet-learning-content/api-4.4-ac5.md
 - **Git Commit**: `Content: api-4.4-ac5 - POJO Classes for Request/Response Serialization`
+### 2026-02-05 - Iteration 173
+- **Feature Completed**: api-4.4-ac6
+- **Content File**: ./sdet-learning-content/api-4.4-ac6.md
+- **Git Commit**: `Content: api-4.4-ac6 - Serialization using Jackson ObjectMapper`
