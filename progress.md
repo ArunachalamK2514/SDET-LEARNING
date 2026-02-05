@@ -250,7 +250,7 @@
 - [x] api-4.4-ac5: POJO classes for request/response
 - [x] api-4.4-ac6: Serialization with Jackson
 - [x] api-4.4-ac7: Deserialization implementation
-- [ ] api-4.4-ac8: Data-driven framework
+- [x] api-4.4-ac8: Data-driven framework
 
 #### Story 4.5: Advanced REST Assured Techniques (5 points)
 - [ ] api-4.5-ac1: Multipart file upload
@@ -1125,3 +1125,7 @@
 - **Feature Completed**: api-4.4-ac7
 - **Content File**: ./sdet-learning-content/api-4.4-ac7.md
 - **Git Commit**: `Content: api-4.4-ac7 - Deserialization to Extract Response into Objects`
+### 2026-02-05 - Iteration 175
+- **Feature Completed**: api-4.4-ac8
+- **Content File**: ./sdet-learning-content/api-4.4-ac8.md
+- **Git Commit**: `Content: api-4.4-ac8 - Data-Driven & Parameterized API Testing Framework`
