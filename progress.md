@@ -257,8 +257,8 @@
 - [x] api-4.5-ac2: File download validation
 - [x] api-4.5-ac3: Request/response logging
 - [x] api-4.5-ac4: Filters implementation
-- [ ] api-4.5-ac5: Response time validation
-- [ ] api-4.5-ac6: JDBC database integration
+- [x] api-4.5-ac5: Response time validation
+- [x] api-4.5-ac6: JDBC database integration
 - [ ] api-4.5-ac7: WireMock for API mocking
 - [ ] api-4.5-ac8: Retry logic for flaky tests
 
@@ -1152,3 +1152,8 @@
 - **Feature Completed**: api-4.5-ac5
 - **Content File**: ./sdet-learning-content/api-4.5-ac5.md
 - **Git Commit**: `Content: api-4.5-ac5 - Validate API response time and set SLA thresholds`
+
+### 2026-02-05 - Iteration 181
+- **Feature Completed**: api-4.5-ac6
+- **Content File**: ./sdet-learning-content/api-4.5-ac6.md
+- **Git Commit**: `Content: api-4.5-ac6 - Integrate database validation with JDBC`
