@@ -243,7 +243,7 @@
 - [x] api-4.3-ac8: 401 and 403 validation
 
 #### Story 4.4: Data-Driven & Parameterized API Testing (5 points)
-- [ ] api-4.4-ac1: TestNG DataProvider integration
+- [x] api-4.4-ac1: TestNG DataProvider integration
 - [ ] api-4.4-ac2: Excel data reading
 - [ ] api-4.4-ac3: JSON data reading
 - [ ] api-4.4-ac4: Positive/negative parameterized tests
@@ -322,7 +322,7 @@
 
 #### Story 5.6: Playwright API Testing (3 points)
 - [ ] playwright-5.6-ac1: API request context
-- [ ] playwright-5.6-ac2: HTTP methods (GET, POST, etc.)
+- [ ] playwright-5.5-ac2: HTTP methods (GET, POST, etc.)
 - [ ] playwright-5.6-ac3: API response validation
 - [ ] playwright-5.6-ac4: JSON parsing
 - [ ] playwright-5.6-ac5: API call chaining
@@ -604,7 +604,7 @@
 ### 2026-02-03 - Iteration 85
 - **Feature Completed**: selenium-2.6-ac1
 - **Content File**: ./sdet-learning-content/selenium-2.6-ac1.md
-- **Git Commit**: `Content: selenium-2.6-ac1 - Implement relative locators (above, below, toLeftOf, toRightOf, near)`
+- **Git Commit**: `Content: selenium-2.6-ac1 - Implement relative locators in Selenium 4 (above, below, toLeftOf, toRightOf, near)`
 
 ### 2026-02-03 - Iteration 84
 - **Feature Completed**: selenium-2.5-ac8
@@ -1093,3 +1093,8 @@
 - **Feature Completed**: api-4.3-ac8
 - **Content File**: ./sdet-learning-content/api-4.3-ac8.md
 - **Git Commit**: `Content: api-4.3-ac8 - Validate 401 Unauthorized and 403 Forbidden responses`
+
+### 2026-02-05 - Iteration 168
+- **Feature Completed**: api-4.4-ac1
+- **Content File**: ./sdet-learning-content/api-4.4-ac1.md
+- **Git Commit**: `Content: api-4.4-ac1 - Integrate REST Assured with TestNG DataProvider for data-driven API testing`
