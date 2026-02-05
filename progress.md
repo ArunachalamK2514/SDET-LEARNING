@@ -256,7 +256,7 @@
 - [x] api-4.5-ac1: Multipart file upload
 - [x] api-4.5-ac2: File download validation
 - [x] api-4.5-ac3: Request/response logging
-- [ ] api-4.5-ac4: Filters implementation
+- [x] api-4.5-ac4: Filters implementation
 - [ ] api-4.5-ac5: Response time validation
 - [ ] api-4.5-ac6: JDBC database integration
 - [ ] api-4.5-ac7: WireMock for API mocking
@@ -1142,3 +1142,8 @@
 - **Feature Completed**: api-4.5-ac3
 - **Content File**: ./sdet-learning-content/api-4.5-ac3.md
 - **Git Commit**: `Content: api-4.5-ac3 - Request/response logging using log().all()`
+
+### 2026-02-05 - Iteration 179
+- **Feature Completed**: api-4.5-ac4
+- **Content File**: ./sdet-learning-content/api-4.5-ac4.md
+- **Git Commit**: `Content: api-4.5-ac4 - Implement filters for logging and modifying requests`
