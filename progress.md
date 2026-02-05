@@ -255,7 +255,7 @@
 #### Story 4.5: Advanced REST Assured Techniques (5 points)
 - [x] api-4.5-ac1: Multipart file upload
 - [x] api-4.5-ac2: File download validation
-- [ ] api-4.5-ac3: Request/response logging
+- [x] api-4.5-ac3: Request/response logging
 - [ ] api-4.5-ac4: Filters implementation
 - [ ] api-4.5-ac5: Response time validation
 - [ ] api-4.5-ac6: JDBC database integration
@@ -1137,3 +1137,8 @@
 - **Feature Completed**: api-4.5-ac2
 - **Content File**: ./sdet-learning-content/api-4.5-ac2.md
 - **Git Commit**: `Content: api-4.5-ac2 - Validate and download files from API responses`
+
+### 2026-02-05 - Iteration 178
+- **Feature Completed**: api-4.5-ac3
+- **Content File**: ./sdet-learning-content/api-4.5-ac3.md
+- **Git Commit**: `Content: api-4.5-ac3 - Request/response logging using log().all()`
