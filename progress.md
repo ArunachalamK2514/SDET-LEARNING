@@ -253,7 +253,7 @@
 - [x] api-4.4-ac8: Data-driven framework
 
 #### Story 4.5: Advanced REST Assured Techniques (5 points)
-- [ ] api-4.5-ac1: Multipart file upload
+- [x] api-4.5-ac1: Multipart file upload
 - [ ] api-4.5-ac2: File download validation
 - [ ] api-4.5-ac3: Request/response logging
 - [ ] api-4.5-ac4: Filters implementation
@@ -1129,3 +1129,7 @@
 - **Feature Completed**: api-4.4-ac8
 - **Content File**: ./sdet-learning-content/api-4.4-ac8.md
 - **Git Commit**: `Content: api-4.4-ac8 - Data-Driven & Parameterized API Testing Framework`
+### 2026-02-05 - Iteration 176
+- **Feature Completed**: api-4.5-ac1
+- **Content File**: ./sdet-learning-content/api-4.5-ac1.md
+- **Git Commit**: `Content: api-4.5-ac1 - Multipart file upload using multiPart()`
