@@ -246,7 +246,7 @@
 - [x] api-4.4-ac1: TestNG DataProvider integration
 - [x] api-4.4-ac2: Excel data reading
 - [x] api-4.4-ac3: JSON data reading
-- [ ] api-4.4-ac4: Positive/negative parameterized tests
+- [x] api-4.4-ac4: Positive/negative parameterized tests
 - [ ] api-4.4-ac5: POJO classes for request/response
 - [ ] api-4.4-ac6: Serialization with Jackson
 - [ ] api-4.4-ac7: Deserialization implementation
@@ -1107,3 +1107,8 @@
 - **Feature Completed**: api-4.4-ac3
 - **Content File**: ./sdet-learning-content/api-4.4-ac3.md
 - **Git Commit**: `Content: api-4.4-ac3 - Data-Driven & Parameterized API Testing with JSON`
+
+### 2026-02-05 - Iteration 171
+- **Feature Completed**: api-4.4-ac4
+- **Content File**: ./sdet-learning-content/api-4.4-ac4.md
+- **Git Commit**: `Content: api-4.4-ac4 - Parameterized Tests for Positive and Negative API Scenarios`
