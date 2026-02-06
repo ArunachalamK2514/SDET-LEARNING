@@ -304,7 +304,7 @@
 - [x] playwright-5.4-ac3: Fixture composition
 - [x] playwright-5.4-ac4: Data sharing with fixtures
 - [x] playwright-5.4-ac5: Page object fixtures
-- [ ] playwright-5.4-ac6: Test hooks
+- [x] playwright-5.4-ac6: Test hooks
 - [ ] playwright-5.4-ac7: Describe blocks grouping
 - [ ] playwright-5.4-ac8: Skip and focus tests
 - [ ] playwright-5.4-ac9: Test annotations
@@ -1307,3 +1307,7 @@
 - **Feature Completed**: playwright-5.4-ac5
 - **Content File**: ./sdet-learning-content/playwright-5.4-ac5.md
 - **Git Commit**: `Content: playwright-5.4-ac5 - Create page object fixtures`
+### 2026-02-06 - Iteration 215
+- **Feature Completed**: playwright-5.4-ac6
+- **Content File**: ./sdet-learning-content/playwright-5.4-ac6.md
+- **Git Commit**: `Content: playwright-5.4-ac6 - Implement test hooks: beforeEach, afterEach, beforeAll, afterAll`
