@@ -337,7 +337,7 @@
 - [x] playwright-5.7-ac5: Test sharding
 - [x] playwright-5.7-ac6: HTML reports in CI
 - [x] playwright-5.7-ac7: CI artifacts (screenshots/videos)
-- [ ] playwright-5.5-ac8: Docker integration
+- [x] playwright-5.7-ac8: Docker integration
 - [ ] playwright-5.7-ac9: Retry on failure in CI
 
 ### Sprint 4: Advanced Topics & DevOps
@@ -1423,3 +1423,8 @@
 - **Feature Completed**: playwright-5.7-ac6
 - **Content File**: ./sdet-learning-content/playwright-5.7-ac6.md
 - **Git Commit**: Content: playwright-5.7-ac6 - Generate and publish HTML reports in CI
+
+### 2026-02-06 - Iteration 241
+- **Feature Completed**: playwright-5.7-ac8
+- **Content File**: ./sdet-learning-content/playwright-5.7-ac8.md
+- **Git Commit**: Content: playwright-5.7-ac8 - Integrate with Docker for consistent test environments
