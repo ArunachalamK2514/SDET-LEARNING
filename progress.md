@@ -330,7 +330,7 @@
 - [x] playwright-5.6-ac7: Hybrid UI+API scenarios
 
 #### Story 5.7: Playwright CI/CD Integration & Best Practices (4 points)
-- [ ] playwright-5.7-ac1: CI environment configuration
+- [x] playwright-5.7-ac1: CI environment configuration
 - [ ] playwright-5.7-ac2: GitHub Actions workflow
 - [ ] playwright-5.7-ac3: Jenkins pipeline
 - [ ] playwright-5.7-ac4: Parallel execution with workers
@@ -1394,3 +1394,8 @@
 - **Content File**: ./sdet-learning-content/playwright-5.6-ac5.md
 - **Git Commit**: Content: playwright-5.6-ac5 - Chain API calls and use responses in UI tests
 `n### 2026-02-06 - Iteration 233`n- **Feature Completed**: playwright-5.6-ac6`n- **Content File**: ./sdet-learning-content/playwright-5.6-ac6.md`n- **Git Commit**: Content: playwright-5.6-ac6 - Implement API-based test data setup`n`n### 2026-02-06 - Iteration 234`n- **Feature Completed**: playwright-5.6-ac7`n- **Content File**: ./sdet-learning-content/playwright-5.6-ac7.md`n- **Git Commit**: Content: playwright-5.6-ac7 - Test hybrid scenarios combining API and UI
+
+### 2026-02-06 - Iteration 235
+- **Feature Completed**: playwright-5.7-ac1
+- **Content File**: ./sdet-learning-content/playwright-5.7-ac1.md
+- **Git Commit**: Content: playwright-5.7-ac1 - Playwright CI/CD Integration: Configuring for CI Environments
