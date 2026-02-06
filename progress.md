@@ -276,7 +276,7 @@
 - [x] playwright-5.1-ac9: VS Code with Playwright extension
 
 #### Story 5.2: Playwright Locators & Auto-Waiting (5 points)
-- [ ] playwright-5.2-ac1: Recommended locators (getByRole, etc.)
+- [x] playwright-5.2-ac1: Recommended locators (getByRole, etc.)
 - [ ] playwright-5.2-ac2: Locator vs elementHandle
 - [ ] playwright-5.2-ac3: CSS and XPath selectors
 - [ ] playwright-5.2-ac4: Text-based locators
@@ -1208,3 +1208,8 @@
 - **Feature Completed**: playwright-5.1-ac9
 - **Content File**: ./sdet-learning-content/playwright-5.1-ac9.md
 - **Git Commit**: `Content: playwright-5.1-ac9 - Set up VS Code with Playwright extension for debugging`
+
+### 2026-02-06 - Iteration 193
+- **Feature Completed**: playwright-5.2-ac1
+- **Content File**: ./sdet-learning-content/playwright-5.2-ac1.md
+- **Git Commit**: `Content: playwright-5.2-ac1 - Playwright Locators & Auto-Waiting`
