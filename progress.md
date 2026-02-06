@@ -312,7 +312,7 @@
 #### Story 5.5: Authentication & Network Interception (5 points)
 - [x] playwright-5.5-ac1: UI login and auth state save
 - [x] playwright-5.5-ac2: Auth state reuse
-- [ ] playwright-5.5-ac3: API-based authentication
+- [x] playwright-5.5-ac3: API-based authentication
 - [ ] playwright-5.5-ac4: Auth strategies comparison
 - [ ] playwright-5.5-ac5: Network request interception
 - [ ] playwright-5.5-ac6: API response mocking
@@ -1336,3 +1336,7 @@
 - **Feature Completed**: playwright-5.5-ac2
 - **Content File**: ./sdet-learning-content/playwright-5.5-ac2.md
 - **Git Commit**: `Content: playwright-5.5-ac2 - Reuse authentication state across tests to avoid repeated logins`
+### 2026-02-06 - Iteration 221
+- **Feature Completed**: playwright-5.5-ac3
+- **Content File**: ./sdet-learning-content/playwright-5.5-ac3.md
+- **Git Commit**: `Content: playwright-5.5-ac3 - Implement API-based authentication using request context`
