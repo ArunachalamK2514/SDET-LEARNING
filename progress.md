@@ -281,7 +281,7 @@
 - [x] playwright-5.2-ac3: CSS and XPath selectors
 - [x] playwright-5.2-ac4: Text-based locators
 - [x] playwright-5.2-ac5: nth(), first(), last()
-- [ ] playwright-5.2-ac6: Filtering locators
+- [x] playwright-5.2-ac6: Filtering locators
 - [ ] playwright-5.2-ac7: Auto-waiting understanding
 - [ ] playwright-5.2-ac8: waitFor() implementation
 - [ ] playwright-5.2-ac9: waitForSelector vs locator.waitFor
@@ -1232,3 +1232,8 @@
 - **Feature Completed**: playwright-5.2-ac5
 - **Content File**: ./sdet-learning-content/playwright-5.2-ac5.md
 - **Git Commit**: `Content: playwright-5.2-ac5 - Use nth(), first(), last() for selecting from multiple elements`
+
+### 2026-02-06 - Iteration 198
+- **Feature Completed**: playwright-5.2-ac6
+- **Content File**: ./sdet-learning-content/playwright-5.2-ac6.md
+- **Git Commit**: `Content: playwright-5.2-ac6 - Filter locators using has(), hasText(), filter()`
