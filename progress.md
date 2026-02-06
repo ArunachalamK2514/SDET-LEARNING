@@ -336,7 +336,7 @@
 - [x] playwright-5.7-ac4: Parallel execution with workers
 - [x] playwright-5.7-ac5: Test sharding
 - [x] playwright-5.7-ac6: HTML reports in CI
-- [ ] playwright-5.7-ac7: CI artifacts (screenshots/videos)
+- [x] playwright-5.7-ac7: CI artifacts (screenshots/videos)
 - [ ] playwright-5.5-ac8: Docker integration
 - [ ] playwright-5.7-ac9: Retry on failure in CI
 
