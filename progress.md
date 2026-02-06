@@ -272,7 +272,7 @@
 - [x] playwright-5.1-ac5: Folder structure setup
 - [x] playwright-5.1-ac6: Multiple browsers configuration
 - [x] playwright-5.1-ac7: Environment-specific configs
-- [ ] playwright-5.1-ac8: Base URL, timeout, retries config
+- [x] playwright-5.1-ac8: Base URL, timeout, retries config
 - [ ] playwright-5.1-ac9: VS Code with Playwright extension
 
 #### Story 5.2: Playwright Locators & Auto-Waiting (5 points)
@@ -1198,3 +1198,8 @@
 - **Feature Completed**: playwright-5.1-ac7
 - **Content File**: ./sdet-learning-content/playwright-5.1-ac7.md
 - **Git Commit**: `Content: playwright-5.1-ac7 - Set up environment-specific configuration files`
+
+### 2026-02-06 - Iteration 191
+- **Feature Completed**: playwright-5.1-ac8
+- **Content File**: ./sdet-learning-content/playwright-5.1-ac8.md
+- **Git Commit**: `Content: playwright-5.1-ac8 - Configure base URL, timeout, retries, screenshots, videos, and trace viewer`
