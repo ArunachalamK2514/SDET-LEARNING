@@ -299,7 +299,7 @@
 - [x] playwright-5.3-ac10: Screenshots and videos
 
 #### Story 5.4: Playwright Fixtures & Test Organization (5 points)
-- [ ] playwright-5.4-ac1: Built-in fixtures
+- [x] playwright-5.4-ac1: Built-in fixtures
 - [ ] playwright-5.4-ac2: Custom fixtures
 - [ ] playwright-5.4-ac3: Fixture composition
 - [ ] playwright-5.4-ac4: Data sharing with fixtures
@@ -1291,3 +1291,7 @@
 - **Feature Completed**: playwright-5.3-ac10
 - **Content File**: ./sdet-learning-content/playwright-5.3-ac10.md
 - **Git Commit**: `Content: playwright-5.3-ac10 - Take screenshots and record videos`
+### 2026-02-06 - Iteration 211
+- **Feature Completed**: playwright-5.4-ac1
+- **Content File**: ./sdet-learning-content/playwright-5.4-ac1.md
+- **Git Commit**: `Content: playwright-5.4-ac1 - Understand built-in fixtures (page, context, browser)`
