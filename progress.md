@@ -203,72 +203,72 @@
 
 #### Story 3.6: Framework Interview Preparation (2 points)
 - [x] interview-3.6-ac1: Framework architecture explanation
-- [x] interview-3.6-ac2: Framework components
-- [x] interview-3.6-ac3: Design pattern choices
-- [x] interview-3.6-ac4: Challenges and solutions
-- [x] interview-3.6-ac5: ROI calculation
-- [x] interview-3.6-ac6: Scalability strategies
+- [x] interview-3.6-ac2: Explain framework components
+- [x] interview-3.6-ac3: Discuss design pattern choices and alternatives considered
+- [x] interview-3.6-ac4: Handling Technical Challenges and Implementing Solutions in Test Automation
+- [x] interview-3.6-ac5: How to Calculate ROI for Test Automation
+- [x] interview-3.6-ac6: Framework Scalability and Maintenance Strategies
 - [x] interview-3.6-ac7: Designing a Test Automation Framework from Scratch
 - [x] interview-3.6-ac8: Framework Interview Preparation: Presentation Slides
 
 #### Story 4.1: REST Assured Fundamentals (3 points)
 - [x] api-4.1-ac1: REST Assured advantages
-- [x] api-4.1-ac2: BDD syntax (given, when, then)
-- [x] api-4.1-ac3: All HTTP methods tests
-- [x] api-4.1-ac4: Status code validation
-- [x] api-4.1-ac5: JsonPath response validation
+- [x] api-4.1-ac2: BDD-style syntax (given, when, then)
+- [x] api-4.1-ac3: HTTP Methods Testing with REST Assured
+- [x] api-4.1-ac4: Validate response status codes (200, 201, 400, 404, 500)
+- [x] api-4.1-ac5: Extract and validate response body using JsonPath
 - [x] api-4.1-ac6: Headers, cookies, response time validation
-- [x] api-4.1-ac7: Request/response specifications
-- [x] api-4.1-ac8: Base URI, headers, parameters
+- [x] api-4.1-ac7: Request/response specifications for reusability
+- [x] api-4.1-ac8: Base URI, headers, path parameters, query parameters
 
 #### Story 4.2: JSON & XML Response Validation (5 points)
-- [x] api-4.2-ac1: Simple JSON validation with JsonPath
-- [x] api-4.2-ac2: Nested JSON validation
-- [x] api-4.2-ac3: JSON schema validation
+- [x] api-4.2-ac1: Validate simple JSON responses using JsonPath expressions
+- [x] api-4.2-ac2: Extract and validate nested JSON objects and arrays
+- [x] api-4.2-ac3: Validate JSON schema using json-schema-validator
 - [x] api-4.2-ac4: XML response validation with XmlPath
-- [x] api-4.2-ac5: Hamcrest matchers
-- [x] api-4.2-ac6: Array validation
-- [x] api-4.2-ac7: Request chaining
-- [x] api-4.2-ac8: Partial content validation
-- [x] api-4.2-ac9: Custom validation logic
+- [x] api-4.2-ac5: JSON Response Validation with Hamcrest Matchers
+- [x] api-4.2-ac6: JSON Array Validation in REST Assured
+- [x] api-4.2-ac7: API Chaining: Extracting and Reusing Response Data
+- [x] api-4.2-ac8: JSON & XML Response Validation with Hamcrest
+- [x] api-4.2-ac9: Custom JSON Validation Logic
 
 #### Story 4.3: Authentication & Authorization (5 points)
-- [x] api-4.3-ac1: Basic Authentication
-- [x] api-4.3-ac2: OAuth 2.0 flow
-- [x] api-4.3-ac3: Bearer token authentication
-- [x] api-4.3-ac4: API Key authentication
-- [x] api-4.3-ac5: Token generation and refresh
-- [x] api-4.3-ac6: Token storage and reuse
-- [x] api-4.3-ac7: Authenticated scenarios testing
-- [x] api-4.3-ac8: 401 and 403 validation
+- [x] api-4.3-ac1: Basic Authentication using preemptive().basic()
+- [x] api-4.3-ac2: OAuth 2.0 Authentication Flow
+- [x] api-4.3-ac3: Bearer Token Authentication in API Testing
+- [x] api-4.3-ac4: Implement API Key Authentication
+- [x] api-4.3-ac5: Handle token generation and refresh logic
+- [x] api-4.3-ac6: Store and reuse authentication tokens across tests
+- [x] api-4.3-ac7: Test authenticated and unauthenticated scenarios
+- [x] api-4.3-ac8: Validate 401 Unauthorized and 403 Forbidden responses
 
 #### Story 4.4: Data-Driven & Parameterized API Testing (5 points)
-- [x] api-4.4-ac1: TestNG DataProvider integration
-- [x] api-4.4-ac2: Excel data reading
-- [x] api-4.4-ac3: JSON data reading
-- [x] api-4.4-ac4: Positive/negative parameterized tests
-- [x] api-4.4-ac5: POJO classes for request/response
-- [x] api-4.4-ac6: Serialization with Jackson
-- [x] api-4.4-ac7: Deserialization implementation
-- [x] api-4.4-ac8: Data-driven framework
+- [x] api-4.4-ac1: Integrate REST Assured with TestNG DataProvider for data-driven API testing
+- [x] api-4.4-ac2: Data-Driven & Parameterized API Testing with Excel
+- [x] api-4.4-ac3: Data-Driven & Parameterized API Testing with JSON
+- [x] api-4.4-ac4: Parameterized Tests for Positive and Negative API Scenarios
+- [x] api-4.4-ac5: POJO Classes for Request/Response Serialization
+- [x] api-4.4-ac6: Serialization using Jackson ObjectMapper
+- [x] api-4.4-ac7: Deserialization to Extract Response into Objects
+- [x] api-4.4-ac8: Data-Driven & Parameterized API Testing Framework
 
 #### Story 4.5: Advanced REST Assured Techniques (5 points)
-- [x] api-4.5-ac1: Multipart file upload
-- [x] api-4.5-ac2: File download validation
-- [x] api-4.5-ac3: Request/response logging
-- [x] api-4.5-ac4: Filters implementation
-- [x] api-4.5-ac5: Response time validation
-- [x] api-4.5-ac6: JDBC database integration
-- [x] api-4.5-ac7: WireMock for API mocking
-- [x] api-4.5-ac8: Retry logic for flaky tests
+- [x] api-4.5-ac1: Multipart file upload using multiPart()
+- [x] api-4.5-ac2: Validate and download files from API responses
+- [x] api-4.5-ac3: Request/response logging using log().all()
+- [x] api-4.5-ac4: Implement filters for logging and modifying requests
+- [x] api-4.5-ac5: Validate API response time and set SLA thresholds
+- [x] api-4.5-ac6: Integrate database validation with JDBC
+- [x] api-4.5-ac7: Mock API responses using WireMock
+- [x] api-4.5-ac8: Implement retry logic for flaky API tests
 
 ### Sprint 3: Modern Tools & DevOps
 
 #### Story 5.1: Playwright Project Setup & Configuration (3 points)
 - [x] playwright-5.1-ac1: Node.js and npm installation
 - [x] playwright-5.1-ac2: Playwright project initialization
-- [ ] playwright-5.1-ac3: TypeScript configuration
-- [ ] playwright-5.1-ac4: playwright.config.ts
+- [x] playwright-5.1-ac3: TypeScript configuration
+- [x] playwright-5.1-ac4: playwright.config.ts
 - [ ] playwright-5.1-ac5: Folder structure setup
 - [ ] playwright-5.1-ac6: Multiple browsers configuration
 - [ ] playwright-5.1-ac7: Environment-specific configs
@@ -409,7 +409,7 @@
 - [ ] git-6.6-ac7: .gitignore usage
 - [ ] git-6.6-ac8: Release tagging
 - [ ] git-6.6-ac9: Commit message best practices
-- [ ] git-6.6-ac10: Collaborative workflows
+- [ ] git-6.6-ac10: Image versioning
 
 #### Story 7.1: Microservices Testing Strategy (5 points)
 - [ ] microservices-7.1-ac1: Microservices architecture
@@ -744,7 +744,7 @@
 ### 2026-02-02 - Iteration 57
 - **Feature Completed**: selenium-2.2-ac8
 - **Content File**: ./sdet-learning-content/selenium-2.2-ac8.md
-- **Git Commit**: `Content: selenium-2.2-ac8 - Implement relative locators in Selenium 4 (above, below, near, toLeftOf, toRightOf)`
+- **Git Commit**: `Content: selenium-2.2-ac8 - Implement relative locators in Selenium 4 (above, below, near, toLeftOf, toRightOf, near)`
 
 ### 2026-02-02 - Iteration 56
 - **Feature Completed**: selenium-2.2-ac7
@@ -1173,3 +1173,13 @@
 - **Feature Completed**: playwright-5.1-ac2
 - **Content File**: ./sdet-learning-content/playwright-5.1-ac2.md
 - **Git Commit**: `Content: playwright-5.1-ac2 - Playwright Project Setup & Configuration`
+
+### 2026-02-06 - Iteration 186
+- **Feature Completed**: playwright-5.1-ac3
+- **Content File**: ./sdet-learning-content/playwright-5.1-ac3.md
+- **Git Commit**: `Content: playwright-5.1-ac3 - Configure TypeScript in Playwright project`
+
+### 2026-02-06 - Iteration 187
+- **Feature Completed**: playwright-5.1-ac4
+- **Content File**: ./sdet-learning-content/playwright-5.1-ac4.md
+- **Git Commit**: `Content: playwright-5.1-ac4 - Understand and configure playwright.config.ts file`
