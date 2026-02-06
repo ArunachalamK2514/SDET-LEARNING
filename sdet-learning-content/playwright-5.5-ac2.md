@@ -1,177 +1,175 @@
 # Playwright: Reusing Authentication State Across Tests
 
 ## Overview
-In end-to-end testing, logging into an application for every single test case can be a significant bottleneck, leading to slower test execution times and increased flakiness. Playwright provides a robust mechanism to capture and reuse authentication states, allowing tests to start directly from an authenticated session without repeatedly performing login actions. This significantly speeds up test suites and improves their reliability. This feature is crucial for efficient test automation in real-world applications.
+In end-to-end test automation, repeatedly logging into an application for every test scenario can be a significant bottleneck, leading to slower test execution times and increased test flakiness. Playwright provides a robust mechanism to capture and reuse authentication states, allowing tests to start directly from a logged-in state. This dramatically improves test efficiency and focuses tests on the specific feature under validation rather than the login process itself. This feature is crucial for SDETs working on complex applications with authentication-gated features.
 
 ## Detailed Explanation
-Playwright's `storageState` option allows you to save the browser's authentication state (cookies, local storage, session storage) to a JSON file. This file can then be loaded by subsequent tests or test files, effectively restoring the user's logged-in session.
+Playwright's `storageState` option is the core of reusing authentication. When a browser context is created, you can specify a file path for `storageState`. Playwright will then either load the authentication state from this file (if it exists) or save the current authentication state to it (if a state is successfully established during a test run).
 
-The typical workflow involves:
-1.  **Login once**: Create a dedicated "login" test or a setup fixture that performs the login steps and saves the `storageState` to a file (e.g., `auth.json`).
-2.  **Reuse state**: Configure your Playwright project to use this `auth.json` file for all tests that require an authenticated user. This ensures that every test context starts with the saved authentication state.
+The authentication state typically includes cookies, local storage, and session storage. By capturing this state after a successful login and reusing it, subsequent test runs can bypass the login flow.
 
-This approach is particularly beneficial for:
-*   **Large test suites**: Avoids redundant login steps.
-*   **Faster feedback**: Developers get quicker test results.
-*   **Reduced flakiness**: Login processes can sometimes be unstable; reusing a stable state mitigates this.
+There are two primary ways to manage `storageState`:
 
-### `storageState` Options:
-*   **`storageState: 'path/to/auth.json'` (in `playwright.config.ts`)**: This tells Playwright to load the authentication state from the specified file for all tests running in that project.
-*   **`browserContext.storageState()` (programmatic)**: Allows you to programmatically save the `storageState` from a browser context. This is used in the initial login script.
-*   **`browser.newContext({ storageState: 'path/to/auth.json' })` (programmatic)**: Allows you to programmatically create a new browser context with a loaded authentication state.
+1.  **Via `browserContext.storageState()` and `browser.newContext()`**: You can explicitly capture the state after a login and save it to a JSON file. Then, for subsequent tests, you can load this JSON file when creating a new browser context. This approach offers fine-grained control and is often used for global setup.
+2.  **Via `playwright.config.ts`**: For a more integrated approach, Playwright allows configuring `storageState` directly in `playwright.config.ts` within the `use` option of your project. You can define a global setup file that performs the login and saves the state, and then all tests in that project will automatically use this state.
+
+### How it works (Conceptual Flow):
+1.  **Login Test (Global Setup)**: A dedicated test or setup script navigates to the login page, enters credentials, and successfully logs in.
+2.  **Capture State**: After successful login, `browserContext.storageState({ path: 'auth.json' })` is called to save the current authentication state to `auth.json`.
+3.  **Reuse State**: For all subsequent tests, a new `browserContext` is launched with `storageState: 'auth.json'`. This context will automatically have the cookies, local storage, and session storage from the `auth.json` file, effectively starting the tests in a logged-in state.
 
 ## Code Implementation
 
-First, let's create a setup file (e.g., `global.setup.ts`) to log in and save the authentication state.
+First, let's create a global setup file (`global-setup.ts`) to perform the login and save the authentication state.
 
 ```typescript
-// global.setup.ts
-import { test as setup, expect } from '@playwright/test';
+// global-setup.ts
+import { chromium, FullConfig } from '@playwright/test';
 
-const AUTH_FILE = 'playwright-auth.json'; // Define a constant for the auth file name
+async function globalSetup(config: FullConfig) {
+  const { baseURL, storageState } = config.projects[0].use; // Assuming baseURL and storageState are defined in playwright.config.ts
+  if (!baseURL) {
+    throw new Error('baseURL is not defined in playwright.config.ts');
+  }
+  if (!storageState) {
+    throw new Error('storageState path is not defined in playwright.config.ts');
+  }
 
-setup('authenticate', async ({ page }) => {
-  // Navigate to the login page
-  await page.goto('https://www.saucedemo.com/'); // Replace with your application's login URL
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
 
-  // Perform login steps
-  await page.fill('input[data-test="username"]', 'standard_user');
-  await page.fill('input[data-test="password"]', 'secret_sauce');
-  await page.click('input[data-test="login-button"]');
+  console.log(`Navigating to login page: ${baseURL}/login`);
+  await page.goto(`${baseURL}/login`); // Replace with your actual login URL
 
-  // Verify successful login (e.g., check for a specific element on the dashboard)
-  await expect(page.locator('.inventory_list')).toBeVisible();
+  // Perform login
+  console.log('Performing login...');
+  await page.fill('input#username', 'your_username'); // Replace with your username input selector
+  await page.fill('input#password', 'your_password'); // Replace with your password input selector
+  await page.click('button#login-button'); // Replace with your login button selector
+
+  // Wait for successful login (e.g., redirect to dashboard or an element appears)
+  await page.waitForURL(`${baseURL}/dashboard`); // Replace with your dashboard URL or a better indicator
+  console.log('Login successful. Saving storage state...');
 
   // Save authentication state
-  await page.context().storageState({ path: AUTH_FILE });
-  console.log(`Authentication state saved to ${AUTH_FILE}`);
-});
+  await page.context().storageState({ path: storageState as string });
+  console.log(`Authentication state saved to: ${storageState}`);
+
+  await browser.close();
+}
+
+export default globalSetup;
 ```
 
-Next, configure `playwright.config.ts` to run this setup and use the saved state.
+Next, configure `playwright.config.ts` to use this global setup and reuse the `storageState`.
 
 ```typescript
 // playwright.config.ts
 import { defineConfig, devices } from '@playwright/test';
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
 export default defineConfig({
-  testDir: './tests', // Your test files directory
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
+  testDir: './tests',
+  fullyParallel: true,
+  forbidOnly: !!process.env.CI,
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 1 : undefined,
+  reporter: 'html',
 
-  // Global setup file to run once before all tests
-  globalSetup: require.resolve('./global.setup'), // Path to your setup file
-
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  // Define baseURL and storageState path
   use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
-
-    /* Collect traces upon retrying the first time. See https://playwright.dev/docs/trace-viewer */
+    baseURL: 'http://localhost:3000', // Replace with your application's base URL
     trace: 'on-first-retry',
-    // Reuse authentication state from the saved file
-    storageState: 'playwright-auth.json', // Must match the file name saved in global.setup.ts
+    storageState: 'playwright-auth-state.json', // Path to save/load auth state
   },
 
-  /* Configure projects for major browsers */
+  // Configure global setup
+  globalSetup: require.resolve('./global-setup'),
+
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    // Add other browsers if needed
+    // Add other projects for different browsers if needed
   ],
 });
 ```
 
-Finally, write your actual test files. These tests will automatically start in a logged-in state.
+Finally, a test file that leverages the saved authentication state.
 
 ```typescript
 // tests/dashboard.spec.ts
 import { test, expect } from '@playwright/test';
 
-test.describe('Dashboard Functionality', () => {
-  test.beforeEach(async ({ page }) => {
-    // Navigate to the application's base URL.
-    // The browser context should already be logged in due to storageState.
-    await page.goto('https://www.saucedemo.com/inventory.html'); // Assuming this is the authenticated dashboard URL
+test.describe('Dashboard access', () => {
+  test('should display user dashboard after login without explicit login steps', async ({ page, baseURL }) => {
+    // Because storageState is configured, this page context starts already logged in.
+    await page.goto(`${baseURL}/dashboard`); // Navigate to a protected route
+
+    // Verify a logged-in element (e.g., user profile name, logout button)
+    await expect(page.locator('h1#dashboard-title')).toHaveText('Welcome to your Dashboard');
+    await expect(page.locator('button#logout-button')).toBeVisible();
+
+    console.log('Dashboard test passed, user was automatically logged in.');
   });
 
-  test('should display inventory items after successful authentication', async ({ page }) => {
-    // Verify that inventory items are visible without explicit login steps
-    await expect(page.locator('.inventory_item')).toHaveCount(6);
-    await expect(page.locator('.inventory_item_name').first()).toHaveText('Sauce Labs Backpack');
-  });
+  test('should display user profile without re-logging in', async ({ page, baseURL }) => {
+    await page.goto(`${baseURL}/profile`); // Navigate to another protected route
 
-  test('should be able to navigate to product details page', async ({ page }) => {
-    await page.locator('#item_4_title_link').click();
-    await expect(page.url()).toContain('/inventory-item.html?id=4');
-    await expect(page.locator('.inventory_details_name')).toHaveText('Sauce Labs Backpack');
+    await expect(page.locator('h2#profile-header')).toHaveText('User Profile');
+    await expect(page.locator('span#username-display')).toHaveText('your_username'); // Verify username display
   });
 });
 ```
 
-To run this:
-1.  Make sure you have Playwright installed (`npm init playwright@latest`).
-2.  Save the files as `global.setup.ts`, `playwright.config.ts`, and `tests/dashboard.spec.ts`.
-3.  Run `npx playwright test`.
+To run these tests:
+1.  Ensure you have an application running at `http://localhost:3000` (or your configured `baseURL`) with a login page and protected routes.
+2.  Install Playwright: `npm init playwright@latest`
+3.  Place `global-setup.ts`, `playwright.config.ts`, and `tests/dashboard.spec.ts` in your project.
+4.  Run `npx playwright test`.
 
-You will observe that the `authenticate` setup runs once, creates `playwright-auth.json`, and then all subsequent tests immediately start on the inventory page without performing login actions.
+The `global-setup.ts` will run once before all tests, create `playwright-auth-state.json`, and then subsequent tests will use this file.
 
 ## Best Practices
--   **Isolate Login**: Create a single, dedicated setup script or test file responsible for logging in and saving the `storageState`. This centralizes your authentication logic.
--   **Ephemeral `storageState`**: Consider cleaning up the `auth.json` file after the test run, especially in CI/CD environments, to ensure a clean state for subsequent runs. Or, let Playwright handle it within its temporary test runner environment.
--   **Security**: Do not commit `auth.json` files to your version control system, as they might contain sensitive user tokens. Ensure they are added to `.gitignore`.
--   **Multiple Users**: For scenarios requiring different user roles, create separate `storageState` files (e.g., `admin-auth.json`, `guest-auth.json`) and configure different Playwright projects in `playwright.config.ts` to use them.
--   **Avoid Over-reliance**: While useful, don't completely abandon testing the login flow itself. Periodically run a full end-to-end test that includes the login steps to ensure that part of the application remains functional.
--   **Use `baseURL`**: Define `baseURL` in `playwright.config.ts` to make your `page.goto()` calls cleaner (e.g., `await page.goto('/inventory.html')`).
+-   **Isolate Login Logic**: Keep the login flow in a dedicated setup file (e.g., `global-setup.ts`) or a fixture.
+-   **Parameterize Credentials**: Avoid hardcoding credentials. Use environment variables or a secure configuration management system.
+-   **Invalidate State on Change**: If your application's authentication mechanism changes (e.g., token refresh logic), you might need to manually delete the `storageState` file to force a fresh login during the next test run.
+-   **Consider Different Roles**: For testing different user roles, create separate `storageState` files for each role (e.g., `admin-auth.json`, `user-auth.json`) and configure projects to use them.
+-   **Use `test.use()` for granular control**: For specific test files or blocks that need a different `storageState`, you can override it using `test.use({ storageState: 'path/to/another-auth.json' })`.
+-   **Error Handling**: Ensure robust error handling in your `global-setup.ts` to catch failed logins or unexpected UI changes.
 
 ## Common Pitfalls
--   **`auth.json` not found**: If the `globalSetup` script fails to run or fails to save the `storageState` file, subsequent tests will fail because they won't find the `auth.json` file. Ensure `globalSetup` path is correct and the setup script passes.
--   **Expired Sessions**: Authentication tokens can expire. If your tests run for a very long time, or if the `auth.json` is reused across different test runs over days, the saved session might become invalid, leading to unauthorized errors. Re-running the `globalSetup` (e.g., by deleting `auth.json` or forcing it) usually fixes this.
--   **Incorrect `storageState` path**: Mismatch between the path where the `storageState` is saved and where it's loaded from in `playwright.config.ts` will cause issues. Use a constant for the filename.
--   **State Pollution**: Be mindful that `storageState` captures *all* local storage, session storage, and cookies. If your application has complex state management, this could inadvertently lead to tests being affected by previous test runs. Isolate tests as much as possible.
+-   **Stale Authentication State**: If the `auth.json` file becomes outdated (e.g., password change, session expiry), tests will fail unexpectedly. The `global-setup` should ideally re-run and refresh the state if needed, or you might need a mechanism to periodically clear the state file.
+-   **Incorrect Selectors**: Changes to the login page's HTML structure can break the `global-setup.ts` script, leading to failed logins and subsequently failing tests.
+-   **Environment Differences**: Authentication flows might differ between local, staging, and production environments. Ensure your `baseURL` and login selectors are adaptable.
+-   **Security Concerns**: Storing authentication states (especially with sensitive data like tokens) directly in your repository (if not ignored) can be a security risk. Ensure `storageState` files are properly handled and ideally not committed to version control. They are usually generated during CI runs or locally.
+-   **No Wait After Login**: Forgetting to add appropriate `await page.waitForURL()` or `await page.waitForSelector()` after login can cause tests to proceed before the authentication state is fully established.
 
 ## Interview Questions & Answers
-1.  **Q**: How can you optimize Playwright test execution time, especially for tests that require a logged-in user?
-    **A**: By using Playwright's `storageState` feature. This involves creating a `globalSetup` script to log in once, save the authentication state to a JSON file (e.g., `auth.json`), and then configuring `playwright.config.ts` to load this `storageState` for all relevant test projects. This allows tests to bypass repetitive login steps, starting directly from an authenticated session, significantly speeding up the test suite.
+1.  **Q: Why is reusing authentication state important in Playwright tests?**
+    **A**: Reusing authentication state significantly speeds up test execution by avoiding repetitive login flows for every test case. It also makes tests more focused, as they only test the specific feature under validation, not the login process, reducing flakiness associated with login UI interactions.
 
-2.  **Q**: Explain the security implications of `storageState` and how you would mitigate them.
-    **A**: The `storageState` file contains sensitive information like authentication tokens and session cookies. The primary security concern is committing this file to version control, which could expose credentials. Mitigation strategies include:
-    *   Adding `auth.json` (or whatever your file is named) to `.gitignore`.
-    *   Ensuring `storageState` files are generated on-the-fly during CI/CD runs and never persisted in shared environments.
-    *   Considering short-lived tokens or mechanisms to invalidate sessions after test runs, if applicable to the application under test.
+2.  **Q: How do you implement authentication reuse in Playwright?**
+    **A**: The primary method involves using Playwright's `storageState` option. A `global-setup.ts` script is typically used to perform a login once, capture the `browserContext.storageState()` into a JSON file (e.g., `playwright-auth-state.json`), and then `playwright.config.ts` is configured to use this `storageState` file for all tests within a project.
 
-3.  **Q**: When would you NOT use `storageState` for authentication in Playwright tests?
-    **A**: You would avoid using `storageState` in scenarios where:
-    *   You specifically need to test the login/logout flow itself.
-    *   Each test requires a unique user account or a different authentication state (though you could generate multiple `storageState` files for this).
-    *   The application's authentication state is highly dynamic or tied to specific browser sessions in a way that `storageState` capture/restore might not fully replicate.
-    *   The overhead of logging in is negligible compared to the test's overall execution time.
+3.  **Q: What exactly does Playwright's `storageState` capture?**
+    **A**: `storageState` captures the current browser context's state, which includes cookies, local storage, and session storage. These are the primary mechanisms web applications use to maintain a user's logged-in session.
+
+4.  **Q: What are the security implications of `storageState`?**
+    **A**: The `storageState` file contains sensitive information (like session tokens or cookies). It should never be committed to version control (add it to `.gitignore`). In CI/CD pipelines, ensure the state file is generated securely and not exposed. For local development, it should be treated with care, similar to other sensitive configuration files.
+
+5.  **Q: How would you handle testing with multiple user roles (e.g., admin, regular user) using `storageState`?**
+    **A**: You would create separate `storageState` files for each role (e.g., `admin-auth.json`, `user-auth.json`). In `playwright.config.ts`, you can define multiple projects, each configured to use a specific `storageState` file, or create separate global setup files that generate these role-specific states. Alternatively, you can use `test.use()` within specific test files to switch the `storageState` for a particular set of tests.
 
 ## Hands-on Exercise
-1.  **Objective**: Adapt the provided code to test a different authenticated page in the Sauce Demo application (e.g., the shopping cart page after adding an item).
-2.  **Instructions**:
-    *   Modify `global.setup.ts` if needed (though the login part remains the same).
-    *   Create a new test file, `tests/cart.spec.ts`.
-    *   In `cart.spec.ts`, navigate to the inventory page, add an item to the cart, then navigate to the cart page.
-    *   Verify that the cart page shows the added item, ensuring you are still logged in.
-    *   Ensure the tests run without explicit login steps in `cart.spec.ts`.
+1.  **Setup a basic web application with a login page**: If you don't have one, you can use a simple Node.js/Express app or even a static HTML page with client-side login simulation. Ensure it sets some cookies or local storage items upon successful login.
+2.  **Implement `global-setup.ts`**: Write the script to navigate to your login page, fill in credentials, and save the `storageState` to `auth.json`.
+3.  **Configure `playwright.config.ts`**: Update your Playwright configuration to use the `global-setup.ts` and set the `storageState` path.
+4.  **Create a protected test**: Write a test that attempts to access a page that requires authentication without performing explicit login steps. Assert that the page loads correctly and displays elements indicative of a logged-in user.
+5.  **Verify**: Run your tests. Observe that the login flow is only executed once (by `global-setup.ts`) and all subsequent tests start already authenticated.
+6.  **Experiment**: Try invalidating the `auth.json` file (e.g., by changing credentials in the setup or manually deleting the file) and observe the test failures.
 
 ## Additional Resources
--   **Playwright Documentation - Authentication**: [https://playwright.dev/docs/auth](https://playwright.dev/docs/auth)
--   **Blog Post on Playwright Authentication**: [https://playwright.dev/docs/auth#reuse-authentication-state-between-tests](https://playwright.dev/docs/auth#reuse-authentication-state-between-tests)
--   **Sauce Demo Application (for practice)**: [https://www.saucedemo.com/](https://www.saucedemo.com/)
+-   **Playwright Documentation on Authentication**: [https://playwright.dev/docs/auth](https://playwright.dev/docs/auth)
+-   **Playwright Global Setup/Teardown**: [https://playwright.dev/docs/test-global-setup-teardown](https://playwright.dev/docs/test-global-setup-teardown)
+-   **Testing with different user roles**: [https://playwright.dev/docs/test-auth#reuse-authentication-in-tests-with-different-users](https://playwright.dev/docs/test-auth#reuse-authentication-in-tests-with-different-users)
