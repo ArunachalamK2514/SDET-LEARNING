@@ -269,7 +269,7 @@
 - [x] playwright-5.1-ac2: Playwright project initialization
 - [x] playwright-5.1-ac3: TypeScript configuration
 - [x] playwright-5.1-ac4: playwright.config.ts
-- [ ] playwright-5.1-ac5: Folder structure setup
+- [x] playwright-5.1-ac5: Folder structure setup
 - [ ] playwright-5.1-ac6: Multiple browsers configuration
 - [ ] playwright-5.1-ac7: Environment-specific configs
 - [ ] playwright-5.1-ac8: Base URL, timeout, retries config
@@ -1183,3 +1183,8 @@
 - **Feature Completed**: playwright-5.1-ac4
 - **Content File**: ./sdet-learning-content/playwright-5.1-ac4.md
 - **Git Commit**: `Content: playwright-5.1-ac4 - Understand and configure playwright.config.ts file`
+
+### 2026-02-06 - Iteration 188
+- **Feature Completed**: playwright-5.1-ac5
+- **Content File**: ./sdet-learning-content/playwright-5.1-ac5.md
+- **Git Commit**: `Content: playwright-5.1-ac5 - Set up folder structure for Playwright tests`
