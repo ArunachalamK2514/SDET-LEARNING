@@ -290,7 +290,7 @@
 - [x] playwright-5.3-ac1: Browser, context, page hierarchy
 - [x] playwright-5.3-ac2: Multiple browser contexts
 - [x] playwright-5.3-ac3: Multiple pages handling
-- [ ] playwright-5.3-ac4: Navigation methods
+- [x] playwright-5.3-ac4: Navigation methods
 - [ ] playwright-5.3-ac5: Actions (click, fill, type, etc.)
 - [ ] playwright-5.3-ac6: File uploads
 - [ ] playwright-5.3-ac7: File downloads
@@ -1264,3 +1264,7 @@
 - **Feature Completed**: playwright-5.3-ac3
 - **Content File**: ./sdet-learning-content/playwright-5.3-ac3.md
 - **Git Commit**: `Content: playwright-5.3-ac3 - Handle multiple pages within single context`
+### 2026-02-06 - Iteration 205
+- **Feature Completed**: playwright-5.3-ac4
+- **Content File**: ./sdet-learning-content/playwright-5.3-ac4.md
+- **Git Commit**: `Content: playwright-5.3-ac4 - Implement Playwright navigation methods`
