@@ -9,7 +9,7 @@
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=3
+MAX_ITERATIONS=5
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
@@ -139,7 +139,7 @@ To avoid file editing errors, use the EXACT text below when using the 'replace' 
    $LOG_CONTEXT
    \`\`\`
    
-   *Action*: Append your new log entry (Date, Iteration, Feature ID, Commit) after this block.
+   *Action*: Append your new log entry (Date, Iteration, Feature ID, Commit) after this block. NEVER delete or modify existing lines in '$PROGRESS_FILE' except for marking the feature complete as described above.
 
 ### CRITICAL INSTRUCTION - READ CAREFULLY ###
 You MUST generate content for EXACTLY ONE (1) acceptance criterion ONLY (the one provided above).
