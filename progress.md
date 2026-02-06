@@ -332,7 +332,7 @@
 #### Story 5.7: Playwright CI/CD Integration & Best Practices (4 points)
 - [x] playwright-5.7-ac1: CI environment configuration
 - [x] playwright-5.7-ac2: GitHub Actions workflow
-- [ ] playwright-5.7-ac3: Jenkins pipeline
+- [x] playwright-5.7-ac3: Jenkins pipeline
 - [ ] playwright-5.7-ac4: Parallel execution with workers
 - [ ] playwright-5.7-ac5: Test sharding
 - [ ] playwright-5.7-ac6: HTML reports in CI
@@ -1403,4 +1403,9 @@
 - **Feature Completed**: playwright-5.7-ac2
 - **Content File**: ./sdet-learning-content/playwright-5.7-ac2.md
 - **Git Commit**: Content: playwright-5.7-ac2 - Set up GitHub Actions workflow for Playwright tests
+
+### 2026-02-06 - Iteration 237
+- **Feature Completed**: playwright-5.7-ac3
+- **Content File**: ./sdet-learning-content/playwright-5.7-ac3.md
+- **Git Commit**: Content: playwright-5.7-ac3 - Configure Jenkins pipeline for Playwright execution
 
