@@ -307,7 +307,7 @@
 - [x] playwright-5.4-ac6: Test hooks
 - [x] playwright-5.4-ac7: Describe blocks grouping
 - [x] playwright-5.4-ac8: Skip and focus tests
-- [ ] playwright-5.4-ac9: Test annotations
+- [x] playwright-5.4-ac9: Test annotations
 
 #### Story 5.5: Authentication & Network Interception (5 points)
 - [ ] playwright-5.5-ac1: UI login and auth state save
@@ -1321,3 +1321,8 @@
 - **Feature Completed**: playwright-5.4-ac8
 - **Content File**: ./sdet-learning-content/playwright-5.4-ac8.md
 - **Git Commit**: `Content: playwright-5.4-ac8 - Skip and focus tests using test.skip(), test.only(), and test.fixme()`
+
+### 2026-02-06 - Iteration 218
+- **Feature Completed**: playwright-5.4-ac9
+- **Content File**: ./sdet-learning-content/playwright-5.4-ac9.md
+- **Git Commit**: `Content: playwright-5.4-ac9 - Annotate tests with test.info() for better reporting`
