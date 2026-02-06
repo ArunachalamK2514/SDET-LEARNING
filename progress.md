@@ -15,11 +15,11 @@
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
 | 3. TestNG & Framework Design | 49 | 10 | 18% |
 | 4. REST Assured API Testing | 45 | 1 | 2% |
-| 5. Playwright TypeScript | 54 | 0 | 0% |
+| 5. Playwright TypeScript | 54 | 1 | 2% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **96** | **27%** |
+| **TOTAL** | **353** | **97** | **27%** |
 
 ---
 
@@ -278,7 +278,7 @@
 #### Story 5.2: Playwright Locators & Auto-Waiting (5 points)
 - [x] playwright-5.2-ac1: Recommended locators (getByRole, etc.)
 - [x] playwright-5.2-ac2: Locator vs elementHandle
-- [ ] playwright-5.2-ac3: CSS and XPath selectors
+- [x] playwright-5.2-ac3: CSS and XPath selectors
 - [ ] playwright-5.2-ac4: Text-based locators
 - [ ] playwright-5.2-ac5: nth(), first(), last()
 - [ ] playwright-5.2-ac6: Filtering locators
@@ -1218,3 +1218,8 @@
 - **Feature Completed**: playwright-5.2-ac2
 - **Content File**: ./sdet-learning-content/playwright-5.2-ac2.md
 - **Git Commit**: `Content: playwright-5.2-ac2 - Playwright Locators & Auto-Waiting: Locator vs elementHandle`
+
+### 2026-02-06 - Iteration 195
+- **Feature Completed**: playwright-5.2-ac3
+- **Content File**: ./sdet-learning-content/playwright-5.2-ac3.md
+- **Git Commit**: `Content: playwright-5.2-ac3 - Use CSS selectors and XPath when semantic locators are not available`
