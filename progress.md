@@ -314,7 +314,7 @@
 - [x] playwright-5.5-ac2: Auth state reuse
 - [x] playwright-5.5-ac3: API-based authentication
 - [x] playwright-5.5-ac4: Auth strategies comparison
-- [ ] playwright-5.5-ac5: Network request interception
+- [x] playwright-5.5-ac5: Network request interception
 - [ ] playwright-5.5-ac6: API response mocking
 - [ ] playwright-5.5-ac7: Request modification
 - [ ] playwright-5.5-ac8: Network wait strategies
@@ -1344,3 +1344,7 @@
 - **Feature Completed**: playwright-5.5-ac4
 - **Content File**: ./sdet-learning-content/playwright-5.5-ac4.md
 - **Git Commit**: `Content: playwright-5.5-ac4 - Compare UI login vs token-based authentication strategies`
+### 2026-02-06 - Iteration 223
+- **Feature Completed**: playwright-5.5-ac5
+- **Content File**: ./sdet-learning-content/playwright-5.5-ac5.md
+- **Git Commit**: `Content: playwright-5.5-ac5 - Network Request Interception with Playwright's page.route()`
