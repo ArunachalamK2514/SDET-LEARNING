@@ -172,30 +172,30 @@
 - [x] patterns-3.3-ac3: Singleton pattern for WebDriver
 - [x] patterns-3.3-ac4: Factory pattern for browsers
 - [x] patterns-3.3-ac5: Data-Driven Testing framework
-- [x] patterns-3.3-ac6: Strategy pattern
-- [x] patterns-3.3-ac7: Facade pattern
-- [x] patterns-3.3-ac8: Observer pattern
-- [x] patterns-3.3-ac9: Modular framework architecture
-- [x] patterns-3.3-ac10: When to use each pattern
+- [x] patterns-3.3-ac6: Strategy pattern for test execution strategies
+- [x] patterns-3.3-ac7: Implement Facade pattern to simplify complex subsystems
+- [x] patterns-3.3-ac8: Build Observer pattern for test event notifications
+- [x] patterns-3.3-ac9: Create modular framework architecture with clear separation of concerns
+- [x] patterns-3.3-ac10: Design Patterns for Test Automation: When to Use Each Pattern
 
 #### Story 3.4: Framework Architecture & Best Practices (5 points)
-- [x] framework-3.4-ac1: Framework folder structure
-- [x] framework-3.4-ac2: Configuration management
+- [x] framework-3.4-ac1: Framework Architecture & Best Practices - Folder Structure
+- [x] framework-3.4-ac2: Configuration Management
 - [x] framework-3.4-ac3: Centralized utility packages
-- [x] framework-3.4-ac4: Test data management layer
+- [x] framework-3.4-ac4: Build test data management layer with Excel, JSON, CSV readers
 - [x] framework-3.4-ac5: Environment-specific configuration
-- [x] framework-3.4-ac6: Abstraction layers
-- [x] framework-3.4-ac7: Dependency injection
-- [x] framework-3.4-ac8: Framework documentation
-- [x] framework-3.4-ac9: Scalability principles
+- [x] framework-3.4-ac6: Design abstraction layers separating test logic from implementation
+- [x] framework-3.4-ac7: Implement dependency injection for better testability
+- [x] framework-3.4-ac8: Framework documentation with architecture diagrams
+- [x] framework-3.4-ac9: Explain scalability, maintainability, and reusability principles
 
 #### Story 3.5: Logging & Reporting Implementation (5 points)
-- [x] reporting-3.5-ac1: Log4j2 integration
-- [x] reporting-3.5-ac2: Log levels configuration
-- [x] reporting-3.5-ac3: ExtentReports HTML reporting
-- [x] reporting-3.5-ac4: Screenshot on failure
-- [x] reporting-3.5-ac5: Create custom report with summary
-- [x] reporting-3.5-ac6: Allure reporting integration
+- [x] reporting-3.5-ac1: Integrate Log4j2 for application logging
+- [x] reporting-3.5-ac2: Understanding Log Levels and Configuration in Log4j2
+- [x] reporting-3.5-ac3: Implement ExtentReports for detailed HTML reporting
+- [x] reporting-3.5-ac4: Implement screenshot capture on test failure for enhanced reporting
+- [x] reporting-3.5-ac5: Create custom report with test execution summary, pass/fail counts
+- [x] reporting-3.5-ac6: Integrate Allure reporting framework
 - [x] reporting-3.5-ac7: Add test execution videos for failed tests
 - [x] reporting-3.5-ac8: Implement ReportPortal for AI-powered test analysis
 - [x] reporting-3.5-ac9: Execution trends and historical data
@@ -270,7 +270,7 @@
 - [x] playwright-5.1-ac3: TypeScript configuration
 - [x] playwright-5.1-ac4: playwright.config.ts
 - [x] playwright-5.1-ac5: Folder structure setup
-- [ ] playwright-5.1-ac6: Multiple browsers configuration
+- [x] playwright-5.1-ac6: Multiple browsers configuration
 - [ ] playwright-5.1-ac7: Environment-specific configs
 - [ ] playwright-5.1-ac8: Base URL, timeout, retries config
 - [ ] playwright-5.1-ac9: VS Code with Playwright extension
@@ -1188,3 +1188,8 @@
 - **Feature Completed**: playwright-5.1-ac5
 - **Content File**: ./sdet-learning-content/playwright-5.1-ac5.md
 - **Git Commit**: `Content: playwright-5.1-ac5 - Set up folder structure for Playwright tests`
+
+### 2026-02-06 - Iteration 189
+- **Feature Completed**: playwright-5.1-ac6
+- **Content File**: ./sdet-learning-content/playwright-5.1-ac6.md
+- **Git Commit**: `Content: playwright-5.1-ac6 - Configure multiple browsers in Playwright`
