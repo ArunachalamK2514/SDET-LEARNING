@@ -271,7 +271,7 @@
 - [x] playwright-5.1-ac4: playwright.config.ts
 - [x] playwright-5.1-ac5: Folder structure setup
 - [x] playwright-5.1-ac6: Multiple browsers configuration
-- [ ] playwright-5.1-ac7: Environment-specific configs
+- [x] playwright-5.1-ac7: Environment-specific configs
 - [ ] playwright-5.1-ac8: Base URL, timeout, retries config
 - [ ] playwright-5.1-ac9: VS Code with Playwright extension
 
@@ -1193,3 +1193,8 @@
 - **Feature Completed**: playwright-5.1-ac6
 - **Content File**: ./sdet-learning-content/playwright-5.1-ac6.md
 - **Git Commit**: `Content: playwright-5.1-ac6 - Configure multiple browsers in Playwright`
+
+### 2026-02-06 - Iteration 190
+- **Feature Completed**: playwright-5.1-ac7
+- **Content File**: ./sdet-learning-content/playwright-5.1-ac7.md
+- **Git Commit**: `Content: playwright-5.1-ac7 - Set up environment-specific configuration files`
