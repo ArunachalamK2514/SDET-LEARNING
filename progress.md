@@ -302,7 +302,7 @@
 - [x] playwright-5.4-ac1: Built-in fixtures
 - [x] playwright-5.4-ac2: Custom fixtures
 - [x] playwright-5.4-ac3: Fixture composition
-- [ ] playwright-5.4-ac4: Data sharing with fixtures
+- [x] playwright-5.4-ac4: Data sharing with fixtures
 - [ ] playwright-5.4-ac5: Page object fixtures
 - [ ] playwright-5.4-ac6: Test hooks
 - [ ] playwright-5.4-ac7: Describe blocks grouping
