@@ -288,7 +288,7 @@
 
 #### Story 5.3: Playwright Core Features (5 points)
 - [x] playwright-5.3-ac1: Browser, context, page hierarchy
-- [ ] playwright-5.3-ac2: Multiple browser contexts
+- [x] playwright-5.3-ac2: Multiple browser contexts
 - [ ] playwright-5.3-ac3: Multiple pages handling
 - [ ] playwright-5.3-ac4: Navigation methods
 - [ ] playwright-5.3-ac5: Actions (click, fill, type, etc.)
@@ -1251,9 +1251,12 @@
 ### 2026-02-06 - Iteration 201
 - **Feature Completed**: playwright-5.2-ac9
 - **Content File**: ./sdet-learning-content/playwright-5.2-ac9.md
-- **Git Commit**: `Content: playwright-5.2-ac9 - Explain difference between page.waitForSelector vs locator.waitFor` 
- # # #   2 0 2 6 - 0 2 - 0 6   -   I t e r a t i o n   2 0 2  
- -   * * F e a t u r e   C o m p l e t e d * * :   p l a y w r i g h t - 5 . 3 - a c 1  
- -   * * C o n t e n t   F i l e * * :   . / s d e t - l e a r n i n g - c o n t e n t / p l a y w r i g h t - 5 . 3 - a c 1 . m d  
- -   * * G i t   C o m m i t * * :   \ C o n t e n t :   p l a y w r i g h t - 5 . 3 - a c 1   -   U n d e r s t a n d   b r o w s e r ,   c o n t e x t ,   a n d   p a g e   h i e r a r c h y   i n   P l a y w r i g h t  
- 
+- **Git Commit**: `Content: playwright-5.2-ac9 - Explain difference between page.waitForSelector vs locator.waitFor`
+### 2026-02-06 - Iteration 202
+- **Feature Completed**: playwright-5.3-ac1
+- **Content File**: ./sdet-learning-content/playwright-5.3-ac1.md
+- **Git Commit**: \Content: playwright-5.3-ac1 - Understand browser, context, and page hierarchy in Playwright
+### 2026-02-06 - Iteration 203
+- **Feature Completed**: playwright-5.3-ac2
+- **Content File**: ./sdet-learning-content/playwright-5.3-ac2.md
+- **Git Commit**: `Content: playwright-5.3-ac2 - Create multiple browser contexts for test isolation`
