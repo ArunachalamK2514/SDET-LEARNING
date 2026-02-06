@@ -316,7 +316,7 @@
 - [x] playwright-5.5-ac4: Auth strategies comparison
 - [x] playwright-5.5-ac5: Network request interception
 - [x] playwright-5.5-ac6: API response mocking
-- [ ] playwright-5.5-ac7: Request modification
+- [x] playwright-5.5-ac7: Request modification
 - [ ] playwright-5.5-ac8: Network wait strategies
 - [ ] playwright-5.5-ac9: Resource blocking
 
@@ -1352,3 +1352,7 @@
 - **Feature Completed**: playwright-5.5-ac6
 - **Content File**: ./sdet-learning-content/playwright-5.5-ac6.md
 - **Git Commit**: `Content: playwright-5.5-ac6 - Mock API responses for testing edge cases`
+### 2026-02-06 - Iteration 224
+- **Feature Completed**: playwright-5.5-ac7
+- **Content File**: ./sdet-learning-content/playwright-5.5-ac7.md
+- **Git Commit**: `Content: playwright-5.5-ac7 - Modifying Network Requests (Headers, Method, Post Data)`
