@@ -284,7 +284,7 @@
 - [x] playwright-5.2-ac6: Filtering locators
 - [x] playwright-5.2-ac7: Auto-waiting understanding
 - [x] playwright-5.2-ac8: waitFor() implementation
-- [ ] playwright-5.2-ac9: waitForSelector vs locator.waitFor
+- [x] playwright-5.2-ac9: waitForSelector vs locator.waitFor
 
 #### Story 5.3: Playwright Core Features (5 points)
 - [ ] playwright-5.3-ac1: Browser, context, page hierarchy
@@ -1247,3 +1247,8 @@
 - **Feature Completed**: playwright-5.2-ac8
 - **Content File**: ./sdet-learning-content/playwright-5.2-ac8.md
 - **Git Commit**: `Content: playwright-5.2-ac8 - Implement custom waiting conditions using waitFor()`
+
+### 2026-02-06 - Iteration 201
+- **Feature Completed**: playwright-5.2-ac9
+- **Content File**: ./sdet-learning-content/playwright-5.2-ac9.md
+- **Git Commit**: `Content: playwright-5.2-ac9 - Explain difference between page.waitForSelector vs locator.waitFor`
