@@ -84,11 +84,11 @@
 - [x] selenium-2.1-ac1: WebDriver architecture
 - [x] selenium-2.1-ac2: WebDriver vs RemoteWebDriver
 - [x] selenium-2.1-ac3: ChromeOptions, FirefoxOptions
-- [x] selenium-2.1-ac4: Browser profile management
 - [x] selenium-2.1-ac5: findElement vs findElements
 - [x] selenium-2.1-ac6: Exception handling
 - [x] selenium-2.1-ac7: Navigation methods
 - [x] selenium-2.1-ac8: Browser window management
+- [x] selenium-2.1-ac4: Browser profile management
 
 #### Story 2.2: Advanced Locator Strategies (5 points)
 - [x] selenium-2.2-ac1: All 8 locator strategies
@@ -338,7 +338,7 @@
 - [x] playwright-5.7-ac6: HTML reports in CI
 - [x] playwright-5.7-ac7: CI artifacts (screenshots/videos)
 - [x] playwright-5.7-ac8: Docker integration
-- [ ] playwright-5.7-ac9: Retry on failure in CI
+- [x] playwright-5.7-ac9: Retry on failure in CI
 
 ### Sprint 4: Advanced Topics & DevOps
 
@@ -1428,3 +1428,8 @@
 - **Feature Completed**: playwright-5.7-ac8
 - **Content File**: ./sdet-learning-content/playwright-5.7-ac8.md
 - **Git Commit**: Content: playwright-5.7-ac8 - Integrate with Docker for consistent test environments
+
+### 2026-02-06 - Iteration 242
+- **Feature Completed**: playwright-5.7-ac9
+- **Content File**: ./sdet-learning-content/playwright-5.7-ac9.md
+- **Git Commit**: Content: playwright-5.7-ac9 - Configure retry on failure in CI
