@@ -324,7 +324,7 @@
 - [x] playwright-5.6-ac1: API request context
 - [x] playwright-5.6-ac2: HTTP methods (GET, POST, etc.)
 - [x] playwright-5.6-ac3: API response validation
-- [ ] playwright-5.6-ac4: JSON parsing
+- [x] playwright-5.6-ac4: JSON parsing
 - [ ] playwright-5.6-ac5: API call chaining
 - [ ] playwright-5.6-ac6: API test data setup
 - [ ] playwright-5.6-ac7: Hybrid UI+API scenarios
@@ -1382,3 +1382,9 @@
 - **Content File**: ./sdet-learning-content/playwright-5.6-ac3.md
 - **Git Commit**: Content: playwright-5.6-ac3 - Validate API responses (status, headers, body)
 
+
+
+### 2026-02-06 - Iteration 231
+- **Feature Completed**: playwright-5.6-ac4
+- **Content File**: ./sdet-learning-content/playwright-5.6-ac4.md
+- **Git Commit**: Content: playwright-5.6-ac4 - Parse and validate JSON responses
