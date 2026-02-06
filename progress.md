@@ -322,7 +322,7 @@
 
 #### Story 5.6: Playwright API Testing (3 points)
 - [x] playwright-5.6-ac1: API request context
-- [x] playwright-5.5-ac2: HTTP methods (GET, POST, etc.)
+- [x] playwright-5.6-ac2: HTTP methods (GET, POST, etc.)
 - [ ] playwright-5.6-ac3: API response validation
 - [ ] playwright-5.6-ac4: JSON parsing
 - [ ] playwright-5.6-ac5: API call chaining
@@ -1372,3 +1372,8 @@
 - **Feature Completed**: playwright-5.5-ac2
 - **Content File**: ./sdet-learning-content/playwright-5.5-ac2.md
 - **Git Commit**: `Content: playwright-5.5-ac2 - Reuse authentication state across tests to avoid repeated logins`
+### 2026-02-06 - Iteration 229
+- **Feature Completed**: playwright-5.6-ac2
+- **Content File**: ./sdet-learning-content/playwright-5.6-ac2.md
+- **Git Commit**: Content: playwright-5.6-ac2 - Playwright API Testing - Performing CRUD Requests
+
