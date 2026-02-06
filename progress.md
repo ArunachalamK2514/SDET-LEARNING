@@ -283,7 +283,7 @@
 - [x] playwright-5.2-ac5: nth(), first(), last()
 - [x] playwright-5.2-ac6: Filtering locators
 - [x] playwright-5.2-ac7: Auto-waiting understanding
-- [ ] playwright-5.2-ac8: waitFor() implementation
+- [x] playwright-5.2-ac8: waitFor() implementation
 - [ ] playwright-5.2-ac9: waitForSelector vs locator.waitFor
 
 #### Story 5.3: Playwright Core Features (5 points)
@@ -1242,3 +1242,8 @@
 - **Feature Completed**: playwright-5.2-ac7
 - **Content File**: ./sdet-learning-content/playwright-5.2-ac7.md
 - **Git Commit**: `Content: playwright-5.2-ac7 - Auto-waiting and explicit waits`
+
+### 2026-02-06 - Iteration 200
+- **Feature Completed**: playwright-5.2-ac8
+- **Content File**: ./sdet-learning-content/playwright-5.2-ac8.md
+- **Git Commit**: `Content: playwright-5.2-ac8 - Implement custom waiting conditions using waitFor()`
