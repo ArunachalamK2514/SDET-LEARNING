@@ -279,7 +279,7 @@
 - [x] playwright-5.2-ac1: Recommended locators (getByRole, etc.)
 - [x] playwright-5.2-ac2: Locator vs elementHandle
 - [x] playwright-5.2-ac3: CSS and XPath selectors
-- [ ] playwright-5.2-ac4: Text-based locators
+- [x] playwright-5.2-ac4: Text-based locators
 - [ ] playwright-5.2-ac5: nth(), first(), last()
 - [ ] playwright-5.2-ac6: Filtering locators
 - [ ] playwright-5.2-ac7: Auto-waiting understanding
@@ -1223,3 +1223,7 @@
 - **Feature Completed**: playwright-5.2-ac3
 - **Content File**: ./sdet-learning-content/playwright-5.2-ac3.md
 - **Git Commit**: `Content: playwright-5.2-ac3 - Use CSS selectors and XPath when semantic locators are not available`
+### 2026-02-06 - Iteration 196
+- **Feature Completed**: playwright-5.2-ac4
+- **Content File**: ./sdet-learning-content/playwright-5.2-ac4.md
+- **Git Commit**: `Content: playwright-5.2-ac4 - Implement text-based locators with exact and partial matching`
