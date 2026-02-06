@@ -306,7 +306,7 @@
 - [x] playwright-5.4-ac5: Page object fixtures
 - [x] playwright-5.4-ac6: Test hooks
 - [x] playwright-5.4-ac7: Describe blocks grouping
-- [ ] playwright-5.4-ac8: Skip and focus tests
+- [x] playwright-5.4-ac8: Skip and focus tests
 - [ ] playwright-5.4-ac9: Test annotations
 
 #### Story 5.5: Authentication & Network Interception (5 points)
@@ -1316,3 +1316,8 @@
 - **Feature Completed**: playwright-5.4-ac7
 - **Content File**: ./sdet-learning-content/playwright-5.4-ac7.md
 - **Git Commit**: `Content: playwright-5.4-ac7 - Group tests using describe blocks`
+
+### 2026-02-06 - Iteration 217
+- **Feature Completed**: playwright-5.4-ac8
+- **Content File**: ./sdet-learning-content/playwright-5.4-ac8.md
+- **Git Commit**: `Content: playwright-5.4-ac8 - Skip and focus tests using test.skip(), test.only(), and test.fixme()`
