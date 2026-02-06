@@ -265,7 +265,7 @@
 ### Sprint 3: Modern Tools & DevOps
 
 #### Story 5.1: Playwright Project Setup & Configuration (3 points)
-- [ ] playwright-5.1-ac1: Node.js and npm installation
+- [x] playwright-5.1-ac1: Node.js and npm installation
 - [ ] playwright-5.1-ac2: Playwright project initialization
 - [ ] playwright-5.1-ac3: TypeScript configuration
 - [ ] playwright-5.1-ac4: playwright.config.ts
@@ -1167,3 +1167,8 @@
 - **Feature Completed**: api-4.5-ac8
 - **Content File**: ./sdet-learning-content/api-4.5-ac8.md
 - **Git Commit**: `Content: api-4.5-ac8 - Implement retry logic for flaky API tests`
+
+### 2026-02-06 - Iteration 184
+- **Feature Completed**: playwright-5.1-ac1
+- **Content File**: ./sdet-learning-content/playwright-5.1-ac1.md
+- **Git Commit**: `Content: playwright-5.1-ac1 - Install Node.js and npm`
