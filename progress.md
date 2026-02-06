@@ -15,11 +15,11 @@
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
 | 3. TestNG & Framework Design | 49 | 10 | 18% |
 | 4. REST Assured API Testing | 45 | 1 | 2% |
-| 5. Playwright TypeScript | 54 | 4 | 7% |
+| 5. Playwright TypeScript | 54 | 5 | 9% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **100** | **28%** |
+| **TOTAL** | **353** | **101** | **28%** |
 
 ---
 
@@ -305,7 +305,7 @@
 - [x] playwright-5.4-ac4: Data sharing with fixtures
 - [x] playwright-5.4-ac5: Page object fixtures
 - [x] playwright-5.4-ac6: Test hooks
-- [ ] playwright-5.4-ac7: Describe blocks grouping
+- [x] playwright-5.4-ac7: Describe blocks grouping
 - [ ] playwright-5.4-ac8: Skip and focus tests
 - [ ] playwright-5.4-ac9: Test annotations
 
@@ -1311,3 +1311,8 @@
 - **Feature Completed**: playwright-5.4-ac6
 - **Content File**: ./sdet-learning-content/playwright-5.4-ac6.md
 - **Git Commit**: `Content: playwright-5.4-ac6 - Implement test hooks: beforeEach, afterEach, beforeAll, afterAll`
+
+### 2026-02-06 - Iteration 216
+- **Feature Completed**: playwright-5.4-ac7
+- **Content File**: ./sdet-learning-content/playwright-5.4-ac7.md
+- **Git Commit**: `Content: playwright-5.4-ac7 - Group tests using describe blocks`
