@@ -15,11 +15,11 @@
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
 | 3. TestNG & Framework Design | 49 | 10 | 18% |
 | 4. REST Assured API Testing | 45 | 1 | 2% |
-| 5. Playwright TypeScript | 54 | 1 | 2% |
+| 5. Playwright TypeScript | 54 | 3 | 5% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **97** | **27%** |
+| **TOTAL** | **353** | **99** | **28%** |
 
 ---
 
@@ -289,7 +289,7 @@
 #### Story 5.3: Playwright Core Features (5 points)
 - [x] playwright-5.3-ac1: Browser, context, page hierarchy
 - [x] playwright-5.3-ac2: Multiple browser contexts
-- [ ] playwright-5.3-ac3: Multiple pages handling
+- [x] playwright-5.3-ac3: Multiple pages handling
 - [ ] playwright-5.3-ac4: Navigation methods
 - [ ] playwright-5.3-ac5: Actions (click, fill, type, etc.)
 - [ ] playwright-5.3-ac6: File uploads
@@ -432,7 +432,7 @@
 - [ ] flaky-7.2-ac6: Test isolation design
 - [ ] flaky-7.2-ac7: External dependencies mocking
 - [ ] flaky-7.2-ac8: Retry mechanisms
-- [ ] flaky-7.2-ac9: Quarantine strategy
+- [ ] flaky-7.7-ac9: Quarantine strategy
 - [ ] flaky-7.2-ac10: Team culture around flakiness
 
 #### Story 7.3: Test Data Management Strategy (5 points)
@@ -1255,8 +1255,12 @@
 ### 2026-02-06 - Iteration 202
 - **Feature Completed**: playwright-5.3-ac1
 - **Content File**: ./sdet-learning-content/playwright-5.3-ac1.md
-- **Git Commit**: \Content: playwright-5.3-ac1 - Understand browser, context, and page hierarchy in Playwright
+- **Git Commit**: `Content: playwright-5.3-ac1 - Understand browser, context, and page hierarchy in Playwright`
 ### 2026-02-06 - Iteration 203
 - **Feature Completed**: playwright-5.3-ac2
 - **Content File**: ./sdet-learning-content/playwright-5.3-ac2.md
 - **Git Commit**: `Content: playwright-5.3-ac2 - Create multiple browser contexts for test isolation`
+### 2026-02-06 - Iteration 204
+- **Feature Completed**: playwright-5.3-ac3
+- **Content File**: ./sdet-learning-content/playwright-5.3-ac3.md
+- **Git Commit**: `Content: playwright-5.3-ac3 - Handle multiple pages within single context`
