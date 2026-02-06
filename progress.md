@@ -313,7 +313,7 @@
 - [x] playwright-5.5-ac1: UI login and auth state save
 - [x] playwright-5.5-ac2: Auth state reuse
 - [x] playwright-5.5-ac3: API-based authentication
-- [ ] playwright-5.5-ac4: Auth strategies comparison
+- [x] playwright-5.5-ac4: Auth strategies comparison
 - [ ] playwright-5.5-ac5: Network request interception
 - [ ] playwright-5.5-ac6: API response mocking
 - [ ] playwright-5.5-ac7: Request modification
@@ -1340,3 +1340,7 @@
 - **Feature Completed**: playwright-5.5-ac3
 - **Content File**: ./sdet-learning-content/playwright-5.5-ac3.md
 - **Git Commit**: `Content: playwright-5.5-ac3 - Implement API-based authentication using request context`
+### 2026-02-06 - Iteration 222
+- **Feature Completed**: playwright-5.5-ac4
+- **Content File**: ./sdet-learning-content/playwright-5.5-ac4.md
+- **Git Commit**: `Content: playwright-5.5-ac4 - Compare UI login vs token-based authentication strategies`
