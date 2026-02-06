@@ -300,7 +300,7 @@
 
 #### Story 5.4: Playwright Fixtures & Test Organization (5 points)
 - [x] playwright-5.4-ac1: Built-in fixtures
-- [ ] playwright-5.4-ac2: Custom fixtures
+- [x] playwright-5.4-ac2: Custom fixtures
 - [ ] playwright-5.4-ac3: Fixture composition
 - [ ] playwright-5.4-ac4: Data sharing with fixtures
 - [ ] playwright-5.4-ac5: Page object fixtures
@@ -1295,3 +1295,7 @@
 - **Feature Completed**: playwright-5.4-ac1
 - **Content File**: ./sdet-learning-content/playwright-5.4-ac1.md
 - **Git Commit**: `Content: playwright-5.4-ac1 - Understand built-in fixtures (page, context, browser)`
+### 2026-02-06 - Iteration 212
+- **Feature Completed**: playwright-5.4-ac2
+- **Content File**: ./sdet-learning-content/playwright-5.4-ac2.md
+- **Git Commit**: `Content: playwright-5.4-ac2 - Create custom fixtures for reusable setup/teardown`
