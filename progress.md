@@ -15,11 +15,11 @@
 | 2. Selenium WebDriver Mastery | 51 | 43 | 84% |
 | 3. TestNG & Framework Design | 49 | 10 | 18% |
 | 4. REST Assured API Testing | 45 | 1 | 2% |
-| 5. Playwright TypeScript | 54 | 3 | 5% |
+| 5. Playwright TypeScript | 54 | 4 | 7% |
 | 6. CI/CD & Docker | 45 | 0 | 0% |
 | 7. Advanced SDET Topics | 38 | 0 | 0% |
 | 8. Interview Preparation | 28 | 0 | 0% |
-| **TOTAL** | **353** | **99** | **28%** |
+| **TOTAL** | **353** | **100** | **28%** |
 
 ---
 
@@ -301,7 +301,7 @@
 #### Story 5.4: Playwright Fixtures & Test Organization (5 points)
 - [x] playwright-5.4-ac1: Built-in fixtures
 - [x] playwright-5.4-ac2: Custom fixtures
-- [ ] playwright-5.4-ac3: Fixture composition
+- [x] playwright-5.4-ac3: Fixture composition
 - [ ] playwright-5.4-ac4: Data sharing with fixtures
 - [ ] playwright-5.4-ac5: Page object fixtures
 - [ ] playwright-5.4-ac6: Test hooks
@@ -1092,7 +1092,7 @@
 ### 2026-02-04 - Iteration 167
 - **Feature Completed**: api-4.3-ac8
 - **Content File**: ./sdet-learning-content/api-4.3-ac8.md
-- **Git Commit**: `Content: api-4.3-ac8 - Validate 401 Unauthorized and 403 Forbidden responses`
+- **Git Commit**: `Content: api-4.4-ac8 - Validate 401 Unauthorized and 403 Forbidden responses`
 
 ### 2026-02-05 - Iteration 168
 - **Feature Completed**: api-4.4-ac1
@@ -1241,7 +1241,7 @@
 ### 2026-02-06 - Iteration 199
 - **Feature Completed**: playwright-5.2-ac7
 - **Content File**: ./sdet-learning-content/playwright-5.2-ac7.md
-- **Git Commit**: `Content: playwright-5.2-ac7 - Auto-waiting and explicit waits`
+- **Git Commit**: `Content: playwright-5.2-ac7 - Auto-waiting understanding`
 
 ### 2026-02-06 - Iteration 200
 - **Feature Completed**: playwright-5.2-ac8
@@ -1299,3 +1299,7 @@
 - **Feature Completed**: playwright-5.4-ac2
 - **Content File**: ./sdet-learning-content/playwright-5.4-ac2.md
 - **Git Commit**: `Content: playwright-5.4-ac2 - Create custom fixtures for reusable setup/teardown`
+### 2026-02-06 - Iteration 213
+- **Feature Completed**: playwright-5.4-ac3
+- **Content File**: ./sdet-learning-content/playwright-5.4-ac3.md
+- **Git Commit**: `Content: playwright-5.4-ac3 - Implement fixture composition and dependency injection`
