@@ -318,7 +318,7 @@
 - [x] playwright-5.5-ac6: API response mocking
 - [x] playwright-5.5-ac7: Request modification
 - [x] playwright-5.5-ac8: Network wait strategies
-- [ ] playwright-5.5-ac9: Resource blocking
+- [x] playwright-5.5-ac9: Resource blocking
 
 #### Story 5.6: Playwright API Testing (3 points)
 - [ ] playwright-5.6-ac1: API request context
@@ -1360,3 +1360,7 @@
 - **Feature Completed**: playwright-5.5-ac8
 - **Content File**: ./sdet-learning-content/playwright-5.5-ac8.md
 - **Git Commit**: `Content: playwright-5.5-ac8 - Wait for specific network requests/responses`
+### 2026-02-06 - Iteration 226
+- **Feature Completed**: playwright-5.5-ac9
+- **Content File**: ./sdet-learning-content/playwright-5.5-ac9.md
+- **Git Commit**: `Content: playwright-5.5-ac9 - Block unnecessary resources (images, fonts) for faster tests`
