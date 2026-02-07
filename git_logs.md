@@ -6,3 +6,8 @@
 - **Feature Completed**: microservices-7.1-ac1
 - **Content File**: ./sdet-learning-content/microservices-7.1-ac1.md
 - **Git Commit**: Content: microservices-7.1-ac1 - Microservices Architecture and Testing Challenges
+
+### 2026-02-07 - Iteration 6
+- **Feature Completed**: microservices-7.1-ac2
+- **Content File**: ./sdet-learning-content/microservices-7.1-ac2.md
+- **Git Commit**: Content: microservices-7.1-ac2 - Understand test pyramid for microservices

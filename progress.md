@@ -413,7 +413,7 @@
 
 #### Story 7.1: Microservices Testing Strategy (5 points)
 - [x] microservices-7.1-ac1: Microservices architecture
-- [ ] microservices-7.1-ac2: Test pyramid for microservices
+- [x] microservices-7.1-ac2: Test pyramid for microservices
 - [ ] microservices-7.1-ac3: Component testing
 - [ ] microservices-7.1-ac4: Integration testing strategy
 - [ ] microservices-7.1-ac5: Contract testing
