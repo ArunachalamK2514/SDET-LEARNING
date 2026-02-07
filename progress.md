@@ -385,7 +385,7 @@
 - [x] docker-6.4-ac5: Docker image building
 - [x] docker-6.4-ac6: Tests in containers
 - [x] docker-6.4-ac7: Docker Compose
-- [ ] docker-6.4-ac8: Selenium Grid with Docker
+- [x] docker-6.4-ac8: Selenium Grid with Docker
 - [ ] docker-6.4-ac9: Container best practices
 - [ ] docker-6.4-ac10: Image versioning
 
