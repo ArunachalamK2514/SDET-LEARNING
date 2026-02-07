@@ -39,3 +39,8 @@
 - **Feature Completed**: microservices-7.1-ac8
 - **Content File**: ./sdet-learning-content/microservices-7.1-ac8.md
 - **Git Commit**: Content: microservices-7.1-ac8 - Minimal E2E tests for critical microservices flows
+
+### 2026-02-07 - Iteration 13
+- **Feature Completed**: microservices-7.1-ac9
+- **Content File**: ./sdet-learning-content/microservices-7.1-ac9.md
+- **Git Commit**: Content: microservices-7.1-ac9 - Service virtualization and mocking for microservices testing

@@ -420,7 +420,7 @@
 - [x] microservices-7.1-ac6: Consumer-driven contracts
 - [x] microservices-7.1-ac7: API testing for microservices
 - [x] microservices-7.1-ac8: Minimal E2E tests
-- [ ] microservices-7.1-ac9: Service virtualization
+- [x] microservices-7.1-ac9: Service virtualization
 - [ ] microservices-7.1-ac10: Chaos testing
 
 #### Story 7.2: Flaky Test Detection & Prevention (5 points)
