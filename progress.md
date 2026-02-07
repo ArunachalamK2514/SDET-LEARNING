@@ -364,7 +364,7 @@
 - [x] jenkins-6.2-ac8: Test results publishing
 - [x] jenkins-6.2-ac9: Artifact archiving
 - [x] jenkins-6.2-ac10: Email notifications
-- [ ] jenkins-6.2-ac11: GitHub/GitLab integration
+- [x] jenkins-6.2-ac11: GitHub/GitLab integration
 
 #### Story 6.3: GitHub Actions for Test Automation (5 points)
 - [ ] github-6.3-ac1: GitHub Actions concepts
@@ -608,3 +608,7 @@
 - **Feature Completed**: jenkins-6.2-ac10
 - **Content File**: ./sdet-learning-content/jenkins-6.2-ac10.md
 - **Git Commit**: Content: jenkins-6.2-ac10 - Send email notifications on build success/failure
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: jenkins-6.2-ac11
+- **Content File**: ./sdet-learning-content/jenkins-6.2-ac11.md
+- **Git Commit**: Content: jenkins-6.2-ac11 - Integrate with GitHub/GitLab for source code management
