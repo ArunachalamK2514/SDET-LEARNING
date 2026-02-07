@@ -406,7 +406,7 @@
 - [x] git-6.6-ac4: Branch operations
 - [x] git-6.6-ac5: Merge conflict resolution
 - [x] git-6.6-ac6: Pull requests
-- [ ] git-6.6-ac7: .gitignore usage
+- [x] git-6.6-ac7: .gitignore usage
 - [ ] git-6.6-ac8: Release tagging
 - [ ] git-6.6-ac9: Commit message best practices
 - [ ] git-6.6-ac10: Image versioning
