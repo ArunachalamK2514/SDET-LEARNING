@@ -378,7 +378,7 @@
 - [x] github-6.3-ac9: Docker container integration
 
 #### Story 6.4: Docker Fundamentals for Test Automation (5 points)
-- [ ] docker-6.4-ac1: Docker concepts
+- [x] docker-6.4-ac1: Docker concepts
 - [ ] docker-6.4-ac2: Containerization benefits
 - [ ] docker-6.4-ac3: Docker Desktop installation
 - [ ] docker-6.4-ac4: Dockerfile creation
