@@ -343,7 +343,7 @@
 ### Sprint 4: Advanced Topics & DevOps
 
 #### Story 6.1: CI/CD Fundamentals & Best Practices (3 points)
-- [ ] cicd-6.1-ac1: CI/CD concepts and benefits
+- [x] cicd-6.1-ac1: CI/CD concepts and benefits
 - [ ] cicd-6.1-ac2: Test pyramid
 - [ ] cicd-6.1-ac3: Automation vs manual testing
 - [ ] cicd-6.1-ac4: Shift-left testing
@@ -1433,3 +1433,8 @@
 - **Feature Completed**: playwright-5.7-ac9
 - **Content File**: ./sdet-learning-content/playwright-5.7-ac9.md
 - **Git Commit**: Content: playwright-5.7-ac9 - Configure retry on failure in CI
+
+### 2026-02-07 - Iteration 243
+- **Feature Completed**: cicd-6.1-ac1
+- **Content File**: ./sdet-learning-content/cicd-6.1-ac1.md
+- **Git Commit**: Content: cicd-6.1-ac1 - CI/CD Fundamentals & Best Practices for Test Automation
