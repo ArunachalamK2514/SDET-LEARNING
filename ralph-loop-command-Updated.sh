@@ -9,7 +9,7 @@
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=2
+MAX_ITERATIONS=4
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
@@ -139,7 +139,7 @@ To avoid file editing errors, use the EXACT text below when using the 'replace' 
    $LOG_CONTEXT
    \`\`\`
    
-   *Action*: Append your new log entry (Date, Iteration, Feature ID, Commit) after this block. NEVER delete or modify existing lines in '$PROGRESS_FILE' except for marking the feature complete as described above.
+   *Action*: Append your new log entry (Date, Iteration, Feature ID, Commit) AFTER this block. NEVER delete or modify existing lines in '$PROGRESS_FILE' except for marking the feature complete as described above.
 
 ### CRITICAL INSTRUCTION - READ CAREFULLY ###
 You MUST generate content for EXACTLY ONE (1) acceptance criterion ONLY (the one provided above).
@@ -156,7 +156,7 @@ STOP immediately after completing ONE feature.
    - Hands-on practice exercises
    - Links to additional resources
 3. **Create** ONE markdown file in ./sdet-learning-content/ named '$NEXT_ID.md'.
-4. **Update** 'progress.md' using the context provided above.
+4. **Update** 'progress.md' using the context provided above. NEVER delete or modify existing lines in '$PROGRESS_FILE' except for marking the feature complete and appending the log at the END of the file as described above.
 5. **Commit**: Make ONE git commit with message: 'Content: $NEXT_ID - [Brief Description]'
 6. **STOP**: Do not process any other features.
 
