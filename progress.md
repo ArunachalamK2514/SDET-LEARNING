@@ -392,7 +392,7 @@
 #### Story 6.5: Advanced CI/CD & Monitoring (3 points)
 - [x] cicd-6.5-ac1: Continuous monitoring
 - [x] cicd-6.5-ac2: Test dashboards
-- [ ] cicd-6.5-ac3: Flaky test detection in CI
+- [x] cicd-6.5-ac3: Flaky test detection in CI
 - [ ] cicd-6.5-ac4: Test Impact Analysis
 - [ ] cicd-6.5-ac5: AI-driven test optimization
 - [ ] cicd-6.5-ac6: Performance testing in CI

@@ -1,4 +1,3 @@
-
 ### 2026-02-07 - Iteration 3
 - **Feature Completed**: docker-6.4-ac8
 - **Content File**: ./sdet-learning-content/docker-6.4-ac8.md
@@ -21,3 +20,8 @@
 - **Feature Completed**: cicd-6.5-ac2
 - **Content File**: ./sdet-learning-content/cicd-6.5-ac2.md
 - **Git Commit**: Content: cicd-6.5-ac2 - Understand test result dashboards and analytics
+
+### 2026-02-07 - Iteration 8
+- **Feature Completed**: cicd-6.5-ac3
+- **Content File**: ./sdet-learning-content/cicd-6.5-ac3.md
+- **Git Commit**: Content: cicd-6.5-ac3 - Discuss flaky test detection in CI/CD pipelines
