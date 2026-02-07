@@ -379,7 +379,7 @@
 
 #### Story 6.4: Docker Fundamentals for Test Automation (5 points)
 - [x] docker-6.4-ac1: Docker concepts
-- [ ] docker-6.4-ac2: Containerization benefits
+- [x] docker-6.4-ac2: Containerization benefits
 - [ ] docker-6.4-ac3: Docker Desktop installation
 - [ ] docker-6.4-ac4: Dockerfile creation
 - [ ] docker-6.4-ac5: Docker image building
