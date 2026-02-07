@@ -356,7 +356,7 @@
 #### Story 6.2: Jenkins Integration (5 points)
 - [x] jenkins-6.2-ac1: Jenkins installation and config
 - [x] jenkins-6.2-ac2: Freestyle project creation
-- [ ] jenkins-6.2-ac3: Jenkinsfile pipeline
+- [x] jenkins-6.2-ac3: Jenkinsfile pipeline
 - [ ] jenkins-6.2-ac4: Build triggers
 - [ ] jenkins-6.2-ac5: Maven/Gradle integration
 - [ ] jenkins-6.2-ac6: TestNG/JUnit execution
@@ -529,7 +529,7 @@
 - [ ] final-8.5-ac5: Quick reference notes
 - [ ] final-8.5-ac6: Interview day logistics
 - [ ] final-8.5-ac7: "Tell me about yourself" practice
-- [ ] final-8.5-ac8: Common mistakes review
+- [ ] final-8.8-ac8: Common mistakes review
 
 ---
 
@@ -576,3 +576,7 @@
 - **Feature Completed**: jenkins-6.2-ac2
 - **Content File**: ./sdet-learning-content/jenkins-6.2-ac2.md
 - **Git Commit**: Content: jenkins-6.2-ac2 - Freestyle project creation for test execution
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: jenkins-6.2-ac3
+- **Content File**: ./sdet-learning-content/jenkins-6.2-ac3.md
+- **Git Commit**: Content: jenkins-6.2-ac3 - Create Jenkins pipeline using Jenkinsfile (declarative and scripted)
