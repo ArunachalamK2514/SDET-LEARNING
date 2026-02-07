@@ -361,7 +361,7 @@
 - [x] jenkins-6.2-ac5: Maven/Gradle integration
 - [x] jenkins-6.2-ac6: TestNG/JUnit execution
 - [x] jenkins-6.2-ac7: Parallel execution in Jenkins
-- [ ] jenkins-6.2-ac8: Test results publishing
+- [x] jenkins-6.2-ac8: Test results publishing
 - [ ] jenkins-6.2-ac9: Artifact archiving
 - [ ] jenkins-6.2-ac10: Email notifications
 - [ ] jenkins-6.2-ac11: GitHub/GitLab integration
@@ -596,3 +596,7 @@
 - **Feature Completed**: jenkins-6.2-ac7
 - **Content File**: ./sdet-learning-content/jenkins-6.2-ac7.md
 - **Git Commit**: Content: jenkins-6.2-ac7 - Configure parallel test execution in Jenkins
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: jenkins-6.2-ac8
+- **Content File**: ./sdet-learning-content/jenkins-6.2-ac8.md
+- **Git Commit**: Content: jenkins-6.2-ac8 - Publish test results using TestNG/JUnit plugins
