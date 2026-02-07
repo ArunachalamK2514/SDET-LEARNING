@@ -25,3 +25,8 @@
 - **Feature Completed**: cicd-6.5-ac3
 - **Content File**: ./sdet-learning-content/cicd-6.5-ac3.md
 - **Git Commit**: Content: cicd-6.5-ac3 - Discuss flaky test detection in CI/CD pipelines
+### 2026-02-07 - Iteration 4
+- **Feature Completed**: cicd-6.5-ac4
+- **Content File**: ./sdet-learning-content/cicd-6.5-ac4.md
+- **Git Commit**: Content: cicd-6.5-ac4 - Explain dynamic test selection and Test Impact Analysis
+
