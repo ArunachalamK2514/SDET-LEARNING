@@ -21,4 +21,7 @@
 - **Content File**: ./sdet-learning-content/microservices-7.1-ac4.md
 - **Git Commit**: Content: microservices-7.1-ac4 - Design integration testing strategy for service communication
 
-
+### 2026-02-07 - Iteration 9
+- **Feature Completed**: microservices-7.1-ac5
+- **Content File**: ./sdet-learning-content/microservices-7.1-ac5.md
+- **Git Commit**: Content: microservices-7.1-ac5 - Understand contract testing using Pact or Spring Cloud Contract

@@ -416,7 +416,7 @@
 - [x] microservices-7.1-ac2: Test pyramid for microservices
 - [x] microservices-7.1-ac3: Component testing
 - [x] microservices-7.1-ac4: Integration testing strategy
-- [ ] microservices-7.1-ac5: Contract testing
+- [x] microservices-7.1-ac5: Contract testing
 - [ ] microservices-7.1-ac6: Consumer-driven contracts
 - [ ] microservices-7.1-ac7: API testing for microservices
 - [ ] microservices-7.1-ac8: Minimal E2E tests
