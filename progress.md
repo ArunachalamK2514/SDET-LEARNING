@@ -354,7 +354,7 @@
 - [x] cicd-6.1-ac9: Explain continuous testing and continuous feedback loops
 
 #### Story 6.2: Jenkins Integration (5 points)
-- [ ] jenkins-6.2-ac1: Jenkins installation and config
+- [x] jenkins-6.2-ac1: Jenkins installation and config
 - [ ] jenkins-6.2-ac2: Freestyle project creation
 - [ ] jenkins-6.2-ac3: Jenkinsfile pipeline
 - [ ] jenkins-6.2-ac4: Build triggers
@@ -567,3 +567,8 @@
 - **Feature Completed**: cicd-6.1-ac9
 - **Content File**: ./sdet-learning-content/cicd-6.1-ac9.md
 - **Git Commit**: Content: cicd-6.1-ac9 - Explain continuous testing and continuous feedback loops
+
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: jenkins-6.2-ac1
+- **Content File**: ./sdet-learning-content/jenkins-6.2-ac1.md
+- **Git Commit**: Content: jenkins-6.2-ac1 - Jenkins installation and configuration
