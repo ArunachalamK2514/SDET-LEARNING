@@ -344,7 +344,7 @@
 
 #### Story 6.1: CI/CD Fundamentals & Best Practices (3 points)
 - [x] cicd-6.1-ac1: CI/CD concepts and benefits
-- [ ] cicd-6.1-ac2: Test pyramid
+- [x] cicd-6.1-ac2: Test pyramid
 - [ ] cicd-6.1-ac3: Automation vs manual testing
 - [ ] cicd-6.1-ac4: Shift-left testing
 - [ ] cicd-6.1-ac5: Build pipeline stages
@@ -1438,3 +1438,8 @@
 - **Feature Completed**: cicd-6.1-ac1
 - **Content File**: ./sdet-learning-content/cicd-6.1-ac1.md
 - **Git Commit**: Content: cicd-6.1-ac1 - CI/CD Fundamentals & Best Practices for Test Automation
+
+### 2026-02-07 - Iteration 244
+- **Feature Completed**: cicd-6.1-ac2
+- **Content File**: ./sdet-learning-content/cicd-6.1-ac2.md
+- **Git Commit**: Content: cicd-6.1-ac2 - Test Pyramid and Test Distribution
