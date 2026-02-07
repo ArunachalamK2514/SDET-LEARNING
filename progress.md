@@ -408,7 +408,7 @@
 - [x] git-6.6-ac6: Pull requests
 - [x] git-6.6-ac7: .gitignore usage
 - [x] git-6.6-ac8: Release tagging
-- [ ] git-6.6-ac9: Commit message best practices
+- [x] git-6.6-ac9: Commit message best practices
 - [ ] git-6.6-ac10: Image versioning
 
 #### Story 7.1: Microservices Testing Strategy (5 points)
