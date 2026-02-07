@@ -369,7 +369,7 @@
 #### Story 6.3: GitHub Actions for Test Automation (5 points)
 - [x] github-6.3-ac1: GitHub Actions concepts
 - [x] github-6.3-ac2: Workflow YAML creation
-- [ ] github-6.3-ac3: Workflow triggers
+- [x] github-6.3-ac3: Workflow triggers
 - [ ] github-6.3-ac4: Test execution matrix
 - [ ] github-6.3-ac5: Parallel execution with matrix
 - [ ] github-6.3-ac6: Test artifacts upload
@@ -620,3 +620,7 @@
 - **Feature Completed**: github-6.3-ac2
 - **Content File**: ./sdet-learning-content/github-6.3-ac2.md
 - **Git Commit**: Content: github-6.3-ac2 - GitHub Actions Workflow for Test Execution
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: github-6.3-ac3
+- **Content File**: ./sdet-learning-content/github-6.3-ac3.md
+- **Git Commit**: Content: github-6.3-ac3 - Configure workflow triggers
