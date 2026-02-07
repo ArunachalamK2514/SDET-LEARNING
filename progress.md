@@ -394,7 +394,7 @@
 - [x] cicd-6.5-ac2: Test dashboards
 - [x] cicd-6.5-ac3: Flaky test detection in CI
 - [x] cicd-6.5-ac4: Test Impact Analysis
-- [ ] cicd-6.5-ac5: AI-driven test optimization
+- [x] cicd-6.5-ac5: AI-driven test optimization
 - [ ] cicd-6.5-ac6: Performance testing in CI
 - [ ] cicd-6.5-ac7: Security testing in pipelines
 - [ ] cicd-6.5-ac8: Cost optimization
