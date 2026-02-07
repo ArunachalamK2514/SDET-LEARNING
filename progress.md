@@ -359,7 +359,7 @@
 - [x] jenkins-6.2-ac3: Jenkinsfile pipeline
 - [x] jenkins-6.2-ac4: Build triggers
 - [x] jenkins-6.2-ac5: Maven/Gradle integration
-- [ ] jenkins-6.2-ac6: TestNG/JUnit execution
+- [x] jenkins-6.2-ac6: TestNG/JUnit execution
 - [ ] jenkins-6.2-ac7: Parallel execution in Jenkins
 - [ ] jenkins-6.2-ac8: Test results publishing
 - [ ] jenkins-6.2-ac9: Artifact archiving
@@ -588,3 +588,7 @@
 - **Feature Completed**: jenkins-6.2-ac5
 - **Content File**: ./sdet-learning-content/jenkins-6.2-ac5.md
 - **Git Commit**: Content: jenkins-6.2-ac5 - Integrate Maven/Gradle build with Jenkins
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: jenkins-6.2-ac6
+- **Content File**: ./sdet-learning-content/jenkins-6.2-ac6.md
+- **Git Commit**: Content: Content: jenkins-6.2-ac6 - Execute TestNG/JUnit tests from Jenkins
