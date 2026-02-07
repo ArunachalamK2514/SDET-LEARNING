@@ -363,7 +363,7 @@
 - [x] jenkins-6.2-ac7: Parallel execution in Jenkins
 - [x] jenkins-6.2-ac8: Test results publishing
 - [x] jenkins-6.2-ac9: Artifact archiving
-- [ ] jenkins-6.2-ac10: Email notifications
+- [x] jenkins-6.2-ac10: Email notifications
 - [ ] jenkins-6.2-ac11: GitHub/GitLab integration
 
 #### Story 6.3: GitHub Actions for Test Automation (5 points)
@@ -604,3 +604,7 @@
 - **Feature Completed**: jenkins-6.2-ac9
 - **Content File**: ./sdet-learning-content/jenkins-6.2-ac9.md
 - **Git Commit**: Content: jenkins-6.2-ac9 - Archive test artifacts (screenshots, logs, videos)
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: jenkins-6.2-ac10
+- **Content File**: ./sdet-learning-content/jenkins-6.2-ac10.md
+- **Git Commit**: Content: jenkins-6.2-ac10 - Send email notifications on build success/failure
