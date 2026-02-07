@@ -390,7 +390,7 @@
 - [x] docker-6.4-ac10: Image versioning
 
 #### Story 6.5: Advanced CI/CD & Monitoring (3 points)
-- [ ] cicd-6.5-ac1: Continuous monitoring
+- [x] cicd-6.5-ac1: Continuous monitoring
 - [ ] cicd-6.5-ac2: Test dashboards
 - [ ] cicd-6.5-ac3: Flaky test detection in CI
 - [ ] cicd-6.5-ac4: Test Impact Analysis
