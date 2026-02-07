@@ -367,7 +367,7 @@
 - [x] jenkins-6.2-ac11: GitHub/GitLab integration
 
 #### Story 6.3: GitHub Actions for Test Automation (5 points)
-- [ ] github-6.3-ac1: GitHub Actions concepts
+- [x] github-6.3-ac1: GitHub Actions concepts
 - [ ] github-6.3-ac2: Workflow YAML creation
 - [ ] github-6.3-ac3: Workflow triggers
 - [ ] github-6.3-ac4: Test execution matrix
@@ -612,3 +612,7 @@
 - **Feature Completed**: jenkins-6.2-ac11
 - **Content File**: ./sdet-learning-content/jenkins-6.2-ac11.md
 - **Git Commit**: Content: jenkins-6.2-ac11 - Integrate with GitHub/GitLab for source code management
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: github-6.3-ac1
+- **Content File**: ./sdet-learning-content/github-6.3-ac1.md
+- **Git Commit**: Content: github-6.3-ac1 - GitHub Actions concepts (workflows, jobs, steps, actions)
