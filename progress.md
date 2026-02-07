@@ -404,7 +404,7 @@
 - [x] git-6.6-ac2: Git commands mastery
 - [x] git-6.6-ac3: Branching strategies
 - [x] git-6.6-ac4: Branch operations
-- [ ] git-6.6-ac5: Merge conflict resolution
+- [x] git-6.6-ac5: Merge conflict resolution
 - [ ] git-6.6-ac6: Pull requests
 - [ ] git-6.6-ac7: .gitignore usage
 - [ ] git-6.6-ac8: Release tagging
