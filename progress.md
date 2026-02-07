@@ -417,7 +417,7 @@
 - [x] microservices-7.1-ac3: Component testing
 - [x] microservices-7.1-ac4: Integration testing strategy
 - [x] microservices-7.1-ac5: Contract testing
-- [ ] microservices-7.1-ac6: Consumer-driven contracts
+- [x] microservices-7.1-ac6: Consumer-driven contracts
 - [ ] microservices-7.1-ac7: API testing for microservices
 - [ ] microservices-7.1-ac8: Minimal E2E tests
 - [ ] microservices-7.1-ac9: Service virtualization
