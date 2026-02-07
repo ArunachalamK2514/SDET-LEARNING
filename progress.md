@@ -350,7 +350,7 @@
 - [x] cicd-6.1-ac5: Build pipeline stages
 - [x] cicd-6.1-ac6: Parallel execution benefits
 - [x] cicd-6.1-ac7: Test categorization
-- [ ] cicd-6.1-ac8: Branching strategies
+- [x] cicd-6.1-ac8: Branching strategies
 - [ ] cicd-6.1-ac9: Continuous testing
 
 #### Story 6.2: Jenkins Integration (5 points)
@@ -559,3 +559,7 @@
 - **Feature Completed**: cicd-6.1-ac7
 - **Content File**: ./sdet-learning-content/cicd-6.1-ac7.md
 - **Git Commit**: Content: cicd-6.1-ac7 - Test categorization strategies (smoke, sanity, regression)
+### 2026-02-07 - Iteration 248
+- **Feature Completed**: cicd-6.1-ac8
+- **Content File**: ./sdet-learning-content/cicd-6.1-ac8.md
+- **Git Commit**: Content: cicd-6.1-ac8 - Version Control Branching Strategies for CI/CD
