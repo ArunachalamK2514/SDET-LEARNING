@@ -345,7 +345,7 @@
 #### Story 6.1: CI/CD Fundamentals & Best Practices (3 points)
 - [x] cicd-6.1-ac1: CI/CD concepts and benefits
 - [x] cicd-6.1-ac2: Test pyramid
-- [ ] cicd-6.1-ac3: Automation vs manual testing
+- [x] cicd-6.1-ac3: Automation vs manual testing
 - [ ] cicd-6.1-ac4: Shift-left testing
 - [ ] cicd-6.1-ac5: Build pipeline stages
 - [ ] cicd-6.1-ac6: Parallel execution benefits
