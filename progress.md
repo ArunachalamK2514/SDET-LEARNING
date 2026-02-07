@@ -383,7 +383,7 @@
 - [x] docker-6.4-ac3: Docker Desktop installation
 - [x] docker-6.4-ac4: Dockerfile creation
 - [x] docker-6.4-ac5: Docker image building
-- [ ] docker-6.4-ac6: Tests in containers
+- [x] docker-6.4-ac6: Tests in containers
 - [ ] docker-6.4-ac7: Docker Compose
 - [ ] docker-6.4-ac8: Selenium Grid with Docker
 - [ ] docker-6.4-ac9: Container best practices
