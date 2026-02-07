@@ -400,7 +400,7 @@
 - [x] cicd-6.5-ac8: Cost optimization
 
 #### Story 6.6: Git Version Control Mastery (3 points)
-- [ ] git-6.6-ac1: Git vs GitHub vs GitLab
+- [x] git-6.6-ac1: Git vs GitHub vs GitLab
 - [ ] git-6.6-ac2: Git commands mastery
 - [ ] git-6.6-ac3: Branching strategies
 - [ ] git-6.6-ac4: Branch operations
