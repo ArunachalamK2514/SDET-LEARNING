@@ -357,7 +357,7 @@
 - [x] jenkins-6.2-ac1: Jenkins installation and config
 - [x] jenkins-6.2-ac2: Freestyle project creation
 - [x] jenkins-6.2-ac3: Jenkinsfile pipeline
-- [ ] jenkins-6.2-ac4: Build triggers
+- [x] jenkins-6.2-ac4: Build triggers
 - [ ] jenkins-6.2-ac5: Maven/Gradle integration
 - [ ] jenkins-6.2-ac6: TestNG/JUnit execution
 - [ ] jenkins-6.2-ac7: Parallel execution in Jenkins
@@ -580,3 +580,7 @@
 - **Feature Completed**: jenkins-6.2-ac3
 - **Content File**: ./sdet-learning-content/jenkins-6.2-ac3.md
 - **Git Commit**: Content: jenkins-6.2-ac3 - Create Jenkins pipeline using Jenkinsfile (declarative and scripted)
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: jenkins-6.2-ac4
+- **Content File**: ./sdet-learning-content/jenkins-6.2-ac4.md
+- **Git Commit**: Content: jenkins-6.2-ac4 - Configure Jenkins build triggers (SCM polling, webhooks, scheduled)
