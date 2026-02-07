@@ -419,7 +419,7 @@
 - [x] microservices-7.1-ac5: Contract testing
 - [x] microservices-7.1-ac6: Consumer-driven contracts
 - [x] microservices-7.1-ac7: API testing for microservices
-- [ ] microservices-7.1-ac8: Minimal E2E tests
+- [x] microservices-7.1-ac8: Minimal E2E tests
 - [ ] microservices-7.1-ac9: Service virtualization
 - [ ] microservices-7.1-ac10: Chaos testing
 

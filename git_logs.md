@@ -29,3 +29,13 @@
 - **Feature Completed**: microservices-7.1-ac6
 - **Content File**: ./sdet-learning-content/microservices-7.1-ac6.md
 - **Git Commit**: Content: microservices-7.1-ac6 - Explain consumer-driven contracts
+
+### 2026-02-07 - Iteration 11
+- **Feature Completed**: microservices-7.1-ac7
+- **Content File**: ./sdet-learning-content/microservices-7.1-ac7.md
+- **Git Commit**: Content: microservices-7.1-ac7 - Implement API testing for microservices endpoints using REST Assured
+
+### 2026-02-07 - Iteration 12
+- **Feature Completed**: microservices-7.1-ac8
+- **Content File**: ./sdet-learning-content/microservices-7.1-ac8.md
+- **Git Commit**: Content: microservices-7.1-ac8 - Minimal E2E tests for critical microservices flows
