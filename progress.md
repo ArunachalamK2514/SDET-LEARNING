@@ -401,7 +401,7 @@
 
 #### Story 6.6: Git Version Control Mastery (3 points)
 - [x] git-6.6-ac1: Git vs GitHub vs GitLab
-- [ ] git-6.6-ac2: Git commands mastery
+- [x] git-6.6-ac2: Git commands mastery
 - [ ] git-6.6-ac3: Branching strategies
 - [ ] git-6.6-ac4: Branch operations
 - [ ] git-6.6-ac5: Merge conflict resolution
