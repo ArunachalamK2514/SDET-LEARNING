@@ -355,7 +355,7 @@
 
 #### Story 6.2: Jenkins Integration (5 points)
 - [x] jenkins-6.2-ac1: Jenkins installation and config
-- [ ] jenkins-6.2-ac2: Freestyle project creation
+- [x] jenkins-6.2-ac2: Freestyle project creation
 - [ ] jenkins-6.2-ac3: Jenkinsfile pipeline
 - [ ] jenkins-6.2-ac4: Build triggers
 - [ ] jenkins-6.2-ac5: Maven/Gradle integration
@@ -572,3 +572,7 @@
 - **Feature Completed**: jenkins-6.2-ac1
 - **Content File**: ./sdet-learning-content/jenkins-6.2-ac1.md
 - **Git Commit**: Content: jenkins-6.2-ac1 - Jenkins installation and configuration
+### 2026-02-07 - Iteration N/A
+- **Feature Completed**: jenkins-6.2-ac2
+- **Content File**: ./sdet-learning-content/jenkins-6.2-ac2.md
+- **Git Commit**: Content: jenkins-6.2-ac2 - Freestyle project creation for test execution
