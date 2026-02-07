@@ -381,7 +381,7 @@
 - [x] docker-6.4-ac1: Docker concepts
 - [x] docker-6.4-ac2: Containerization benefits
 - [x] docker-6.4-ac3: Docker Desktop installation
-- [ ] docker-6.4-ac4: Dockerfile creation
+- [x] docker-6.4-ac4: Dockerfile creation
 - [ ] docker-6.4-ac5: Docker image building
 - [ ] docker-6.4-ac6: Tests in containers
 - [ ] docker-6.4-ac7: Docker Compose
