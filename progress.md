@@ -396,7 +396,7 @@
 - [x] cicd-6.5-ac4: Test Impact Analysis
 - [x] cicd-6.5-ac5: AI-driven test optimization
 - [x] cicd-6.5-ac6: Performance testing in CI
-- [ ] cicd-6.5-ac7: Security testing in pipelines
+- [x] cicd-6.5-ac7: Security testing in pipelines
 - [ ] cicd-6.5-ac8: Cost optimization
 
 #### Story 6.6: Git Version Control Mastery (3 points)
