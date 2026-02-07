@@ -412,7 +412,7 @@
 - [x] git-6.6-ac10: Image versioning
 
 #### Story 7.1: Microservices Testing Strategy (5 points)
-- [ ] microservices-7.1-ac1: Microservices architecture
+- [x] microservices-7.1-ac1: Microservices architecture
 - [ ] microservices-7.1-ac2: Test pyramid for microservices
 - [ ] microservices-7.1-ac3: Component testing
 - [ ] microservices-7.1-ac4: Integration testing strategy
