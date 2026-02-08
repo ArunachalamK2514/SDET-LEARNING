@@ -30,3 +30,7 @@
 - **Feature Completed**: tdm-7.3-ac3
 - **Content File**: ./sdet-learning-content/tdm-7.3-ac3.md
 - **Git Commit**: Content: tdm-7.3-ac3 - Implement synthetic data generation strategies using Faker, covering user profiles and edge cases.
+### 2026-02-08 - Iteration 4
+- **Feature Completed**: tdm-7.3-ac4
+- **Content File**: ./sdet-learning-content/tdm-7.3-ac4.md
+- **Git Commit**: Content: tdm-7.3-ac4 - Data Masking Approach for Sensitive Information in Test Data Management

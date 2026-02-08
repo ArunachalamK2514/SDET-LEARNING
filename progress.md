@@ -439,7 +439,7 @@
 - [x] tdm-7.3-ac1: TDM challenges and practices
 - [x] tdm-7.3-ac2: Data requirements analysis
 - [x] tdm-7.3-ac3: Synthetic data generation
-- [ ] tdm-7.3-ac4: Data masking
+- [x] tdm-7.3-ac4: Data masking
 - [ ] tdm-7.3-ac5: Centralized TDM platform
 - [ ] tdm-7.3-ac6: Automated data refresh
 - [ ] tdm-7.3-ac7: Test data version control
