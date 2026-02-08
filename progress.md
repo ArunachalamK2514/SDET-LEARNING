@@ -443,7 +443,7 @@
 - [x] tdm-7.3-ac5: Centralized TDM platform
 - [x] tdm-7.3-ac6: Automated data refresh
 - [x] tdm-7.3-ac7: Test data version control
-- [ ] tdm-7.3-ac8: Environment-specific data
+- [x] tdm-7.3-ac8: Environment-specific data
 - [ ] tdm-7.3-ac9: Data-driven frameworks
 - [ ] tdm-7.3-ac10: Data automation utilities
 
