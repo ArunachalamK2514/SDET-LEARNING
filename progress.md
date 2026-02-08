@@ -441,7 +441,7 @@
 - [x] tdm-7.3-ac3: Synthetic data generation
 - [x] tdm-7.3-ac4: Data masking
 - [x] tdm-7.3-ac5: Centralized TDM platform
-- [ ] tdm-7.3-ac6: Automated data refresh
+- [x] tdm-7.3-ac6: Automated data refresh
 - [ ] tdm-7.3-ac7: Test data version control
 - [ ] tdm-7.3-ac8: Environment-specific data
 - [ ] tdm-7.3-ac9: Data-driven frameworks
