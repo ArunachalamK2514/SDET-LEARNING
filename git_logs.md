@@ -8,3 +8,8 @@
 - **Feature Completed**: perf-7.4-ac2
 - **Content File**: ./sdet-learning-content/perf-7.4-ac2.md
 - **Git Commit**: Content: perf-7.4-ac2 - Understand key performance metrics
+
+### 2026-02-08 - Iteration 3
+- **Feature Completed**: perf-7.4-ac3
+- **Content File**: ./sdet-learning-content/perf-7.4-ac3.md
+- **Git Commit**: Content: perf-7.4-ac3 - Install and configure Apache JMeter

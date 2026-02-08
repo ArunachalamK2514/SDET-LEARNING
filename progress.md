@@ -450,7 +450,7 @@
 #### Story 7.4: Performance Testing Basics (5 points)
 - [x] perf-7.4-ac1: Performance testing types
 - [x] perf-7.4-ac2: Key performance metrics
-- [ ] perf-7.4-ac3: JMeter installation
+- [x] perf-7.4-ac3: JMeter installation
 - [ ] perf-7.4-ac4: Thread groups and load patterns
 - [ ] perf-7.4-ac5: Samplers for protocols
 - [ ] perf-7.4-ac6: Listeners for analysis
