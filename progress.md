@@ -465,7 +465,7 @@
 - [x] accessibility-7.5-ac3: axe DevTools usage
 - [x] accessibility-7.5-ac4: axe-core integration
 - [x] accessibility-7.5-ac5: Automated vs manual testing
-- [ ] accessibility-7.5-ac6: Screen reader testing
+- [x] accessibility-7.5-ac6: Screen reader testing
 - [ ] accessibility-7.5-ac7: Keyboard navigation validation
 - [ ] accessibility-7.5-ac8: Accessibility in CI/CD
 

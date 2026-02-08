@@ -1,18 +1,5 @@
-- **Feature Completed**: accessibility-7.5-ac2
-- **Content File**: ./sdet-learning-content/accessibility-7.5-ac2.md
-- **Git Commit**: Content: accessibility-7.5-ac2 - Learn about common accessibility issues (color contrast, keyboard navigation, screen readers)
 
-### 2026-02-08 - Iteration 3
-- **Feature Completed**: accessibility-7.5-ac3
-- **Content File**: ./sdet-learning-content/accessibility-7.5-ac3.md
-- **Git Commit**: Content: accessibility-7.5-ac3 - Accessibility Testing with axe DevTools Browser Extension
-
-### 2026-02-08 - Iteration 4
-- **Feature Completed**: accessibility-7.5-ac4
-- **Content File**: ./sdet-learning-content/accessibility-7.5-ac4.md
-- **Git Commit**: Content: accessibility-7.5-ac4 - Integrate axe-core into automation tests
-
-### 2026-02-08 - Iteration 5
-- **Feature Completed**: accessibility-7.5-ac5
-- **Content File**: ./sdet-learning-content/accessibility-7.5-ac5.md
-- **Git Commit**: Content: accessibility-7.5-ac5 - Understand automated vs manual accessibility testing
+### 2026-02-08 - Iteration 6
+- **Feature Completed**: accessibility-7.5-ac6
+- **Content File**: ./sdet-learning-content/accessibility-7.5-ac6.md
+- **Git Commit**: Content: accessibility-7.5-ac6 - Test with screen readers (NVDA, VoiceOver)
