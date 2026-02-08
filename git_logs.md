@@ -11,3 +11,8 @@
 - **Feature Completed**: accessibility-7.5-ac4
 - **Content File**: ./sdet-learning-content/accessibility-7.5-ac4.md
 - **Git Commit**: Content: accessibility-7.5-ac4 - Integrate axe-core into automation tests
+
+### 2026-02-08 - Iteration 5
+- **Feature Completed**: accessibility-7.5-ac5
+- **Content File**: ./sdet-learning-content/accessibility-7.5-ac5.md
+- **Git Commit**: Content: accessibility-7.5-ac5 - Understand automated vs manual accessibility testing
