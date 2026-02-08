@@ -432,7 +432,7 @@
 - [x] flaky-7.2-ac6: Test isolation design
 - [x] flaky-7.2-ac7: External dependencies mocking
 - [x] flaky-7.2-ac8: Retry mechanisms
-- [ ] flaky-7.7-ac9: Quarantine strategy
+- [x] flaky-7.2-ac9: Quarantine strategy
 - [ ] flaky-7.2-ac10: Team culture around flakiness
 
 #### Story 7.3: Test Data Management Strategy (5 points)
