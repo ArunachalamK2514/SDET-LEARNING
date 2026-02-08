@@ -460,7 +460,7 @@
 - [x] perf-7.4-ac10: Results analysis
 
 #### Story 7.5: Accessibility Testing Fundamentals (3 points)
-- [ ] accessibility-7.5-ac1: WCAG guidelines
+- [x] accessibility-7.5-ac1: WCAG guidelines
 - [ ] accessibility-7.5-ac2: Common accessibility issues
 - [ ] accessibility-7.5-ac3: axe DevTools usage
 - [ ] accessibility-7.5-ac4: axe-core integration

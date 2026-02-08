@@ -1,45 +1,4 @@
-### 2026-02-08 - Iteration 1
-- **Feature Completed**: perf-7.4-ac1
-- **Content File**: ./sdet-learning-content/perf-7.4-ac1.md
-- **Git Commit**: Content: perf-7.4-ac1 - Explain performance testing types
-
-### 2026-02-08 - Iteration 2
-- **Feature Completed**: perf-7.4-ac2
-- **Content File**: ./sdet-learning-content/perf-7.4-ac2.md
-- **Git Commit**: Content: perf-7.4-ac2 - Understand key performance metrics
-
-### 2026-02-08 - Iteration 3
-- **Feature Completed**: perf-7.4-ac3
-- **Content File**: ./sdet-learning-content/perf-7.4-ac3.md
-- **Git Commit**: Content: perf-7.4-ac3 - Install and configure Apache JMeter
-
-### 2026-02-08 - Iteration 4
-- **Feature Completed**: perf-7.4-ac4
-- **Content File**: ./sdet-learning-content/perf-7.4-ac4.md
-- **Git Commit**: Content: perf-7.4-ac4 - Performance Testing: Thread Groups and Load Patterns### 2026-02-08 - Iteration 5
-- **Feature Completed**: perf-7.4-ac5
-- **Content File**: ./sdet-learning-content/perf-7.4-ac5.md
-- **Git Commit**: Content: perf-7.4-ac5 - Performance Testing: HTTP and JDBC Samplers
-
-### 2026-02-08 - Iteration 6
-- **Feature Completed**: perf-7.4-ac6
-- **Content File**: ./sdet-learning-content/perf-7.4-ac6.md
-- **Git Commit**: Content: perf-7.4-ac6 - Performance Testing: Listeners for Analysis
-
-### 2026-02-08 - Iteration 7
-- **Feature Completed**: perf-7.4-ac7
-- **Content File**: ./sdet-learning-content/perf-7.4-ac7.md
-- **Git Commit**: Content: perf-7.4-ac7 - Performance Testing: Response Validation Assertions### 2026-02-08 - Iteration 8
-- **Feature Completed**: perf-7.4-ac8
-- **Content File**: ./sdet-learning-content/perf-7.4-ac8.md
-- **Git Commit**: Content: perf-7.4-ac8 - Performance Testing: Timers and Pacing
-
-### 2026-02-08 - Iteration 9
-- **Feature Completed**: perf-7.4-ac9
-- **Content File**: ./sdet-learning-content/perf-7.4-ac9.md
-- **Git Commit**: Content: perf-7.4-ac9 - Performance Testing: Parameterization with CSV Data Set Config
-
-### 2026-02-08 - Iteration 10
-- **Feature Completed**: perf-7.4-ac10
-- **Content File**: ./sdet-learning-content/perf-7.4-ac10.md
-- **Git Commit**: Content: perf-7.4-ac10 - Performance Testing: Analyzing Test Results and Identifying Bottlenecks
+### 2026-02-08 - Iteration 11
+- **Feature Completed**: accessibility-7.5-ac1
+- **Content File**: ./sdet-learning-content/accessibility-7.5-ac1.md
+- **Git Commit**: Content: accessibility-7.5-ac1 - Accessibility Testing Fundamentals: WCAG Guidelines and Compliance Levels
