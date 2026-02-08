@@ -445,7 +445,7 @@
 - [x] tdm-7.3-ac7: Test data version control
 - [x] tdm-7.3-ac8: Environment-specific data
 - [x] tdm-7.3-ac9: Data-driven frameworks
-- [ ] tdm-7.3-ac10: Data automation utilities
+- [x] tdm-7.3-ac10: Data automation utilities
 
 #### Story 7.4: Performance Testing Basics (5 points)
 - [ ] perf-7.4-ac1: Performance testing types
