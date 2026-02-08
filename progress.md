@@ -454,7 +454,7 @@
 - [x] perf-7.4-ac4: Thread groups and load patterns
 - [x] perf-7.4-ac5: Samplers for protocols
 - [x] perf-7.4-ac6: Listeners for analysis
-- [ ] perf-7.4-ac7: Response validation assertions
+- [x] perf-7.4-ac7: Response validation assertions
 - [ ] perf-7.4-ac8: Timers configuration
 - [ ] perf-7.4-ac9: Parameterization with CSV
 - [ ] perf-7.4-ac10: Results analysis
