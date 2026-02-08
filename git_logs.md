@@ -17,3 +17,8 @@
 - **Feature Completed**: flaky-7.2-ac10
 - **Content File**: ./sdet-learning-content/flaky-7.2-ac10.md
 - **Git Commit**: Content: flaky-7.2-ac10 - Build team culture around addressing flakiness
+
+### 2026-02-08 - Iteration 1
+- **Feature Completed**: tdm-7.3-ac1
+- **Content File**: ./sdet-learning-content/tdm-7.3-ac1.md
+- **Git Commit**: Content: tdm-7.3-ac1 - Test Data Management Strategy: Challenges and Best Practices

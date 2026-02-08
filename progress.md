@@ -436,7 +436,7 @@
 - [x] flaky-7.2-ac10: Team culture around flakiness
 
 #### Story 7.3: Test Data Management Strategy (5 points)
-- [ ] tdm-7.3-ac1: TDM challenges and practices
+- [x] tdm-7.3-ac1: TDM challenges and practices
 - [ ] tdm-7.3-ac2: Data requirements analysis
 - [ ] tdm-7.3-ac3: Synthetic data generation
 - [ ] tdm-7.3-ac4: Data masking
