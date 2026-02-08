@@ -473,7 +473,7 @@
 - [x] sysdesign-7.6-ac1: Scalable framework design
 - [x] sysdesign-7.6-ac2: Cloud-native architecture
 - [x] sysdesign-7.6-ac3: Infrastructure as code
-- [ ] sysdesign-7.6-ac4: Modular architecture
+- [x] sysdesign-7.6-ac4: Modular architecture
 - [ ] sysdesign-7.6-ac5: Test data at scale
 - [ ] sysdesign-7.6-ac6: Distributed testing
 - [ ] sysdesign-7.6-ac7: Reporting and observability

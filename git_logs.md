@@ -1,4 +1,3 @@
-
 ### 2026-02-08 - Iteration 2
 - **Feature Completed**: sysdesign-7.6-ac2
 - **Content File**: ./sdet-learning-content/sysdesign-7.6-ac2.md
@@ -7,3 +6,8 @@
 - **Feature Completed**: sysdesign-7.6-ac3
 - **Content File**: ./sdet-learning-content/sysdesign-7.6-ac3.md
 - **Git Commit**: Content: sysdesign-7.6-ac3 - Discuss test infrastructure as code approach
+
+### 2026-02-08 - Iteration 4
+- **Feature Completed**: sysdesign-7.6-ac4
+- **Content File**: ./sdet-learning-content/sysdesign-7.6-ac4.md
+- **Git Commit**: Content: sysdesign-7.6-ac4 - Explain modular and layered architecture
