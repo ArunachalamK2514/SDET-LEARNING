@@ -479,7 +479,7 @@
 - [x] sysdesign-7.6-ac7: Reporting and observability
 - [x] sysdesign-7.6-ac8: Security testing integration
 - [x] sysdesign-7.6-ac9: AI-powered optimization
-- [ ] sysdesign-7.6-ac10: Architecture diagrams
+- [x] sysdesign-7.6-ac10: Architecture diagrams
 
 #### Story 8.1: Coding Practice - Common Patterns (5 points)
 - [ ] coding-8.1-ac1: String manipulation (50 problems)
