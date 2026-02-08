@@ -477,7 +477,7 @@
 - [x] sysdesign-7.6-ac5: Test data at scale
 - [x] sysdesign-7.6-ac6: Distributed testing
 - [x] sysdesign-7.6-ac7: Reporting and observability
-- [ ] sysdesign-7.6-ac8: Security testing integration
+- [x] sysdesign-7.6-ac8: Security testing integration
 - [ ] sysdesign-7.6-ac9: AI-powered optimization
 - [ ] sysdesign-7.6-ac10: Architecture diagrams
 
