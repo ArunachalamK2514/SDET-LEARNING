@@ -451,7 +451,7 @@
 - [x] perf-7.4-ac1: Performance testing types
 - [x] perf-7.4-ac2: Key performance metrics
 - [x] perf-7.4-ac3: JMeter installation
-- [ ] perf-7.4-ac4: Thread groups and load patterns
+- [x] perf-7.4-ac4: Thread groups and load patterns
 - [ ] perf-7.4-ac5: Samplers for protocols
 - [ ] perf-7.4-ac6: Listeners for analysis
 - [ ] perf-7.4-ac7: Response validation assertions

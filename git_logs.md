@@ -1,4 +1,3 @@
-
 ### 2026-02-08 - Iteration 1
 - **Feature Completed**: perf-7.4-ac1
 - **Content File**: ./sdet-learning-content/perf-7.4-ac1.md
@@ -13,3 +12,8 @@
 - **Feature Completed**: perf-7.4-ac3
 - **Content File**: ./sdet-learning-content/perf-7.4-ac3.md
 - **Git Commit**: Content: perf-7.4-ac3 - Install and configure Apache JMeter
+
+### 2026-02-08 - Iteration 4
+- **Feature Completed**: perf-7.4-ac4
+- **Content File**: ./sdet-learning-content/perf-7.4-ac4.md
+- **Git Commit**: Content: perf-7.4-ac4 - Performance Testing: Thread Groups and Load Patterns
