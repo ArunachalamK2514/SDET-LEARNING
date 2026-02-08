@@ -448,7 +448,7 @@
 - [x] tdm-7.3-ac10: Data automation utilities
 
 #### Story 7.4: Performance Testing Basics (5 points)
-- [ ] perf-7.4-ac1: Performance testing types
+- [x] perf-7.4-ac1: Performance testing types
 - [ ] perf-7.4-ac2: Key performance metrics
 - [ ] perf-7.4-ac3: JMeter installation
 - [ ] perf-7.4-ac4: Thread groups and load patterns
