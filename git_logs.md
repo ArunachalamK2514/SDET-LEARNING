@@ -11,3 +11,7 @@
 - **Feature Completed**: sysdesign-7.6-ac4
 - **Content File**: ./sdet-learning-content/sysdesign-7.6-ac4.md
 - **Git Commit**: Content: sysdesign-7.6-ac4 - Explain modular and layered architecture
+### 2026-02-08 - Iteration 5
+- **Feature Completed**: sysdesign-7.6-ac5
+- **Content File**: ./sdet-learning-content/sysdesign-7.6-ac5.md
+- **Git Commit**: Content: sysdesign-7.6-ac5 - Design test data management at scale
