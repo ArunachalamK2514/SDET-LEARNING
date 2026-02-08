@@ -427,7 +427,7 @@
 - [x] flaky-7.2-ac1: Flaky tests definition
 - [x] flaky-7.2-ac2: Common causes identification
 - [x] flaky-7.2-ac3: Detection methods
-- [ ] flaky-7.2-ac4: Detection tools
+- [x] flaky-7.2-ac4: Detection tools
 - [ ] flaky-7.2-ac5: Proper synchronization
 - [ ] flaky-7.2-ac6: Test isolation design
 - [ ] flaky-7.2-ac7: External dependencies mocking
