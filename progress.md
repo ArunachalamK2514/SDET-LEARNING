@@ -475,7 +475,7 @@
 - [x] sysdesign-7.6-ac3: Infrastructure as code
 - [x] sysdesign-7.6-ac4: Modular architecture
 - [x] sysdesign-7.6-ac5: Test data at scale
-- [ ] sysdesign-7.6-ac6: Distributed testing
+- [x] sysdesign-7.6-ac6: Distributed testing
 - [ ] sysdesign-7.6-ac7: Reporting and observability
 - [ ] sysdesign-7.6-ac8: Security testing integration
 - [ ] sysdesign-7.6-ac9: AI-powered optimization

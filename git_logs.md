@@ -15,3 +15,7 @@
 - **Feature Completed**: sysdesign-7.6-ac5
 - **Content File**: ./sdet-learning-content/sysdesign-7.6-ac5.md
 - **Git Commit**: Content: sysdesign-7.6-ac5 - Design test data management at scale
+### 2026-02-08 - Iteration 6
+- **Feature Completed**: sysdesign-7.6-ac6
+- **Content File**: ./sdet-learning-content/sysdesign-7.6-ac6.md
+- **Git Commit**: Content: sysdesign-7.6-ac6 - Discuss distributed testing and test orchestration
