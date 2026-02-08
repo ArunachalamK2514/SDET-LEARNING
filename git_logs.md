@@ -16,4 +16,4 @@
 ### 2026-02-08 - Iteration 4
 - **Feature Completed**: perf-7.4-ac4
 - **Content File**: ./sdet-learning-content/perf-7.4-ac4.md
-- **Git Commit**: Content: perf-7.4-ac4 - Performance Testing: Thread Groups and Load Patterns
+- **Git Commit**: Content: perf-7.4-ac4 - Performance Testing: Thread Groups and Load Patterns### 2026-02-08 - Iteration 5`n- **Feature Completed**: perf-7.4-ac5`n- **Content File**: ./sdet-learning-content/perf-7.4-ac5.md`n- **Git Commit**: Content: perf-7.4-ac5 - Performance Testing: HTTP and JDBC Samplers`n
