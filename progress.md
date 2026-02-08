@@ -467,7 +467,7 @@
 - [x] accessibility-7.5-ac5: Automated vs manual testing
 - [x] accessibility-7.5-ac6: Screen reader testing
 - [x] accessibility-7.5-ac7: Keyboard navigation validation
-- [ ] accessibility-7.5-ac8: Accessibility in CI/CD
+- [x] accessibility-7.5-ac8: Accessibility in CI/CD
 
 #### Story 7.6: System Design for SDET Interviews (3 points)
 - [ ] sysdesign-7.6-ac1: Scalable framework design
