@@ -425,7 +425,7 @@
 
 #### Story 7.2: Flaky Test Detection & Prevention (5 points)
 - [x] flaky-7.2-ac1: Flaky tests definition
-- [ ] flaky-7.2-ac2: Common causes identification
+- [x] flaky-7.2-ac2: Common causes identification
 - [ ] flaky-7.2-ac3: Detection methods
 - [ ] flaky-7.2-ac4: Detection tools
 - [ ] flaky-7.2-ac5: Proper synchronization
