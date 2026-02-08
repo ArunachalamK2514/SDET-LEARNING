@@ -462,7 +462,7 @@
 #### Story 7.5: Accessibility Testing Fundamentals (3 points)
 - [x] accessibility-7.5-ac1: WCAG guidelines
 - [x] accessibility-7.5-ac2: Common accessibility issues
-- [ ] accessibility-7.5-ac3: axe DevTools usage
+- [x] accessibility-7.5-ac3: axe DevTools usage
 - [ ] accessibility-7.5-ac4: axe-core integration
 - [ ] accessibility-7.5-ac5: Automated vs manual testing
 - [ ] accessibility-7.5-ac6: Screen reader testing
