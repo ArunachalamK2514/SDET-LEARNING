@@ -433,7 +433,7 @@
 - [x] flaky-7.2-ac7: External dependencies mocking
 - [x] flaky-7.2-ac8: Retry mechanisms
 - [x] flaky-7.2-ac9: Quarantine strategy
-- [ ] flaky-7.2-ac10: Team culture around flakiness
+- [x] flaky-7.2-ac10: Team culture around flakiness
 
 #### Story 7.3: Test Data Management Strategy (5 points)
 - [ ] tdm-7.3-ac1: TDM challenges and practices
