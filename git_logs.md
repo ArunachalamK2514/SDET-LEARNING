@@ -1,17 +1,5 @@
-### 2026-02-08 - Iteration 6
-- **Feature Completed**: accessibility-7.5-ac6
-- **Content File**: ./sdet-learning-content/accessibility-7.5-ac6.md
-- **Git Commit**: Content: accessibility-7.5-ac6 - Test with screen readers (NVDA, VoiceOver)
 
-### 2026-02-08 - Iteration 7
-- **Feature Completed**: accessibility-7.5-ac7
-- **Content File**: ./sdet-learning-content/accessibility-7.5-ac7.md
-- **Git Commit**: Content: accessibility-7.5-ac7 - Validate keyboard navigation2026-02-08 - Iteration 8
-- **Feature Completed**: accessibility-7.5-ac8
-- **Content File**: ./sdet-learning-content/accessibility-7.5-ac8.md
-- **Git Commit**: Content: accessibility-7.5-ac8 - Implement accessibility checks in CI/CD
-
-### 2026-02-08 - Iteration 1
-- **Feature Completed**: sysdesign-7.6-ac1
-- **Content File**: ./sdet-learning-content/sysdesign-7.6-ac1.md
-- **Git Commit**: Content: sysdesign-7.6-ac1 - Design scalable test framework
+### 2026-02-08 - Iteration 2
+- **Feature Completed**: sysdesign-7.6-ac2
+- **Content File**: ./sdet-learning-content/sysdesign-7.6-ac2.md
+- **Git Commit**: Content: sysdesign-7.6-ac2 - Understand cloud-native test framework architecture
