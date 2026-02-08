@@ -429,7 +429,7 @@
 - [x] flaky-7.2-ac3: Detection methods
 - [x] flaky-7.2-ac4: Detection tools
 - [x] flaky-7.2-ac5: Proper synchronization
-- [ ] flaky-7.2-ac6: Test isolation design
+- [x] flaky-7.2-ac6: Test isolation design
 - [ ] flaky-7.2-ac7: External dependencies mocking
 - [ ] flaky-7.2-ac8: Retry mechanisms
 - [ ] flaky-7.7-ac9: Quarantine strategy
