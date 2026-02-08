@@ -438,7 +438,7 @@
 #### Story 7.3: Test Data Management Strategy (5 points)
 - [x] tdm-7.3-ac1: TDM challenges and practices
 - [x] tdm-7.3-ac2: Data requirements analysis
-- [ ] tdm-7.3-ac3: Synthetic data generation
+- [x] tdm-7.3-ac3: Synthetic data generation
 - [ ] tdm-7.3-ac4: Data masking
 - [ ] tdm-7.3-ac5: Centralized TDM platform
 - [ ] tdm-7.3-ac6: Automated data refresh
