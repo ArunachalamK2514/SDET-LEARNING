@@ -33,4 +33,8 @@
 ### 2026-02-08 - Iteration 4
 - **Feature Completed**: tdm-7.3-ac4
 - **Content File**: ./sdet-learning-content/tdm-7.3-ac4.md
-- **Git Commit**: Content: tdm-7.3-ac4 - Data Masking Approach for Sensitive Information in Test Data Management
+- **Git Commit**: Content: tdm-7.3-ac4 - Data Masking Approach for Sensitive Information in Test Data Management;
+### 2026-02-08 - Iteration 5
+- **Feature Completed**: tdm-7.3-ac5
+- **Content File**: ./sdet-learning-content/tdm-7.3-ac5.md
+- **Git Commit**: Content: tdm-7.3-ac5 - Design Centralized Test Data Management Platform
