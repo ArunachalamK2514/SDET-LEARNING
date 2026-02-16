@@ -10,7 +10,7 @@
 # ==============================================================================
 
 # Configuration
-MAX_ITERATIONS=10
+MAX_ITERATIONS=1
 COMPLETION_PROMISE="<promise>COMPLETE</promise>"
 REQUIREMENTS_FILE="requirements.json"
 PROGRESS_FILE="progress.md"
@@ -162,8 +162,8 @@ STOP immediately after completing ONE feature.
 ### YOUR TASK ###
 1. **Analyze** the 'TARGET FEATURE DATA' provided above to understand the requirements.
 2. **Generate** COMPREHENSIVE, PRODUCTION-GRADE content for this ONE feature ($NEXT_ID):
-   - Detailed explanation with real-world examples
-   - Working code samples (complete, runnable, well-commented)
+   - Detailed explanation with real-world examples for ALL the steps involved in implementing this feature.
+   - Working code samples (complete, runnable, well-commented) for ALL the steps involved in implementing this feature.
    - Best practices and common pitfalls
    - Interview tips related to this topic
    - Hands-on practice exercises
