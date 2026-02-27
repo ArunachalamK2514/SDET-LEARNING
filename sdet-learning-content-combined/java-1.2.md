@@ -1214,13 +1214,13 @@ public class LoginTest {
 ## Best Practices
 -   **Interfaces for contracts**: Use interfaces to define the "what" (the contract) without specifying the "how" (the implementation). This is excellent for defining roles, like a `TestDataProvider`.
 -   **Abstract classes for common functionality**: Use abstract classes when you have common methods that can be implemented once and inherited by subclasses, and also require some specific methods to be implemented by each subclass.
--   **Favor composition over inheritance**: For shared utility functions, prefer composition (creating instances of utility classes) over extending abstract classes unless there's a strong "is-a" relationship and common state/behavior.
+-   **Favor composition over inheritance**: For shared utility functions, prefer composition (creating instances of utility classes) over extending abstract classes unless there is a strong "is-a" relationship and common state/behavior.
 -   **Small, focused interfaces**: Keep interfaces lean and focused on a single responsibility.
 -   **Clear Naming**: Name interfaces with an `I` prefix (e.g., `ITestDataProvider`) or describe their role (e.g., `DataProvider`).
 
 ## Common Pitfalls
--   **Overusing abstract classes**: If an abstract class has no abstract methods, it should probably be a concrete class. If it doesn't provide significant common implementation, an interface might be more suitable.
--   **Interfaces with too many default methods**: While Java 8+ allows default methods, an interface with many default methods might indicate it should be an abstract class, as it's leaning towards providing implementation rather than just a contract.
+-   **Overusing abstract classes**: If an abstract class has no abstract methods, it should probably be a concrete class. If it does not provide significant common implementation, an interface might be more suitable.
+-   **Interfaces with too many default methods**: While Java 8+ allows default methods, an interface with many default methods might indicate it should be an abstract class, as it is leaning towards providing implementation rather than just a contract.
 -   **Ignoring the single inheritance limitation**: Remember that a class can only extend one abstract class, but it can implement multiple interfaces. This is a critical factor in design.
 -   **Poor error handling in data providers**: Data providers often deal with external files or systems. Ensure robust error handling (e.g., `try-catch` blocks, informative exceptions) to prevent test failures due to data access issues.
 
@@ -1239,7 +1239,7 @@ public class LoginTest {
         *   **Abstract Classes**: Best for providing a common base class with shared functionality and state, while forcing subclasses to implement specific details. For example, `BasePage` in a Page Object Model, which provides common `WebDriver` methods (e.g., `clickElement`, `waitForVisibility`) but requires specific page elements and unique actions to be implemented by concrete page classes like `LoginPage` or `DashboardPage`.
 
 2.  **Q: In your current test automation framework, do you use interfaces or abstract classes more frequently, and why?**
-    **A:** This is a trick question designed to see your reasoning. There's no single "correct" answer, as it depends on the framework's design.
+    **A:** This is a trick question designed to see your reasoning. There is no single "correct" answer, as it depends on the framework's design.
     *   **If favoring interfaces**: "We tend to favor interfaces, especially for defining core capabilities like `ITestDataProvider` or `IWebDriverManager`. This promotes high flexibility and loose coupling, allowing us to easily swap out implementations (e.g., switch from CSV to JSON data without impacting consuming tests). We rely heavily on composition rather than deep inheritance hierarchies."
     *   **If favoring abstract classes**: "We use abstract classes where there's a strong 'is-a' relationship and significant common functionality that can be shared across related components, such as `BasePage` or `BaseTest`. This reduces code duplication and ensures a consistent base setup, while still allowing for specialization in subclasses. For distinct capabilities with no shared base implementation, we'd use interfaces."
 A balanced answer would mention using both where appropriate for their respective strengths.

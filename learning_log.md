@@ -19,4 +19,19 @@ This log tracks my personal progress through the SDET learning plan.
 **Topic ID:** java-1.1-ac6
 **Description:** Write code examples for checked vs unchecked exceptions with test automation scenarios
 
+---
+**Completed On:** Wednesday, 25 February 2026 08:30:00
+**Topic ID:** java-1.1-ac7
+**Description:** Explain and code examples for final, finally, and finalize keywords
+
+---
+**Completed On:** Friday, 27 February 2026 10:00:00
+**Topic ID:** java-1.2-ac1
+**Description:** Implement working examples of all 4 OOP pillars: Encapsulation, Inheritance, Polymorphism, Abstraction
+
+---
+**Completed On:** Friday, 27 February 2026 10:20:00
+**Topic ID:** java-1.2-ac2
+**Description:** Create Page Object Model classes demonstrating encapsulation principles
+
 

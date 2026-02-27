@@ -1,10 +1,12 @@
 package com.sdet.portfolio.core.stringperformance;
 
 /**
- * java-1.1-ac5: Create comparison table for String, StringBuilder, and StringBuffer with performance benchmarks.
+ * java-1.1-ac5: Create comparison table for String, StringBuilder, and
+ * StringBuffer with performance benchmarks.
  * 
- * This class demonstrates the performance differences between immutable String 
- * and mutable StringBuilder/StringBuffer when performing multiple modifications.
+ * This class demonstrates the performance differences between immutable String
+ * and mutable StringBuilder/StringBuffer when performing multiple
+ * modifications.
  */
 public class StringPerformanceBenchmark {
 
@@ -16,7 +18,7 @@ public class StringPerformanceBenchmark {
         runStringBenchmark();
         runStringBuilderBenchmark();
         runStringBufferBenchmark();
-        
+
         System.out.println("--- Hands-on Exercise: JSON Building ---");
         demonstrateJsonBuilding();
     }
@@ -28,6 +30,7 @@ public class StringPerformanceBenchmark {
             result += "x";
         }
         long endTime = System.currentTimeMillis();
+        System.out.println("Result is: " + result);
         System.out.println("String (+) concatenation: " + (endTime - startTime) + " ms");
     }
 
@@ -39,6 +42,7 @@ public class StringPerformanceBenchmark {
         }
         String result = sb.toString();
         long endTime = System.currentTimeMillis();
+        System.out.println("Result is: " + result);
         System.out.println("StringBuilder append:      " + (endTime - startTime) + " ms");
     }
 
@@ -50,6 +54,7 @@ public class StringPerformanceBenchmark {
         }
         String result = sb.toString();
         long endTime = System.currentTimeMillis();
+        System.out.println("Result is: " + result);
         System.out.println("StringBuffer append:       " + (endTime - startTime) + " ms");
     }
 
@@ -60,13 +65,13 @@ public class StringPerformanceBenchmark {
         // StringBuilder is preferred for single-threaded tasks like this
         StringBuilder json = new StringBuilder();
         json.append("{")
-            .append("\n  \"user\": \"sdet_tester\",")
-            .append("\n  \"id\": 101,")
-            .append("\n  \"status\": \"active\",")
-            .append("\n  \"role\": \"admin\",")
-            .append("\n  \"permissions\": [\"read\", \"write\"]")
-            .append("\n}");
-        
+                .append("\n  \"user\": \"sdet_tester\",")
+                .append("\n  \"id\": 101,")
+                .append("\n  \"status\": \"active\",")
+                .append("\n  \"role\": \"admin\",")
+                .append("\n  \"permissions\": [\"read\", \"write\"]")
+                .append("\n}");
+
         System.out.println("Constructed JSON Payload:");
         System.out.println(json.toString());
     }
