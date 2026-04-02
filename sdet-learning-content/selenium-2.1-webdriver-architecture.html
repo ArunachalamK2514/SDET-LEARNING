@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium WebDriver Architecture Visualizer</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #f5f7fb;
+            --panel: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --border: #d7deea;
+            --accent: #2563eb;
+            --accent-soft: #dbeafe;
+            --focus: #7c3aed;
+            --focus-soft: #ede9fe;
+            --success: #059669;
+            --success-soft: #d1fae5;
+            --focus-text: #4c1d95;
+            --connector-dash-cycle: 18px;
+            --legend-fill-stop: 50%;
+            --request-connector-color: rgba(37, 99, 235, 0.95);
+            --response-connector-color: rgba(5, 150, 105, 0.95);
+            --warning: #d97706;
+            --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+            color: var(--text);
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 20px 48px;
+        }
+
+        .hero,
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero {
+            padding: 28px;
+            margin-bottom: 22px;
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+        }
+
+        .hero p,
+        .panel p,
+        .panel li {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
+            gap: 22px;
+        }
+
+        .panel {
+            padding: 22px;
+        }
+
+        .architecture {
+            position: relative;
+            min-height: 520px;
+            overflow: hidden;
+        }
+
+        .flow-lane,
+        .response-lane {
+            display: grid;
+            grid-template-columns:
+                minmax(120px, 1fr) minmax(50px, 0.45fr)
+                minmax(120px, 1fr) minmax(50px, 0.45fr)
+                minmax(120px, 1fr) minmax(50px, 0.45fr)
+                minmax(120px, 1fr) minmax(50px, 0.45fr)
+                minmax(120px, 1fr);
+            gap: 14px;
+            align-items: center;
+            margin-top: 18px;
+        }
+
+        .response-lane {
+            margin-top: 14px;
+        }
+
+        .node {
+            position: relative;
+            z-index: 1;
+            padding: 16px 14px;
+            border-radius: 16px;
+            border: 2px solid var(--border);
+            background: #fbfdff;
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+        }
+
+        .node h3 {
+            margin: 0 0 8px;
+            font-size: 1rem;
+        }
+
+        .node p {
+            margin: 0;
+            font-size: 0.92rem;
+        }
+
+        .node.active {
+            border-color: var(--focus);
+            background: var(--focus-soft);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 30px rgba(124, 58, 237, 0.2);
+        }
+
+        .node.active h3,
+        .node.active p {
+            color: var(--focus-text);
+        }
+
+        .node.returning:not(.active) {
+            border-color: var(--success);
+            background: var(--success-soft);
+        }
+
+        .flow-connector,
+        .return-connector {
+            position: relative;
+            height: 8px;
+            border-radius: 999px;
+            opacity: 0.2;
+            transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .flow-connector {
+            background-image: repeating-linear-gradient(
+                90deg,
+                var(--request-connector-color) 0 10px,
+                transparent 10px var(--connector-dash-cycle)
+            );
+        }
+
+        .return-connector {
+            background-image: repeating-linear-gradient(
+                90deg,
+                var(--response-connector-color) 0 10px,
+                transparent 10px var(--connector-dash-cycle)
+            );
+        }
+
+        .flow-connector::after,
+        .return-connector::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -2px;
+            width: 12px;
+            height: 12px;
+            border-top: 3px solid;
+            border-right: 3px solid;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .flow-connector::after {
+            border-color: var(--accent);
+        }
+
+        .return-connector::after {
+            left: -2px;
+            right: auto;
+            transform: translateY(-50%) rotate(-135deg);
+            border-color: var(--success);
+        }
+
+        .flow-connector.active,
+        .return-connector.active {
+            opacity: 1;
+        }
+
+        .flow-connector.active {
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+            animation: flowRight 0.9s linear infinite;
+        }
+
+        .return-connector.active {
+            box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.12);
+            animation: flowLeft 0.9s linear infinite;
+        }
+
+        .lane-spacer {
+            min-height: 1px;
+        }
+
+        @keyframes flowRight {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: var(--connector-dash-cycle) 0;
+            }
+        }
+
+        @keyframes flowLeft {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: calc(var(--connector-dash-cycle) * -1) 0;
+            }
+        }
+
+        .command-bar {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 14px;
+            background: #0f172a;
+            color: #e5eefc;
+            font-family: "Courier New", monospace;
+            font-size: 0.95rem;
+        }
+
+        .command-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #93c5fd;
+            font-size: 0.82rem;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            border: 1px solid transparent;
+            border-radius: 999px;
+            padding: 10px 14px;
+            cursor: pointer;
+            background: #e5edff;
+            color: #1740a6;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 18px rgba(37, 99, 235, 0.14);
+        }
+
+        button.primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .step-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .step-card {
+            width: 100%;
+            text-align: left;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: #fbfdff;
+            color: inherit;
+            padding: 14px 16px;
+        }
+
+        .step-card.active {
+            border-color: var(--accent);
+            background: #eff6ff;
+            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.12);
+        }
+
+        .step-card strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--text);
+        }
+
+        .details {
+            margin-top: 18px;
+            padding: 16px;
+            border-radius: 16px;
+            background: #f8fafc;
+            border: 1px solid var(--border);
+        }
+
+        .details h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .trace {
+            margin-top: 16px;
+            padding-left: 18px;
+        }
+
+        .trace li {
+            margin-bottom: 8px;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 18px;
+            font-size: 0.92rem;
+            color: var(--muted);
+        }
+
+        .legend span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend i {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 999px;
+        }
+
+        .legend .request {
+            background: linear-gradient(90deg, var(--accent-soft) 0 var(--legend-fill-stop), transparent var(--legend-fill-stop) 100%);
+            border: 2px solid var(--accent);
+        }
+
+        .legend .response {
+            background: linear-gradient(90deg, var(--success-soft) 0 var(--legend-fill-stop), transparent var(--legend-fill-stop) 100%);
+            border: 2px solid var(--success);
+        }
+
+        .legend .active-node {
+            background: var(--focus-soft);
+            border: 2px solid var(--focus);
+        }
+
+        @media (max-width: 980px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .flow-lane,
+            .response-lane {
+                grid-template-columns: 1fr;
+            }
+
+            .flow-connector,
+            .return-connector {
+                width: 6px;
+                height: 44px;
+                justify-self: center;
+            }
+
+            .flow-connector {
+                background-image: repeating-linear-gradient(
+                    180deg,
+                    var(--request-connector-color) 0 10px,
+                    transparent 10px var(--connector-dash-cycle)
+                );
+            }
+
+            .return-connector {
+                background-image: repeating-linear-gradient(
+                    180deg,
+                    var(--response-connector-color) 0 10px,
+                    transparent 10px var(--connector-dash-cycle)
+                );
+            }
+
+            .flow-connector::after,
+            .return-connector::after {
+                left: 50%;
+                right: auto;
+                top: auto;
+                bottom: -2px;
+                transform: translateX(-50%) rotate(135deg);
+            }
+
+            .return-connector::after {
+                top: -2px;
+                bottom: auto;
+                transform: translateX(-50%) rotate(-45deg);
+            }
+
+            .lane-spacer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <section class="hero">
+            <h1>Selenium WebDriver Architecture Visualizer</h1>
+            <p>
+                This interactive view shows how a Selenium command travels from your test code to the browser and how the response comes back.
+                Click individual steps or use the playback controls to follow the full client-server workflow defined by the W3C WebDriver protocol.
+            </p>
+        </section>
+
+        <section class="layout">
+            <section class="panel architecture">
+                <h2>Architecture Flow</h2>
+                <p>The blue path shows the outbound command. The green path shows the response returning to your test script.</p>
+
+                <div class="flow-lane" role="group" aria-label="Outbound request path from the test script to the real browser">
+                    <article class="node" data-node="script">
+                        <h3>Test Script</h3>
+                        <p>Your Java, Python, JavaScript/TypeScript, or C# code calls WebDriver methods.</p>
+                    </article>
+                    <div class="flow-connector" data-arrow="0" role="img" aria-label="Outbound request from Test Script to Client Library"></div>
+                    <article class="node" data-node="client">
+                        <h3>Client Library</h3>
+                        <p>Language bindings convert your API call into a WebDriver command.</p>
+                    </article>
+                    <div class="flow-connector" data-arrow="1" role="img" aria-label="Outbound request from Client Library to W3C Protocol"></div>
+                    <article class="node" data-node="protocol">
+                        <h3>W3C Protocol</h3>
+                        <p>Commands move as HTTP requests with JSON payloads.</p>
+                    </article>
+                    <div class="flow-connector" data-arrow="2" role="img" aria-label="Outbound request from W3C Protocol to Browser Driver"></div>
+                    <article class="node" data-node="driver">
+                        <h3>Browser Driver</h3>
+                        <p>ChromeDriver or GeckoDriver receives the request and speaks to the browser.</p>
+                    </article>
+                    <div class="flow-connector" data-arrow="3" role="img" aria-label="Outbound request from Browser Driver to Real Browser"></div>
+                    <article class="node" data-node="browser">
+                        <h3>Real Browser</h3>
+                        <p>The actual browser navigates, finds elements, and performs actions.</p>
+                    </article>
+                </div>
+
+                <div class="response-lane" role="group" aria-label="Returning response path from the real browser back to the test script">
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                    <div class="return-connector" data-return="0" role="img" aria-label="Returning response from Client Library to Test Script"></div>
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                    <div class="return-connector" data-return="1" role="img" aria-label="Returning response from W3C Protocol to Client Library"></div>
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                    <div class="return-connector" data-return="2" role="img" aria-label="Returning response from Browser Driver to W3C Protocol"></div>
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                    <div class="return-connector" data-return="3" role="img" aria-label="Returning response from Real Browser to Browser Driver"></div>
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                </div>
+
+                <div class="command-bar" aria-live="polite">
+                    <span class="command-label">Current example</span>
+                    <div id="commandOutput">driver = new ChromeDriver(options)</div>
+                </div>
+
+                <div class="legend">
+                    <span><i class="active-node"></i> Active component</span>
+                    <span><i class="request"></i> Outbound request</span>
+                    <span><i class="response"></i> Returning response</span>
+                </div>
+            </section>
+
+            <aside class="panel">
+                <h2>Step-by-Step Walkthrough</h2>
+
+                <div class="controls">
+                    <button type="button" id="prevStep">Previous</button>
+                    <button type="button" class="primary" id="playPause">Auto Play</button>
+                    <button type="button" id="nextStep">Next</button>
+                    <button type="button" id="resetFlow">Reset</button>
+                </div>
+
+                <div class="step-list" id="stepList"></div>
+
+                <section class="details">
+                    <h3 id="stepTitle">1. Create a browser session</h3>
+                    <p id="stepDescription"></p>
+
+                    <ul class="trace" id="stepTrace"></ul>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <script>
+        const steps = [
+            {
+                title: "1. Create a browser session",
+                command: "driver = new ChromeDriver(options)",
+                description: "Your test script asks the Selenium client library to create a browser session. The client library packages the browser name and capabilities into a W3C-compliant HTTP request.",
+                activeNode: "script",
+                activeArrows: [0, 1, 2, 3],
+                activeReturns: [3, 2, 1, 0],
+                returningNodes: ["driver"],
+                trace: [
+                    "The test script calls the WebDriver API.",
+                    "The client library serializes desired capabilities into JSON.",
+                    "A POST /session request is sent through the W3C WebDriver protocol.",
+                    "The browser driver starts or attaches to the target browser session.",
+                    "A session ID is returned to the client library."
+                ]
+            },
+            {
+                title: "2. Navigate to a URL",
+                command: "driver.get(\"https://www.google.com\")",
+                description: "A navigation command is transformed into a POST request to the current session. The browser driver tells the browser to load the page and waits for the response.",
+                activeNode: "script",
+                activeArrows: [0, 1, 2, 3],
+                activeReturns: [3, 2, 1, 0],
+                returningNodes: ["browser", "driver"],
+                trace: [
+                    "The script calls driver.get().",
+                    "The client library creates the payload for POST /session/{id}/url.",
+                    "The driver receives the HTTP request and forwards it to the browser.",
+                    "The browser navigates and waits for the page to load.",
+                    "The driver sends a success response back to the client library."
+                ]
+            },
+            {
+                title: "3. Interact with the page",
+                command: "driver.findElement(...).click()",
+                description: "Element lookup and actions follow the same client-server pattern. Selenium turns each action into standardized HTTP commands so different browsers can respond consistently.",
+                activeNode: "browser",
+                activeArrows: [0, 1, 2, 3],
+                activeReturns: [3, 2, 1, 0],
+                returningNodes: ["browser", "driver", "client"],
+                trace: [
+                    "The client library issues a findElement command.",
+                    "The driver queries the browser for the matching DOM node.",
+                    "A unique element ID is returned.",
+                    "A follow-up click command is sent to the driver.",
+                    "The browser performs the click and returns the result."
+                ]
+            },
+            {
+                title: "4. End the session",
+                command: "driver.quit()",
+                description: "Closing the session uses the same protocol. Selenium sends a DELETE session request, the driver closes the browser, and the client library releases the session.",
+                activeNode: "browser",
+                activeArrows: [0, 1, 2, 3],
+                activeReturns: [3, 2, 1, 0],
+                returningNodes: ["driver", "client"],
+                trace: [
+                    "The script calls driver.quit().",
+                    "The client library sends DELETE /session/{id}.",
+                    "The browser driver shuts down the controlled browser.",
+                    "The driver confirms the session has ended.",
+                    "The client library clears local session state."
+                ]
+            }
+        ];
+
+        const nodeElements = [...document.querySelectorAll(".node")];
+        const arrowElements = [...document.querySelectorAll(".flow-connector")];
+        const returnElements = [...document.querySelectorAll(".return-connector")];
+        const stepList = document.getElementById("stepList");
+        const stepTitle = document.getElementById("stepTitle");
+        const stepDescription = document.getElementById("stepDescription");
+        const stepTrace = document.getElementById("stepTrace");
+        const commandOutput = document.getElementById("commandOutput");
+        const playPause = document.getElementById("playPause");
+
+        let currentStep = 0;
+        let autoplay = null;
+
+        function renderStepButtons() {
+            stepList.innerHTML = "";
+
+            steps.forEach((step, index) => {
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "step-card";
+                button.innerHTML = `<strong>${step.title}</strong><span>${step.command}</span>`;
+                button.addEventListener("click", () => {
+                    stopAutoplay();
+                    setStep(index);
+                });
+                stepList.appendChild(button);
+            });
+        }
+
+        function setStep(index) {
+            currentStep = index;
+            const step = steps[index];
+
+            nodeElements.forEach((node) => {
+                const key = node.dataset.node;
+                node.classList.toggle("active", step.activeNode === key);
+                node.classList.toggle("returning", step.returningNodes.includes(key));
+            });
+
+            arrowElements.forEach((arrowElement, index) => {
+                arrowElement.classList.toggle("active", step.activeArrows.includes(index));
+            });
+
+            returnElements.forEach((returnArrow, index) => {
+                returnArrow.classList.toggle("active", step.activeReturns.includes(index));
+            });
+
+            [...stepList.children].forEach((button, index) => {
+                button.classList.toggle("active", index === currentStep);
+            });
+
+            stepTitle.textContent = step.title;
+            stepDescription.textContent = step.description;
+            commandOutput.textContent = step.command;
+            stepTrace.innerHTML = step.trace.map((item) => `<li>${item}</li>`).join("");
+        }
+
+        function stopAutoplay() {
+            if (autoplay) {
+                window.clearInterval(autoplay);
+                autoplay = null;
+                playPause.textContent = "Auto Play";
+            }
+        }
+
+        function toggleAutoplay() {
+            if (autoplay) {
+                stopAutoplay();
+                return;
+            }
+
+            playPause.textContent = "Pause";
+            autoplay = window.setInterval(() => {
+                currentStep = (currentStep + 1) % steps.length;
+                setStep(currentStep);
+            }, 2500);
+        }
+
+        document.getElementById("prevStep").addEventListener("click", () => {
+            stopAutoplay();
+            setStep((currentStep - 1 + steps.length) % steps.length);
+        });
+
+        document.getElementById("nextStep").addEventListener("click", () => {
+            stopAutoplay();
+            setStep((currentStep + 1) % steps.length);
+        });
+
+        document.getElementById("resetFlow").addEventListener("click", () => {
+            stopAutoplay();
+            setStep(0);
+        });
+
+        playPause.addEventListener("click", toggleAutoplay);
+
+        renderStepButtons();
+        setStep(0);
+    </script>
+</body>
+</html>
