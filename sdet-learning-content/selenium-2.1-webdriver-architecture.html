@@ -428,43 +428,43 @@
                 <h2>Architecture Flow</h2>
                 <p>The blue path shows the outbound command. The green path shows the response returning to your test script.</p>
 
-                <div class="flow-lane">
+                <div class="flow-lane" role="group" aria-label="Outbound request path from the test script to the real browser">
                     <article class="node" data-node="script">
                         <h3>Test Script</h3>
                         <p>Your Java, Python, JavaScript/TypeScript, or C# code calls WebDriver methods.</p>
                     </article>
-                    <div class="flow-connector" data-arrow="0" aria-hidden="true"></div>
+                    <div class="flow-connector" data-arrow="0" role="img" aria-label="Outbound request from Test Script to Client Library"></div>
                     <article class="node" data-node="client">
                         <h3>Client Library</h3>
                         <p>Language bindings convert your API call into a WebDriver command.</p>
                     </article>
-                    <div class="flow-connector" data-arrow="1" aria-hidden="true"></div>
+                    <div class="flow-connector" data-arrow="1" role="img" aria-label="Outbound request from Client Library to W3C Protocol"></div>
                     <article class="node" data-node="protocol">
                         <h3>W3C Protocol</h3>
                         <p>Commands move as HTTP requests with JSON payloads.</p>
                     </article>
-                    <div class="flow-connector" data-arrow="2" aria-hidden="true"></div>
+                    <div class="flow-connector" data-arrow="2" role="img" aria-label="Outbound request from W3C Protocol to Browser Driver"></div>
                     <article class="node" data-node="driver">
                         <h3>Browser Driver</h3>
                         <p>ChromeDriver or GeckoDriver receives the request and speaks to the browser.</p>
                     </article>
-                    <div class="flow-connector" data-arrow="3" aria-hidden="true"></div>
+                    <div class="flow-connector" data-arrow="3" role="img" aria-label="Outbound request from Browser Driver to Real Browser"></div>
                     <article class="node" data-node="browser">
                         <h3>Real Browser</h3>
                         <p>The actual browser navigates, finds elements, and performs actions.</p>
                     </article>
                 </div>
 
-                <div class="response-lane" aria-hidden="true">
-                    <div class="lane-spacer"></div>
-                    <div class="return-connector" data-return="0"></div>
-                    <div class="lane-spacer"></div>
-                    <div class="return-connector" data-return="1"></div>
-                    <div class="lane-spacer"></div>
-                    <div class="return-connector" data-return="2"></div>
-                    <div class="lane-spacer"></div>
-                    <div class="return-connector" data-return="3"></div>
-                    <div class="lane-spacer"></div>
+                <div class="response-lane" role="group" aria-label="Returning response path from the real browser back to the test script">
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                    <div class="return-connector" data-return="0" role="img" aria-label="Returning response from Client Library to Test Script"></div>
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                    <div class="return-connector" data-return="1" role="img" aria-label="Returning response from W3C Protocol to Client Library"></div>
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                    <div class="return-connector" data-return="2" role="img" aria-label="Returning response from Browser Driver to W3C Protocol"></div>
+                    <div class="lane-spacer" aria-hidden="true"></div>
+                    <div class="return-connector" data-return="3" role="img" aria-label="Returning response from Real Browser to Browser Driver"></div>
+                    <div class="lane-spacer" aria-hidden="true"></div>
                 </div>
 
                 <div class="command-bar" aria-live="polite">
