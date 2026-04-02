@@ -17,6 +17,8 @@
             --focus: #7c3aed;
             --focus-soft: #ede9fe;
             --success: #059669;
+            --success-soft: #d1fae5;
+            --focus-text: #4c1d95;
             --warning: #d97706;
             --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
         }
@@ -127,12 +129,12 @@
 
         .node.active h3,
         .node.active p {
-            color: #4c1d95;
+            color: var(--focus-text);
         }
 
         .node.returning:not(.active) {
             border-color: var(--success);
-            background: #d1fae5;
+            background: var(--success-soft);
         }
 
         .flow-connector,
@@ -340,12 +342,12 @@
         }
 
         .legend .request {
-            background: linear-gradient(90deg, #dbeafe 0 50%, transparent 50% 100%);
+            background: linear-gradient(90deg, var(--accent-soft) 0 50%, transparent 50% 100%);
             border: 2px solid var(--accent);
         }
 
         .legend .response {
-            background: linear-gradient(90deg, #d1fae5 0 50%, transparent 50% 100%);
+            background: linear-gradient(90deg, var(--success-soft) 0 50%, transparent 50% 100%);
             border: 2px solid var(--success);
         }
 
