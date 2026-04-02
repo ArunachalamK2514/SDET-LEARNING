@@ -364,7 +364,7 @@
                 <div class="diagram-grid">
                     <article class="node" data-node="script">
                         <h3>Test Script</h3>
-                        <p>Your Java, Python, or C# code calls WebDriver methods.</p>
+                        <p>Your Java, Python, JavaScript/TypeScript, or C# code calls WebDriver methods.</p>
                     </article>
                     <article class="node" data-node="client">
                         <h3>Client Library</h3>
@@ -539,12 +539,12 @@
                 node.classList.toggle("returning", step.returningNodes.includes(key));
             });
 
-            arrowElements.forEach((arrow, index) => {
-                arrow.classList.toggle("active", step.activeArrows.includes(index));
+            arrowElements.forEach((arrowElement, index) => {
+                arrowElement.classList.toggle("active", step.activeArrows.includes(index));
             });
 
-            returnElements.forEach((arrow, index) => {
-                arrow.classList.toggle("active", step.activeReturns.includes(index));
+            returnElements.forEach((returnArrow, index) => {
+                returnArrow.classList.toggle("active", step.activeReturns.includes(index));
             });
 
             [...stepList.children].forEach((button, index) => {
