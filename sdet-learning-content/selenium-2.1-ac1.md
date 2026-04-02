@@ -17,7 +17,27 @@ The Selenium WebDriver architecture consists of four main components that commun
 **Communication Flow:**
 `Test Script` -> `Selenium Client Library` -> `(W3C Protocol)` -> `Browser Driver` -> `Real Browser`
 
-![Selenium Architecture Diagram](https://i.imgur.com/7y3k9Vv.png)
+```mermaid
+flowchart LR
+    TS["Test Script<br/>driver.get(), click(), quit()"]
+    CL["Selenium Client Library<br/>(Java / Python / C# bindings)"]
+    WP["W3C WebDriver Protocol<br/>HTTP requests + JSON payloads"]
+    BD["Browser Driver<br/>ChromeDriver / GeckoDriver / EdgeDriver"]
+    RB["Real Browser<br/>Chrome / Firefox / Edge"]
+
+    TS -->|"Uses WebDriver API"| CL
+    CL -->|"Builds HTTP command"| WP
+    WP -->|"POST /session<br/>POST /url<br/>POST /click"| BD
+    BD -->|"Invokes native automation hooks"| RB
+    RB -->|"Browser state / DOM changes"| BD
+    BD -->|"HTTP response + result"| CL
+    CL -->|"Parsed response"| TS
+```
+
+### Interactive Visualization
+Open the local interactive walkthrough to step through how commands move from your test code into the browser and back:
+
+- [Interactive Selenium WebDriver Architecture Visualizer](./selenium-2.1-webdriver-architecture.html)
 
 ## Code Implementation
 This code demonstrates the setup where the client library (Java) communicates with the `ChromeDriver` to open a browser.
